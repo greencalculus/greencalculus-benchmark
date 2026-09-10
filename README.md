@@ -3,9 +3,11 @@
 How wrong are language models when you ask them for an emission factor with no
 tools — and, worse, how often do they name the wrong source for a number?
 
-**473 questions, 45 sections, 75 publishers**, generated deterministically
+**467 questions, 45 sections, 75 publishers**, generated deterministically
 (seed 20260910) from data version 2026.187. Only factors we may republish are
-used, so the answer key ships with the benchmark.
+used, so the answer key ships with the benchmark. (`questions.json` holds 473
+entries; 6 are duplicate keys the generator emitted before it was fixed, and
+`assemble.py` deduplicates them — every result in this repo is over 467.)
 
 Questions are phrased the way a practitioner asks, not as canonical keys:
 
@@ -75,7 +77,7 @@ Full write-up, caveats, and the log of the scorer's own six bugs:
 - `score.py` — scoring and summary. **Verified against 8 synthetic answers**
   covering exact, close-but-wrong-source, confidently wrong, refusal, and a
   bare year (which must not be read as a value).
-- **Pilot run** against Claude Opus 5 (45 of 473 questions) — see above.
+- **Pilot run** against Claude Opus 5 (45 of 467 questions) — see above.
 - **Not yet run against other vendors.** GPT/Gemini need API keys and spend money.
 - **`score.py` now does unit reconciliation** ([`units.py`](./units.py)) and
   unit-aware, range-aware extraction. Validated against independent hand
