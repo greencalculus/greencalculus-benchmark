@@ -101,6 +101,13 @@ def main():
             })
             i += 1
 
+    # The section listing can serve the same key twice, so the picker dedups as
+    # it goes. Assert it here too: a duplicate silently collapses at scoring
+    # time and leaves the published count overstating the set.
+    ids = [p["id"] for p in picked]
+    assert len(ids) == len(set(ids)), (
+        f"{len(ids) - len(set(ids))} duplicate question ids — dedup is broken")
+
     out = {
         "benchmark": "greencalculus-emission-factor-accuracy",
         "data_version": meta["gc_version"], "data_updated": meta["gc_updated"],

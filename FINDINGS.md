@@ -154,7 +154,7 @@ revised short-lived hydrocarbon GWPs down by two orders of magnitude.
 
 ## Is the scorer trustworthy?
 
-It was wrong four times, and each is recorded because on a benchmark the
+It was wrong six times, and each is recorded because on a benchmark the
 corrections matter more than the headline.
 
 1. **It compared numbers, not quantities.** The first version reported 35.6% and
@@ -187,11 +187,11 @@ they are real.
 
 Two independent checks that the headline is real:
 
-- **Against hand adjudication.** Automated 45.9% vs a hand read of ~47% on the
+- **Against hand adjudication.** Automated 46.9% vs a hand read of ~47% on the
   same 45 pilot answers.
 - **Against scorer coverage.** Closing successive gaps moved unscoreable from 137
-  to 112 while the headline moved 46.7% -> 46.3%. If the unscoreable pile had
-  hidden a bias, converting a quarter of it would have shifted the result.
+  to 110 while the headline moved 46.7% -> 45.7%. If the unscoreable pile had
+  hidden a bias, converting a fifth of it would have shifted the result.
 
 Unreconcilable units are reported **UNSCOREABLE** and leave the denominator,
 never counted wrong — mostly currency (a SEK answer against a USD truth) and
