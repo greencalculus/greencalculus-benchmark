@@ -1,5 +1,10 @@
 # Emission-factor accuracy benchmark
 
+[![questions](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreencalculus%2Fgreencalculus-benchmark%2Fmain%2Fquestions.json&query=%24.n&label=questions&color=04BF62)](./questions.json)
+[![data version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreencalculus%2Fgreencalculus-benchmark%2Fmain%2Fquestions.json&query=%24.data_version&label=ground%20truth&color=04BF62)](https://verify.greencalculus.com)
+[![findings](https://img.shields.io/badge/write--up-FINDINGS.md-04BF62)](./FINDINGS.md)
+[![licence](https://img.shields.io/badge/licence-MIT-blue)](./LICENSE)
+
 How wrong are language models when you ask them for an emission factor with no
 tools — and, worse, how often do they name the wrong source for a number?
 
