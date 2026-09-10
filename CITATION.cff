@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or its results, please cite it as below."
+type: dataset
+title: "GreenCalculus Emission-Factor Accuracy Benchmark"
+abstract: >
+  A benchmark measuring how accurately large language models recall greenhouse-gas
+  emission factors without tools, and — separately — how often they attribute a
+  number to the wrong publisher. 467 questions across 45 sections and 75
+  publishers, generated deterministically from sourced ground truth at data
+  version 2026.187, phrased the way a practitioner asks rather than as canonical
+  keys. Five frontier models were scored unaided; a paired 90-question run
+  measures the effect of connecting a sourced factor lookup. Includes the scoring
+  harness, unit reconciliation, every raw model reply, and a log of the six bugs
+  found in the scorer itself.
+authors:
+  - family-names: Say
+    given-names: Jeremiah
+    affiliation: "GreenCalculus"
+version: "1.0.0"
+date-released: "2026-09-10"
+url: "https://greencalculus.com"
+repository-code: "https://github.com/greencalculus/greencalculus-benchmark"
+license: MIT
+keywords:
+  - benchmark
+  - large language models
+  - hallucination
+  - citation accuracy
+  - groundedness
+  - emission factors
+  - carbon accounting
+  - GHG Protocol
+  - retrieval augmented generation
+  - LLM evaluation
