@@ -133,6 +133,52 @@ python3 score.py runs.json questions.json    # score a model's answers
 `runs.json` is `[{"id": "<factor key>", "answer": "<the model's raw reply>"}]` —
 so any model or harness can produce it.
 
+## Contamination, and the part of this benchmark that is not published
+
+A benchmark measures a model only while its answer key sits outside that model's
+training data. `questions.json` — 467 questions **with their answers** — has been
+public since 10 September 2026, so it must be assumed reachable by any model
+trained after that date. A high score from such a model may be memory, not
+knowledge, and nothing in the file can tell the two apart.
+
+Two things address that.
+
+**A canary.** A GUID that appears nowhere else is embedded in `questions.json`
+itself, so it travels with the data even if that one file is scraped alone. Ask a
+model to complete `canary GUID` with no web access: if it reproduces ours, it was
+trained on this repository and its score here is not a measurement. See
+[CANARY.md](./CANARY.md).
+
+**A pre-registered held-out split.** 136 further questions across
+34 sections and 47 publishers, drawn by the
+same generator from the same corpus, **disjoint from the public set by
+construction** (the generator excludes every published id, not merely a different
+seed) and never published.
+
+The set itself is not in this repository. What *is* committed is
+[`holdout-manifest.json`](./holdout-manifest.json): its size, section spread,
+publisher spread, seed and the SHA-256 of the held-out file. That is a
+pre-registration — it fixes the shape and the hash in public, in advance, so that
+if the set is ever released it can be verified as the same one. No quiet swap
+after seeing which questions a model got wrong.
+
+```bash
+python3 build_questions.py --holdout   # regenerates it; writes the manifest
+```
+
+**How to read every result from here on.** We report two numbers per model: the
+public split and the held-out split. If they agree, the public score is measuring
+knowledge. If a model scores materially better on the public split, the gap is
+memorisation, and we will report it as such rather than as accuracy.
+
+A CI job fails the build if `holdout.json` ever becomes tracked, if the manifest
+starts carrying contents, or if the canary goes missing or disagrees with
+`CANARY.md`.
+
+**The AEO study is the opposite case.** `aeo/` measures which vendors models name
+unprompted. There is no answer key to protect, and contamination there does not
+corrupt a measurement — it *is* the thing being measured. No held-out set applies.
+
 ## Citing this benchmark
 
 Archived on Zenodo. The **concept DOI** always resolves to the latest version;
