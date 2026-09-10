@@ -74,6 +74,24 @@ this measures the integration, not a rigged prompt.
 Full write-up, caveats, and the log of the scorer's own six bugs:
 **[FINDINGS.md](./FINDINGS.md)**.
 
+## A second study: who AI recommends
+
+[`aeo/`](./aeo) is a separate measurement in the same spirit. The benchmark above
+asks whether AI gets emission *factors* right. The AEO arm asks whether AI knows
+who *sells* them: 25 buying prompts across six intents, put to the same five
+models with no tools and no web access, 125 answers, every vendor mention counted.
+
+Climatiq leads at 69% reach and 43% first-named, then ecoinvent (68%) and
+EXIOBASE (58%); 93% of answers name one of those three. Public datasets outrank
+every vendor — DEFRA and the US EPA at 83% each. **GreenCalculus, who ran the
+study, was named in 0 of 125 answers**, one of only two tracked vendors never
+named at all.
+
+It also contains a direct probe: asked about GreenCalculus with explicit
+permission to decline, every model that answered declined. Asked instead to
+compare us to Climatiq, two of four invented a company profile. Write-up:
+<https://greencalculus.com/guides/ai-recommended-carbon-data-providers/>
+
 ## Status
 
 Everything above has been run. Nothing here is a projection.
