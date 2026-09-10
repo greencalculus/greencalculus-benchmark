@@ -31,6 +31,13 @@ The fourth row is the story. A model that cites DEFRA for an EPA figure is more
 dangerous than one that cites nothing, because the citation is what makes a
 reader stop checking.
 
+> **The write-up lives at [greencalculus.com/guides/ai-emission-factors-accuracy](https://greencalculus.com/guides/ai-emission-factors-accuracy/)** —
+> the findings, the caveats and a live factor lookup you can try. This repo is the
+> evidence behind it: the questions, the answer key, every model's raw output, the
+> scoring code and the harness, so anyone can re-run it and check us.
+>
+> Licence terms for all 137 sources: [emission-factor-licences](https://greencalculus.com/guides/emission-factor-licences/).
+
 ## Result — five models, 467 questions, no tools
 
 | Model | Answered | Right *when it answered* | Right *of all 467* | Right source, wrong number |
