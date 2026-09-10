@@ -37,8 +37,20 @@ _ALIAS = [(r"co2e|co2eq\w*|co2-e|co₂e|co2 eq\w*|carbon dioxide equivalent", "c
           (r"\bcarbon\b(?! dioxide)|\bc\b(?!o)", "c")]
 
 
+SUP = {"⁰":"0","¹":"1","²":"2","³":"3","⁴":"4","⁵":"5","⁶":"6","⁷":"7","⁸":"8","⁹":"9","⁻":"-"}
+SUB = {"₀":"0","₁":"1","₂":"2","₃":"3","₄":"4","₅":"5","₆":"6","₇":"7","₈":"8","₉":"9"}
+
+
 def _clean(u):
     u = (u or "").lower().strip()
+    # Some models write "kg CH4 head-1 yr-1" with Unicode superscripts, and
+    # "N2O" with subscripts. Both mean the same as the spelled-out forms; not
+    # normalising them would score a model down for its typography.
+    for k, v in SUB.items():
+        u = u.replace(k, v)
+    u = re.sub(r"([a-z0-9]+)\s*⁻\s*[¹1]", r"per \1", u)
+    for k, v in SUP.items():
+        u = u.replace(k, v)
     u = u.replace("−", "-").replace("·", " ").replace("/", " per ")
     # "room.night", "passenger.km", "vehicle.km" join two words with a dot
     u = re.sub(r"(?<=[a-z])[.\-](?=[a-z])", " ", u)

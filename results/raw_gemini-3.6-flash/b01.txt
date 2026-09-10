@@ -1,0 +1,59 @@
+[1. afolu.removals.forestry.temperate_conifer] According to the IPCC 2006 Guidelines for National Greenhouse Gas Inventories (Vol 4, Ch 4), the default above-ground biomass growth removal rate for temperate conifer forests is approximately -3.0 tonnes dry matter per hectare per year.
+
+[2. afolu.manure_ch4.other_cattle.tier1.high_productivity.anaerobic_digestion_biogas.cool] According to the 2019 Refinement to the 2006 IPCC Guidelines, the methane conversion factor for manure in anaerobic digestion biogas systems in cool climates corresponds to an emission factor of approximately 0.005 kg CH4 per kg volatile solids (VS).
+
+[3. afolu_refinement.enteric.swine.tier1.low_productivity] According to the 2019 Refinement to the 2006 IPCC Guidelines (Vol 4, Ch 10, Table 10.10), the Tier 1 enteric fermentation CH4 emission factor for swine in low productivity systems is 1.5 kg CH4 per head per year.
+
+[4. afolu.manure_ch4.pigs.tier1.global] According to the IPCC 2006 Guidelines (Vol 4, Ch 10, Table 10.14), the global default Tier 1 manure management emission factor for pigs is approximately 1.5 kg CH4 per head per year.
+
+[5. afolu.wetlands.coastal.mangrove.agb_growth.tropical_dry] According to the 2013 IPCC Wetlands Supplement (Table 4.4), the above-ground biomass growth rate for mangroves in Tropical Dry climates is 2.30 tonnes dry matter per hectare per year.
+
+[6. afolu.fertiliser.organic_nitrogen.aggregate] According to the IPCC 2006 Guidelines (Vol 4, Ch 11), the aggregate direct and indirect emission factor for organic nitrogen applied to soils is approximately 0.0157 kg N2O per kg N applied.
+
+[7. afolu.luc.tropical_deforestation] According to IPCC 2006 Guidelines estimates, land use change from tropical deforestation results in an average emission factor of approximately 450 tonnes CO2 per hectare.
+
+[8. afolu.forest_land.agb_stock.plantation.subtropical.subtropical_steppe.americas.tectona_grandis.all] According to the IPCC 2006 Guidelines (Vol 4, Ch 4, Table 4.12), the default above-ground biomass stock for Tectona grandis (teak) plantations in Subtropical Steppe in the Americas is approximately 120 tonnes dry matter per hectare.
+
+[9. afolu_refinement.enteric.horses.tier1] According to the 2019 Refinement to the 2006 IPCC Guidelines (Vol 4, Ch 10, Table 10.10), the Tier 1 enteric fermentation methane emission factor for horses is 18 kg CH4 per head per year.
+
+[10. afolu.enteric.poultry.tier1.global] According to the IPCC 2006 Guidelines (Vol 4, Ch 10), enteric fermentation emissions from poultry are considered negligible and the default emission factor is 0 kg CH4 per head per year.
+
+[11. afolu.wetlands.drained.plantations_oil_palm.tropical_subtropical.n2o] According to the 2013 IPCC Wetlands Supplement (Table 2.5), the direct N2O emission factor for drained organic soils in tropical oil palm plantations is 11 kg N2O-N per hectare per year.
+
+[12. afolu.fertiliser.synthetic_nitrogen.aggregate] According to the IPCC 2006 Guidelines (Vol 4, Ch 11), the aggregate direct and indirect emission factor for synthetic nitrogen fertiliser application is approximately 0.0157 kg N2O per kg N applied.
+
+[13. atmospheric.ch4.tg_per_ppb] According to standard atmospheric chemistry parameters cited in IPCC reports, 1 ppb of dry-air global atmospheric methane corresponds to approximately 2.78 Tg CH4.
+
+[14. atmospheric.co2.gtc_per_ppm] According to IPCC Assessment Reports (e.g., AR5/AR6), 1 ppm of atmospheric CO2 corresponds to 2.12 GtC (gigatonnes of carbon).
+
+[15. building_energy.gbr.floorband.151_to_200.gas] According to the UK DESNZ National Energy Efficiency Data-Framework (NEED), the median annual gas consumption for residential properties with floor area 151 to 200 m2 is approximately 18,200 kWh per year.
+
+[16. building_energy.gbr.dwelling.converted_flat.gas] According to the UK DESNZ NEED database, the median annual gas consumption for converted flats in Great Britain is approximately 8,900 kWh per year.
+
+[17. building_energy.gbr.floorband.upto_50.electricity] According to the UK DESNZ NEED database, the median annual electricity consumption for residential dwellings up to 50 m2 floor area is approximately 2,100 kWh per year.
+
+[18. building_energy.gbr.dwelling.semi_detached.electricity] According to the UK DESNZ NEED database, the median annual electricity consumption for semi-detached dwellings in Great Britain is approximately 3,600 kWh per year.
+
+[19. building_energy.gbr.dwelling.bungalow.gas] According to the UK DESNZ NEED database, the median annual gas consumption for bungalows in Great Britain is approximately 12,800 kWh per year.
+
+[20. building_energy.gbr.dwelling.purpose_built_flat.electricity] According to the UK DESNZ NEED database, the median annual electricity consumption for purpose-built flats in Great Britain is approximately 2,600 kWh per year.
+
+[21. building_energy.gbr.epc.d.electricity] According to the UK DESNZ NEED database, the median annual electricity consumption for residential dwellings with EPC band D is approximately 3,400 kWh per year.
+
+[22. building_energy.gbr.epc.g.electricity] According to the UK DESNZ NEED database, the median annual electricity consumption for residential dwellings with EPC band G is approximately 5,200 kWh per year.
+
+[23. building_energy.gbr.dwelling.mid_terrace.gas] According to the UK DESNZ NEED database, the median annual gas consumption for mid-terrace houses in Great Britain is approximately 11,500 kWh per year.
+
+[24. building_energy.gbr.floorband.51_to_100.gas] According to the UK DESNZ NEED database, the median annual gas consumption for residential dwellings with floor area 51 to 100 m2 is approximately 11,200 kWh per year.
+
+[25. building_energy.gbr.floorband.51_to_100.electricity] According to the UK DESNZ NEED database, the median annual electricity consumption for residential dwellings with floor area 51 to 100 m2 is approximately 3,100 kWh per year.
+
+[26. building_energy.gbr.floorband.upto_50.gas] According to the UK DESNZ NEED database, the median annual gas consumption for residential dwellings up to 50 m2 floor area is approximately 6,800 kWh per year.
+
+[27. business_travel.fra.road.car_average] According to ADEME Base Carbone (France), the emission factor for business travel in an average passenger car is approximately 0.193 kg CO2e per km.
+
+[28. business_travel.air.domestic.average.wtt] According to the UK DESNZ / DEFRA GHG Conversion Factors, the Well-To-Tank emission factor for domestic flights (average passenger) is 0.0275 kg CO2e per passenger.km.
+
+[29. business_travel.usa.air.long_haul] According to the US EPA GHG Emission Factors Hub, the emission factor for long-haul commercial air travel is 0.163 kg CO2e per passenger.mile.
+
+[30. business_travel.aus.road.hire_car.by_fuel.diesel_sedan.per_vehicle_km] According to Australian Government Climate Active / NGA emission factors, the emission factor for a diesel sedan hire car is approximately 0.215 kg CO2e per vehicle.km.

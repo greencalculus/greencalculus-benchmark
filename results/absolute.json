@@ -1,0 +1,20 @@
+{
+ "gemini-3.6-flash": {
+  "answered": 436,
+  "refused": 31,
+  "correct": 133,
+  "pct_of_all": 28.5
+ },
+ "grok-4.6": {
+  "answered": 150,
+  "refused": 317,
+  "correct": 56,
+  "pct_of_all": 12.0
+ },
+ "claude-opus-5": {
+  "answered": 456,
+  "refused": 11,
+  "correct": 157,
+  "pct_of_all": 33.6
+ }
+}

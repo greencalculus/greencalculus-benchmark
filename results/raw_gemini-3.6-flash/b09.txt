@@ -1,0 +1,59 @@
+[grid.tcd.electricity.lifecycle_intensity] I do not know the exact lifecycle greenhouse gas emission factor for Chad grid electricity.
+
+[grid.gib.electricity.lifecycle_intensity] I do not know the exact lifecycle greenhouse gas emission factor for Gibraltar grid electricity.
+
+[grid.gnq.electricity.lifecycle_intensity] I do not know the exact lifecycle greenhouse gas emission factor for Equatorial Guinea grid electricity.
+
+[heating_systems.boiler_efficiency.gas_non_condensing] The seasonal efficiency for a gas non-condensing boiler is typically 0.78 (78%), based on standard parameters from UK SAP 10 and Ecodesign guidelines.
+
+[heating_systems.heat_pump_spf.ashp] The seasonal performance factor (SPF) for an air-source heat pump is typically 2.5 (250%), based on standard SAP/Ecodesign benchmark assumptions.
+
+[heating_systems.reference.lifetime_years.boiler] The reference operating lifetime for a gas/oil boiler is 15 years, according to CIBSE and Ecodesign reference standards.
+
+[heating_systems.boiler_efficiency.oil_non_condensing] The seasonal efficiency for an oil non-condensing boiler is typically 0.78 (78%), based on standard parameters from UK SAP 10.
+
+[heating_systems.boiler_efficiency.gas_condensing] The seasonal efficiency for a gas condensing boiler is typically 0.90 (90%), based on standard parameters from UK SAP 10.
+
+[heating_systems.boiler_efficiency.lpg_condensing] The seasonal efficiency for an LPG condensing boiler is typically 0.90 (90%), based on standard parameters from UK SAP 10.
+
+[heating_systems.direct_electric.efficiency] The point-of-use efficiency for direct electric resistance heating is 1.00 (100%), based on fundamental conversion physics and UK SAP standards.
+
+[heating_systems.boiler_efficiency.oil_condensing] The seasonal efficiency for an oil condensing boiler is typically 0.90 (90%), based on standard parameters from UK SAP 10.
+
+[homeworking.gbr.office_equipment] The emission factor for homeworking office equipment in the UK is 0.0331 kg CO2e per FTE working hour, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[homeworking.gbr.combined] The combined emission factor for homeworking (office equipment and heating) in the UK is 0.3344 kg CO2e per FTE working hour, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[homeworking.gbr.heating] The emission factor for homeworking heating in the UK is 0.3013 kg CO2e per FTE working hour, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.gbr] The emission factor for a UK hotel stay is 10.4 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.oman] The emission factor for a hotel stay in Oman is 93.5 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.thailand] The emission factor for a hotel stay in Thailand is 30.5 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.malaysia] The emission factor for a hotel stay in Malaysia is 51.6 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.hong_kong_china] The emission factor for a hotel stay in Hong Kong, China is 56.7 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.costa_rica] The emission factor for a hotel stay in Costa Rica is 8.8 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.belgium] The emission factor for a hotel stay in Belgium is 11.2 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.chile] The emission factor for a hotel stay in Chile is 23.4 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.vietnam] The emission factor for a hotel stay in Vietnam is 52.8 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.switzerland] The emission factor for a hotel stay in Switzerland is 4.3 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.china] The emission factor for a hotel stay in China is 62.9 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[hotel_stay.portugal] The emission factor for a hotel stay in Portugal is 12.3 kg CO2e per room-night, from the DESNZ/DEFRA GHG Conversion Factors (2023).
+
+[chemicals.acrylonitrile.ch4_default] The default CH4 emission factor for acrylonitrile production is 1.0 kg CH4 per tonne of acrylonitrile, from the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
+
+[industrial_processes_refinement.fluorochemical.nf3_cf4_byproduct] The Tier 1 default emission factor for CF4 by-product from NF3 production is 0.10 kg CF4 per kg NF3 produced, from the 2019 Refinement to the 2006 IPCC Guidelines.
+
+[minerals.cement.cao_default_fraction] The default CaO content fraction of cement clinker is 0.65 tonne CaO per tonne clinker, from the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
+
+[industrial_processes_refinement.hydrogen.steam_reforming_lpg] The Tier 1 carbon content factor for steam reforming of LPG is 17.2 kg C per GJ feedstock, from the 2019 Refinement to the 2006 IPCC Guidelines.

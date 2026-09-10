@@ -1,0 +1,30 @@
+[fuel_properties.hydrogen.gross_cv_gj_tonne] The gross calorific value of hydrogen is 141.80 GJ/tonne, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.diesel.net_cv_gj_tonne] The net calorific value of diesel fuel is 42.60 GJ/tonne, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.hydrogen.net_cv_gj_tonne] The net calorific value of hydrogen is 120.00 GJ/tonne, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.gas_oil.gross_cv_gj_tonne] The gross calorific value of gas oil is 45.38 GJ/tonne, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.gas_oil.net_cv_gj_tonne] The net calorific value of gas oil is 42.80 GJ/tonne, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.petrol.density_kg_m3] The density of petrol is 737.00 kg/m³, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.natural_gas.gross_cv_kwh_kg] The gross calorific value of natural gas is 14.99 kWh/kg, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.petrol.density_kg_litre] The density of petrol is 0.737 kg/litre, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.lpg.density_kg_litre] The density of liquefied petroleum gas (LPG) is 0.523 kg/litre, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.diesel_100_mineral.gross_cv_kwh_litre] The gross calorific value of 100% mineral diesel is 10.02 kWh/litre, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuel_properties.diesel_100_mineral.litres_per_tonne] The volumetric property of 100% mineral diesel is 1186 litres/tonne, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuels.gbr.bio.methanol_bio.litre] The emission factor for bio-methanol is 0.395 kg CO2e/litre, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuels.usa.residual_fuel_oil_no_6.gallon] The stationary combustion emission factor for US Residual Fuel Oil No. 6 is 11.27 kg CO2e/gallon, sourced from the US EPA GHG Emission Factors Hub.
+[fuels.ipcc.liquefied_petroleum_gases.litre] The stationary combustion emission factor for liquefied petroleum gases is approximately 1.61 kg CO2/litre, calculated from the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
+[fuels.can.ethane.litre] The combustion emission factor for ethane is 0.983 kg CO2e/litre, sourced from Environment and Climate Change Canada's National Inventory Report.
+[fuels.fra.heating_oil.litre] The direct emission factor for heating oil (fioul domestique) is 3.25 kg CO2e/litre, sourced from ADEME Base Empreinte.
+[fuels.aus.burning_oil.litre] The combustion emission factor for burning oil is 2.54 kg CO2e/litre, sourced from Australia's National Greenhouse Accounts (NGA) Factors.
+[fuels.gbr.waste_oils.tonne] The combustion greenhouse gas emission factor for waste oils is 3223.3 kg CO2e/tonne, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuels.usa.liquefied_petroleum_gases.mmbtu] The greenhouse gas emission factor for US Liquefied Petroleum Gases is 61.71 kg CO2e/mmBtu, sourced from the US EPA GHG Emission Factors Hub.
+[fuels.ipcc.anthracite.kwh_ncv] The stationary combustion emission factor for anthracite is 0.354 kg CO2/kWh NCV, based on default factors from the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
+[fuels.can.propane.litre] The combustion emission factor for propane is 1.544 kg CO2e/litre, sourced from Environment and Climate Change Canada's National Inventory Report.
+[fuels.fra.propane.kwh_ncv] The direct combustion emission factor for propane is 0.274 kg CO2e/kWh NCV, sourced from ADEME Base Empreinte.
+[fuels.aus.gas_oil.kwh_gcv] The combustion emission factor for gas oil is approximately 0.270 kg CO2e/kWh GCV, sourced from Australia's National Greenhouse Accounts (NGA) Factors.
+[fuels.fra.diesel_road.wtt.litre] The well-to-tank emission factor for road diesel is 0.56 kg CO2e/litre, sourced from ADEME Base Empreinte.
+[grid.usa.ba.public_utility_district_no_2_of_grant_county_washington.wtt_generation] I don't know the exact well-to-tank emission factor for US Public Utility District No. 2 of Grant County, Washington grid electricity.
+[fuels.aus.natural_gas.sa.non_metro.wtt.gj] The well-to-tank emission factor for non-metro natural gas in South Australia is 13.6 kg CO2e/GJ, sourced from Australia's National Greenhouse Accounts (NGA) Factors.
+[fuels.can.kerosene.wtt.mj] The well-to-tank emission factor for kerosene in Canada is approximately 0.014 kg CO2e/MJ, based on Environment and Climate Change Canada data.
+[grid.gbr.electricity.wtt_generation] The well-to-tank emission factor for UK electricity generation is 0.0245 kg CO2e/kWh, sourced from the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+[fuels.fra.heating_oil.wtt.litre] The well-to-tank emission factor for heating oil (fioul domestique) is 0.46 kg CO2e/litre, sourced from ADEME Base Empreinte.
+[grid.usa.ba.southwest_power_pool.wtt_generation_residual_mix] I don't know the exact well-to-tank residual mix emission factor for the US Southwest Power Pool.

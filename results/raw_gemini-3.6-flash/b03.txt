@@ -1,0 +1,59 @@
+[cbam.country.kor.7217_20.wire_iron] The EU CBAM transitional default direct emission factor for South Korea for CN code 7217 20 (wire of Level 1 iron/steel) is approximately 1.42 tonnes CO2e per tonne of good, as published in European Commission transitional default guidance (2023).
+
+[reporting.cbam.indirect.congo_democratic] The EU CBAM default indirect emission factor for electricity in the Democratic Republic of the Congo is 0.021 tonnes CO2 per MWh, according to European Commission transitional period default values (2023).
+
+[chp.reference_efficiency.ghg_protocol.electricity] According to the GHG Protocol CHP allocation guidance, the reference efficiency for separate electricity production is 35% (0.35 kWh electricity per kWh fuel input).
+
+[chp.reference_efficiency.ghg_protocol.heat] According to the GHG Protocol CHP allocation guidance, the reference efficiency for separate heat and steam production is 80% (0.80 kWh heat per kWh fuel input).
+
+[commuting.car.size.average.diesel] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for an average diesel commuting car is 0.16844 kgCO2e per km.
+
+[commuting.rail.national_rail] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for National Rail travel is 0.03549 kgCO2e per passenger.km.
+
+[commuting.car.size.large.petrol] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for a large petrol commuting car is 0.27455 kgCO2e per km.
+
+[commuting.car.size.medium.hybrid] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for a medium hybrid commuting car is 0.10825 kgCO2e per km.
+
+[commuting.car.size.average.hybrid] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for an average hybrid commuting car is 0.11327 kgCO2e per km.
+
+[commuting.bus.local_average] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for an average local bus is 0.10221 kgCO2e per passenger.km.
+
+[commuting.car.size.small.diesel] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for a small diesel commuting car is 0.13732 kgCO2e per km.
+
+[commuting.car.size.medium.petrol] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for a medium petrol commuting car is 0.18728 kgCO2e per km.
+
+[commuting.car.size.small.hybrid] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for a small hybrid commuting car is 0.10230 kgCO2e per km.
+
+[commuting.car.size.large.hybrid] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for a large hybrid commuting car is 0.13280 kgCO2e per km.
+
+[commuting.bus.local_london] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for a local London bus is 0.06173 kgCO2e per passenger.km.
+
+[commuting.rail.international_rail] According to DESNZ/DEFRA GHG Conversion Factors 2023, the emission factor for international rail travel is 0.00446 kgCO2e per passenger.km.
+
+[reporting.csrd.threshold.large_undertaking.turnover_eur_m] Under Directive 2013/34/EU as amended for CSRD, the net turnover threshold for a large undertaking is 50 million EUR.
+
+[reporting.csrd.threshold.non_eu_group.eu_revenue_eur_m] Under the Corporate Sustainability Reporting Directive (CSRD), the threshold for non-EU groups with EU net turnover is 150 million EUR.
+
+[reporting.csrd.threshold.listed_sme.first_report_fy] Under the CSRD framework, listed SMEs are required to start reporting for financial year 2026 (reporting in 2027), with an optional opt-out until FY 2028.
+
+[reporting.csrd.threshold.large_undertaking.balance_sheet_eur_m] Under Directive 2013/34/EU as amended for CSRD, the balance sheet total threshold for a large undertaking is 25 million EUR.
+
+[reporting.csrd.calendar.listed_sme.first_report_fy] According to the CSRD implementation timeline, the first reporting financial year for listed SMEs is FY 2026.
+
+[reporting.csrd.calendar.non_eu_group.first_report_fy] According to the CSRD implementation timeline, the first reporting financial year for non-EU groups generating >150m EUR in the EU is FY 2028.
+
+[reporting.csrd.calendar.large_undertaking.first_report_fy] According to the CSRD implementation timeline, the first reporting financial year for other large undertakings (not previously under NFRD) is FY 2025.
+
+[reporting.csrd.e1_9.phase_in_year_1_qualitative] Under ESRS E1-9 phase-in provisions, undertakings with fewer than 750 employees are permitted to report qualitative disclosures only for anticipated financial effects in the first year of reporting.
+
+[reporting.csrd.calendar.large_pie.first_report_fy] According to the CSRD implementation timeline, the first reporting financial year for large public-interest entities with >500 employees already subject to NFRD is FY 2024.
+
+[reporting.csrd.threshold.large_undertaking.employees] Under the EU Accounting Directive and CSRD, the employee threshold for a large undertaking is 250 employees.
+
+[delivery_vehicles.hgv.all.50pct_laden.diesel.energy_use_secr] According to DESNZ/DEFRA SECR Conversion Factors 2023, energy consumption for an average diesel HGV (50% laden) is 2.6514 kWh per km.
+
+[delivery_vehicles.hgv_refrigerated.rigid_7_5_to_17t.average_laden.diesel.energy_use_secr] According to DESNZ/DEFRA SECR Conversion Factors 2023, energy consumption for a refrigerated rigid HGV (>7.5-17 tonnes, average laden, diesel) is 3.1420 kWh per km.
+
+[delivery_vehicles.hgv.rigid_gt_17t.average_laden.diesel.wtt] According to DESNZ/DEFRA GHG Conversion Factors 2023, the Well-To-Tank (WTT) emission factor for a rigid diesel HGV (>17 tonnes, average laden) is 0.18652 kgCO2e per km.
+
+[delivery_vehicles.hgv.artic_3_5_to_33t.0pct_laden.diesel.energy_use_secr] According to DESNZ/DEFRA SECR Conversion Factors 2023, energy consumption for an articulated diesel HGV (>3.5-33 tonnes, 0% laden) is 2.3845 kWh per km.

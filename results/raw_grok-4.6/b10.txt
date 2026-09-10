@@ -1,0 +1,30 @@
+[minerals.glass.specialty_tv_panel] I don't know a distinct process emission factor for specialty TV-panel glass per tonne melted.
+[industrial_processes_refinement.nitric_acid.old_pre_1975] 10 kg N2O per tonne 100% nitric acid, which I believe is the IPCC 2019 Refinement default for old (pre-1975) plants (all processes).
+[chemicals.ethylene_oxide.ch4_thermal_treatment] I don't know the CH4 factor for ethylene oxide with thermal treatment of process vents.
+[industrial_processes_refinement.hydrogen.steam_reforming_methanol] I don't know the Tier 1 CCF for hydrogen from steam reforming of methanol in the 2019 Refinement.
+[minerals.cement.clinker_pre_ckd] 0.51 t CO2 per tonne clinker (base calcination factor before CKD correction), IPCC 2006 Guidelines Vol. 3 Ch. 2.
+[industrial_processes_refinement.hfc23_hcfc22.recent_design] 0.015 kg HFC-23 per kg HCFC-22 produced, which I believe is the IPCC 2019 Refinement default for recent-design plants not specifically optimised.
+[metals.iron_steel.blast_furnace_pig_iron] 1.35 t CO2 per tonne pig iron, IPCC 2006 Guidelines Vol. 3 Table 4.1.
+[industrial_processes_refinement.nitric_acid.single_low_pressure] 5 kg N2O per tonne 100% nitric acid, IPCC 2019 Refinement (single low-pressure / L/L plants).
+[lca.pef.data_quality.dqr_fair_max] 4.0 (dimensionless DQR); fair quality is DQR ≤ 4.0 under the EU PEF Method.
+[lca.pef.normalisation.required] 1 (yes); normalisation is required by the EU PEF Method (European Commission).
+[lca.pef.recycling.cff_required] 1 (yes); the Circular Footprint Formula is required for end-of-life modelling in the EU PEF Method.
+[lca.pef.data_quality.dqr_dimensions_count] 5 (technological, geographical and time-related representativeness, completeness, and precision), EU PEF Method.
+[lca.pef.climate_change.includes_biogenic_separate_subindicator] 1 (yes); biogenic GHG is a separate climate-change sub-indicator in the EU PEF Method.
+[lca.pef.climate_change.includes_fossil] 1 (yes); fossil GHG emissions are included in the climate-change category in the EU PEF Method.
+[lca.pef.data_quality.dqr_excellent_max] 1.5 (dimensionless DQR); excellent quality is DQR ≤ 1.5 under the EU PEF Method.
+[lca.pef.impact_categories_count] 16 Environmental Footprint impact categories, EU PEF Method.
+[lca.pef.climate_change.includes_land_use_change_subindicator] 1 (yes); land-use-change GHG is a separate climate-change sub-indicator in the EU PEF Method.
+[lca.pef.electricity.residual_mix_default] 1 (yes); residual electricity mix is the default when contractual instruments are absent, EU PEF Method.
+[lca.pef.data_quality.dqr_poor_threshold] 4.0 (dimensionless DQR); DQR > 4.0 is poor quality under the EU PEF Method.
+[lca.biogenic.gwp_bio.short_rotation_pef] 0 (dimensionless GWPbio) for short-rotation biomass under the EU PEF treatment of biogenic carbon.
+[managed_assets.van.class_iii.diesel] I don't know the exact current DEFRA kgCO2e/km figure for a Class III diesel van.
+[managed_assets.car.size.average.hybrid] I don't know the exact current DEFRA kgCO2e/km figure for an average hybrid car.
+[managed_assets.hgv_refrigerated.rigid_all.0pct_laden.diesel] I don't know the exact current DEFRA kgCO2e/km figure for all rigid refrigerated HGVs at 0% laden, diesel.
+[managed_assets.hgv_refrigerated.rigid_gt_17t.50pct_laden.diesel] I don't know the exact current DEFRA kgCO2e/km figure for rigid (>17 t) refrigerated HGVs at 50% laden, diesel.
+[managed_assets.car.segment.executive.diesel] I don't know the exact current DEFRA kgCO2e/km figure for an executive diesel car.
+[managed_assets.car.segment.mini.petrol] I don't know the exact current DEFRA kgCO2e/km figure for a mini petrol car.
+[managed_assets.van.class_i.diesel] I don't know the exact current DEFRA kgCO2e/km figure for a Class I diesel van.
+[managed_assets.van.class_ii.diesel] I don't know the exact current DEFRA kgCO2e/km figure for a Class II diesel van.
+[managed_assets.hgv.rigid_7_5_to_17t.0pct_laden.diesel] I don't know the exact current DEFRA kgCO2e/km figure for rigid (>7.5–17 t) HGVs at 0% laden, diesel.
+[managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel] I don't know the exact current DEFRA kgCO2e/km figure for all articulated refrigerated HGVs at 50% laden, diesel.

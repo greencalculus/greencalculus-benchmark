@@ -1,0 +1,30 @@
+[afolu.removals.forestry.temperate_conifer] I don't know this factor.
+[afolu.manure_ch4.other_cattle.tier1.high_productivity.anaerobic_digestion_biogas.cool] I don't know this factor.
+[afolu_refinement.enteric.swine.tier1.low_productivity] 1.0 kg CH4 head⁻¹ yr⁻¹, IPCC 2019 Refinement Volume 4 Table 10.10.
+[afolu.manure_ch4.pigs.tier1.global] I don't know a single global default; IPCC 2006 Table 10.14 is regional and climate-specific.
+[afolu.wetlands.coastal.mangrove.agb_growth.tropical_dry] I don't know this factor.
+[afolu.fertiliser.organic_nitrogen.aggregate] 0.01425 kg N₂O-N per kg N applied (IPCC 2006: EF1 0.01 + FracGASM 0.20 × EF4 0.01 + FracLEACH 0.30 × EF5 0.0075).
+[afolu.luc.tropical_deforestation] I don't know a single standard per-hectare factor.
+[afolu.forest_land.agb_stock.plantation.subtropical.subtropical_steppe.americas.tectona_grandis.all] I don't know this factor.
+[afolu_refinement.enteric.horses.tier1] 18 kg CH4 head⁻¹ yr⁻¹, IPCC 2019 Refinement Volume 4 Table 10.10.
+[afolu.enteric.poultry.tier1.global] 0 kg CH4 head⁻¹ yr⁻¹; IPCC Tier 1 enteric tables do not include poultry (emissions treated as negligible).
+[afolu.wetlands.drained.plantations_oil_palm.tropical_subtropical.n2o] 1.2 kg N₂O-N ha⁻¹ yr⁻¹, IPCC 2013 Wetlands Supplement Table 2.5 (tropical drained organic soils, plantations).
+[afolu.fertiliser.synthetic_nitrogen.aggregate] 0.01325 kg N₂O-N per kg N applied (IPCC 2006: EF1 0.01 + FracGASF 0.10 × EF4 0.01 + FracLEACH 0.30 × EF5 0.0075).
+[atmospheric.ch4.tg_per_ppb] 2.75 Tg CH4 per ppb, the conversion commonly used in IPCC assessments (dry-air mole fraction).
+[atmospheric.co2.gtc_per_ppm] 2.13 Gt C per ppm CO2, the standard IPCC/CDIAC dry-air conversion.
+[building_energy.gbr.floorband.151_to_200.gas] I don't know this factor.
+[building_energy.gbr.dwelling.converted_flat.gas] I don't know this factor.
+[building_energy.gbr.floorband.upto_50.electricity] I don't know this factor.
+[building_energy.gbr.dwelling.semi_detached.electricity] I don't know this factor.
+[building_energy.gbr.dwelling.bungalow.gas] I don't know this factor.
+[building_energy.gbr.dwelling.purpose_built_flat.electricity] I don't know this factor.
+[building_energy.gbr.epc.d.electricity] I don't know this factor.
+[building_energy.gbr.epc.g.electricity] I don't know this factor.
+[building_energy.gbr.dwelling.mid_terrace.gas] I don't know this factor.
+[building_energy.gbr.floorband.51_to_100.gas] I don't know this factor.
+[building_energy.gbr.floorband.51_to_100.electricity] I don't know this factor.
+[building_energy.gbr.floorband.upto_50.gas] I don't know this factor.
+[business_travel.fra.road.car_average] About 0.193 kg CO2e per km, ADEME Base Carbone (average French passenger car); I do not recall the exact current vintage figure.
+[business_travel.air.domestic.average.wtt] I don't know the exact DEFRA WTT figure for the relevant year.
+[business_travel.usa.air.long_haul] 0.161 kg CO2 per passenger-mile, EPA GHG Emission Factors Hub (long-haul air, ≥2300 miles; CO2 only).
+[business_travel.aus.road.hire_car.by_fuel.diesel_sedan.per_vehicle_km] I don't know this factor.

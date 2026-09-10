@@ -1,0 +1,30 @@
+[cbam.country.kor.7217_20.wire_iron] I don't know the CBAM default direct-emission factor for South Korea CN 7217 20.
+[reporting.cbam.indirect.congo_democratic] I don't know the CBAM Annex II indirect (electricity) emission factor for the Democratic Republic of the Congo.
+[chp.reference_efficiency.ghg_protocol.electricity] 0.35 kWh electricity per kWh fuel input (35% assumed efficiency of separate electricity production), from the GHG Protocol CHP allocation guidance.
+[chp.reference_efficiency.ghg_protocol.heat] 0.80 kWh heat per kWh fuel input (80% assumed efficiency of separate heat/steam production), from the GHG Protocol CHP allocation guidance.
+[commuting.car.size.average.diesel] I don't know the current DEFRA kgCO2e per km factor for an average diesel car.
+[commuting.rail.national_rail] I don't know the current DEFRA kgCO2e per passenger.km factor for national rail.
+[commuting.car.size.large.petrol] I don't know the current DEFRA kgCO2e per km factor for a large petrol car.
+[commuting.car.size.medium.hybrid] I don't know the current DEFRA kgCO2e per km factor for a medium hybrid car.
+[commuting.car.size.average.hybrid] I don't know the current DEFRA kgCO2e per km factor for an average hybrid car.
+[commuting.bus.local_average] I don't know the current DEFRA kgCO2e per passenger.km factor for an average local bus.
+[commuting.car.size.small.diesel] I don't know the current DEFRA kgCO2e per km factor for a small diesel car.
+[commuting.car.size.medium.petrol] I don't know the current DEFRA kgCO2e per km factor for a medium petrol car.
+[commuting.car.size.small.hybrid] I don't know the current DEFRA kgCO2e per km factor for a small hybrid car.
+[commuting.car.size.large.hybrid] I don't know the current DEFRA kgCO2e per km factor for a large hybrid car.
+[commuting.bus.local_london] I don't know the current DEFRA kgCO2e per passenger.km factor for a local London bus.
+[commuting.rail.international_rail] I don't know the current DEFRA kgCO2e per passenger.km factor for international rail.
+[reporting.csrd.threshold.large_undertaking.turnover_eur_m] 50 million EUR net turnover (one of the large-undertaking size tests), from the Accounting Directive as amended by Delegated Directive (EU) 2023/2775.
+[reporting.csrd.threshold.non_eu_group.eu_revenue_eur_m] 150 million EUR net turnover in the EU, from CSRD Article 40a.
+[reporting.csrd.threshold.listed_sme.first_report_fy] Financial year 2026 (first CSRD reporting year for listed SMEs), from the CSRD phasing provisions.
+[reporting.csrd.threshold.large_undertaking.balance_sheet_eur_m] 25 million EUR balance-sheet total (one of the large-undertaking size tests), from the Accounting Directive as amended by Delegated Directive (EU) 2023/2775.
+[reporting.csrd.calendar.listed_sme.first_report_fy] Financial year 2026, from the CSRD first-application calendar for listed SMEs.
+[reporting.csrd.calendar.non_eu_group.first_report_fy] Financial year 2028, from CSRD Article 40a first-application timing for non-EU groups.
+[reporting.csrd.calendar.large_undertaking.first_report_fy] Financial year 2025, from the CSRD first-application calendar for other large undertakings.
+[reporting.csrd.e1_9.phase_in_year_1_qualitative] Yes — qualitative-only information is permitted in year 1 of mandatory application (quantitative anticipated financial effects under ESRS E1-9 may be omitted then), per ESRS 1 Appendix C.
+[reporting.csrd.calendar.large_pie.first_report_fy] Financial year 2024, from the CSRD first-application calendar for large public-interest entities already under NFRD.
+[reporting.csrd.threshold.large_undertaking.employees] 250 employees (average number during the year), from the Accounting Directive large-undertaking size tests used for CSRD.
+[delivery_vehicles.hgv.all.50pct_laden.diesel.energy_use_secr] I don't know the current DEFRA SECR kWh per km factor for all HGVs at 50% laden (diesel).
+[delivery_vehicles.hgv_refrigerated.rigid_7_5_to_17t.average_laden.diesel.energy_use_secr] I don't know the current DEFRA SECR kWh per km factor for refrigerated rigid HGVs (>7.5–17 t, average laden, diesel).
+[delivery_vehicles.hgv.rigid_gt_17t.average_laden.diesel.wtt] I don't know the current DEFRA WTT kgCO2e per km factor for rigid HGVs >17 t (average laden, diesel).
+[delivery_vehicles.hgv.artic_3_5_to_33t.0pct_laden.diesel.energy_use_secr] I don't know the current DEFRA SECR kWh per km factor for articulated HGVs (>3.5–33 t, 0% laden, diesel).

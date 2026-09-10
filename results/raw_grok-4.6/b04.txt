@@ -1,0 +1,30 @@
+[delivery_vehicles.hgv_refrigerated.rigid_gt_17t.average_laden.diesel] I don't know the exact DEFRA kgCO2e/km factor for refrigerated rigid HGVs >17 t, average laden, diesel.
+[delivery_vehicles.hgv_refrigerated.rigid_all.0pct_laden.diesel.energy_use_secr] I don't know the exact DEFRA SECR kWh/km energy-use factor for refrigerated all-rigids, 0% laden, diesel.
+[delivery_vehicles.hgv_refrigerated.all.0pct_laden.diesel.energy_use_secr] I don't know the exact DEFRA SECR kWh/km energy-use factor for refrigerated all HGVs, 0% laden, diesel.
+[delivery_vehicles.hgv.rigid_3_5_to_7_5t.50pct_laden.diesel] I don't know the exact DEFRA kgCO2e/km factor for rigid HGVs >3.5–7.5 t, 50% laden, diesel.
+[delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt] I don't know the exact DEFRA WTT kgCO2e/km factor for rigid HGVs >3.5–7.5 t, average laden, diesel.
+[delivery_vehicles.hgv.rigid_gt_17t.100pct_laden.diesel] I don't know the exact DEFRA kgCO2e/km factor for rigid HGVs >17 t, 100% laden, diesel.
+[delivery_vehicles.van.average.diesel.wtt] I don't know the exact DEFRA WTT kgCO2e/km factor for average diesel vans (up to 3.5 t).
+[delivery_vehicles.hgv_refrigerated.artic_all.average_laden.diesel.energy_use_secr] I don't know the exact DEFRA SECR kWh/km energy-use factor for refrigerated all artics, average laden, diesel.
+[digital.gcp.region.europe-southwest1] I don't know Google Cloud’s published kgCO2e/kWh (or gCO2e/kWh) factor for europe-southwest1.
+[digital.data_centre.pue.enterprise.low] I don't know the specific PUE constant this id expects for older/enterprise-operated data centres (industry averages are often cited around 1.5–1.8, e.g. Uptime Institute, but that is not this factor).
+[digital.storage.network.egress.kwh_per_gb] I don't know the exact kWh/GB network energy-intensity constant used here for cloud storage egress.
+[digital.end_user_device.composite_user_pc.operational.digst_constant] I don't know the Digst framework operational-power coefficient for a composite user PC.
+[digital.gcp.region.europe-north2] I don't know Google Cloud’s published kgCO2e/kWh factor for europe-north2.
+[digital.data_centre.electricity_demand.global.2025_twh] I don't know the exact 2025 global data-centre electricity-demand baseline in TWh this id refers to.
+[digital.storage.embodied.hdd.useful_life_years] I don't know the exact HDD useful-life/amortization period (years) used in that cloud-storage embodied factor.
+[digital.gcp.region.europe-west9] I don't know Google Cloud’s published kgCO2e/kWh factor for europe-west9.
+[digital.data_centre.pue.hyperscale.low] I don't know the specific best-in-class hyperscale PUE constant this id expects (operators such as Google often report fleet PUE near 1.10, but that is not a confirmed match).
+[digital.storage.redundancy.object_erasure.default_factor] I don't know the exact default object-erasure-coding redundancy multiplier used here.
+[digital.gcp.region.me-central1] I don't know Google Cloud’s published kgCO2e/kWh factor for me-central1.
+[digital.data_centre.pue.hyperscale.high] I don't know the specific hyperscale PUE (high) constant this id expects.
+[district_heating.usa.steam_heat.mmbtu] I don't know the exact EPA kgCO2e (or kg CO2) per mmBtu factor for purchased steam/heat this id wants.
+[district_heating.eu_framework.fossil_dh_baseline_ef] I don't know the exact fossil-DH baseline kgCO2e/kWh for a natural-gas-dominated EU district-heat system.
+[district_heating.eu_framework.hre4_scenario_methodology] Heat Roadmap Europe 4 (HRE4) is a modelled EU heat-decarbonisation pathway (Aalborg University et al.); I don't know a single numeric emission factor for it.
+[district_heating.ita.eurostat.renewable_share] I don't know Eurostat’s district-heating renewable + waste-heat share for Italy.
+[district_heating.gbr.onsite] I don't know the exact current UK/DEFRA kgCO2e/kWh factor for onsite heat and steam.
+[district_heating.usa.steam_heat.kwh_gcv] I don't know the exact EPA kgCO2e/kWh (GCV) factor for steam/heat.
+[district_heating.cyp.eurostat.renewable_share] I don't know Eurostat’s district-heating renewable + waste-heat share for Cyprus.
+[district_heating.gbr.onsite_wtt] I don't know the exact UK/DEFRA WTT kgCO2e/kWh factor for heat and steam.
+[district_heating.kos.eurostat.renewable_share] I don't know Eurostat’s district-heating renewable + waste-heat share for Kosovo*.
+[district_heating.gbr.district] I don't know the exact current UK/DEFRA kgCO2e/kWh factor for district heat and steam.

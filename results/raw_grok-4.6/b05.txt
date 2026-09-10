@@ -1,0 +1,59 @@
+[district_heating.eu_framework.renewable_share_eu27] I don't know.
+
+[equivalencies.ref.person_day] I don't know a published person-day factor; a rough global mean from ~50 GtCO2e/yr excl. LULUCF and ~8 billion people is about 17 kg CO2e per person-day, but that is not a cited equivalency value.
+
+[equivalencies.gbr.ref.car_annual_distance_km] I don't know the specific Great Britain equivalency figure.
+
+[equivalencies.gbr.flight_london_new_york_return] I don't know the specific published GB equivalency for a London–New York return economy flight including radiative forcing.
+
+[equivalencies.usa.home_energy_year] About 7.9 metric tons CO2e per home per year, from the US EPA Greenhouse Gas Equivalencies Calculator (all household energy); I am not confident of the current exact EPA digit.
+
+[equivalencies.usa.oil_barrel] 0.43 metric tons CO2 per barrel of oil consumed, from the US EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.railcar_coal] About 181 metric tons CO2 per railcar of coal burned, from the US EPA Greenhouse Gas Equivalencies Calculator (I am not confident of the current exact digit).
+
+[equivalencies.usa.natural_gas_therm] 0.0053 metric tons CO2 per therm of natural gas, from the US EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.waste_recycled_short_ton] About 2.9 metric tons CO2e per short ton of mixed waste recycled instead of landfilled, from the US EPA Greenhouse Gas Equivalencies Calculator / WARM; I am not confident of the current exact EPA digit.
+
+[equivalencies.usa.propane_cylinder] 0.024 metric tons CO2 per 16-lb propane barbecue cylinder, from the US EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.forest_acre_sequestration_year] 0.84 metric tons CO2 per acre of US forest per year, from the US EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.smartphone_charged] 8.22 × 10⁻⁶ metric tons CO2 per smartphone charged, from the US EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.ref.tree_seedling.sequestration_10yr] 0.060 metric tons CO2 per urban tree seedling grown for 10 years, from the US EPA Greenhouse Gas Equivalencies Calculator.
+
+[ev_charging.van.class_iii.bev.td_loss_uk] I don't know.
+
+[ev_charging.car.segment.supermini.bev.charging_uk] I don't know.
+
+[ev_charging.car.segment.supermini.bev.energy_use_secr] I don't know.
+
+[ev_charging.car.segment.lower_medium.phev.charging_uk] I don't know.
+
+[ev_charging.car.segment.dual_purpose_4x4.bev.charging_uk] I don't know.
+
+[ev_charging.car.segment.mpv.phev.td_loss_uk] I don't know.
+
+[ev_charging.car.segment.upper_medium.bev.energy_use_secr] I don't know.
+
+[ev_charging.car.segment.dual_purpose_4x4.bev.energy_use_secr] I don't know.
+
+[ev_charging.car.size.large.phev.td_loss_uk] I don't know.
+
+[ev_charging.car.segment.luxury.bev.energy_use_secr] I don't know.
+
+[ev_charging.car.segment.mpv.bev.energy_use_secr] I don't know.
+
+[ev_charging.van.class_ii.bev.charging_uk] I don't know.
+
+[food.diet.high_meat.annual] About 2.62 t CO2e per person per year (7.19 kg CO2e/day), from Scarborough et al. (2014), Climatic Change, high meat-eaters (>100 g meat/day).
+
+[food.diet.mixed.annual] About 2.05 t CO2e per person per year (5.63 kg CO2e/day), from Scarborough et al. (2014), medium meat-eaters, often used as a mixed/average omnivorous diet.
+
+[food.diet.low_meat.annual] About 1.70 t CO2e per person per year (4.67 kg CO2e/day), from Scarborough et al. (2014), low meat-eaters.
+
+[food.diet.vegan.annual] About 1.05 t CO2e per person per year (2.89 kg CO2e/day), from Scarborough et al. (2014), vegan diet.
+
+[food.diet.vegetarian.annual] About 1.39 t CO2e per person per year (3.81 kg CO2e/day), from Scarborough et al. (2014), vegetarian diet.

@@ -1,0 +1,59 @@
+[passenger_vehicles.car.segment.luxury.diesel.energy_use_secr] 0.6361 kWh per km, based on the UK Government (DESNZ/DEFRA) GHG Conversion Factors for SECR company reporting.
+
+[passenger_vehicles.car.segment.upper_medium.petrol] 0.17822 kgCO2e per km, according to the UK DESNZ/DEFRA GHG Conversion Factors for Company Reporting.
+
+[refrigerants.r_422d] 2,729 kgCO2e per kg leaked, based on IPCC Fourth Assessment Report (AR4) GWP values used in UK DEFRA conversion factors.
+
+[refrigerants.hcfc_1224yd] 0.88 kgCO2e per kg leaked, based on IPCC Sixth Assessment Report (AR6) values for HCFC-1224yd(Z).
+
+[refrigerants.r_134a] 1,430 kgCO2e per kg leaked, according to IPCC AR4 / UK DEFRA GHG Conversion Factors.
+
+[refrigerants.pfc_4_1_14] 9,160 kgCO2e per kg leaked, based on IPCC AR4 values for perfluoropentane (PFC-4-1-14).
+
+[refrigerants.r_290] 3 kgCO2e per kg leaked, based on IPCC AR4 / UK DEFRA GHG Conversion Factors for propane.
+
+[refrigerants.pfc_n_methylmorpholine] I do not know the exact greenhouse-gas emission factor for Perfluoro-N-methylmorpholine.
+
+[refrigerants.r_717] 0 kgCO2e per kg leaked, according to IPCC guidelines and DEFRA GHG Conversion Factors for ammonia.
+
+[refrigerants.hfk_perfluoro_butanone] 1 kgCO2e per kg leaked, based on IPCC AR4/AR5 values for 1,1,1,3,4,4,4-heptafluoro-3-(trifluoromethyl)butan-2-one (FK-5-1-12).
+
+[refrigerants.r_718] 0 kgCO2e per kg leaked, based on IPCC guidelines for water refrigerant.
+
+[refrigerants.pfc_c_c3f6] 9,200 kgCO2e per kg leaked, based on IPCC AR4 GWP values for perfluorocyclopropane.
+
+[refrigerants.r_1336mzz_z] 2 kgCO2e per kg leaked, based on IPCC AR5 / UK DEFRA GHG Conversion Factors for R-1336mzz(Z).
+
+[refrigerants.hfc_nonafluoro_tfm_pentene] 0 kgCO2e per kg leaked, based on IPCC AR6 assessment values for fluorinated alkenes with near-zero GWP.
+
+[reporting.aasb_s2.group3.applicability] 1 July 2027, representing the commencement date for Group 3 reporting entities under the Australian Sustainability Reporting Standards (AASB S2).
+
+[reporting.sb_253_261.sb261.threshold.annual_revenue_usd_m] 500 million USD total annual revenue threshold, established under California Senate Bill 261 (SB 261).
+
+[reporting.sgx_acra.listed_non_sti_ge_1bn] FY 2025, representing the mandated commencement year for climate reporting for listed entities with market cap >= S$1bn under SGX/ACRA regulations.
+
+[reporting.uk_secr.threshold.employees] 250 employees, set as the headcount threshold for large companies and LLPs under the UK SECR reporting framework.
+
+[reporting.eu_ets.price.eua_average_eur_per_t.2013] 4.47 EUR per tonne CO2e, based on average market spot prices reported by the European Energy Exchange (EEX) in 2013.
+
+[reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m] 1,000 million USD total annual revenue threshold, established under California Senate Bill 253 (SB 253).
+
+[reporting.sec.rule.assurance.limited_phase_in_years] 3 years, representing the limited assurance phase-in window following initial Scope 1 and Scope 2 disclosure compliance under SEC Climate Rules.
+
+[reporting.aasb_s2.scenario_analysis.requirement] Requires at least 2 climate scenarios, including a 1.5°C scenario and a higher warming scenario, as defined in AASB S2 / ISSB standards.
+
+[reporting.aasb_s2.group1.applicability] 1 January 2025, representing the commencement start date for Group 1 reporting entities under AASB S2 rules.
+
+[reporting.sb_253_261.sb261.cadence.years] 2 years, defined as the biennial reporting cadence required under California Senate Bill 261 (SB 261).
+
+[reporting.sgx_acra.scenario_analysis.requirement] Mandatory scenario analysis requirement, established under SGX/ACRA climate-related disclosure regulations based on TCFD/ISSB frameworks.
+
+[reporting.uk_secr.exemption.low_energy_kwh] 40,000 kWh per year, representing the low energy consumption exemption ceiling for UK SECR reporting.
+
+[renewable_generation.reference.specific_yield.irl] 950 kWh per kWp per year, sourced from European Commission PVGIS performance reference data for Ireland.
+
+[renewable_generation.reference.degradation_pct.solar_pv_rooftop] 0.5% per year, based on NREL benchmark degradation studies for crystalline silicon rooftop solar PV arrays.
+
+[renewable_generation.reference.specific_yield.ita] 1,350 kWh per kWp per year, sourced from European Commission PVGIS performance reference data for Italy.
+
+[renewable_generation.reference.degradation_pct.solar_pv_utility] 0.5% per year, based on NREL benchmark degradation studies for utility-scale solar PV installations.

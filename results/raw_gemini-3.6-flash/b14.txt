@@ -1,0 +1,59 @@
+[renewable_generation.reference.specific_yield.swe] The reference specific yield for solar PV in Sweden is approximately 950 kWh/kWp/year, based on PVGIS / JRC data.
+
+[renewable_generation.reference.degradation_pct.wind_onshore] The reference annual output degradation rate for onshore wind power is approximately 1.6% per year, based on findings from Staffell and Green (2014).
+
+[renewable_generation.reference.specific_yield.zaf] The reference specific yield for solar PV in South Africa is approximately 1,650 kWh/kWp/year, based on Global Solar Atlas data.
+
+[renewable_generation.reference.specific_yield.fra] The reference specific yield for solar PV in France is approximately 1,150 kWh/kWp/year, based on PVGIS / JRC data.
+
+[renewable_generation.reference.specific_yield.nld] The reference specific yield for solar PV in the Netherlands is approximately 950 kWh/kWp/year, based on PVGIS / JRC data.
+
+[renewable_generation.reference.specific_yield.pol] The reference specific yield for solar PV in Poland is approximately 1,000 kWh/kWp/year, based on PVGIS / JRC data.
+
+[renewable_generation.reference.specific_yield.bra] The reference specific yield for solar PV in Brazil is approximately 1,500 kWh/kWp/year, based on Global Solar Atlas data.
+
+[renewable_generation.reference.specific_yield.chn] The reference specific yield for solar PV in China is approximately 1,300 kWh/kWp/year, based on Global Solar Atlas data.
+
+[reusable_vs_single_use.reference.handwash_tap.energy_per_item] Hand washing under a running hot tap consumes approximately 0.23 kWh per item, based on dishwashing life-cycle studies such as the University of Bonn study.
+
+[reusable_vs_single_use.reference.dishwasher.place_settings_per_cycle] A standard domestic dishwasher capacity reference is 12 place settings per full cycle, based on EU Ecodesign standard EN 50242.
+
+[reusable_vs_single_use.reference.handwash_tap.water_per_item] Hand washing under a running hot tap consumes approximately 2.5 liters per item, based on University of Bonn dishwashing study standards.
+
+[reusable_vs_single_use.reference.dishwasher.water_per_cycle] A domestic dishwasher consumes approximately 9.5 liters of water per full eco-programme cycle, based on EU Ecodesign standards.
+
+[reusable_vs_single_use.reference.handwash_basin.energy_per_item] Hand washing in a filled basin or sink consumes approximately 0.03 kWh per item, based on University of Bonn dishwashing studies.
+
+[reusable_vs_single_use.reference.dishwasher.energy_per_cycle] A domestic dishwasher consumes approximately 0.85 kWh per full eco-programme cycle, based on EU Ecodesign standards.
+
+[reusable_vs_single_use.reference.handwash_basin.water_per_item] Hand washing in a filled basin or sink consumes approximately 0.4 liters per item, based on University of Bonn dishwashing studies.
+
+[semiconductors.tier1.cf4] I do not know the exact IPCC Tier 1 emission factor value for CF4 per m2 silicon from memory.
+
+[tft_fpd.tier1.nf3] I do not know the exact IPCC Tier 1 emission factor value for NF3 per m2 glass from memory.
+
+[tft_fpd.tier1.sf6] I do not know the exact IPCC Tier 1 emission factor value for SF6 per m2 glass from memory.
+
+[semiconductors.tier1.sf6] I do not know the exact IPCC Tier 1 emission factor value for SF6 per m2 silicon from memory.
+
+[tft_fpd.tier1.cf4] I do not know the exact IPCC Tier 1 emission factor value for CF4 per m2 glass from memory.
+
+[pv_cells.tier1.cf4] I do not know the exact IPCC Tier 1 emission factor value for CF4 per m2 silicon in PV-cell manufacturing from memory.
+
+[semiconductors.tier1.chf3] I do not know the exact IPCC Tier 1 emission factor value for CHF3 per m2 silicon from memory.
+
+[semiconductors.tier1.c3f8] I do not know the exact IPCC Tier 1 emission factor value for C3F8 per m2 silicon from memory.
+
+[semiconductors.tier1.nf3] I do not know the exact IPCC Tier 1 emission factor value for NF3 per m2 silicon from memory.
+
+[pv_cells.tier1.c2f6] I do not know the exact IPCC Tier 1 emission factor value for C2F6 per m2 silicon in PV-cell manufacturing from memory.
+
+[heat_transfer_fluids.tier1.c6f14_proxy] I do not know the exact IPCC Tier 1 emission factor value for aggregate FC heat transfer fluids per m2 silicon from memory.
+
+[semiconductors.tier1.c2f6] I do not know the exact IPCC Tier 1 emission factor value for C2F6 per m2 silicon from memory.
+
+[spend_based.defra.sectors.paper_products] I do not know the exact 2025 DESNZ/DEFRA spend-based GHG intensity factor for paper and paper products per GBP purchaser price from memory.
+
+[spend_based.uk.sic.c.manufacturing] I do not know the exact UK ONS spend-based GHG intensity factor for SIC Section C Manufacturing per GBP GVA from memory.
+
+[spend_based.us.naics6.333515.cutting_tool_and_machine_tool_accessory_manufacturing] I do not know the exact US EPA USEEIO spend-based GHG intensity factor for NAICS 333515 per 2024 USD from memory.

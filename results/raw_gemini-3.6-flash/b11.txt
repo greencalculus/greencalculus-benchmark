@@ -1,0 +1,59 @@
+[managed_assets.car.size.medium.petrol] The greenhouse-gas emission factor is 0.18788 kg CO2e per km, published in the UK Government GHG Conversion Factors for Company Reporting (DEFRA).
+
+[managed_assets.car.size.average.diesel] The greenhouse-gas emission factor is 0.16843 kg CO2e per km, published in the UK Government GHG Conversion Factors for Company Reporting (DEFRA).
+
+[materials.cbam.cement.grey_clinker] The greenhouse-gas emission factor is 0.766 kg CO2e per kg of good, published by the European Commission under EU CBAM default values.
+
+[materials.lca.wastage.generic_default] The default wastage rate for generic construction materials is 5% (0.05 kg wasted per kg used), published in the RICS Whole Life Carbon Assessment for the Built Environment standard.
+
+[materials.concrete.binder.cem_i_portland_uk.module_a1_a3] The greenhouse-gas emission factor for Cement CEM I is 0.852 kg CO2e per kg, published by the Mineral Products Association (MPA) and the Inventory of Carbon and Energy (ICE Database v3.0).
+
+[materials.concrete.constituent.aggregate_fine.module_a1_a3] The greenhouse-gas emission factor for fine aggregate is 0.0074 kg CO2e per kg, published in the Inventory of Carbon and Energy (ICE Database v3.0).
+
+[materials.steel.galvanised.module_a1_a3] The greenhouse-gas emission factor for hot-dip galvanised steel is 2.72 kg CO2e per kg (Module A1-A3), published in the Inventory of Carbon and Energy (ICE Database v3.0).
+
+[materials.benchmark.office.target_2030_riba] The embodied carbon target for offices is 530 kg CO2e/m² (Module A1-A5), published by the Royal Institute of British Architects in the RIBA 2030 Climate Challenge.
+
+[materials.benchmark.office.target_2030_leti] The embodied carbon target for offices is 350 kg CO2e/m² (Module A1-A5 Band A target), published in the LETI Climate Emergency Design Guide.
+
+[materials.aluminium.recycled_secondary.module_a1_a3] The greenhouse-gas emission factor for secondary/recycled aluminium ingot is 0.50 kg CO2e per kg (Module A1-A3), published by European Aluminium and the ICE Database v3.0.
+
+[materials.plastics.ldpe_lldpe.module_a1_a3] The greenhouse-gas emission factor for LDPE/LLDPE is 2,520 kg CO2e per tonne (Module A1-A3), published in the Inventory of Carbon and Energy (ICE Database v3.0).
+
+[materials.paper.paper.module_c3] The greenhouse-gas emission factor for paper incineration (Module C3) is 21.3 kg CO2e per tonne, published in the UK Government GHG Conversion Factors for Company Reporting (DEFRA).
+
+[materials.cbam.iron_steel.crude_steel_ingot] The greenhouse-gas emission factor is 1.891 kg CO2e per kg of good, published by the European Commission under EU CBAM default values.
+
+[materials.lca.wastage.timber] The default wastage rate for timber is 10% (0.10 kg wasted per kg used), published in the RICS Whole Life Carbon Assessment for the Built Environment standard.
+
+[mobile_combustion.usa.residual_fuel_oil.litre] The greenhouse-gas emission factor for residual fuel oil is 2.98 kg CO2e per litre, published in the US EPA GHG Emission Factors Hub.
+
+[mobile_combustion.can.ldgv_tier3.per_litre] The greenhouse-gas emission factor for light-duty gasoline vehicles (Tier 3) is 2.30 kg CO2e per litre, published by Environment and Climate Change Canada in the National Inventory Report.
+
+[mobile_combustion.propane.per_kwh_gross_cv] The greenhouse-gas emission factor for propane is 0.21419 kg CO2e per kWh (Gross CV), published in the UK Government GHG Conversion Factors for Company Reporting (DEFRA).
+
+[fuels.fra.petrol.litre] The greenhouse-gas emission factor for petrol is 2.80 kg CO2e per litre (well-to-wheel), published by ADEME in the Base Carbone France.
+
+[mobile_combustion.aus.diesel_100pct_mineral.per_litre] The greenhouse-gas emission factor for 100% mineral diesel is 2.70 kg CO2e per litre, published in the Australian National Greenhouse Accounts (NGA) Factors.
+
+[mobile_combustion.usa.aviation_gasoline.litre] The greenhouse-gas emission factor for aviation gasoline is 2.20 kg CO2e per litre, published in the US EPA GHG Emission Factors Hub.
+
+[mobile_combustion.can.hddv_advanced_control.per_litre] The greenhouse-gas emission factor for heavy-duty diesel vehicles (advanced control) is 2.69 kg CO2e per litre, published by Environment and Climate Change Canada in the National Inventory Report.
+
+[mobile_combustion.petrol_100pct_mineral.per_kwh_gross_cv] The greenhouse-gas emission factor for 100% mineral petrol is 0.24028 kg CO2e per kWh (Gross CV), published in the UK Government GHG Conversion Factors for Company Reporting (DEFRA).
+
+[fuels.fra.diesel_road.litre] The greenhouse-gas emission factor for road diesel is 3.17 kg CO2e per litre (well-to-wheel), published by ADEME in the Base Carbone France.
+
+[mobile_combustion.aus.lpg.per_litre] The greenhouse-gas emission factor for LPG is 1.56 kg CO2e per litre, published in the Australian National Greenhouse Accounts (NGA) Factors.
+
+[mobile_combustion.usa.diesel.gallon] The greenhouse-gas emission factor for diesel is 10.21 kg CO2 per gallon, published in the US EPA GHG Emission Factors Hub.
+
+[mobile_combustion.can.offroad_diesel_tier1_3.per_litre] The greenhouse-gas emission factor for off-road diesel (>=19 kW Tier 1-3) is 2.72 kg CO2e per litre, published by Environment and Climate Change Canada in the National Inventory Report.
+
+[reporting.ngfs.carbon_price.messageix_globiom.below_2c.world.2045] I do not know the exact numeric shadow carbon price for this specific NGFS Phase 5 scenario.
+
+[reporting.ngfs.carbon_price.gcam.delayed_transition.world.2035] I do not know the exact numeric shadow carbon price for this specific NGFS Phase 5 scenario.
+
+[reporting.ngfs.carbon_price.messageix_globiom.low_demand.world.2030] I do not know the exact numeric shadow carbon price for this specific NGFS Phase 5 scenario.
+
+[reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030] I do not know the exact numeric shadow carbon price for this specific NGFS Phase 5 scenario.

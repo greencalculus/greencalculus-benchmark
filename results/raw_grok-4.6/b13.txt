@@ -1,0 +1,30 @@
+[passenger_vehicles.car.segment.luxury.diesel.energy_use_secr] I don't know the DEFRA/DESNZ SECR kWh per km factor for a luxury diesel car; I do not have that table memorized.
+[passenger_vehicles.car.segment.upper_medium.petrol] I don't know the current DEFRA/DESNZ kgCO2e per km factor for an upper-medium petrol car; I do not have that year’s conversion-factor table memorized.
+[refrigerants.r_422d] 2,729 kgCO2e per kg leaked (100-year GWP), the value widely used in refrigerant tables from IPCC AR4 and older UK conversion factors.
+[refrigerants.hcfc_1224yd] 1 kgCO2e per kg leaked (GWP ≈ 1) for HCFO/HCFC-1224yd(Z), as given by IPCC/WMO assessments and producer data.
+[refrigerants.r_134a] 1,300 kgCO2e per kg leaked using IPCC AR5 GWP-100 (1,430 kgCO2e/kg if IPCC AR4 is used, as in many older DEFRA tables).
+[refrigerants.pfc_4_1_14] 9,160 kgCO2e per kg leaked (IPCC AR4 GWP-100 for PFC-4-1-14 / C5F12); AR5 is 8,550 kgCO2e/kg.
+[refrigerants.r_290] 3 kgCO2e per kg leaked (IPCC GWP-100 for propane / R-290).
+[refrigerants.pfc_n_methylmorpholine] I don't know a reliable GWP/emission factor for perfluoro-N-methylmorpholine per kg leaked.
+[refrigerants.r_717] 0 kgCO2e per kg leaked (ammonia / R-717 has GWP 0 in IPCC inventories).
+[refrigerants.hfk_perfluoro_butanone] 1 kgCO2e per kg leaked (GWP 1) for the fluoroketone typically meant here (e.g. FK-5-1-12 / Novec 1230), per IPCC/WMO and manufacturer data.
+[refrigerants.r_718] 0 kgCO2e per kg leaked (water / R-718 has GWP 0).
+[refrigerants.pfc_c_c3f6] 9,200 kgCO2e per kg leaked (IPCC AR5 GWP-100 for perfluorocyclopropane / c-C3F6).
+[refrigerants.r_1336mzz_z] 2 kgCO2e per kg leaked for HFO-1336mzz(Z) (IPCC/WMO GWP-100); the E isomer is higher (~18).
+[refrigerants.hfc_nonafluoro_tfm_pentene] I don't know the GWP/emission factor for nonafluoro-(trifluoromethyl)pent-2-ene and isomers per kg leaked.
+[reporting.aasb_s2.group3.applicability] AASB S2 Group 3 applies to entities meeting at least two of three size tests (A$50m revenue, A$25m assets, 100 employees) for periods commencing on or after 1 January 2027, with a no-material climate-related risks/opportunities exemption route (Australian Treasury / AASB S2).
+[reporting.sb_253_261.sb261.threshold.annual_revenue_usd_m] US$500 million total annual revenue (California SB-261).
+[reporting.sgx_acra.listed_non_sti_ge_1bn] Mandatory TCFD-aligned climate disclosure for SGX-listed non-STI issuers with market cap ≥ S$1 billion, from FY 2023 (SGX Listing Rules / sustainability reporting guidance).
+[reporting.uk_secr.threshold.employees] 250 employees, as one of the three “large company/LLP” tests under UK SECR (Companies Act 2006 / 2018 SECR regulations).
+[reporting.eu_ets.price.eua_average_eur_per_t.2013] About €4.5 per tCO2 average EUA price in 2013 (EEX/ICE; World Bank-type carbon-market summaries).
+[reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m] US$1 billion total annual revenue (California SB-253).
+[reporting.sec.rule.assurance.limited_phase_in_years] 3 years: the adopted SEC climate rule required limited assurance on Scope 1–2 for large accelerated filers from FY 2029, the third year of those disclosures.
+[reporting.aasb_s2.scenario_analysis.requirement] AASB S2 / IFRS S2 requires climate-resilience assessment using climate-related scenario analysis commensurate with circumstances, including a scenario aligned with the latest international climate agreement; it does not hard-code a numeric “at least two scenarios” rule.
+[reporting.aasb_s2.group1.applicability] Group 1 applies for periods commencing on or after 1 January 2025 to NGER reporters above threshold or entities meeting two of three tests: 500 employees, A$500 million revenue, A$1 billion assets (Australian Treasury / AASB S2).
+[reporting.sb_253_261.sb261.cadence.years] 2 years (biennial climate-related financial risk reporting under California SB-261).
+[reporting.sgx_acra.scenario_analysis.requirement] Scenario analysis is required as part of TCFD-aligned SGX climate reporting (Strategy pillar), phased in so that all primary-listed issuers must cover it (SGX sustainability reporting regime).
+[reporting.uk_secr.exemption.low_energy_kwh] 40,000 kWh per year low-energy-user exemption ceiling (UK SECR).
+[renewable_generation.reference.specific_yield.irl] About 900 kWh/kWp per year first-year specific yield for Ireland (typical PVGIS-class estimate); I do not have a single official named emission-factor document for this.
+[renewable_generation.reference.degradation_pct.solar_pv_rooftop] 0.5% per year rooftop PV output degradation (common NREL/IRENA default).
+[renewable_generation.reference.specific_yield.ita] About 1,400 kWh/kWp per year first-year specific yield for Italy (typical PVGIS-class national average); I do not have a single official named emission-factor document for this.
+[renewable_generation.reference.degradation_pct.solar_pv_utility] 0.4% per year utility-scale PV output degradation is a common modelling assumption (NREL-type rates are often ~0.4–0.5%/year).

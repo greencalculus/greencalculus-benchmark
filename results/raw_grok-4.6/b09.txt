@@ -1,0 +1,30 @@
+[grid.tcd.electricity.lifecycle_intensity] I don't know a published lifecycle GHG intensity for Chad grid electricity per kWh.
+[grid.gib.electricity.lifecycle_intensity] I don't know a published lifecycle GHG intensity for Gibraltar grid electricity per kWh.
+[grid.gnq.electricity.lifecycle_intensity] I don't know a published lifecycle GHG intensity for Equatorial Guinea grid electricity per kWh.
+[heating_systems.boiler_efficiency.gas_non_condensing] About 78% seasonal efficiency (0.78), as typically used in UK SAP/SEDBUK for non-condensing gas boilers.
+[heating_systems.heat_pump_spf.ashp] About 2.8 (dimensionless SPF), a typical UK SAP/MCS seasonal performance factor for air-source heat pumps.
+[heating_systems.reference.lifetime_years.boiler] 15 years, the common reference operating lifetime used in UK SAP/PAS-style heating assessments for gas/oil boilers.
+[heating_systems.boiler_efficiency.oil_non_condensing] About 80% seasonal efficiency (0.80), as typically used in UK SAP/SEDBUK for non-condensing oil boilers.
+[heating_systems.boiler_efficiency.gas_condensing] About 90% seasonal efficiency (0.90), as typically used in UK SAP/SEDBUK for condensing gas boilers.
+[heating_systems.boiler_efficiency.lpg_condensing] About 90% seasonal efficiency (0.90), in line with UK SAP/SEDBUK condensing LPG boilers.
+[heating_systems.direct_electric.efficiency] 100% (1.0) point-of-use efficiency for direct electric resistance heating.
+[heating_systems.boiler_efficiency.oil_condensing] About 90% seasonal efficiency (0.90), as typically used in UK SAP/SEDBUK for condensing oil boilers.
+[homeworking.gbr.office_equipment] I don't know the current DEFRA kgCO2e per FTE working hour figure for UK homeworking office equipment.
+[homeworking.gbr.combined] I don't know the current DEFRA kgCO2e per FTE working hour figure for combined UK homeworking (equipment + heating).
+[homeworking.gbr.heating] I don't know the current DEFRA kgCO2e per FTE working hour figure for UK homeworking heating.
+[hotel_stay.gbr] I don't know the current DEFRA kgCO2e per room.night figure for a UK hotel stay.
+[hotel_stay.oman] I don't know the current DEFRA kgCO2e per room.night figure for an Oman hotel stay.
+[hotel_stay.thailand] I don't know the current DEFRA kgCO2e per room.night figure for a Thailand hotel stay.
+[hotel_stay.malaysia] I don't know the current DEFRA kgCO2e per room.night figure for a Malaysia hotel stay.
+[hotel_stay.hong_kong_china] I don't know the current DEFRA kgCO2e per room.night figure for a Hong Kong, China hotel stay.
+[hotel_stay.costa_rica] I don't know the current DEFRA kgCO2e per room.night figure for a Costa Rica hotel stay.
+[hotel_stay.belgium] I don't know the current DEFRA kgCO2e per room.night figure for a Belgium hotel stay.
+[hotel_stay.chile] I don't know the current DEFRA kgCO2e per room.night figure for a Chile hotel stay.
+[hotel_stay.vietnam] I don't know the current DEFRA kgCO2e per room.night figure for a Vietnam hotel stay.
+[hotel_stay.switzerland] I don't know the current DEFRA kgCO2e per room.night figure for a Switzerland hotel stay.
+[hotel_stay.china] I don't know the current DEFRA kgCO2e per room.night figure for a China hotel stay.
+[hotel_stay.portugal] I don't know the current DEFRA kgCO2e per room.night figure for a Portugal hotel stay.
+[chemicals.acrylonitrile.ch4_default] I don't know the IPCC default CH4 emission factor per tonne of acrylonitrile.
+[industrial_processes_refinement.fluorochemical.nf3_cf4_byproduct] I don't know the 2019 IPCC Refinement Tier 1 CF4 by-product factor per kg NF3 produced.
+[minerals.cement.cao_default_fraction] 0.65 (65% CaO in clinker) per tonne clinker, from the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 3, Chapter 2.
+[industrial_processes_refinement.hydrogen.steam_reforming_lpg] I don't know the 2019 IPCC Refinement Tier 1 carbon content factor for steam reforming of LPG per GJ feedstock.

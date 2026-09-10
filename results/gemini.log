@@ -1,0 +1,21 @@
+  b01 HTTP 503, retry in 5s
+  b01  30/30 answers  (72s)
+  b02 HTTP 503, retry in 5s
+  b02  30/30 answers  (114s)
+  b03  30/30 answers  (152s)
+  b04  30/30 answers  (182s)
+  b05  0/30 answers  (217s)
+  b06  30/30 answers  (243s)
+  b07  30/30 answers  (275s)
+  b08  30/30 answers  (305s)
+  b09  30/30 answers  (342s)
+  b10  30/30 answers  (375s)
+  b11  30/30 answers  (414s)
+  b12  30/30 answers  (442s)
+  b13 HTTP 503, retry in 5s
+  b13  30/30 answers  (486s)
+  b14  30/30 answers  (516s)
+  b15  30/30 answers  (554s)
+  b16  17/17 answers  (572s)
+
+gemini-3.6-flash: 16 batches, 437 answers -> results/raw_gemini-3.6-flash

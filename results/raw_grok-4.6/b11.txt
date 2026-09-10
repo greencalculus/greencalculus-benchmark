@@ -1,0 +1,30 @@
+[managed_assets.car.size.medium.petrol] I don't know.
+[managed_assets.car.size.average.diesel] I don't know.
+[materials.cbam.cement.grey_clinker] I don't know.
+[materials.lca.wastage.generic_default] 5% default A5 wastage rate for generic construction materials (RICS Whole Life Carbon / ICE-type defaults).
+[materials.concrete.binder.cem_i_portland_uk.module_a1_a3] 0.912 kgCO2e/kg (ICE Database, Circular Ecology, CEM I).
+[materials.concrete.constituent.aggregate_fine.module_a1_a3] About 0.005 kgCO2e/kg (ICE Database, fine aggregate/sand, A1–A3).
+[materials.steel.galvanised.module_a1_a3] I don't know.
+[materials.benchmark.office.target_2030_riba] 750 kgCO2e/m² (RIBA 2030 Climate Challenge, offices / non-domestic embodied carbon).
+[materials.benchmark.office.target_2030_leti] 350 kgCO2e/m² (LETI 2030 office / non-domestic embodied-carbon target).
+[materials.aluminium.recycled_secondary.module_a1_a3] About 0.5 kgCO2e/kg (ICE Database, secondary/recycled aluminium ingot, A1–A3).
+[materials.plastics.ldpe_lldpe.module_a1_a3] About 2080 kgCO2e/tonne (ICE Database, LDPE, A1–A3).
+[materials.paper.paper.module_c3] I don't know.
+[materials.cbam.iron_steel.crude_steel_ingot] I don't know.
+[materials.lca.wastage.timber] 10% default A5 wastage rate for timber (RICS / ICE-type defaults).
+[mobile_combustion.usa.residual_fuel_oil.litre] About 2.98 kgCO2/litre (EPA GHG Emission Factors Hub, converted from 11.27 kg CO2/gallon residual fuel oil).
+[mobile_combustion.can.ldgv_tier3.per_litre] I don't know.
+[mobile_combustion.propane.per_kwh_gross_cv] I don't know.
+[fuels.fra.petrol.litre] I don't know.
+[mobile_combustion.aus.diesel_100pct_mineral.per_litre] About 2.7 kgCO2e/litre (Australian National Greenhouse Accounts Factors, diesel).
+[mobile_combustion.usa.aviation_gasoline.litre] About 2.20 kgCO2/litre (EPA GHG Emission Factors Hub, converted from 8.31 kg CO2/gallon aviation gasoline).
+[mobile_combustion.can.hddv_advanced_control.per_litre] I don't know.
+[mobile_combustion.petrol_100pct_mineral.per_kwh_gross_cv] I don't know.
+[fuels.fra.diesel_road.litre] I don't know.
+[mobile_combustion.aus.lpg.per_litre] About 1.6 kgCO2e/litre (Australian National Greenhouse Accounts Factors, LPG).
+[mobile_combustion.usa.diesel.gallon] 10.21 kg CO2/gallon (EPA GHG Emission Factors Hub, diesel fuel).
+[mobile_combustion.can.offroad_diesel_tier1_3.per_litre] I don't know.
+[reporting.ngfs.carbon_price.messageix_globiom.below_2c.world.2045] I don't know.
+[reporting.ngfs.carbon_price.gcam.delayed_transition.world.2035] I don't know.
+[reporting.ngfs.carbon_price.messageix_globiom.low_demand.world.2030] I don't know.
+[reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030] I don't know.

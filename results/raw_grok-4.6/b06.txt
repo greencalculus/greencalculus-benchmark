@@ -1,0 +1,30 @@
+[food.diet.pescatarian.annual] About 1,430 kg CO2e per person per year (~3.91 kg CO2e/day × 365), from Scarborough et al. 2014 (Climatic Change).
+[food_pcf.fra.madeleine_cake_pure_butter] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.cheese_souffle] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.parsley_dried] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.spanish_style_tortilla_with_onions_omelette_with_potatoes_an] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.grapeseed_oil] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.coconut_oil_coprah] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.orange_juice_home_made] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.kombu_or_japanese_kelp_laminaria_japonica_dried_or_dehydrate] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.mussel_boiled_cooked_in_water] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.soup_tomatoes_prepacked_to_be_reheated] I don't know the AGRIBALYSE value for this product.
+[food_pcf.fra.brioche_filled_with_chocolate_drops] I don't know the AGRIBALYSE value for this product.
+[freight.sea.tonne_km] I don't know a precise Panamax bulk-carrier factor; typical bulk sea freight is on the order of 0.003–0.008 kg CO2e/tonne-km in sources such as UK DEFRA/BEIS or IMO.
+[freight.road_hgv.tonne_km] I don't know the exact generic HGV average-laden factor; UK DEFRA/BEIS all-HGV figures are typically around 0.10–0.13 kg CO2e/tonne-km.
+[freight.air.tonne_km] I don't know the exact long-haul belly-freight factor; UK DEFRA/BEIS long-haul air freight is typically around 0.5–0.6 kg CO2e/tonne-km without radiative forcing.
+[freight.rail.tonne_km] I don't know a precise generic rail factor; typical values in UK DEFRA/BEIS or similar are around 0.02–0.03 kg CO2e/tonne-km.
+[freight_detailed.sea.container.intra_north_america.reefer] I don't know this specific TEU-km factor.
+[freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo] I don't know this specific tonne-km factor.
+[freight_detailed.road.na.ltl_dry_van.diesel] I don't know this specific tonne-km factor.
+[freight_detailed.sea.container.asia_to_north_oceania.dry] I don't know this specific TEU-km factor.
+[freight_detailed.sea.refrigerated_bulk.dwt_6000_9999.vlsfo] I don't know this specific tonne-km factor.
+[freight_detailed.sea.ferry_ropax.gt_2000_4999.hfo] I don't know this specific tonne-km factor.
+[freight_detailed.sea.bulk_carrier.dwt_60000_99999.vlsfo] I don't know this specific tonne-km factor.
+[freight_detailed.sea.refrigerated_bulk.dwt_2000_5999.hfo] I don't know this specific tonne-km factor.
+[freight_detailed.rail.eu.diesel.cars] I don't know this specific tonne-km factor.
+[freight_detailed.road.china.dump.mdt_4_5_5_5t.diesel] I don't know this specific tonne-km factor.
+[freight_detailed.road.eu_sa.rigid_7_5_12t.avg.electric] I don't know this specific tonne-km factor.
+[freight_detailed.sea.general_cargo.dwt_gt_20000.vlsfo] I don't know this specific tonne-km factor.
+[fuel_properties.lpg.gross_cv_gj_tonne] Roughly 49–50.4 GJ/tonne depending on propane/butane mix (IPCC/DEFRA-type fuel tables); I do not recall one canonical published figure for this exact id.

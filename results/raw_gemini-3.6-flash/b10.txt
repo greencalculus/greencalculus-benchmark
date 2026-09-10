@@ -1,0 +1,59 @@
+[minerals.glass.specialty_tv_panel] The default greenhouse-gas emission factor for specialty glass production is 0.20 tonnes CO2 per tonne of glass melted, according to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
+
+[industrial_processes_refinement.nitric_acid.old_pre_1975] The greenhouse-gas emission factor for pre-1975 nitric acid plants across all processes is 12 kg N2O per tonne of 100% nitric acid produced, according to the 2019 Refinement to the 2006 IPCC Guidelines.
+
+[chemicals.ethylene_oxide.ch4_thermal_treatment] The CH4 emission factor for ethylene oxide production with thermal treatment of process vents is 0.00 kg CH4 per tonne of ethylene oxide, according to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
+
+[industrial_processes_refinement.hydrogen.steam_reforming_methanol] The Tier 1 carbon content factor for steam reforming of methanol for hydrogen production is 18.8 kg C per GJ feedstock (equivalent to 68.9 kg CO2 per GJ), according to the 2019 Refinement to the 2006 IPCC Guidelines.
+
+[minerals.cement.clinker_pre_ckd] The base greenhouse-gas emission factor for cement clinker calcination prior to CKD correction is 0.507 tonnes CO2 per tonne of clinker, according to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
+
+[industrial_processes_refinement.hfc23_hcfc22.recent_design] The default emission factor for HFC-23 from unoptimized recent-design HCFC-22 production plants is 0.015 kg HFC-23 per kg of HCFC-22 produced, according to the 2019 Refinement to the 2006 IPCC Guidelines.
+
+[metals.iron_steel.blast_furnace_pig_iron] The direct process greenhouse-gas emission factor for blast furnace pig iron production is 1.35 tonnes CO2 per tonne of pig iron produced, according to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
+
+[industrial_processes_refinement.nitric_acid.single_low_pressure] The default N2O emission factor for single low-pressure nitric acid plants is 5.0 kg N2O per tonne of 100% nitric acid produced, according to the 2019 Refinement to the 2006 IPCC Guidelines.
+
+[lca.pef.data_quality.dqr_fair_max] Under the EU Product Environmental Footprint (PEF) method, the maximum threshold for Data Quality Rating (DQR) to be classified as fair quality is a score of 3.0.
+
+[lca.pef.normalisation.required] Under the EU Product Environmental Footprint (PEF) method, normalisation is mandatory (1 / required) for standard PEF studies according to the PEF method guidelines.
+
+[lca.pef.recycling.cff_required] The EU Product Environmental Footprint (PEF) method mandates the use of the Circular Footprint Formula (CFF) (1 / required) for end-of-life modeling.
+
+[lca.pef.data_quality.dqr_dimensions_count] The Data Quality Rating (DQR) in the EU Product Environmental Footprint (PEF) method consists of 4 evaluation dimensions: Technological Representativeness, Geographical Representativeness, Time Representativeness, and Precision.
+
+[lca.pef.climate_change.includes_biogenic_separate_subindicator] In the EU Product Environmental Footprint (PEF) method, biogenic GHG emissions and removals are required to be reported as a separate climate-change sub-indicator (1 / required).
+
+[lca.pef.climate_change.includes_fossil] In the EU Product Environmental Footprint (PEF) method, fossil GHG emissions are required to be included in the climate-change impact assessment (1 / required).
+
+[lca.pef.data_quality.dqr_excellent_max] Under the EU Product Environmental Footprint (PEF) method, the maximum DQR score threshold for excellent data quality is 1.6.
+
+[lca.pef.impact_categories_count] The EU Product Environmental Footprint (PEF) method mandates 16 default environmental footprint impact categories.
+
+[lca.pef.climate_change.includes_land_use_change_subindicator] In the EU Product Environmental Footprint (PEF) method, land-use-change GHG emissions are required to be reported as a separate climate-change sub-indicator (1 / required).
+
+[lca.pef.electricity.residual_mix_default] The EU Product Environmental Footprint (PEF) method requires using the residual electricity grid mix as the default when contractual instruments are absent (1 / required).
+
+[lca.pef.data_quality.dqr_poor_threshold] Under the EU Product Environmental Footprint (PEF) method, data with a DQR score exceeding 3.0 is classified as poor quality.
+
+[lca.biogenic.gwp_bio.short_rotation_pef] Under the EU Product Environmental Footprint (PEF) method, the GWPbio characterization factor for short-rotation biomass biogenic carbon is 0 kg CO2e per kg CO2.
+
+[managed_assets.van.class_iii.diesel] The greenhouse-gas emission factor for a diesel Class III van (1.74 to 3.5 tonnes) under managed assets is 0.252 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.car.size.average.hybrid] The greenhouse-gas emission factor for an average hybrid car under managed assets is 0.117 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.hgv_refrigerated.rigid_all.0pct_laden.diesel] The greenhouse-gas emission factor for an all-rigid 0% laden diesel refrigerated HGV under managed assets is 0.685 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.hgv_refrigerated.rigid_gt_17t.50pct_laden.diesel] The greenhouse-gas emission factor for a rigid (>17 tonnes) 50% laden diesel refrigerated HGV under managed assets is 0.902 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.car.segment.executive.diesel] The greenhouse-gas emission factor for an executive diesel car under managed assets is 0.185 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.car.segment.mini.petrol] The greenhouse-gas emission factor for a mini petrol car under managed assets is 0.120 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.van.class_i.diesel] The greenhouse-gas emission factor for a diesel Class I van (up to 1.305 tonnes) under managed assets is 0.143 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.van.class_ii.diesel] The greenhouse-gas emission factor for a diesel Class II van (1.305 to 1.74 tonnes) under managed assets is 0.188 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.hgv.rigid_7_5_to_17t.0pct_laden.diesel] The greenhouse-gas emission factor for a rigid (>7.5 to 17 tonnes) 0% laden diesel HGV under managed assets is 0.505 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.
+
+[managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel] The greenhouse-gas emission factor for an all-artic 50% laden diesel refrigerated HGV under managed assets is 1.025 kg CO2e per km, according to the UK DEFRA Greenhouse Gas Reporting Conversion Factors.

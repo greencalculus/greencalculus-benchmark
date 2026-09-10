@@ -1,124 +1,143 @@
-# Claude Opus 5, unaided — 467 questions
+# How wrong are LLMs about emission factors?
 
-Run 2026-09-10 against GreenCalculus data version 2026.187. Sixteen fresh
-contexts, ~30 questions each, one tool call apiece (reading their own question
-file) and no lookups. Questions cover 45 sections and 75 publishers.
+467 questions drawn from the GreenCalculus corpus (data version 2026.187),
+covering 45 sections and 75 publishers. Every model was asked the same questions
+in the same wording, in batches of 30, with no tools and no lookups. Run
+2026-09-10.
 
-## Result
+## Two numbers, and you need both
 
-| | |
-|---|---|
-| Gave a number | 456 / 467 (97.6%) |
-| Declined outright | 8 (1.7%) |
-| Hedged but still gave a number | 94 (20%) |
-| **Within 10% of the sourced value** | **46.3%** (of 339 scoreable) |
-| Within 50% | 79.1% |
-| Off by more than 50%, stated as fact | 20.9% |
-| Named a source | 75.2% |
-| Named the *right* source, when it named one | 90.0% |
-| **Named the right source AND got the number wrong** | **55.1%** |
+**When it answers, is it right?**
 
-112 questions were **unscoreable** — the model's unit and the source's unit
-could not be reconciled (mostly a local-currency answer against a USD/tCO2e
-truth). Those are excluded from the accuracy denominator rather than counted
-wrong. See "Is the scorer trustworthy?" below.
+| Model | Scoreable | Within 10% | Within 50% | Off by >50% |
+|---|---:|---:|---:|---:|
+| Grok 4.6 | 84 | **66.7%** | 88.1% | 11.9% |
+| Claude Opus 5 | 342 | 45.9% | 78.7% | 21.3% |
+| Gemini 3.6 Flash | 306 | 43.5% | 78.4% | 21.6% |
 
-## The finding
+**Of all 467 asked, how many did it actually get right?**
 
-The model almost never refuses, and it almost always attributes correctly.
-It names the right publisher 90% of the time — **and more than half of those
-correctly-attributed answers carry a wrong number.**
+| Model | Answered | Refused | Correct | Correct of all 467 |
+|---|---:|---:|---:|---:|
+| Claude Opus 5 | 456 | 11 | 157 | **33.6%** |
+| Gemini 3.6 Flash | 436 | 31 | 133 | 28.5% |
+| Grok 4.6 | 150 | **317** | 56 | 12.0% |
 
-That is the dangerous combination. A refusal is safe: the reader goes and looks
-it up. A wrong number with no source is usually caught: the reader has nothing
-to cite. A wrong number under the right publisher's name is the one that gets
-pasted into a disclosure, because it looks exactly like diligence.
+The tables rank in opposite orders, and that is the finding. Quote either alone
+and you have misled someone.
+
+## The real story is calibration, not accuracy
+
+**Grok 4.6 refused 317 of 467 questions** — more than two in three, usually with
+a flat "I don't know this factor." When it did answer it was right two-thirds of
+the time, the best rate here by a wide margin. It is not the most knowledgeable
+model in this test. It is the most *honest about the edge of its knowledge*.
+
+**Claude Opus 5 refused 11 times out of 467.** It answers essentially everything,
+which is why it gets the most questions right in absolute terms — and also why it
+produces by far the most confidently wrong numbers.
+
+For carbon accounting that trade is not neutral. A refusal costs you a lookup. A
+confident wrong number costs you a misstated disclosure.
+
+## The dangerous combination
+
+| Model | Named a source | Named the *right* source | **Right source, wrong number** |
+|---|---:|---:|---:|
+| Gemini 3.6 Flash | 76.9% | 91.9% | **58.2%** |
+| Claude Opus 5 | 75.2% | 90.0% | **55.2%** |
+| Grok 4.6 | 22.1% | 82.5% | **29.8%** |
+
+All three attribute well — around 90% of the time they name the publisher the
+number really comes from. And for the two talkative models, **the majority of
+those correctly-attributed answers still carry a wrong number.**
+
+That is the failure mode worth naming. A wrong figure with no source gets caught,
+because nobody can cite it. A wrong figure under the right publisher's name looks
+exactly like diligence, and goes into the report.
+
+Grok's much lower rate is mostly a consequence of refusing: it cites rarely
+because it answers rarely.
 
 ## It knows the famous numbers and invents the rest
 
-Accuracy by section, where at least 8 questions were scoreable:
+Claude Opus 5 by section, where at least 8 questions were scoreable:
 
 | | Section | Within 10% |
-|---|---|---|
-| Best | fuels | 92% (11/12) |
-| | fuel_properties | 91% (10/11) |
-| | mobile_combustion | 83% (10/12) |
-| | district_heating | 80% (8/10) |
-| Worst | cbam | 18% (2/11) |
-| | ev_charging | 17% (2/12) |
-| | ngfs_scenarios | 9% (1/11) |
-| | food_pcf | 8% (1/12) |
+|---|---|---:|
+| Best | fuels | 92% |
+| | fuel_properties | 91% |
+| | mobile_combustion | 83% |
+| Worst | cbam | 18% |
+| | ev_charging | 17% |
+| | ngfs_scenarios | 9% |
+| | food_pcf | 8% |
 
-Diesel per gallon and the calorific value of LPG are in every textbook, and the
-model gets them right. Anything jurisdiction-specific, recently published, or
-buried in an annex — a CBAM country default, an NGFS scenario cell, an
-AGRIBALYSE product line — it fabricates with the same confident tone.
+Diesel per gallon is in every textbook and it gets it right. A CBAM country
+default, an NGFS scenario cell, an AGRIBALYSE product line — jurisdiction-specific
+or recently published — it fabricates in the same tone.
 
-## Exemplars — right source, badly wrong number
+## One clean case
 
-| Factor | Model said | Truth | Cited |
-|---|---|---|---|
-| UK bio-methanol per litre | 0.665 | 0.00669 | DEFRA |
-| Cattle manure CH4, anaerobic digestion, cool | 110 | 2.4 | IPCC |
-| CBAM indirect, Namibia | 0.6 | 0.044 | CBAM |
-| GCP europe-north2 gCO2e/kWh | 35 | 3 | Google |
-| EPA WARM, PLA landfilled | 200 | 20 | EPA |
-| DEFRA closed-loop PP recycling | 21.3 | 4.65 | DEFRA |
-
-And from the 45-question pilot, the cleanest single case:
-
-> **R-290 (propane), per kg leaked.** Opus 5: *"3 kgCO2e per kg leaked — GWP100
-> = 3 under IPCC AR5. This is the value DEFRA publishes."*
+> **R-290 (propane), per kg leaked.** Claude Opus 5: *"3 kgCO2e per kg leaked —
+> GWP100 = 3 under IPCC AR5. This is the value DEFRA publishes."*
 > Truth: **0.02**, IPCC AR6 WGI Ch 7 Table 7.SM.7.
 
-150x too high, attributed to a publisher that does not publish it, no hedge.
-AR6 revised short-lived hydrocarbon GWPs down by two orders of magnitude; the
-model is still answering from the older figure.
+150x too high, credited to a publisher that does not publish it, no hedge. AR6
+revised short-lived hydrocarbon GWPs down by two orders of magnitude.
 
 ## Is the scorer trustworthy?
 
-This is the part most benchmarks skip, so: the scorer was wrong first, and we
-caught it.
+It was wrong first, twice, and both are documented because the correction matters
+more than the headline.
 
-The initial version compared numbers rather than quantities and reported 35.6%
-on the pilot. It scored a *correct* hydrogen answer (63 kgCO2/GJ against a truth
-of 0.0172 tonne C/GJ — the same number, x44/12) as a 366,179% error, and 80% vs
-0.8 as 9,900% wrong. Hand-adjudicating all 45 pilot answers gave ~47%.
-[`units.py`](./units.py) now reconciles mass/energy/volume/length scales,
-percent against fraction, and the carbon-species conversion in both directions.
+- **It compared numbers, not quantities.** The first version reported 35.6% and
+  scored a *correct* answer of 63 kgCO2/GJ against a truth of 0.0172 tonne C/GJ
+  (the same number, x44/12) as a 366,179% error. [`units.py`](./units.py) now
+  reconciles mass/energy/volume/length, percent-vs-fraction, and the C<->CO2
+  conversion both ways.
+- **It penalised a model for its typography.** Grok writes `head-1 yr-1` and
+  `N2O` with Unicode superscripts and subscripts; those were being stripped, so
+  its units failed to parse. Normalised now — caught before any number was
+  published.
+- **It threw away a whole batch on formatting.** Gemini numbered one batch
+  `1. [id]` instead of `[id]` and the parser skipped all 30. Fixed; all three
+  models now parse at 467/467.
 
-Two independent checks that the current number is real:
+Two independent checks that the headline is real:
 
-- **Against hand adjudication.** Automated 45.9% vs hand-read ~47% on the same
-  45 answers.
-- **Against scorer coverage.** Closing successive gaps moved unscoreable from
-  137 to 126 to 112 — and the headline moved only 46.7% to 46.6% to 46.3%.
-  If the unscoreable pile had been hiding a bias, converting a quarter of it
-  would have shifted the result. It didn't.
+- **Against hand adjudication.** Automated 45.9% vs a hand read of ~47% on the
+  same 45 pilot answers.
+- **Against scorer coverage.** Closing successive gaps moved unscoreable from 137
+  to 112 while the headline moved 46.7% -> 46.3%. If the unscoreable pile had
+  hidden a bias, converting a quarter of it would have shifted the result.
 
-Remaining unscoreable is dominated by currency (a SEK answer against a USD
-truth) and by prose units like "calendar year" and "boolean". Those stay
-excluded rather than guessed.
+Unreconcilable units are reported **UNSCOREABLE** and leave the denominator —
+never counted as wrong. What remains is mostly currency (a SEK answer against a
+USD truth) and prose units like "calendar year".
+
+## Caveats, stated plainly
+
+- **Gemini 3.6 Flash is not Google's frontier model.** It is the fast tier, run
+  because the Pro models are not available on a free key. Do not read it as
+  "Gemini scores X" — it is a different weight class from Opus 5 and Grok 4.6.
+- **GPT is absent** — the account had no credits at run time.
+- One run per model, no temperature sweep, no repeats. A floor-setting
+  measurement, not a leaderboard.
+- 30 questions share a context window, so answers within a batch are not fully
+  independent.
+- Questions come only from factors we may republish, so the answer key can ship.
+  That favours well-documented public sources — if anything it makes the task
+  easier than reality.
 
 ## Reproduce
 
 ```bash
-python3 build_questions.py                                   # regenerate questions.json
-python3 assemble.py                                          # results/raw/*.txt -> runs file
-python3 score.py results/runs_opus5_full.json questions.json  # score
+python3 build_questions.py                 # regenerate questions.json
+python3 run_model.py --model grok-4.6      # ask a model (needs that provider's key)
+python3 compare.py                         # score every run in results/
 ```
 
-Raw model output is in [`results/raw/`](./results/raw), one file per batch,
-verbatim. The prompt is in [`prompts/`](./prompts).
-
-## Caveats
-
-- One model, one run, no temperature sweep. Treat as a floor-setting
-  measurement, not a leaderboard.
-- Questions are generated from a corpus that only includes republishable
-  factors, so the answer key can ship. That biases toward well-documented
-  public sources — if anything, it makes the task *easier* than reality.
-- 30 questions share a context window per batch, so answers are not fully
-  independent of each other.
-- 6 duplicate keys came out of the generator and were deduplicated at assembly
-  (473 rows, 467 unique).
+Every model's raw output is committed verbatim under
+[`results/`](./results), one file per batch. The prompt is in
+[`prompts/`](./prompts).

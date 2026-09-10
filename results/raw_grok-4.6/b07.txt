@@ -1,0 +1,30 @@
+[fuel_properties.hydrogen.gross_cv_gj_tonne] 141.8 GJ/tonne (standard HHV of hydrogen); commonly tabulated in UK Government GHG Conversion Factors fuel-properties sheets.
+[fuel_properties.diesel.net_cv_gj_tonne] I don't know the exact published net CV they intend (typical range ~42.6–43.1 GJ/tonne).
+[fuel_properties.hydrogen.net_cv_gj_tonne] 120 GJ/tonne (standard LHV of hydrogen); commonly tabulated in UK Government GHG Conversion Factors fuel-properties sheets.
+[fuel_properties.gas_oil.gross_cv_gj_tonne] I don't know the exact published gross CV.
+[fuel_properties.gas_oil.net_cv_gj_tonne] I don't know the exact published net CV.
+[fuel_properties.petrol.density_kg_m3] I don't know the exact published density (typical motor gasoline ~720–775 kg/m³).
+[fuel_properties.natural_gas.gross_cv_kwh_kg] I don't know the exact published gross CV per kg for the commercial mix.
+[fuel_properties.petrol.density_kg_litre] I don't know the exact published density (typical ~0.74 kg/litre in UK tables).
+[fuel_properties.lpg.density_kg_litre] I don't know the exact published density (typical commercial LPG ~0.51–0.54 kg/litre).
+[fuel_properties.diesel_100_mineral.gross_cv_kwh_litre] I don't know the exact published gross CV per litre.
+[fuel_properties.diesel_100_mineral.litres_per_tonne] I don't know the exact published litres-per-tonne figure.
+[fuels.gbr.bio.methanol_bio.litre] I don't know.
+[fuels.usa.residual_fuel_oil_no_6.gallon] Approximately 11.27 kg CO2 per gallon (EPA GHG Emission Factors Hub, stationary combustion; CH4/N2O add very little to CO2e).
+[fuels.ipcc.liquefied_petroleum_gases.litre] I don't know the per-litre value as published (IPCC 2006 default is 63.1 t CO2/TJ on an NCV basis).
+[fuels.can.ethane.litre] I don't know.
+[fuels.fra.heating_oil.litre] I don't know.
+[fuels.aus.burning_oil.litre] I don't know.
+[fuels.gbr.waste_oils.tonne] I don't know.
+[fuels.usa.liquefied_petroleum_gases.mmbtu] Approximately 61.71 kg CO2 per mmBtu (EPA GHG Emission Factors Hub).
+[fuels.ipcc.anthracite.kwh_ncv] Approximately 0.354 kg CO2/kWh (IPCC 2006 default 98.3 t CO2/TJ NCV × 0.0036 GJ/kWh; CH4/N2O are negligible).
+[fuels.can.propane.litre] I don't know.
+[fuels.fra.propane.kwh_ncv] I don't know.
+[fuels.aus.gas_oil.kwh_gcv] I don't know.
+[fuels.fra.diesel_road.wtt.litre] I don't know.
+[grid.usa.ba.public_utility_district_no_2_of_grant_county_washington.wtt_generation] I don't know.
+[fuels.aus.natural_gas.sa.non_metro.wtt.gj] I don't know.
+[fuels.can.kerosene.wtt.mj] I don't know.
+[grid.gbr.electricity.wtt_generation] I don't know the exact year-specific UK conversion-factor value.
+[fuels.fra.heating_oil.wtt.litre] I don't know.
+[grid.usa.ba.southwest_power_pool.wtt_generation_residual_mix] I don't know.

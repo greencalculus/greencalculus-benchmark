@@ -1,0 +1,59 @@
+[reporting.ngfs.carbon_price.gcam.below_2c.world.2035] I do not know the exact value for the NGFS Phase 5 GCAM 6.0 Below 2°C World 2035 shadow carbon price from the NGFS/IIASA scenario database.
+
+[reporting.ngfs.carbon_price.gcam.fragmented_world.world.2045] I do not know the exact value for the NGFS Phase 5 GCAM 6.0 Fragmented World World 2045 shadow carbon price from the NGFS/IIASA scenario database.
+
+[reporting.ngfs.carbon_price.messageix_globiom.delayed_transition.world.2025] I do not know the exact value for the NGFS Phase 5 MESSAGEix-GLOBIOM 2.0-M-R12-NGFS Delayed transition World 2025 shadow carbon price from the NGFS/IIASA scenario database.
+
+[reporting.ngfs.carbon_price.gcam.net_zero_2050.world.2025] I do not know the exact value for the NGFS Phase 5 GCAM 6.0 Net Zero 2050 World 2025 shadow carbon price from the NGFS/IIASA scenario database.
+
+[reporting.ngfs.carbon_price.gcam.fragmented_world.world.2035] I do not know the exact value for the NGFS Phase 5 GCAM 6.0 Fragmented World World 2035 shadow carbon price from the NGFS/IIASA scenario database.
+
+[reporting.ngfs.carbon_price.messageix_globiom.low_demand.world.2045] I do not know the exact value for the NGFS Phase 5 MESSAGEix-GLOBIOM 2.0-M-R12-NGFS Low demand World 2045 shadow carbon price from the NGFS/IIASA scenario database.
+
+[reporting.ngfs.carbon_price.gcam.delayed_transition.world.2040] I do not know the exact value for the NGFS Phase 5 GCAM 6.0 Delayed transition World 2040 shadow carbon price from the NGFS/IIASA scenario database.
+
+[reporting.ngfs.carbon_price.gcam.ndcs.world.2050] I do not know the exact value for the NGFS Phase 5 GCAM 6.0 Nationally Determined Contributions World 2050 shadow carbon price from the NGFS/IIASA scenario database.
+
+[oil_gas.throughput.oil_transport.tanks] I do not know the exact numeric emission factor for oil transport tanks per thousand m3 crude oil fed.
+
+[oil_gas.throughput.gas_distribution.limited_ldar] I do not know the exact numeric emission factor for gas distribution (<50% plastic pipe, limited/no LDAR) per million m3 gas consumption.
+
+[oil_gas.throughput.gas_transmission.extensive_ldar] I do not know the exact numeric emission factor for gas transmission (extensive LDAR, ~50%+ centrifugal dry seals) per million m3 gas consumption.
+
+[oil_gas.throughput.gas_production.onshore_low_emitting] I do not know the exact numeric emission factor for natural gas production onshore (lower-emitting technologies) per million m3 gas production.
+
+[oil_gas.throughput.oil_transport.offshore_loading_no_vru] I do not know the exact numeric emission factor for oil transport offshore loading onto tanker ships (no VRU) per thousand m3 loaded.
+
+[oil_gas.throughput.oil_transport.tanker_truck_rail] I do not know the exact numeric emission factor for oil transport tanker trucks and rail cars per thousand m3 transported.
+
+[oil_gas.throughput.gas_storage.extensive_ldar] I do not know the exact numeric emission factor for gas storage (extensive LDAR, lower-emitting) per million m3 gas consumption.
+
+[oil_gas.throughput.gas_production.onshore_high_emitting] I do not know the exact numeric emission factor for natural gas production onshore (higher-emitting technologies) per million m3 gas production.
+
+[oil_gas.throughput.oil_transport.pipelines] I do not know the exact numeric emission factor for oil transport pipelines per thousand m3 transported.
+
+[oil_gas.throughput.oil_production.onshore_high_emitting] I do not know the exact numeric emission factor for oil production onshore (higher-emitting technologies) per thousand m3 oil production.
+
+[oil_gas.throughput.gas_production.offshore] I do not know the exact numeric emission factor for natural gas production offshore per million m3 gas production.
+
+[oil_gas.throughput.gas_storage.limited_ldar] I do not know the exact numeric emission factor for gas storage (limited LDAR, higher-emitting) per million m3 gas consumption.
+
+[passenger_vehicles.motorbike.medium.petrol] The greenhouse-gas emission factor for a medium petrol motorbike is approximately 0.101 kg CO2e per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors for Company Reporting.
+
+[passenger_vehicles.motorbike.average.petrol.energy_use_secr] The SECR energy use factor for an average petrol motorbike is approximately 0.435 kWh per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors for SECR reporting.
+
+[passenger_vehicles.car.segment.sports.diesel.energy_use_secr] The SECR energy use factor for a sports diesel car is approximately 0.60 kWh per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+
+[passenger_vehicles.car.segment.executive.petrol.energy_use_secr] The SECR energy use factor for an executive petrol car is approximately 0.75 kWh per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+
+[passenger_vehicles.car.segment.dual_purpose_4x4.petrol.energy_use_secr] The SECR energy use factor for a dual purpose 4x4 petrol car is approximately 0.80 kWh per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+
+[passenger_vehicles.car.segment.mpv.diesel.energy_use_secr] The SECR energy use factor for an MPV diesel car is approximately 0.55 kWh per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+
+[passenger_vehicles.car.size.large.diesel.energy_use_secr] The SECR energy use factor for a large diesel car is approximately 0.58 kWh per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.
+
+[passenger_vehicles.motorbike.large.petrol] The greenhouse-gas emission factor for a large petrol motorbike is approximately 0.133 kg CO2e per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors for Company Reporting.
+
+[passenger_vehicles.car.size.medium.petrol] The greenhouse-gas emission factor for a medium petrol passenger car is approximately 0.187 kg CO2e per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors for Company Reporting.
+
+[passenger_vehicles.car.size.small.diesel.energy_use_secr] The SECR energy use factor for a small diesel car is approximately 0.43 kWh per km, according to the UK DESNZ/DEFRA Greenhouse Gas Conversion Factors.

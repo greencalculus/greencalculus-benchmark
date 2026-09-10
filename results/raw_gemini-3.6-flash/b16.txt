@@ -1,0 +1,33 @@
+[waste.landfill.k.wood_straw.tropical_moist_wet] According to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, the first-order decay rate (k) for wood and straw in a tropical moist/wet climate is 0.035 yr⁻¹.
+
+[waste_disposal.usa.yard_trimmings.landfilled] According to the US EPA Waste Reduction Model (WARM), the greenhouse-gas emission factor for landfilled yard trimmings is 0.23 MTCO2e per short ton.
+
+[waste_disposal.aus.commercial_industrial.landfill] According to the Australian National Greenhouse Accounts Factors, commercial and industrial waste disposed to landfill has an emission factor of 1.2 t CO2-e per tonne.
+
+[waste_disposal.fra.recyclage_granules.plastique_rigide_pp.per_tonne] According to ADEME Base Carbone, the emission factor for recycling rigid PP plastic into granules is 38.3 kg CO2e per tonne.
+
+[waste_disposal.gbr.refuse.commercial_and_industrial_waste.combustion] According to the UK Government GHG Conversion Factors for Company Reporting, combustion of commercial and industrial waste has an emission factor of 21.28 kg CO2e per tonne.
+
+[waste_disposal.can.incineration.industrial_batch_fluidized_bed] According to Environment and Climate Change Canada's National Inventory Report, industrial waste batch fluidized bed incineration has an emission factor of 1.15 tonnes CO2e per tonne.
+
+[waste_disposal.usa.pla.landfilled] According to the US EPA Waste Reduction Model (WARM), the emission factor for landfilled PLA (polylactic acid) is 0.02 MTCO2e per short ton.
+
+[waste_disposal.aus.construction_demolition.landfill] According to the Australian National Greenhouse Accounts Factors, construction and demolition waste disposed to landfill has an emission factor of 0.2 t CO2-e per tonne.
+
+[waste_disposal.fra.fin_de_vie_moyenne.cuivre.per_tonne] According to ADEME Base Carbone, the average end-of-life emission factor for copper is 120 kg CO2e per tonne.
+
+[waste_disposal.gbr.plastic.pp.closed_loop] According to the UK Government GHG Conversion Factors for Company Reporting, closed-loop recycling of PP plastic has an emission factor of 21.28 kg CO2e per tonne.
+
+[waste_disposal.can.composting.municipal_solid_waste] According to Environment and Climate Change Canada's National Inventory Report, municipal solid waste composting has an emission factor of 0.088 tonnes CO2e per tonne.
+
+[waste_disposal.usa.aluminum_cans.combusted] According to the US EPA Waste Reduction Model (WARM), the emission factor for combusted aluminum cans is 0.01 MTCO2e per short ton.
+
+[waste_disposal.aus.municipal_solid_waste.landfill] According to the Australian National Greenhouse Accounts Factors, municipal solid waste disposed to landfill has an emission factor of 1.4 t CO2-e per tonne.
+
+[water.fra.supply.mains] According to ADEME Base Carbone, France mains water supply treatment and distribution has an emission factor of 0.132 kg CO2e per m³.
+
+[water.gbr.treatment.wastewater] According to the UK Government GHG Conversion Factors for Company Reporting, UK wastewater treatment has an emission factor of 0.272 kg CO2e per m³.
+
+[water.fra.treatment.wastewater] According to ADEME Base Carbone, wastewater treatment in France has an emission factor of 0.052 kg CO2e per m³.
+
+[water.gbr.supply.mains] According to the UK Government GHG Conversion Factors for Company Reporting, UK mains water supply has an emission factor of 0.149 kg CO2e per m³.

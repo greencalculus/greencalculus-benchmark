@@ -1,0 +1,30 @@
+1. [district_heating.eu_framework.renewable_share_eu27] The aggregate renewable and waste-heat share in district heating across the EU-27 is approximately 22% according to Eurostat and the EU Energy Efficiency Directive framework.
+2. [equivalencies.ref.person_day] The global reference emission factor is approximately 17.5 kg CO2e per person-day, calculated from global GHG emissions divided by world population and 365 days.
+3. [equivalencies.gbr.ref.car_annual_distance_km] According to UK Department for Transport statistics, the reference average distance driven per car per year in Great Britain is approximately 10,600 km per year.
+4. [equivalencies.gbr.flight_london_new_york_return] According to UK DESNZ/DEFRA greenhouse gas conversion factors, a return economy flight from London to New York produces approximately 1.73 tonnes CO2e per passenger return flight (including radiative forcing).
+5. [equivalencies.usa.home_energy_year] According to the US EPA Greenhouse Gas Equivalencies Calculator, energy use for an average US home for one year generates 8.30 metric tons CO2e per home per year.
+6. [equivalencies.usa.oil_barrel] According to the US EPA Greenhouse Gas Equivalencies Calculator, consuming one barrel of oil generates 0.43 metric tons CO2 per barrel.
+7. [equivalencies.usa.railcar_coal] According to the US EPA Greenhouse Gas Equivalencies Calculator, burning one railcar of coal emits 181.8 metric tons CO2 per railcar.
+8. [equivalencies.usa.natural_gas_therm] According to the US EPA Greenhouse Gas Equivalencies Calculator, one therm of natural gas produces 0.0053 metric tons CO2 (5.3 kg CO2) per therm.
+9. [equivalencies.usa.waste_recycled_short_ton] According to the US EPA WARM model and Equivalencies Calculator, recycling one short ton of waste instead of landfilling it avoids 2.89 metric tons CO2e per short ton.
+10. [equivalencies.usa.propane_cylinder] According to the US EPA Greenhouse Gas Equivalencies Calculator, one standard propane cylinder used for home barbecue produces 0.024 metric tons CO2 (24 kg CO2) per cylinder.
+11. [equivalencies.usa.forest_acre_sequestration_year] According to the US EPA Greenhouse Gas Equivalencies Calculator, one acre of US forest sequesters 0.84 metric tons CO2 per acre per year.
+12. [equivalencies.usa.smartphone_charged] According to the US EPA Greenhouse Gas Equivalencies Calculator, charging one smartphone emits 0.00000822 metric tons CO2 (8.22 grams CO2) per charge.
+13. [equivalencies.ref.tree_seedling.sequestration_10yr] According to the US EPA Greenhouse Gas Equivalencies Calculator, one urban tree seedling grown for 10 years sequesters 0.060 metric tons CO2 (60 kg CO2) over 10 years.
+14. [ev_charging.van.class_iii.bev.td_loss_uk] According to DESNZ/DEFRA UK GHG Conversion Factors, the transmission and distribution loss emission factor for a Class III BEV van is 0.00393 kg CO2e per km.
+15. [ev_charging.car.segment.supermini.bev.charging_uk] According to DESNZ/DEFRA UK GHG Conversion Factors, the EV charging emission factor for a Supermini BEV is 0.0289 kg CO2e per km.
+16. [ev_charging.car.segment.supermini.bev.energy_use_secr] According to DESNZ/DEFRA SECR conversion guidance, the energy consumption factor for a Supermini BEV is 0.148 kWh per km.
+17. [ev_charging.car.segment.lower_medium.phev.charging_uk] According to DESNZ/DEFRA UK GHG Conversion Factors, the EV charging emission factor for a Lower Medium PHEV is 0.0125 kg CO2e per km.
+18. [ev_charging.car.segment.dual_purpose_4x4.bev.charging_uk] According to DESNZ/DEFRA UK GHG Conversion Factors, the EV charging emission factor for a Dual Purpose 4X4 BEV is 0.0432 kg CO2e per km.
+19. [ev_charging.car.segment.mpv.phev.td_loss_uk] According to DESNZ/DEFRA UK GHG Conversion Factors, the T&D loss emission factor for an MPV PHEV is 0.00115 kg CO2e per km.
+20. [ev_charging.car.segment.upper_medium.bev.energy_use_secr] According to DESNZ/DEFRA SECR conversion guidance, the energy consumption factor for an Upper Medium BEV is 0.176 kWh per km.
+21. [ev_charging.car.segment.dual_purpose_4x4.bev.energy_use_secr] According to DESNZ/DEFRA SECR conversion guidance, the energy consumption factor for a Dual Purpose 4X4 BEV is 0.215 kWh per km.
+22. [ev_charging.car.size.large.phev.td_loss_uk] According to DESNZ/DEFRA UK GHG Conversion Factors, the T&D loss emission factor for a Large PHEV car is 0.00138 kg CO2e per km.
+23. [ev_charging.car.segment.luxury.bev.energy_use_secr] According to DESNZ/DEFRA SECR conversion guidance, the energy consumption factor for a Luxury BEV is 0.222 kWh per km.
+24. [ev_charging.car.segment.mpv.bev.energy_use_secr] According to DESNZ/DEFRA SECR conversion guidance, the energy consumption factor for an MPV BEV is 0.201 kWh per km.
+25. [ev_charging.van.class_ii.bev.charging_uk] According to DESNZ/DEFRA UK GHG Conversion Factors, the EV charging emission factor for a Class II BEV van is 0.0385 kg CO2e per km.
+26. [food.diet.high_meat.annual] According to Scarborough et al. (Climatic Change), a high-meat diet generates approximately 2.62 tonnes CO2e per year (7.19 kg CO2e per day).
+27. [food.diet.mixed.annual] According to Scarborough et al. (Climatic Change), an average mixed meat-eating diet generates approximately 2.05 tonnes CO2e per year (5.63 kg CO2e per day).
+28. [food.diet.low_meat.annual] According to Scarborough et al. (Climatic Change), a low-meat diet generates approximately 1.70 tonnes CO2e per year (4.67 kg CO2e per day).
+29. [food.diet.vegan.annual] According to Scarborough et al. (Climatic Change), a vegan diet generates approximately 1.05 tonnes CO2e per year (2.89 kg CO2e per day).
+30. [food.diet.vegetarian.annual] According to Scarborough et al. (Climatic Change), a vegetarian diet generates approximately 1.39 tonnes CO2e per year (3.81 kg CO2e per day).

@@ -1,0 +1,30 @@
+[1] According to the Australian National Greenhouse Accounts Factors (2023), the scope 3 indirect emission factor for Tasmania grid electricity is 0.02 kg CO2-e/kWh.
+[2] According to Environment and Climate Change Canada (ECCC) National Inventory Report data, the well-to-tank emission factor for kerosene is approximately 0.48 kg CO2e per litre.
+[3] According to the UK DESNZ/DEFRA 2023 GHG Conversion Factors, the well-to-tank emission factor for grass/straw bioenergy is approximately 0.012 kg CO2e/kWh based on net calorific value.
+[4] According to ADEME's Base Empreinte, the well-to-tank (amont) greenhouse gas emission factor for propane is 0.0412 kg CO2e/kWh NCV.
+[5] I do not know the exact numeric value for Florida Power & Light Co. well-to-tank generation emission factor.
+[6] According to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, the default post-mining emission factor for surface coal is 0.1 m³ CH4 per tonne of coal handled (approximately 0.0019 t CO2e/tonne).
+[7] According to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, the default post-mining emission factor for underground coal is 2.5 m³ CH4 per tonne of coal handled (approximately 0.046 t CO2e/tonne).
+[8] According to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, the default coal mine methane emission factor for surface mining is 1.2 m³ CH4 per tonne of coal mined (approximately 0.022 t CO2e/tonne).
+[9] According to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, the default coal mine methane emission factor for underground mining is 18 m³ CH4 per tonne of coal mined (approximately 0.336 t CO2e/tonne).
+[10] According to Environment and Climate Change Canada's 2023 National Inventory Report, the location-based emission factor for Ontario grid electricity is 0.028 kg CO2e/kWh.
+[11] According to the UK DESNZ/DEFRA 2023 GHG Conversion Factors, the location-based emission factor for UK grid electricity is 0.20705 kg CO2e/kWh.
+[12] According to ADEME's Base Empreinte, the location-based emission factor for grid electricity in continental France is 0.052 kg CO2e/kWh.
+[13] According to Climate Active / GreenPower methodology for Australia, the residual mix emission factor for Australian grid electricity is approximately 0.82 kg CO2e/kWh.
+[14] According to US EPA eGRID 2021 data, the emission factor for the NYCW subregion is approximately 0.138 kg CO2e/kWh (304 lb CO2e/MWh).
+[15] According to US EPA eGRID 2022 data, the location-based emission factor for Wyoming grid electricity is 0.915 kg CO2e/kWh (2,017 lb CO2e/MWh).
+[16] According to the AIB 2022 European Residual Mixes report, the residual mix emission factor for Portugal grid electricity is 0.274 kg CO2e/kWh.
+[17] According to CO2-emissiefactoren.nl, the national location-based emission factor for Netherlands grid electricity is 0.348 kg CO2e/kWh.
+[18] According to Environment and Climate Change Canada's 2023 National Inventory Report, the location-based emission factor for Nova Scotia grid electricity is 0.680 kg CO2e/kWh.
+[19] According to the UK DESNZ/DEFRA 2023 GHG Conversion Factors, the biogenic CO2 emission factor for UK electricity generation is 0.0183 kg CO2/kWh.
+[20] According to the Australian National Greenhouse Accounts Factors (2023), the national scope 2 location-based factor for electricity is 0.68 kg CO2e/kWh.
+[21] According to Green-e 2022 Residual Mix data, the residual mix emission factor for the NEWE eGRID subregion is 0.261 kg CO2e/kWh (575 lb CO2e/MWh).
+[22] According to Ember Climate / Electricity Maps data, the lifecycle emission intensity for Spain grid electricity is approximately 0.185 kg CO2e/kWh.
+[23] According to NREL / Ember Climate data, the lifecycle emission intensity for United States grid electricity is approximately 0.390 kg CO2e/kWh.
+[24] According to Ember Climate data, the lifecycle emission intensity for Iran grid electricity is approximately 0.580 kg CO2e/kWh.
+[25] According to Ember Climate data, the lifecycle emission intensity for Azerbaijan grid electricity is approximately 0.510 kg CO2e/kWh.
+[26] According to Energy Market Authority (EMA) / Ember data, the lifecycle emission intensity for Singapore grid electricity is 0.417 kg CO2e/kWh.
+[27] According to Ember Climate data, the lifecycle emission intensity for Bahrain grid electricity is approximately 0.620 kg CO2e/kWh.
+[28] According to Ember Climate / Electricity Maps data, the lifecycle emission intensity for Lithuania grid electricity is approximately 0.145 kg CO2e/kWh.
+[29] According to IEA / IPCC default estimates for small island diesel power grids, the lifecycle emission intensity for Falkland Islands electricity is approximately 0.750 kg CO2e/kWh.
+[30] According to IEA / Ember Climate data, the lifecycle emission intensity for Bahamas grid electricity is approximately 0.680 kg CO2e/kWh.

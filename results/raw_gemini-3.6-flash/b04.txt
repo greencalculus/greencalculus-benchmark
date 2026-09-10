@@ -1,0 +1,59 @@
+[delivery_vehicles.hgv_refrigerated.rigid_gt_17t.average_laden.diesel] The greenhouse-gas emission factor for a refrigerated rigid HGV (>17 tonnes, average laden, diesel) is approximately 1.258 kg CO2e per km, sourced from DEFRA GHG Conversion Factors.
+
+[delivery_vehicles.hgv_refrigerated.rigid_all.0pct_laden.diesel.energy_use_secr] The SECR energy use factor for a refrigerated rigid HGV (All rigids, 0% laden, diesel) is approximately 3.32 kWh per km, sourced from DEFRA GHG Conversion Factors.
+
+[delivery_vehicles.hgv_refrigerated.all.0pct_laden.diesel.energy_use_secr] The SECR energy use factor for a refrigerated HGV (All HGVs, 0% laden, diesel) is approximately 3.48 kWh per km, sourced from DEFRA GHG Conversion Factors.
+
+[delivery_vehicles.hgv.rigid_3_5_to_7_5t.50pct_laden.diesel] The greenhouse-gas emission factor for a rigid HGV (>3.5 to 7.5 tonnes, 50% laden, diesel) is approximately 0.288 kg CO2e per km, sourced from DEFRA GHG Conversion Factors.
+
+[delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt] The Well-To-Tank (WTT) greenhouse-gas emission factor for a rigid HGV (>3.5 to 7.5 tonnes, average laden, diesel) is approximately 0.0597 kg CO2e per km, sourced from DEFRA GHG Conversion Factors.
+
+[delivery_vehicles.hgv.rigid_gt_17t.100pct_laden.diesel] The greenhouse-gas emission factor for a rigid HGV (>17 tonnes, 100% laden, diesel) is approximately 1.082 kg CO2e per km, sourced from DEFRA GHG Conversion Factors.
+
+[delivery_vehicles.van.average.diesel.wtt] The Well-To-Tank (WTT) greenhouse-gas emission factor for an average diesel delivery van (up to 3.5 tonnes) is approximately 0.0526 kg CO2e per km, sourced from DEFRA GHG Conversion Factors.
+
+[delivery_vehicles.hgv_refrigerated.artic_all.average_laden.diesel.energy_use_secr] The SECR energy use factor for a refrigerated articulated HGV (All artics, average laden, diesel) is approximately 4.25 kWh per km, sourced from DEFRA GHG Conversion Factors.
+
+[digital.gcp.region.europe-southwest1] The grid carbon intensity for Google Cloud europe-southwest1 (Madrid) is 0.160 kg CO2e per kWh, sourced from Google Cloud Carbon Footprint report.
+
+[digital.data_centre.pue.enterprise.low] The Power Usage Effectiveness (PUE) lower-bound baseline for older/enterprise-operated data centres is 1.60 (unitless ratio), sourced from EPA and Uptime Institute benchmark reports.
+
+[digital.storage.network.egress.kwh_per_gb] The energy intensity for cloud storage data network egress is approximately 0.06 kWh per GB transferred, sourced from Cloud Carbon Footprint methodology based on Aslan et al.
+
+[digital.end_user_device.composite_user_pc.operational.digst_constant] The operational power constant for a composite user PC under the Digst framework is 0.035 kW (or 35 W operational power coefficient), sourced from the Danish Agency for Digital Government (Digst).
+
+[digital.gcp.region.europe-north2] The grid carbon intensity for Google Cloud europe-north2 (Hamina, Finland) is approximately 0.136 kg CO2e per kWh, sourced from Google Cloud Carbon Footprint report.
+
+[digital.data_centre.electricity_demand.global.2025_twh] The global data centre electricity demand baseline projection for 2025 is approximately 500 TWh, sourced from the International Energy Agency (IEA).
+
+[digital.storage.embodied.hdd.useful_life_years] The embodied carbon amortization period for HDD cloud storage is 4 years (useful life), sourced from Cloud Carbon Footprint and GHG Protocol ICT sector guidance.
+
+[digital.gcp.region.europe-west9] The grid carbon intensity for Google Cloud europe-west9 (Paris) is approximately 0.057 kg CO2e per kWh, sourced from Google Cloud Carbon Footprint report.
+
+[digital.data_centre.pue.hyperscale.low] The lower-bound Power Usage Effectiveness (PUE) for best-in-class hyperscale data centres is 1.10 (unitless ratio), sourced from Google and Uptime Institute published data.
+
+[digital.storage.redundancy.object_erasure.default_factor] The standard storage redundancy multiplier for object storage with erasure coding is 1.50 (unitless ratio), sourced from Cloud Carbon Footprint framework methodology.
+
+[digital.gcp.region.me-central1] The grid carbon intensity for Google Cloud me-central1 (Doha) is approximately 0.494 kg CO2e per kWh, sourced from Google Cloud Carbon Footprint report.
+
+[digital.data_centre.pue.hyperscale.high] The standard upper-range Power Usage Effectiveness (PUE) for hyperscale data centres is 1.20 (unitless ratio), sourced from Uptime Institute benchmarking studies.
+
+[digital.district_heating.usa.steam_heat.mmbtu] The greenhouse-gas emission factor for district steam heat is 66.33 kg CO2 per MMBtu, sourced from the EPA Center for Corporate Climate Leadership GHG Emission Factors Hub.
+
+[district_heating.eu_framework.fossil_dh_baseline_ef] The baseline greenhouse-gas emission factor for natural-gas-dominated fossil district heating in the EU is 0.202 kg CO2e per kWh of delivered heat, sourced from EU RED II directive framework.
+
+[district_heating.eu_framework.hre4_scenario_methodology] The Heat Roadmap Europe 4 (HRE4) baseline carbon intensity benchmark for district heat decarbonisation targets 0.175 kg CO2e per kWh delivered heat, sourced from the Heat Roadmap Europe 4 methodology.
+
+[district_heating.ita.eurostat.renewable_share] The share of renewable energy and waste heat in the Italian district heating sector is approximately 52% (0.52 fraction), sourced from Eurostat SHARES statistics.
+
+[district_heating.gbr.onsite] The greenhouse-gas emission factor for UK onsite generated heat and steam is 0.20655 kg CO2e per kWh, sourced from DEFRA GHG Conversion Factors.
+
+[district_heating.usa.steam_heat.kwh_gcv] The greenhouse-gas emission factor for district steam heat converted to gross calorific energy is approximately 0.226 kg CO2e per kWh, sourced from the EPA GHG Emission Factors Hub.
+
+[district_heating.cyp.eurostat.renewable_share] The renewable and waste-heat share for district heating in Cyprus is 0% (0.0 fraction), as Cyprus has no operational district heating grid according to Eurostat SHARES data.
+
+[district_heating.gbr.onsite_wtt] The Well-To-Tank (WTT) greenhouse-gas emission factor for UK onsite generated heat and steam is 0.02703 kg CO2e per kWh, sourced from DEFRA GHG Conversion Factors.
+
+[district_heating.kos.eurostat.renewable_share] The renewable and waste-heat share in the district heating sector of Kosovo is approximately 38% (0.38 fraction), sourced from Eurostat and Energy Community Secretariat reporting.
+
+[district_heating.gbr.district] The greenhouse-gas emission factor for UK district heat and steam is 0.16982 kg CO2e per kWh, sourced from DEFRA GHG Conversion Factors.

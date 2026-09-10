@@ -1,0 +1,59 @@
+[1. business_travel.fra.road.car_diesel] The greenhouse-gas emission factor for a diesel car in France is approximately 0.218 kg CO2e per km, according to the ADEME Base Empreinte database.
+
+[2. business_travel.sea.ferry.average] The greenhouse-gas emission factor for an average sea ferry passenger is 0.11281 kg CO2e per passenger.km, according to the UK DEFRA GHG Conversion Factors for Company Reporting.
+
+[3. business_travel.usa.rail.transit] The greenhouse-gas emission factor for transit rail is 0.163 kg CO2e per passenger.mile, according to the US EPA GHG Emission Factors Hub.
+
+[4. business_travel.aus.road.hire_car.by_drive.internal_combustion_engine_light_bus.per_vehicle_km] I do not know the exact emission factor for an internal combustion engine light bus hire car from the Australian Government ERF dataset.
+
+[5. business_travel.fra.rail.ter] The greenhouse-gas emission factor for TER regional rail travel is 0.0248 kg CO2e per passenger.km, according to the ADEME Base Empreinte database.
+
+[6. business_travel.land.car.segment.supermini.bev] The greenhouse-gas emission factor for a supermini BEV is 0.0000 kg CO2e per km for direct tailpipe emissions (or 0.04306 kg CO2e per km including well-to-wheel electricity consumption), according to UK DEFRA GHG Conversion Factors.
+
+[7. business_travel.usa.air.short_haul] The greenhouse-gas emission factor for short-haul passenger air travel is 0.207 kg CO2e per passenger.mile, according to the US EPA GHG Emission Factors Hub.
+
+[8. business_travel.aus.road.hire_car.by_fuel.electric_diesel_wagon.per_vehicle_km] I do not know the exact emission factor for an electric/diesel wagon hire car from the Australian Government ERF dataset.
+
+[9. carbon_pricing.jpn_tokyo.ets] The carbon price under the Tokyo Cap-and-Trade Program is approximately 1,000 JPY per tonne CO2e, as documented in the World Bank State and Trends of Carbon Pricing report.
+
+[10. carbon_pricing.eu.ets] The carbon price in the EU ETS is approximately 85.00 EUR per tonne CO2e, according to European Energy Exchange (EEX) market reports.
+
+[11. carbon_pricing.twn.carbon_tax] The carbon fee in Taiwan is set at 300 TWD per tonne CO2e, according to the Ministry of Environment of Taiwan.
+
+[12. carbon_pricing.nor.carbon_tax] The carbon tax in Norway is approximately 952 NOK per tonne CO2e, according to the Norwegian Tax Administration and World Bank State and Trends of Carbon Pricing.
+
+[13. carbon_pricing.usa_rggi.ets] The allowance clearing price in the Regional Greenhouse Gas Initiative (RGGI) is approximately 13.50 USD per short ton CO2, according to RGGI auction results.
+
+[14. carbon_pricing.esp.carbon_tax] The carbon tax rate in Spain is 15.00 EUR per tonne CO2e, according to the Spanish Tax Agency (Agencia Tributaria).
+
+[15. carbon_pricing.swe.carbon_tax] The carbon tax rate in Sweden is 1,330 SEK per tonne CO2e, according to the Swedish Tax Agency (Skatteverket).
+
+[16. carbon_pricing.hun.carbon_tax] The carbon tax rate in Hungary is 3,600 HUF per tonne CO2e, as reported in the World Bank State and Trends of Carbon Pricing report.
+
+[17. carbon_pricing.aus.ets] The carbon offset price under the Australian Safeguard Mechanism / ACCU market is approximately 35.00 AUD per tonne CO2e, according to Clean Energy Regulator reports.
+
+[18. carbon_pricing.mex_queretaro.carbon_tax] The state carbon tax in Querétaro, Mexico is approximately 600 MXN per tonne CO2e, according to the Querétaro Secretariat of Sustainable Development.
+
+[19. carbon_pricing.nld.carbon_tax] The industrial carbon tax in the Netherlands is approximately 51.00 EUR per tonne CO2e, according to the Dutch Ministry of Finance.
+
+[20. carbon_pricing.zaf.carbon_tax] The carbon tax rate in South Africa is 159 ZAR per tonne CO2e, according to the South African Revenue Service (SARS).
+
+[21. cbam.country.ind.7326_90_94.articles_iron] I do not know the exact EU CBAM default direct emission factor for CN code 7326 90 94 from India.
+
+[22. reporting.cbam.indirect.namibia] I do not know the exact EU CBAM Annex II indirect electricity emission factor for Namibia.
+
+[23. cbam.country.chn.7609_00_00.aluminium_tube_pipe] I do not know the exact EU CBAM default direct emission factor for CN code 7609 00 00 from China.
+
+[24. reporting.cbam.indirect.turkiye] The EU CBAM Annex II default indirect emission factor for electricity in Türkiye is 0.442 tonnes CO2e per MWh, according to the European Commission Implementing Regulation (EU) 2023/1773.
+
+[25. cbam.country.rus.7207_11_90.semi_finished_products] I do not know the exact EU CBAM default direct emission factor for CN code 7207 11 90 from Russia.
+
+[26. reporting.cbam.indirect.tanzania_united] I do not know the exact EU CBAM Annex II indirect electricity emission factor for the United Republic of Tanzania.
+
+[27. cbam.country.rus.7207_11_16.semi_finished_products] I do not know the exact EU CBAM default direct emission factor for CN code 7207 11 16 from Russia.
+
+[28. reporting.cbam.indirect.zambia] I do not know the exact EU CBAM Annex II indirect electricity emission factor for Zambia.
+
+[29. cbam.country.ind.7307_92.threaded_elbows_bends] I do not know the exact EU CBAM default direct emission factor for CN code 7307 92 from India.
+
+[30. reporting.cbam.indirect.georgia] I do not know the exact EU CBAM Annex II indirect electricity emission factor for Georgia.

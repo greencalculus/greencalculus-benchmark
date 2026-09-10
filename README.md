@@ -26,16 +26,25 @@ The fourth row is the story. A model that cites DEFRA for an EPA figure is more
 dangerous than one that cites nothing, because the citation is what makes a
 reader stop checking.
 
-## Result — Claude Opus 5, 467 questions, unaided
+## Result — three models, 467 questions, no tools
 
-**46.3% within 10%** of the sourced value. It named a source 75% of the time and
-named the *right* one 90% of those — **but 55% of the correctly-attributed
-answers carried a wrong number.** It is best on textbook fuel factors (92%) and
-worst on anything jurisdiction-specific or recent (food PCF 8%, NGFS 9%).
+| Model | Answered | Within 10% *when it answered* | Correct *of all 467* | Right source, wrong number |
+|---|---:|---:|---:|---:|
+| Claude Opus 5 | 456/467 | 45.9% | **33.6%** | 55.2% |
+| Gemini 3.6 Flash | 436/467 | 43.5% | 28.5% | 58.2% |
+| Grok 4.6 | 150/467 | **66.7%** | 12.0% | 29.8% |
 
-Full write-up, exemplars, and the evidence that the scorer itself is sound:
-**[FINDINGS.md](./FINDINGS.md)**. Earlier 45-question pilot:
-[FINDINGS-pilot.md](./FINDINGS-pilot.md).
+Those two middle columns rank in opposite orders, and that is the point. **Grok
+refused 317 of 467 questions** and was right two-thirds of the time when it did
+answer. Claude refused 11 and answers nearly everything — most correct answers
+overall, and the most confidently wrong ones.
+
+And for both talkative models, **the majority of correctly-attributed answers
+still carry a wrong number.** A wrong figure with no source gets caught. A wrong
+figure under the right publisher's name looks like diligence.
+
+Full write-up, caveats, and the record of the scorer's own bugs:
+**[FINDINGS.md](./FINDINGS.md)**.
 
 ## Status
 

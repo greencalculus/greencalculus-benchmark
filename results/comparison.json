@@ -1,0 +1,53 @@
+{
+ "claude-opus-5": {
+  "summary": {
+   "n": 467,
+   "answered": 456,
+   "declined": 8,
+   "hedged_but_answered": 94,
+   "unscoreable_units": 109,
+   "scoreable": 342,
+   "within_10pct": 45.9,
+   "within_50pct": 78.7,
+   "confidently_wrong": 21.3,
+   "cited_a_source": 75.2,
+   "citation_correct_of_cited": 90.0,
+   "right_source_wrong_number": 55.2
+  },
+  "n_answers": 467
+ },
+ "gemini-3.6-flash": {
+  "summary": {
+   "n": 467,
+   "answered": 436,
+   "declined": 26,
+   "hedged_but_answered": 35,
+   "unscoreable_units": 126,
+   "scoreable": 306,
+   "within_10pct": 43.5,
+   "within_50pct": 78.4,
+   "confidently_wrong": 21.6,
+   "cited_a_source": 76.9,
+   "citation_correct_of_cited": 91.9,
+   "right_source_wrong_number": 58.2
+  },
+  "n_answers": 467
+ },
+ "grok-4.6": {
+  "summary": {
+   "n": 467,
+   "answered": 150,
+   "declined": 309,
+   "hedged_but_answered": 38,
+   "unscoreable_units": 63,
+   "scoreable": 84,
+   "within_10pct": 66.7,
+   "within_50pct": 88.1,
+   "confidently_wrong": 11.9,
+   "cited_a_source": 22.1,
+   "citation_correct_of_cited": 82.5,
+   "right_source_wrong_number": 29.8
+  },
+  "n_answers": 467
+ }
+}

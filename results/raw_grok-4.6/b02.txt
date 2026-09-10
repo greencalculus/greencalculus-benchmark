@@ -1,0 +1,30 @@
+[business_travel.fra.road.car_diesel] I don't know the current ADEME Base Carbone factor for a diesel car per km.
+[business_travel.sea.ferry.average] I don't know the DEFRA greenhouse-gas conversion factor for average passenger ferry travel per passenger.km.
+[business_travel.usa.rail.transit] I don't know the EPA emission factor for transit rail per passenger.mile.
+[business_travel.aus.road.hire_car.by_drive.internal_combustion_engine_light_bus.per_vehicle_km] I don't know the Australian Government ERF factor for an ICE light bus hire car per vehicle.km.
+[business_travel.fra.rail.ter] I don't know the ADEME factor for TER rail per passenger.km.
+[business_travel.land.car.segment.supermini.bev] I don't know the DEFRA factor for a supermini BEV per km.
+[business_travel.usa.air.short_haul] I don't know the EPA factor for short-haul air travel per passenger.mile.
+[business_travel.aus.road.hire_car.by_fuel.electric_diesel_wagon.per_vehicle_km] I don't know the Australian Government ERF factor for an electric/diesel wagon hire car per vehicle.km.
+[carbon_pricing.jpn_tokyo.ets] I don't know a specific Tokyo CaT carbon price to report as a factor.
+[carbon_pricing.eu.ets] I don't know a single official EU ETS carbon price to report as a fixed emission factor (the allowance price fluctuates).
+[carbon_pricing.twn.carbon_tax] I don't know Taiwan's carbon fee rate as a specific factor.
+[carbon_pricing.nor.carbon_tax] I don't know Norway's current carbon tax rate as a specific factor.
+[carbon_pricing.usa_rggi.ets] I don't know a specific RGGI carbon price to report as a factor.
+[carbon_pricing.esp.carbon_tax] I don't know Spain's carbon tax rate as a specific factor.
+[carbon_pricing.swe.carbon_tax] I don't know Sweden's current carbon tax rate as a specific factor.
+[carbon_pricing.hun.carbon_tax] I don't know Hungary's carbon tax rate as a specific factor.
+[carbon_pricing.aus.ets] I don't know a specific Australia Safeguard Mechanism carbon price to report as a factor.
+[carbon_pricing.mex_queretaro.carbon_tax] I don't know Queretaro's carbon tax rate as a specific factor.
+[carbon_pricing.nld.carbon_tax] I don't know the Netherlands carbon tax rate as a specific factor.
+[carbon_pricing.zaf.carbon_tax] I don't know South Africa's carbon tax rate as a specific factor.
+[cbam.country.ind.7326_90_94.articles_iron] I don't know the CBAM Annex I default direct-emissions factor for India CN 7326 90 94.
+[reporting.cbam.indirect.namibia] I don't know the CBAM Annex II indirect emission factor for Namibia.
+[cbam.country.chn.7609_00_00.aluminium_tube_pipe] I don't know the CBAM Annex I default direct-emissions factor for China CN 7609 00 00.
+[reporting.cbam.indirect.turkiye] I don't know the CBAM Annex II indirect emission factor for Türkiye.
+[cbam.country.rus.7207_11_90.semi_finished_products] I don't know the CBAM Annex I default direct-emissions factor for Russia CN 7207 11 90.
+[reporting.cbam.indirect.tanzania_united] I don't know the CBAM Annex II indirect emission factor for Tanzania.
+[cbam.country.rus.7207_11_16.semi_finished_products] I don't know the CBAM Annex I default direct-emissions factor for Russia CN 7207 11 16.
+[reporting.cbam.indirect.zambia] I don't know the CBAM Annex II indirect emission factor for Zambia.
+[cbam.country.ind.7307_92.threaded_elbows_bends] I don't know the CBAM Annex I default direct-emissions factor for India CN 7307 92.
+[reporting.cbam.indirect.georgia] I don't know the CBAM Annex II indirect emission factor for Georgia.

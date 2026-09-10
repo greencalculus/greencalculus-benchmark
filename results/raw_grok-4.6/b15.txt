@@ -1,0 +1,30 @@
+[spend_based.can.ioic.bs23c20.oil_and_gas_engineering_construction] I don't know.
+[spend_based.eu.rou.nace.k.financial_and_insurance_activities] I don't know.
+[spend_based.useeio.sectors.cement_manufacturing] I don't know.
+[spend_based.defra.sectors.real_estate] I don't know.
+[spend_based.uk.sic.r.arts_entertainment_and_recreation] I don't know.
+[spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers] I don't know.
+[spend_based.can.ioic.bs81300.professional_and_similar_organisations] I don't know.
+[spend_based.eu.svk.nace.c29.manufacture_of_motor_vehicles_trailers_and_semi_tr] I don't know.
+[spend_based.useeio.sectors.pharmaceuticals] I don't know.
+[transmission_distribution.gbr.district_heat] I don't know.
+[transmission_distribution.aus.state.wa_nwis.electricity] I don't know.
+[transmission_distribution.fra.electricity] I don't know.
+[transmission_distribution.cuw.loss_rate] I don't know.
+[transmission_distribution.gbr.electricity] I don't know the exact current DEFRA figure; it is on the order of 0.018 kg CO2e/kWh in recent UK Government GHG Conversion Factors.
+[transmission_distribution.aus.state.vic.electricity] I don't know.
+[transmission_distribution.col.loss_rate] I don't know.
+[transmission_distribution.aus.state.nt_dkis.electricity] I don't know.
+[transmission_distribution.ukr.loss_rate] I don't know.
+[transmission_distribution.aus.state.qld.electricity] I don't know.
+[waste.incineration.co2.cc.msw.garden_park] 0.49 of dry weight (49% C), IPCC 2006 Guidelines Volume 5 Table 5.2.
+[waste.wastewater.domestic.mcf.treated.latrine_dry_communal] 0.5 (dimensionless MCF), IPCC 2006 Guidelines Volume 5 Table 6.3.
+[waste.incineration.co2.cc.msw.other_inert] 0.03 of dry weight (3% C), IPCC 2006 Guidelines Volume 5 Table 5.2.
+[waste.landfill.ox.uncovered] 0 (dimensionless), IPCC 2006 Guidelines Volume 5 Chapter 3 default OX for uncovered SWDS.
+[waste.wastewater.domestic.mcf.treated.latrine_dry_small] 0.1 (dimensionless MCF), IPCC 2006 Guidelines Volume 5 Table 6.3.
+[waste.wastewater.domestic.bod_per_capita.deu] 60 g BOD5 person⁻¹ day⁻¹, IPCC 2006 default for Europe / Table 6.4; I do not recall a distinct Germany-only figure.
+[waste.wastewater.industrial.mcf.treated.aerobic_well_managed] 0 (dimensionless MCF), IPCC 2006 Guidelines Volume 5 Table 6.8.
+[waste.incineration.co2.dm.msw.other_inert] 0.90 of wet weight (90% dry matter), IPCC 2006 Guidelines Volume 5 Table 5.2.
+[waste.landfill.k.paper_textiles.boreal_temperate_wet] 0.06 yr⁻¹, IPCC 2006 Guidelines Volume 5 Table 3.3 (paper/textiles, boreal/temperate wet).
+[waste.wastewater.n2o.advanced_centralized_plant.per_capita] 3.2 g N2O person⁻¹ year⁻¹, IPCC 2006 Guidelines Volume 5 Chapter 6.
+[waste.landfill.doc.industrial.rubber] 0.39 kg DOC per kg wet waste, IPCC 2006 Guidelines (rubber and leather default); I do not recall a separate industrial-rubber row.

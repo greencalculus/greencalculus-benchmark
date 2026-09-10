@@ -1,0 +1,59 @@
+[food.diet.pescatarian.annual] According to Scarborough et al. (2023, Nature Food), a pescatarian diet generates approximately 1.73 tonnes CO2e per person per year (4.74 kg CO2e per day).
+
+[food_pcf.fra.madeleine_cake_pure_butter] According to the AGRIBALYSE v3.1 database (ADEME), pure butter madeleine cake has an emission factor of approximately 3.33 kg CO2e per kg of product.
+
+[food_pcf.fra.cheese_souffle] According to AGRIBALYSE v3.1 (ADEME), cheese soufflé has an emission factor of approximately 3.82 kg CO2e per kg of product.
+
+[food_pcf.fra.parsley_dried] According to AGRIBALYSE v3.1 (ADEME), dried parsley has an emission factor of approximately 11.8 kg CO2e per kg of product due to the dehydration process.
+
+[food_pcf.fra.spanish_style_tortilla_with_onions_omelette_with_potatoes_an] According to AGRIBALYSE v3.1 (ADEME), Spanish-style tortilla with potatoes and onions has an emission factor of approximately 2.45 kg CO2e per kg of product.
+
+[food_pcf.fra.grapeseed_oil] According to AGRIBALYSE v3.1 (ADEME), grapeseed oil has an emission factor of approximately 5.32 kg CO2e per kg of product.
+
+[food_pcf.fra.coconut_oil_coprah] According to AGRIBALYSE v3.1 (ADEME), coconut oil (copra) has an emission factor of approximately 3.47 kg CO2e per kg of product.
+
+[food_pcf.fra.orange_juice_home_made] According to AGRIBALYSE v3.1 (ADEME), home-made squeezed orange juice has an emission factor of approximately 0.95 kg CO2e per kg of product.
+
+[food_pcf.fra.kombu_or_japanese_kelp_laminaria_japonica_dried_or_dehydrate] According to AGRIBALYSE v3.1 (ADEME), dried kombu / Japanese kelp has an emission factor of approximately 5.20 kg CO2e per kg of product.
+
+[food_pcf.fra.mussel_boiled_cooked_in_water] According to AGRIBALYSE v3.1 (ADEME), boiled mussels have an emission factor of approximately 1.35 kg CO2e per kg of product.
+
+[food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed] According to AGRIBALYSE v3.1 (ADEME), pre-packed sponge cake with fruit covering has an emission factor of approximately 3.12 kg CO2e per kg of product.
+
+[food_pcf.fra.soup_tomatoes_prepacked_to_be_reheated] According to AGRIBALYSE v3.1 (ADEME), prepacked tomato soup to be reheated has an emission factor of approximately 0.92 kg CO2e per kg of product.
+
+[food_pcf.fra.brioche_filled_with_chocolate_drops] According to AGRIBALYSE v3.1 (ADEME), brioche filled with chocolate drops has an emission factor of approximately 3.54 kg CO2e per kg of product.
+
+[freight.sea.tonne_km] According to UK DESNZ / IMO GHG studies, generic bulk carrier ocean freight emits approximately 0.0084 kg CO2e per tonne-km.
+
+[freight.road_hgv.tonne_km] According to UK DESNZ GHG Conversion Factors, an average laden road HGV freight emits approximately 0.108 kg CO2e per tonne-km.
+
+[freight.air.tonne_km] According to UK DESNZ GHG Conversion Factors, long-haul belly air freight emits approximately 0.602 kg CO2e per tonne-km (excluding radiative forcing).
+
+[freight.rail.tonne_km] According to UK DESNZ GHG Conversion Factors, generic average rail freight emits approximately 0.027 kg CO2e per tonne-km.
+
+[freight_detailed.sea.container.intra_north_america.reefer] According to the GLEC Framework (SmartWay / CCWG), Intra-North America reefer container sea transport emits approximately 0.098 kg CO2e per TEU-km.
+
+[freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo] According to the IMO 4th GHG Study / GLEC Framework, a 10,000–19,999 dwt chemical tanker running on MDO emits approximately 0.024 kg CO2e per tonne-km.
+
+[freight_detailed.road.na.ltl_dry_van.diesel] According to the GLEC Framework / US EPA SmartWay, North American diesel LTL dry van freight emits approximately 0.215 kg CO2e per tonne-km.
+
+[freight_detailed.sea.container.asia_to_north_oceania.dry] According to the GLEC Framework / CCWG, dry container sea shipping from Asia to North Oceania emits approximately 0.052 kg CO2e per TEU-km.
+
+[freight_detailed.sea.refrigerated_bulk.dwt_6000_9999.vlsfo] According to the IMO 4th GHG Study / GLEC Framework, a 6,000–9,999 dwt refrigerated bulk vessel burning VLSFO emits approximately 0.048 kg CO2e per tonne-km.
+
+[freight_detailed.sea.ferry_ropax.gt_2000_4999.hfo] According to the IMO 4th GHG Study / GLEC Framework, a 2,000–4,999 GT RoPax ferry operating on HFO emits approximately 0.210 kg CO2e per tonne-km.
+
+[freight_detailed.sea.bulk_carrier.dwt_60000_99999.vlsfo] According to the IMO 4th GHG Study / GLEC Framework, a 60,000–99,999 dwt bulk carrier burning VLSFO emits approximately 0.0062 kg CO2e per tonne-km.
+
+[freight_detailed.sea.refrigerated_bulk.dwt_2000_5999.hfo] According to the IMO 4th GHG Study / GLEC Framework, a 2,000–5,999 dwt refrigerated bulk ship running on HFO emits approximately 0.075 kg CO2e per tonne-km.
+
+[freight_detailed.rail.eu.diesel.cars] According to EcoTransIT / GLEC Framework, EU diesel rail freight for automotive vehicle transport emits approximately 0.054 kg CO2e per tonne-km.
+
+[freight_detailed.road.china.dump.mdt_4_5_5_5t.diesel] According to the GLEC Framework, a Chinese 4.5–5.5t GVW diesel dump truck emits approximately 0.285 kg CO2e per tonne-km.
+
+[freight_detailed.road.eu_sa.rigid_7_5_12t.avg.electric] According to EcoTransIT / GLEC Framework, an 7.5–12t electric rigid truck in EU/SA emits approximately 0.042 kg CO2e per tonne-km on an average grid mix.
+
+[freight_detailed.sea.general_cargo.dwt_gt_20000.vlsfo] According to the IMO 4th GHG Study / GLEC Framework, a 20,000+ dwt general cargo ship burning VLSFO emits approximately 0.0145 kg CO2e per tonne-km.
+
+[fuel_properties.lpg.gross_cv_gj_tonne] According to UK DESNZ / IPCC fuel property tables, Liquefied Petroleum Gas (LPG) has a gross calorific value (GCV) of approximately 49.3 GJ per tonne.
