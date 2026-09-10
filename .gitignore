@@ -1,2 +1,15 @@
 __pycache__/
 *.pyc
+
+# ── THE HELD-OUT SET MUST NEVER BE COMMITTED ────────────────────────────────
+# holdout.json is the private half of the benchmark. Its whole value is that no
+# model has seen it. One commit destroys it permanently and irreversibly — there
+# is no un-publishing a git object.
+#
+# holdout-manifest.json IS committed on purpose: it pins the set's shape and
+# SHA-256 in public so a later release can be verified, without revealing a
+# single question. See CANARY.md.
+#
+# A CI job (.github/workflows/holdout-guard.yml) fails the build if this file
+# ever becomes tracked. Do not "temporarily" add it to check something.
+holdout.json

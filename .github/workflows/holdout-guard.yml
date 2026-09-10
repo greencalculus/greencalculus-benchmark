@@ -1,0 +1,64 @@
+name: Held-out guard
+
+# The held-out split is only worth something while it is unpublished. A single
+# commit ends that, permanently — git objects cannot be recalled once pushed and
+# forks may already have them. So this runs on every push and every PR, and it
+# is the one check in this repo that should never be made "advisory".
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: holdout.json must not be tracked
+        run: |
+          if git ls-files --error-unmatch holdout.json >/dev/null 2>&1; then
+            echo "::error file=holdout.json::The held-out question set is tracked in git."
+            echo "The benchmark's private split has been published. This is not"
+            echo "recoverable by deleting the file — rotate the held-out set instead:"
+            echo "  python3 build_questions.py --holdout   (with a new HOLDOUT_SEED)"
+            exit 1
+          fi
+          echo "holdout.json is not tracked."
+
+      - name: the manifest must not leak its contents
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          m = json.load(open("holdout-manifest.json"))
+          bad = [k for k in ("questions", "ids", "truth") if k in m]
+          if bad:
+              sys.exit(f"holdout-manifest.json carries {bad} — it must record shape only")
+          if m.get("contents_published") is not False:
+              sys.exit("holdout-manifest.json no longer declares contents_published: false")
+          for f in ("n", "sha256_of_holdout_json", "seed"):
+              if f not in m:
+                  sys.exit(f"holdout-manifest.json is missing {f}")
+          print(f"manifest OK — {m['n']} held-out questions, shape only")
+          PY
+
+      - name: the canary must still be present and identical in both places
+        run: |
+          python3 - <<'PY'
+          import json, re, sys, pathlib
+          q = json.load(open("questions.json"))
+          if "canary" not in q:
+              sys.exit("questions.json has lost its canary")
+          doc = pathlib.Path("CANARY.md").read_text()
+          guid = re.search(r"canary GUID ([0-9a-f-]{36})", q["canary"])
+          if not guid:
+              sys.exit("questions.json canary is malformed")
+          if guid.group(1) not in doc:
+              sys.exit("CANARY.md and questions.json disagree on the GUID")
+          print(f"canary present and consistent: {guid.group(1)}")
+          PY
