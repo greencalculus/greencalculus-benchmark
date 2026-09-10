@@ -28,11 +28,11 @@ reader stop checking.
 
 ## Pilot result
 
-Claude Opus 5, unaided, 45 questions: **~47% within 10%** of the sourced value,
-78% named a source, and of those 83% named the right one — so a correct-looking
-citation sits beside a wrong number about half the time. See
-[FINDINGS-pilot.md](./FINDINGS-pilot.md), which also records why the automated
-scorer's own headline (35.6%) is wrong and must be fixed before publication.
+Claude Opus 5, unaided, 45 questions, 0 tool uses: **47.2% within 10%** of the
+sourced value (of 36 scoreable; 8 had units too ambiguous to reconcile and are
+excluded rather than counted wrong). 84% named a source and 90% of those named
+the right one — but **when it named the right source, the number was still wrong
+51.7% of the time.** See [FINDINGS-pilot.md](./FINDINGS-pilot.md).
 
 ## Status
 
@@ -42,9 +42,9 @@ scorer's own headline (35.6%) is wrong and must be fixed before publication.
   bare year (which must not be read as a value).
 - **Pilot run** against Claude Opus 5 (45 of 473 questions) — see above.
 - **Not yet run against other vendors.** GPT/Gemini need API keys and spend money.
-- **`score.py` must not be used for a published figure until it does unit
-  reconciliation and unit-aware number extraction.** The pilot proved it
-  understates accuracy badly.
+- **`score.py` now does unit reconciliation** ([`units.py`](./units.py)) and
+  unit-aware, range-aware extraction. Validated against independent hand
+  adjudication of the pilot: automated 47.2% vs hand-read ~47%.
 
 A known scoring bias was found and fixed during development: a refusal that
 name-drops a publisher ("consult the DEFRA tables") was counting as a correct

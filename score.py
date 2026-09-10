@@ -1,64 +1,87 @@
 #!/usr/bin/env python3
 """Score a model's unaided answers against the sourced ground truth.
 
-STATUS: this scorer UNDERSTATES accuracy and must not produce a published
-figure yet. It has no unit reconciliation (a correct answer in kg C/GJ scored
-against a truth in tonne C/GJ reads as a 366,179% error) and its number
-extraction takes the first plausible number, which picks SEK out of an answer
-that also gave USD. See FINDINGS-pilot.md. Fixing both is the next task.
-
-
 Four things are measured, and the fourth is the one that matters:
 
   answered          did it give a number at all, or decline
-  value_within_10   the number is within 10% of the sourced value
+  value_within_10   the number is within 10% of the sourced value, AFTER unit
+                    reconciliation (see units.py)
   cited             it named a publisher or document
-  citation_correct  the source it named is the source the number actually
-                    comes from — a model that cites DEFRA for an EPA figure
-                    is more dangerous than one that cites nothing
+  citation_correct  the source it named is the source the number actually comes
+                    from — a model that cites DEFRA for an EPA figure is more
+                    dangerous than one that cites nothing
+
+Three outcomes per question, not two: correct, wrong, or UNSCOREABLE. A pair of
+units this scorer cannot reconcile is excluded from the accuracy denominator and
+reported separately, never counted as a wrong answer.
 """
 import json, re, unicodedata
+from units import reconcile
 
-NUM = re.compile(r"(?<![\w.])(\d{1,3}(?:,\d{3})+|\d+)(?:\.(\d+))?(?:\s*[eE]\s*([+-]?\d+))?")
+RANGE = re.compile(
+    r"(\d[\d,]*(?:\.\d+)?)\s*(?:[-–—]|\bto\b)\s*(\d[\d,]*(?:\.\d+)?)\s*([^,;.()]{0,45})")
+SINGLE = re.compile(r"(?<![\w.])(\d[\d,]*(?:\.\d+)?)(?:\s*[eE]\s*([+-]?\d+))?\s*([^,;.()]{0,45})")
 
-# publisher -> the strings a model plausibly uses for it
 ALIASES = {
     "DEFRA": ["defra", "desnz", "beis", "uk government", "department for energy security"],
-    "EPA": ["epa", "environmental protection agency", "egrid"],
+    "EPA": ["epa", "environmental protection agency", "egrid", "warm"],
     "IPCC": ["ipcc", "intergovernmental panel"],
     "EMBER": ["ember"],
-    "ADEME": ["ademe", "base carbone", "agribalyse"],
+    "ADEME": ["ademe", "base carbone", "agribalyse", "base empreinte"],
     "EUROSTAT": ["eurostat"],
-    "ECCC": ["eccc", "environment and climate change canada"],
-    "DCCEEW": ["dcceew", "nga factors", "australian national greenhouse"],
-    "WORLD_BANK": ["world bank"],
+    "ECCC": ["eccc", "environment and climate change canada", "canada nir"],
+    "DCCEEW": ["dcceew", "nga factors", "national greenhouse accounts"],
+    "WORLD": ["world bank"],
     "STATCAN": ["statistics canada", "statcan"],
     "OEKOBAUDAT": ["ökobaudat", "okobaudat", "oekobaudat"],
     "GLEC": ["glec", "smart freight"],
-    "NETL": ["netl", "national energy technology"],
+    "NETL": ["netl"],
     "CBAM": ["cbam", "carbon border"],
     "USEEIO": ["useeio"],
+    "GCP": ["google cloud", "google"],
+    "NGFS": ["ngfs"],
+    "CSRD": ["csrd", "esrs"],
+    "CA": ["sb-253", "sb253", "sb-261", "california"],
+    "GHGP": ["ghg protocol", "greenhouse gas protocol"],
+    "NEED": ["need", "national energy efficiency data"],
+    "SCARBOROUGH": ["scarborough"],
+    "AU": ["australian government"],
 }
 DECLINE = ["i don't have", "i do not have", "cannot provide", "can't provide", "unable to",
-           "no reliable", "i'd recommend checking", "consult the", "varies", "i don't know"]
+           "no reliable", "i don't know", "i do not know", "don't reliably recall",
+           "cannot recall", "can't recall", "would not stand behind", "i don't recall",
+           "do not reliably know"]
 
 
 def norm(s):
     return unicodedata.normalize("NFKD", (s or "")).lower()
 
 
-def extract_number(text):
-    """First plausible factor-like number in the text."""
-    for m in NUM.finditer(text or ""):
-        whole, frac, exp = m.group(1).replace(",", ""), m.group(2), m.group(3)
-        # skip bare years
-        if not frac and not exp and re.fullmatch(r"(19|20)\d{2}", whole):
+def candidates(text):
+    """[(value, trailing_unit_text)] — ranges collapse to their midpoint."""
+    out, seen = [], set()
+    for m in RANGE.finditer(text or ""):
+        lo, hi = float(m.group(1).replace(",", "")), float(m.group(2).replace(",", ""))
+        out.append(((lo + hi) / 2.0, m.group(3)))
+        seen.update(range(m.start(), m.end()))
+    for m in SINGLE.finditer(text or ""):
+        if m.start() in seen:
             continue
-        v = float(whole + ("." + frac if frac else ""))
-        if exp:
-            v *= 10 ** int(exp)
-        return v
-    return None
+        whole, exp, unit = m.group(1).replace(",", ""), m.group(2), m.group(3)
+        if "." not in whole and not exp and re.fullmatch(r"(19|20)\d{2}", whole):
+            continue  # a bare year is not a value
+        v = float(whole) * (10 ** int(exp) if exp else 1)
+        out.append((v, unit))
+    return out
+
+
+def best_value(answer, truth_unit):
+    """The first candidate whose unit reconciles with the truth's unit."""
+    for v, unit in candidates(answer):
+        conv, note = reconcile(v, unit, truth_unit)
+        if conv is not None:
+            return conv, unit, note
+    return None, None, None
 
 
 def source_family(source_id):
@@ -71,34 +94,33 @@ def source_family(source_id):
 
 def cited_families(text):
     t = norm(text)
-    return {fam for fam, words in ALIASES.items() if any(w in t for w in words)}
+    return {f for f, words in ALIASES.items() if any(w in t for w in words)}
 
 
 def score_one(q, answer):
     truth = q["truth"]
     t = norm(answer)
-    declined = any(d in t for d in DECLINE) and extract_number(answer) is None
-    got = extract_number(answer)
-    within = None
+    raw = candidates(answer)
+    hedged = any(d in t for d in DECLINE)
+    declined = hedged and not raw
+    got, used_unit, note = best_value(answer, truth["unit"])
+    unscoreable = bool(raw) and got is None
+
+    rel = None
     if got is not None and truth["value"]:
-        within = abs(got - truth["value"]) / abs(truth["value"])
-    # Citations only count on an answer that actually gave a number. A refusal
-    # that name-drops a publisher ("consult the DEFRA tables") is not a citation,
-    # and counting it inflates the citation-accuracy figure.
-    fams = cited_families(answer) if got is not None else set()
+        rel = abs(got - truth["value"]) / abs(truth["value"])
+
+    fams = cited_families(answer) if raw else set()
     want = source_family(truth["source_id"])
     return {
-        "id": q["id"],
-        "section": q["section"],
-        "answered": got is not None,
-        "declined": declined,
-        "got": got,
-        "expected": truth["value"],
-        "rel_error": within,
-        "within_10pct": bool(within is not None and within <= 0.10),
-        "within_50pct": bool(within is not None and within <= 0.50),
-        "cited": bool(fams),
-        "cited_families": sorted(fams),
+        "id": q["id"], "section": q["section"],
+        "answered": bool(raw), "declined": declined, "hedged": hedged,
+        "unscoreable": unscoreable, "unit_used": used_unit, "unit_note": note,
+        "got": got, "expected": truth["value"], "truth_unit": truth["unit"],
+        "rel_error": rel,
+        "within_10pct": bool(rel is not None and rel <= 0.10),
+        "within_50pct": bool(rel is not None and rel <= 0.50),
+        "cited": bool(fams), "cited_families": sorted(fams),
         "expected_family": want,
         "citation_correct": bool(want and want in fams),
         "citation_wrong": bool(fams and want and want not in fams),
@@ -109,19 +131,24 @@ def summarise(scored):
     n = len(scored)
     if not n:
         return {}
-    answered = [s for s in scored if s["answered"]]
+    scoreable = [s for s in scored if s["rel_error"] is not None]
     cited = [s for s in scored if s["cited"]]
-    pct = lambda k: round(100 * k / n, 1)
+    d = len(scoreable) or 1
     return {
         "n": n,
-        "answered_pct": pct(len(answered)),
-        "declined_pct": pct(sum(1 for s in scored if s["declined"])),
-        "within_10pct_of_all": pct(sum(1 for s in scored if s["within_10pct"])),
-        "within_10pct_of_answered": round(100 * sum(1 for s in answered if s["within_10pct"]) / len(answered), 1) if answered else None,
-        "within_50pct_of_answered": round(100 * sum(1 for s in answered if s["within_50pct"]) / len(answered), 1) if answered else None,
-        "cited_a_source_pct": pct(len(cited)),
+        "answered": sum(1 for s in scored if s["answered"]),
+        "declined": sum(1 for s in scored if s["declined"]),
+        "hedged_but_answered": sum(1 for s in scored if s["hedged"] and s["answered"]),
+        "unscoreable_units": sum(1 for s in scored if s["unscoreable"]),
+        "scoreable": len(scoreable),
+        "within_10pct": round(100 * sum(1 for s in scoreable if s["within_10pct"]) / d, 1),
+        "within_50pct": round(100 * sum(1 for s in scoreable if s["within_50pct"]) / d, 1),
+        "confidently_wrong": round(100 * sum(1 for s in scoreable if not s["within_50pct"]) / d, 1),
+        "cited_a_source": round(100 * len(cited) / n, 1),
         "citation_correct_of_cited": round(100 * sum(1 for s in cited if s["citation_correct"]) / len(cited), 1) if cited else None,
-        "confidently_wrong_pct": pct(sum(1 for s in scored if s["answered"] and not s["within_50pct"])),
+        "right_source_wrong_number": round(
+            100 * sum(1 for s in scoreable if s["citation_correct"] and not s["within_10pct"]) /
+            (sum(1 for s in scoreable if s["citation_correct"]) or 1), 1),
     }
 
 

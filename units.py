@@ -1,0 +1,145 @@
+"""Unit reconciliation for benchmark scoring.
+
+A model answering "63 kgCO2/GJ" against a truth of "0.0172 tonne C per GJ" is
+exactly right; a naive comparison calls it a 366,179% error. This module makes
+the comparison dimensional instead of numeric.
+
+Design rule: when a unit cannot be reconciled, say so. An unreconcilable pair is
+reported as UNSCOREABLE, never silently counted as a wrong answer — a scorer
+that guesses is the same failure the benchmark exists to measure.
+"""
+import re
+
+# multiplier to the base unit of each dimension
+MASS = {  # base: kg
+    "mg": 1e-6, "milligram": 1e-6, "g": 1e-3, "gram": 1e-3, "gramme": 1e-3,
+    "kg": 1.0, "kilogram": 1.0, "kilogramme": 1.0,
+    "t": 1000.0, "tonne": 1000.0, "ton": 1000.0, "tonnes": 1000.0, "mt": 1000.0,
+    "metric ton": 1000.0, "metric tonne": 1000.0, "tco2e": 1000.0, "tco2": 1000.0,
+    "kt": 1e6, "gg": 1e6, "tg": 1e9,
+}
+ENERGY = {"wh": 1e-3, "kwh": 1.0, "mwh": 1e3, "gwh": 1e6, "twh": 1e9,
+          "j": 2.7778e-7, "kj": 2.7778e-4, "mj": 0.2778, "gj": 277.78, "tj": 277_780.0,
+          "btu": 2.931e-4, "mmbtu": 293.07, "therm": 29.3071}
+VOLUME = {"ml": 1e-3, "l": 1.0, "litre": 1.0, "liter": 1.0, "m3": 1000.0,
+          "gallon": 3.78541, "gal": 3.78541}
+LENGTH = {"m": 1e-3, "km": 1.0, "mile": 1.60934, "mi": 1.60934}
+DIMENSIONLESS = {"fraction": 1.0, "ratio": 1.0, "dimensionless": 1.0, "%": 0.01,
+                 "percent": 0.01, "pct": 0.01}
+CURRENCY = {"usd": 1.0, "us$": 1.0, "$": 1.0, "eur": 1.0, "gbp": 1.0, "sek": None}
+
+# carbon-species conversion: 1 kg C == 44/12 kg CO2
+C_TO_CO2 = 44.0 / 12.0
+
+_ALIAS = [(r"co2e|co2-e|co₂e|co2 eq\w*|carbon dioxide equivalent", "co2e"),
+          (r"\bco2\b|co₂", "co2"),
+          (r"\bch4\b|methane", "ch4"), (r"\bn2o\b", "n2o"), (r"\bsf6\b", "sf6"),
+          (r"\bcarbon\b(?! dioxide)|\bc\b(?!o)", "c")]
+
+
+def _clean(u):
+    u = (u or "").lower().strip()
+    u = u.replace("−", "-").replace("·", " ").replace("/", " per ")
+    u = re.sub(r"\(.*?\)", " ", u)
+    u = re.sub(r"[^a-z0-9%$ .\-]+", " ", u)
+    # "kgco2e" / "tco2" / "gsf6" arrive glued; split the mass prefix off the species
+    u = re.sub(r"\b(mg|kg|g|t|tonne|kt|gg|tg)(co2e|co2|ch4|n2o|sf6|c)\b", r"\1 \2", u)
+    return re.sub(r"\s+", " ", u).strip()
+
+
+def _species(u):
+    for pat, name in _ALIAS:
+        if re.search(pat, u):
+            return name
+    return None
+
+
+def _scale(tok, table):
+    tok = tok.strip()
+    return table.get(tok)
+
+
+def parse_unit(u):
+    """-> dict(num_scale, species, den_dim, den_scale) or None if unparseable."""
+    u = _clean(u)
+    if not u:
+        return None
+    for k, v in DIMENSIONLESS.items():
+        if u == k or u.startswith(k + " "):
+            return {"num_scale": v, "species": None, "den_dim": None, "den_scale": 1.0}
+    num, den = (u.split(" per ", 1) + [""])[:2] if " per " in u else (u, "")
+    sp = _species(num)
+    num_scale = None
+    # leading mass/currency token
+    m = re.match(r"([a-z$%]+(?:\s+ton(?:ne)?)?)", num)
+    if m:
+        tok = m.group(1)
+        for table in (MASS, CURRENCY, ENERGY, VOLUME):
+            if tok in table:
+                num_scale = table[tok]
+                break
+    if num_scale is None:
+        for tok in num.split():
+            for table in (MASS, ENERGY, VOLUME, CURRENCY):
+                if tok in table:
+                    num_scale = table[tok]
+                    break
+            if num_scale is not None:
+                break
+    if num_scale is None:
+        return None
+    den_dim = den_scale = None
+    if den:
+        for name, table in (("energy", ENERGY), ("volume", VOLUME), ("length", LENGTH),
+                            ("mass", MASS)):
+            for tok in den.split():
+                if tok in table:
+                    den_dim, den_scale = name, table[tok]
+                    break
+            if den_dim:
+                break
+        if den_dim is None:
+            den_dim, den_scale = ("other:" + den.split()[0] if den.split() else "other"), 1.0
+    stop = {"of", "per", "the", "a", "good", "product", "basis", "input", "output"}
+    return {"num_scale": num_scale, "species": sp, "den_dim": den_dim,
+            "den_scale": den_scale if den_scale is not None else 1.0,
+            "den_tokens": {t for t in den.split() if t not in stop}}
+
+
+def reconcile(value, model_unit, truth_unit):
+    """Convert `value` from model_unit into truth_unit.
+
+    Returns (converted_value, note) or (None, reason) when the pair cannot be
+    reconciled — the caller must treat that as UNSCOREABLE, not as wrong.
+    """
+    a, b = parse_unit(model_unit), parse_unit(truth_unit)
+    if a is None or b is None:
+        return None, "unit not parseable"
+    if a["num_scale"] is None or b["num_scale"] is None:
+        return None, "unknown numerator unit"
+    # denominators must be the same dimension
+    da, db = a["den_dim"], b["den_dim"]
+    if da != db:
+        both_other = isinstance(da, str) and isinstance(db, str) and \
+            da.startswith("other") and db.startswith("other")
+        # One token set must CONTAIN the other. "per year" vs "per person per
+        # year" is the same basis stated at different length; "per dwelling per
+        # year" vs "per m2 per year" is two different quantities that merely
+        # share the word "year", and must not reconcile.
+        if both_other and a["den_tokens"] and b["den_tokens"] and (
+                a["den_tokens"] <= b["den_tokens"] or b["den_tokens"] <= a["den_tokens"]):
+            pass
+        elif da is None and db is None:
+            pass
+        else:
+            return None, f"denominator mismatch ({da} vs {db})"
+    note = None
+    v = value * a["num_scale"] / b["num_scale"]
+    v = v * (a["den_scale"] / b["den_scale"]) ** -1 if a["den_scale"] and b["den_scale"] else v
+    # carbon species: C vs CO2/CO2e
+    sa, sb = a["species"], b["species"]
+    if sa == "c" and sb in ("co2", "co2e"):
+        v, note = v * C_TO_CO2, "converted kg C -> kg CO2 (x44/12)"
+    elif sb == "c" and sa in ("co2", "co2e"):
+        v, note = v / C_TO_CO2, "converted kg CO2 -> kg C (x12/44)"
+    return v, note
