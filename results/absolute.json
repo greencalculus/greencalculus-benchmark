@@ -1,37 +1,37 @@
 [
  {
   "model": "gemini-3.1-pro-preview",
-  "answered": 85,
-  "refused": 382,
-  "correct": 33,
-  "pct_of_all": 7.1
+  "answered": 77,
+  "refused": 390,
+  "correct": 30,
+  "pct_of_all": 6.4
  },
  {
   "model": "gemini-3.6-flash",
-  "answered": 436,
-  "refused": 31,
-  "correct": 133,
-  "pct_of_all": 28.5
+  "answered": 404,
+  "refused": 63,
+  "correct": 132,
+  "pct_of_all": 28.3
  },
  {
   "model": "gpt-5.5",
-  "answered": 341,
-  "refused": 126,
+  "answered": 326,
+  "refused": 141,
   "correct": 149,
   "pct_of_all": 31.9
  },
  {
   "model": "grok-4.6",
-  "answered": 150,
-  "refused": 317,
-  "correct": 56,
-  "pct_of_all": 12.0
+  "answered": 144,
+  "refused": 323,
+  "correct": 41,
+  "pct_of_all": 8.8
  },
  {
   "model": "claude-opus-5",
-  "answered": 456,
-  "refused": 11,
-  "correct": 157,
-  "pct_of_all": 33.6
+  "answered": 430,
+  "refused": 37,
+  "correct": 144,
+  "pct_of_all": 30.8
  }
 ]

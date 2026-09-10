@@ -30,23 +30,36 @@ reader stop checking.
 
 | Model | Answered | Right *when it answered* | Right *of all 467* | Right source, wrong number |
 |---|---:|---:|---:|---:|
-| Gemini 3.1 Pro | 85 | **67.3%** | 7.1% | 30.6% |
-| Grok 4.6 | 150 | 66.7% | 12.0% | 29.8% |
-| GPT-5.5 | 341 | 58.0% | 31.9% | 41.0% |
-| Claude Opus 5 | 456 | 45.9% | **33.6%** | 55.2% |
-| Gemini 3.6 Flash | 436 | 43.5% | 28.5% | 58.2% |
+| Gemini 3.1 Pro | 77 | **65.2%** | 6.4% | 35.3% |
+| Grok 4.6 | 144 | 62.1% | 8.8% | 31.6% |
+| GPT-5.5 | 326 | 58.2% | **31.9%** | 41.0% |
+| Claude Opus 5 | 430 | 45.7% | 30.8% | 54.1% |
+| Gemini 3.6 Flash | 404 | 41.9% | 28.3% | 58.8% |
 
 Those middle columns rank in opposite orders. **The more a model answers, the
-less each answer is worth** — and the last column sorts with talkativeness almost
-perfectly.
+less each answer is worth** — the last column sorts with talkativeness.
 
-The cleanest evidence is one vendor at two tiers: **Gemini Pro answers 85
-questions at 67% accuracy; Gemini Flash answers 436 at 43.5%.** Same company,
-same knowledge — and the fast tier, the one that actually gets deployed behind a
-production pipeline, is wrong about the number *more often than not* even when it
-names the right publisher.
+One vendor, two tiers, no cross-vendor argument: **Gemini Pro answers 77
+questions at 65.2%; Gemini Flash answers 404 at 41.9%** — and the fast tier, the
+one that actually gets deployed behind a production pipeline, is wrong about the
+number more often than not even when it names the right publisher.
 
-Full write-up, caveats, and the record of the scorer's own four bugs:
+## …and connecting GreenCalculus fixes it
+
+90 questions, paired, same model with and without two keyless lookup tools:
+
+| | Without tools | With GreenCalculus |
+|---|---|---|
+| Claude Opus 5 — within 10% | 37.1% | **98.7%** |
+| Claude Opus 5 — off by >50% | 25.8% | **1.3%** |
+| GPT-5.5 — within 10% | 50.0% | **100.0%** |
+| GPT-5.5 — off by >50% | 19.6% | **0.0%** |
+
+About **+61 points** for both, at 1.0–1.6 tool calls per question. The model is
+not handed the answer — it searches, picks the factor and reads the value, so
+this measures the integration, not a rigged prompt.
+
+Full write-up, caveats, and the log of the scorer's own six bugs:
 **[FINDINGS.md](./FINDINGS.md)**.
 
 ## Status

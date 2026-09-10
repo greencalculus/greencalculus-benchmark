@@ -1,0 +1,89 @@
+    4/90 1 calls  atmospheric.ch4.tg_per_ppb                   [atmospheric.ch4.tg_per_ppb] 2.75 Tg CH4 per ppb (1 Tg = 1 M
+    5/90 1 calls  building_energy.gbr.floorband.51_to_100.gas  [building_energy.gbr.floorband.51_to_100.gas] 129.8 kWh per 
+    6/90 2 calls  building_energy.gbr.dwelling.bungalow.gas    [building_energy.gbr.dwelling.bungalow.gas] 11531 kWh per dw
+    7/90 1 calls  business_travel.sea.ferry.average            [business_travel.sea.ferry.average] 0.1127 kg CO2e per passe
+    8/90 2 calls  business_travel.fra.rail.ter                 [business_travel.fra.rail.ter] 0.0277 kg CO2e per passenger.
+    9/90 2 calls  carbon_pricing.jpn_tokyo.ets                 [carbon_pricing.jpn_tokyo.ets] 4.01 USD/tCO2e — World Bank C
+   10/90 1 calls  carbon_pricing.hun.carbon_tax                [carbon_pricing.hun.carbon_tax] 38.84 USD/tCO2e — World Bank
+   11/90 1 calls  cbam.country.kor.7217_20.wire_iron           [cbam.country.kor.7217_20.wire_iron] 2.118 tCO2e per tonne o
+   12/90 2 calls  reporting.cbam.indirect.georgia              [reporting.cbam.indirect.georgia] 0.102 tCO2eq/MWh — CBAM_DE
+   13/90 1 calls  chp.reference_efficiency.ghg_protocol.heat   [chp.reference_efficiency.ghg_protocol.heat] 0.8 fraction (k
+   14/90 1 calls  chp.reference_efficiency.ghg_protocol.electr [chp.reference_efficiency.ghg_protocol.electricity] 0.35 fra
+   15/90 1 calls  commuting.rail.national_rail                 [commuting.rail.national_rail] 0.03092 kg CO2e per passenger
+   16/90 1 calls  commuting.rail.international_rail            [commuting.rail.international_rail] 0.01135 kg CO2e per pass
+   17/90 2 calls  reporting.csrd.threshold.non_eu_group.eu_rev [reporting.csrd.threshold.non_eu_group.eu_revenue_eur_m] 150
+   18/90 2 calls  reporting.csrd.calendar.non_eu_group.first_r [reporting.csrd.calendar.non_eu_group.first_report_fy] 2028 
+   19/90 2 calls  delivery_vehicles.hgv_refrigerated.rigid_7_5 [delivery_vehicles.hgv_refrigerated.rigid_7_5_to_17t.average
+   20/90 1 calls  delivery_vehicles.hgv.all.50pct_laden.diesel [delivery_vehicles.hgv.all.50pct_laden.diesel.energy_use_sec
+   21/90 2 calls  digital.gcp.region.me-central1               [digital.gcp.region.me-central1] 366 g CO2e per kWh — Google
+   22/90 2 calls  digital.storage.redundancy.object_erasure.de [digital.storage.redundancy.object_erasure.default_factor] 1
+   23/90 2 calls  district_heating.usa.steam_heat.kwh_gcv      [district_heating.usa.steam_heat.kwh_gcv] 0.226559807 kg CO2
+   24/90 2 calls  district_heating.gbr.onsite                  [district_heating.gbr.onsite] 0.17529 kg CO2e per kWh — DEFR
+   25/90 1 calls  equivalencies.usa.forest_acre_sequestration_ [equivalencies.usa.forest_acre_sequestration_year] 1 metric 
+   26/90 1 calls  equivalencies.usa.oil_barrel                 [equivalencies.usa.oil_barrel] 0.43 metric tonnes CO2 per ba
+   27/90 2 calls  ev_charging.car.segment.supermini.bev.chargi [ev_charging.car.segment.supermini.bev.charging_uk] 0.02522 
+   28/90 2 calls  ev_charging.car.segment.mpv.bev.energy_use_s [ev_charging.car.segment.mpv.bev.energy_use_secr] 0.22719 kW
+   29/90 2 calls  food.diet.pescatarian.annual                 [food.diet.pescatarian.annual] 1730.1 kg CO2e per person per
+   30/90 2 calls  food.diet.mixed.annual                       [food.diet.mixed.annual] 2733.85 kg CO2e per person per year
+   31/90 2 calls  food_pcf.fra.grapeseed_oil                   [food_pcf.fra.grapeseed_oil] 1.81 kg CO2e per kg product — A
+   32/90 1 calls  food_pcf.fra.mussel_boiled_cooked_in_water   [food_pcf.fra.mussel_boiled_cooked_in_water] 5.92 kg CO2e pe
+   33/90 2 calls  freight.road_hgv.tonne_km                    [freight.road_hgv.tonne_km] 0.1 kg CO2e per tonne-km — GLEC 
+   34/90 2 calls  freight.rail.tonne_km                        [freight.rail.tonne_km] 0.0184 kg CO2e per tonne-km — GLEC F
+   35/90 2 calls  freight_detailed.road.china.dump.mdt_4_5_5_5 [freight_detailed.road.china.dump.mdt_4_5_5_5t.diesel] 0.415
+   36/90 2 calls  freight_detailed.sea.container.intra_north_a [freight_detailed.sea.container.intra_north_america.reefer] 
+   37/90 4 calls  fuel_properties.gas_oil.net_cv_gj_tonne      [mobile_combustion.gas_oil.per_tonne] 3226.57859 kg CO2e per
+   38/90 2 calls  fuel_properties.lpg.density_kg_litre         [fuel_properties.lpg.density_kg_litre] 0.52975 kg per litre 
+   39/90 1 calls  fuels.ipcc.liquefied_petroleum_gases.litre   [fuels.ipcc.liquefied_petroleum_gases.litre] 1.58247 kg CO2e
+   40/90 1 calls  fuels.can.propane.litre                      [fuels.can.propane.litre] 1.54429 kg CO2e per litre — ECCC_E
+   41/90 2 calls  fuels.can.kerosene.wtt.litre                 [fuels.can.kerosene.wtt.litre] 0.69068782 kg CO2e per litre 
+   42/90 2 calls  grid.usa.ba.public_utility_district_no_2_of_ [grid.usa.ba.public_utility_district_no_2_of_grant_county_wa
+   43/90 1 calls  fugitive_coal_methane.cmm.surface_mining     [fugitive_coal_methane.cmm.surface_mining] 23.32 kg CO2e per
+   44/90 1 calls  fugitive_coal_methane.cmm.underground_mining [fugitive_coal_methane.cmm.underground_mining] 348.54 kg CO2
+   45/90 1 calls  grid.nld.electricity.location_based          [grid.nld.electricity.location_based] 0.20 kg CO2e per kWh —
+   46/90 1 calls  grid.gbr.electricity.location_based          [grid.gbr.electricity.location_based] 0.13096 kg CO2e per kW
+   47/90 2 calls  grid.bhs.electricity.lifecycle_intensity     [grid.bhs.electricity.lifecycle_intensity] 0.65333 kg CO2e p
+   48/90 2 calls  grid.flk.electricity.lifecycle_intensity     [grid.flk.electricity.lifecycle_intensity] 1 kg CO2e per kWh
+   49/90 2 calls  heating_systems.reference.lifetime_years.boi [heating_systems.reference.lifetime_years.boiler] 15 years (
+   50/90 2 calls  heating_systems.boiler_efficiency.gas_non_co [heating_systems.boiler_efficiency.gas_non_condensing] 0.78 
+   51/90 1 calls  homeworking.gbr.combined                     [homeworking.gbr.combined] 0.32393 kg CO2e per FTE working h
+   52/90 2 calls  homeworking.gbr.heating                      [homeworking.gbr.heating] 0.30234 kg CO2e per FTE working ho
+   53/90 2 calls  hotel_stay.malaysia                          [hotel_stay.malaysia] 61.5 kg CO2e per room.night — DEFRA_20
+   54/90 2 calls  hotel_stay.china                             [hotel_stay.china] 53.5 kg CO2e per room.night — DEFRA_2026,
+   55/90 2 calls  industrial_processes_refinement.hfc23_hcfc22 [industrial_processes_refinement.hfc23_hcfc22.recent_design]
+   56/90 1 calls  chemicals.ethylene_oxide.ch4_thermal_treatme [chemicals.ethylene_oxide.ch4_thermal_treatment] 0.79 kg CH4
+   57/90 2 calls  lca.pef.normalisation.required               [lca.pef.normalisation.required] 1 boolean (1 = required) — 
+   58/90 2 calls  lca.pef.data_quality.dqr_excellent_max       [lca.pef.data_quality.dqr_excellent_max] 1.6 DQR score (1–5 
+   59/90 2 calls  managed_assets.hgv_refrigerated.rigid_all.0p [managed_assets.hgv_refrigerated.rigid_all.0pct_laden.diesel
+   60/90 2 calls  managed_assets.van.class_ii.diesel           [managed_assets.van.class_ii.diesel] 0.19376 kg CO2e per km 
+   61/90 2 calls  materials.lca.wastage.timber                 [materials.lca.wastage.timber] 5 % — WRAP Net Waste Tool (be
+   62/90 2 calls  materials.lca.wastage.generic_default        [materials.lca.wastage.generic_default] 5 % — WRAP Net Waste
+   63/90 2 calls  fuels.fra.diesel_road.litre                  [fuels.fra.diesel_road.litre] 2.51 kg CO2e per litre — ADEME
+   64/90 1 calls  mobile_combustion.can.hddv_advanced_control. [mobile_combustion.can.hddv_advanced_control.per_litre] 2.72
+   65/90 1 calls  reporting.ngfs.carbon_price.gcam.fragmented_ [reporting.ngfs.carbon_price.gcam.fragmented_world.world.203
+   66/90 1 calls  reporting.ngfs.carbon_price.gcam.fragmented_ [reporting.ngfs.carbon_price.gcam.fragmented_world.world.204
+   67/90 1 calls  oil_gas.throughput.oil_transport.offshore_lo [oil_gas.throughput.oil_transport.offshore_loading_no_vru] 0
+   68/90 1 calls  oil_gas.throughput.gas_production.onshore_lo [oil_gas.throughput.gas_production.onshore_low_emitting] 2.5
+   69/90 1 calls  passenger_vehicles.motorbike.average.petrol. [passenger_vehicles.motorbike.average.petrol.energy_use_secr
+   70/90 1 calls  passenger_vehicles.car.segment.sports.diesel [passenger_vehicles.car.segment.sports.diesel.energy_use_sec
+   71/90 2 calls  refrigerants.hcfc_1224yd                     [refrigerants.hcfc_1224yd] 0.06 kg CO2e per kg leaked — EU F
+   72/90 2 calls  refrigerants.r_718                           [refrigerants.r_718] 0 kg CO2e per kg leaked — IPCC AR6 (WGI
+   73/90 2 calls  reporting.sb_253_261.sb261.cadence.years     [reporting.sb_253_261.sb261.cadence.years] 2 years (biennial
+   74/90 2 calls  reporting.aasb_s2.group3.applicability       [reporting.aasb_s2.group3.applicability] 2027 first reportin
+   75/90 2 calls  renewable_generation.reference.specific_yiel [renewable_generation.reference.specific_yield.irl] 900 kWh 
+   76/90 2 calls  renewable_generation.reference.specific_yiel [renewable_generation.reference.specific_yield.fra] 1200 kWh
+   77/90 2 calls  reusable_vs_single_use.reference.handwash_ba [reusable_vs_single_use.reference.handwash_basin.energy_per_
+   78/90 2 calls  reusable_vs_single_use.reference.handwash_ta [reusable_vs_single_use.reference.handwash_tap.water_per_ite
+   79/90 2 calls  heat_transfer_fluids.tier1.c6f14_proxy       [heat_transfer_fluids.tier1.c6f14_proxy] 0.3 kg C6F14-equiva
+   80/90 2 calls  tft_fpd.tier1.cf4                            [tft_fpd.tier1.cf4] 0.5 g CF4 per m2 glass — IPCC 2006 Guide
+   81/90 1 calls  spend_based.defra.sectors.paper_products     [spend_based.defra.sectors.paper_products] 0.825 kg CO2e per
+   82/90 1 calls  spend_based.us.naics6.333515.cutting_tool_an [spend_based.us.naics6.333515.cutting_tool_and_machine_tool_
+   83/90 2 calls  transmission_distribution.aus.state.wa_nwis. [transmission_distribution.aus.state.wa_nwis.electricity] 0.
+   84/90 2 calls  transmission_distribution.aus.state.nt_dkis. [transmission_distribution.aus.state.nt_dkis.electricity] 0.
+   85/90 1 calls  waste.wastewater.industrial.mcf.treated.aero [waste.wastewater.industrial.mcf.treated.aerobic_well_manage
+   86/90 1 calls  waste.wastewater.domestic.mcf.treated.latrin [waste.wastewater.domestic.mcf.treated.latrine_dry_communal]
+   87/90 1 calls  waste_disposal.usa.aluminum_cans.combusted   [waste_disposal.usa.aluminum_cans.combusted] 10 kg CO2e per 
+   88/90 2 calls  waste_disposal.aus.municipal_solid_waste.lan [waste_disposal.aus.municipal_solid_waste.landfill] 1600 kg 
+   89/90 1 calls  water.gbr.supply.mains                       [water.gbr.supply.mains] 0.1913 kg CO2e per m3 — DEFRA_2026,
+   90/90 2 calls  water.gbr.treatment.wastewater               [water.gbr.treatment.wastewater] 0.17088 kg CO2e per m3 — DE
+
+claude-opus-5: 90 questions in 608s -> tools_claude-opus-5.jsonl

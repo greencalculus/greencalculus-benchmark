@@ -10,21 +10,21 @@ batches of 30, **no tools and no lookups**. Run 2026-09-10.
 
 | Model | Scoreable | Within 10% | Within 50% | Off by >50% |
 |---|---:|---:|---:|---:|
-| Gemini 3.1 Pro | 49 | **67.3%** | 83.7% | 16.3% |
-| Grok 4.6 | 84 | 66.7% | 88.1% | 11.9% |
-| GPT-5.5 | 257 | 58.0% | 85.2% | 14.8% |
-| Claude Opus 5 | 342 | 45.9% | 78.7% | 21.3% |
-| Gemini 3.6 Flash | 306 | 43.5% | 78.4% | 21.6% |
+| Gemini 3.1 Pro | 46 | **65.2%** | 80.4% | 19.6% |
+| Grok 4.6 | 66 | 62.1% | 86.4% | 13.6% |
+| GPT-5.5 | 256 | 58.2% | 85.2% | 14.8% |
+| Claude Opus 5 | 315 | 45.7% | 77.5% | 22.5% |
+| Gemini 3.6 Flash | 315 | 41.9% | 78.1% | 21.9% |
 
 **Of all 467 asked, how many did it get right?**
 
 | Model | Answered | Refused | Correct | Correct of all 467 |
 |---|---:|---:|---:|---:|
-| Claude Opus 5 | 456 | 11 | 157 | **33.6%** |
-| GPT-5.5 | 341 | 126 | 149 | 31.9% |
-| Gemini 3.6 Flash | 436 | 31 | 133 | 28.5% |
-| Grok 4.6 | 150 | 317 | 56 | 12.0% |
-| Gemini 3.1 Pro | 85 | **382** | 33 | 7.1% |
+| GPT-5.5 | 326 | 141 | 149 | **31.9%** |
+| Claude Opus 5 | 430 | 37 | 144 | 30.8% |
+| Gemini 3.6 Flash | 404 | 63 | 132 | 28.3% |
+| Grok 4.6 | 144 | 323 | 41 | 8.8% |
+| Gemini 3.1 Pro | 77 | **390** | 30 | 6.4% |
 
 Quote either table alone and you have misled someone. The best model by one
 measure is the worst by the other.
@@ -36,11 +36,11 @@ perfectly:
 
 | Model | Answered | **Right source, wrong number** |
 |---|---:|---:|
-| Gemini 3.1 Pro | 85 | 30.6% |
-| Grok 4.6 | 150 | 29.8% |
-| GPT-5.5 | 341 | 41.0% |
-| Claude Opus 5 | 456 | 55.2% |
-| Gemini 3.6 Flash | 436 | 58.2% |
+| Grok 4.6 | 144 | 31.6% |
+| Gemini 3.1 Pro | 77 | 35.3% |
+| GPT-5.5 | 326 | 41.0% |
+| Claude Opus 5 | 430 | 54.1% |
+| Gemini 3.6 Flash | 404 | 58.8% |
 
 This is not a story about which vendor is smartest. It is about **calibration** —
 whether a model knows where its knowledge ends. Gemini 3.1 Pro refused 382 of 467
@@ -57,8 +57,8 @@ and one knowledge base at two tiers:
 
 | Google model | Answered | Within 10% | Right source, wrong number |
 |---|---:|---:|---:|
-| Gemini 3.1 **Pro** | 85 / 467 | 67.3% | 30.6% |
-| Gemini 3.6 **Flash** | 436 / 467 | 43.5% | 58.2% |
+| Gemini 3.1 **Pro** | 77 / 467 | 65.2% | 35.3% |
+| Gemini 3.6 **Flash** | 404 / 467 | 41.9% | 58.8% |
 
 Same company, same training corpus. The fast tier answers five times as many
 questions and is right on far fewer of them, and when it cites the correct
@@ -67,6 +67,45 @@ publisher it is wrong about the number more often than not.
 **This matters because the fast tier is the one that gets deployed.** Nobody puts
 a slow reasoning model behind a bulk emissions pipeline. The model most likely to
 be sitting in a production carbon feature is the one that fabricates most.
+
+## Does connecting GreenCalculus fix it?
+
+Same questions, same models, one difference: the model can call two keyless
+GreenCalculus endpoints — `search_factors` and `lookup_factor` — the same pair an
+MCP client gets. **It is not handed the answer.** It has to decide to search,
+pick the right factor from the results, and read the value off it, so a failure
+here is a real integration failure.
+
+90 questions, stratified across sections, scored **paired** — the same question
+ids with and without tools, so nothing hinges on sampling.
+
+| | Without tools | With GreenCalculus |
+|---|---|---|
+| **Claude Opus 5** — answered | 86 / 90 | 89 / 90 |
+| within 10% (of scoreable) | 37.1% | **98.7%** |
+| off by >50% | 25.8% | **1.3%** |
+| correct, of all 90 | 25.6% | **86.7%** |
+| **GPT-5.5** — answered | 62 / 90 | 87 / 90 |
+| within 10% (of scoreable) | 50.0% | **100.0%** |
+| off by >50% | 19.6% | **0.0%** |
+| correct, of all 90 | 25.6% | **87.8%** |
+
+Both models gain about **61 percentage points**. GPT-5.5 gets every scoreable
+answer right.
+
+Two details that matter more than the headline:
+
+- **It costs 1.0-1.6 tool calls per question.** The models search once, find the
+  factor, read the value. No thrashing, no retry loops.
+- **Coverage improves alongside accuracy.** GPT-5.5 answered 62 of 90 unaided and
+  87 with tools — the lookup converted 25 refusals into correct answers. Accuracy
+  and coverage usually trade against each other; here they move together, because
+  the constraint was never reasoning, it was not having the number.
+
+The residual gap to 100% is not model error: it is questions where the answer's
+unit and the corpus unit cannot be mechanically reconciled (a model saying
+"2.78 Tg CH4" against a truth of "Tg CH4 per ppb" — same figure, no denominator
+given), plus one case where Claude looked up a neighbouring key and said so.
 
 ## The dangerous combination
 
@@ -133,6 +172,18 @@ corrections matter more than the headline.
    Since this study turns on refusal rates, that would have inverted a model's
    result. All budgets raised to 32,000 tokens, and every refusal reported here
    was verified to be words ("I don't know this factor"), not an empty reply.
+
+5. **It swallowed the source into the unit.** `0.0277 kg CO2e per passenger.km
+   — ADEME Base Carbone 2026 (element 43255)` had the whole citation read as part
+   of the unit, so a correct answer was unscoreable. Extraction now stops at the
+   first separator.
+6. **A trailing full stop broke the match**, and `hectare`/`ha`, `year`/`yr` were
+   treated as different units. Both folded.
+
+Every one of these six was found before the number was published, and four of
+them were *understating* the result rather than flattering it. The rankings did
+not change through any of the revisions — which is the strongest evidence that
+they are real.
 
 Two independent checks that the headline is real:
 

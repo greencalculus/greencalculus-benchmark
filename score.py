@@ -18,9 +18,15 @@ reported separately, never counted as a wrong answer.
 import json, re, unicodedata
 from units import reconcile
 
+# The unit is whatever immediately follows the number, but it must stop at the
+# first separator — an em-dash, comma or bracket usually introduces the source
+# ("0.0277 kg CO2e per passenger.km — ADEME Base Carbone 2026 (element 43255)"),
+# and swallowing that made a perfectly good unit unparseable.
+_UNIT = r"([^,;()\[\]]{0,45}?)(?=\s*(?:[—–]|--|\.\s|,|;|\(|\[|$))"
 RANGE = re.compile(
-    r"(\d[\d,]*(?:\.\d+)?)\s*(?:[-–—]|\bto\b)\s*(\d[\d,]*(?:\.\d+)?)\s*([^,;.()]{0,45})")
-SINGLE = re.compile(r"(?<![\w.])(\d[\d,]*(?:\.\d+)?)(?:\s*[eE]\s*([+-]?\d+))?\s*([^,;.()]{0,45})")
+    r"(\d[\d,]*(?:\.\d+)?)\s*(?:[-–—]|\bto\b)\s*(\d[\d,]*(?:\.\d+)?)\s*" + _UNIT)
+SINGLE = re.compile(
+    r"(?<![\w.])(\d[\d,]*(?:\.\d+)?)(?:\s*[eE]\s*([+-]?\d+))?\s*" + _UNIT)
 
 ALIASES = {
     "DEFRA": ["defra", "desnz", "beis", "uk government", "department for energy security"],

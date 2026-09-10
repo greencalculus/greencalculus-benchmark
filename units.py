@@ -54,6 +54,12 @@ def _clean(u):
     u = u.replace("−", "-").replace("·", " ").replace("/", " per ")
     # "room.night", "passenger.km", "vehicle.km" join two words with a dot
     u = re.sub(r"(?<=[a-z])[.\-](?=[a-z])", " ", u)
+    u = u.strip(" .;:-")                       # a trailing full stop is not part of the unit
+    for a, b in (("hectares", "ha"), ("hectare", "ha"), ("years", "year"), ("yr", "year"),
+                 ("hrs", "hour"), ("hr", "hour"), ("tonnes", "tonne"), ("litres", "litre"),
+                 ("kilometres", "km"), ("kilometers", "km"), ("miles", "mile"),
+                 ("nights", "night"), ("rooms", "room"), ("items", "item"), ("days", "day")):
+        u = re.sub(rf"\b{a}\b", b, u)
     u = re.sub(r"\(.*?\)", " ", u)
     u = re.sub(r"[^a-z0-9%$ .\-]+", " ", u)
     # "kgco2e" / "tco2" / "gsf6" arrive glued; split the mass prefix off the species

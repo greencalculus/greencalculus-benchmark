@@ -1,0 +1,40 @@
+[
+ {
+  "model": "claude-opus-5",
+  "paired_n": 90,
+  "avg_tool_calls": 1.62,
+  "without": {
+   "answered": 86,
+   "scoreable": 62,
+   "within10": 37.1,
+   "correct_of_all": 25.6,
+   "wrong50": 25.8
+  },
+  "with": {
+   "answered": 89,
+   "scoreable": 79,
+   "within10": 98.7,
+   "correct_of_all": 86.7,
+   "wrong50": 1.3
+  }
+ },
+ {
+  "model": "gpt-5.5",
+  "paired_n": 90,
+  "avg_tool_calls": 1.0,
+  "without": {
+   "answered": 62,
+   "scoreable": 46,
+   "within10": 50.0,
+   "correct_of_all": 25.6,
+   "wrong50": 19.6
+  },
+  "with": {
+   "answered": 87,
+   "scoreable": 79,
+   "within10": 100.0,
+   "correct_of_all": 87.8,
+   "wrong50": 0.0
+  }
+ }
+]
