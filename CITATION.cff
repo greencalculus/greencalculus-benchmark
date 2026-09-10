@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this benchmark or its results, please cite it as below."
 type: dataset
-title: "GreenCalculus Emission-Factor Accuracy Benchmark"
+title: "GreenCalculus Emission-Factor Accuracy Benchmark (with the AI vendor-recommendation study)"
 abstract: >
   A benchmark measuring how accurately large language models recall greenhouse-gas
   emission factors without tools, and — separately — how often they attribute a
@@ -11,11 +11,15 @@ abstract: >
   keys. Five frontier models were scored unaided; a paired 90-question run
   measures the effect of connecting a sourced factor lookup. Includes the scoring
   harness, unit reconciliation, every raw model reply, and a log of the six bugs
-  found in the scorer itself.
+  found in the scorer itself. A second study in aeo/ measures which carbon data
+  vendors the same five models recommend across 25 buying prompts and 125
+  answers, with a direct probe testing what each model does when asked about a
+  vendor it has no information on.
 authors:
   - family-names: Say
     given-names: Jeremiah
     affiliation: "GreenCalculus"
+doi: "10.5281/zenodo.22692277"
 version: "1.0.0"
 date-released: "2026-09-10"
 url: "https://greencalculus.com"
@@ -32,3 +36,10 @@ keywords:
   - GHG Protocol
   - retrieval augmented generation
   - LLM evaluation
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22692277"
+    description: "Concept DOI — always resolves to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.22692278"
+    description: "Version 1.0.0, deposited 10 September 2026"

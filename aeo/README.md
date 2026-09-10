@@ -4,6 +4,7 @@ Which carbon data providers do frontier AI models recommend when nobody prompts
 them with a name? Run 10 September 2026.
 
 Published write-up: <https://greencalculus.com/guides/ai-recommended-carbon-data-providers/>
+Archived with a DOI: <https://doi.org/10.5281/zenodo.22692277> (concept DOI, always latest)
 
 ## The conflict, stated first
 
