@@ -1,0 +1,15 @@
+1. [food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Biscuit sponge cake with fruits covering, pre-packed, per kg product?
+2. [freight.rail.tonne_km] What is the greenhouse-gas emission factor for Freight — rail, generic average, per tonne-km?
+3. [freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo] What is the greenhouse-gas emission factor for Sea freight — chemical tanker 10000-19999 dwt, MDO, per tonne-km?
+4. [fuel_properties.lpg.gross_cv_gj_tonne] What is the greenhouse-gas emission factor for LPG — gross calorific value, per tonne?
+5. [fuels.ipcc.liquefied_petroleum_gases.litre] What is the greenhouse-gas emission factor for IPCC Liquefied Petroleum Gases — stationary combustion, per litre?
+6. [fuels.can.kerosene.wtt.litre] What is the greenhouse-gas emission factor for Canada Kerosene — well-to-tank, per litre?
+7. [fugitive_coal_methane.cmm.post_mining_underground] What is the greenhouse-gas emission factor for Post-mining CMM — underground-source coal, per tonne coal handled?
+8. [grid.fra.electricity.location_based] What is the greenhouse-gas emission factor for France grid electricity — location-based, continental France, per kWh?
+9. [grid.bhr.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Bahrain grid electricity — lifecycle intensity, per kWh?
+10. [heating_systems.heat_pump_spf.ashp] What is the greenhouse-gas emission factor for Air-source heat pump - seasonal performance factor?
+11. [homeworking.gbr.combined] What is the greenhouse-gas emission factor for DEFRA homeworking (Homeworking (office equipment + heating), UK) — kgCO2e per FTE working hour, per FTE working hour?
+12. [hotel_stay.portugal] What is the greenhouse-gas emission factor for DEFRA hotel stay (Portugal) — kgCO2e per room per night, per room.night?
+13. [industrial_processes_refinement.hydrogen.steam_reforming_lpg] What is the greenhouse-gas emission factor for Hydrogen — steam reforming of LPG (Tier 1 CCF), 2019 Refinement, per GJ feedstock?
+14. [lca.biogenic.gwp_bio.short_rotation_pef] What is the greenhouse-gas emission factor for Biogenic carbon — short-rotation biomass GWPbio?
+15. [managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel] What is the greenhouse-gas emission factor for DEFRA managed assets HGV refrigerated (All artics, 50% laden, diesel) — kgCO2e per km, per km?

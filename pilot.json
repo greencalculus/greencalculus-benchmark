@@ -1,0 +1,816 @@
+{
+ "pilot_of": "2026.187",
+ "n": 45,
+ "questions": [
+  {
+   "id": "afolu.luc.tropical_deforestation",
+   "section": "afolu",
+   "question": "What is the greenhouse-gas emission factor for Land use change — tropical deforestation, per hectare?",
+   "truth": {
+    "value": 165000,
+    "unit": "kg CO2e per hectare",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "IPCC Tier 1 global average; CO2e aggregate, per-gas decomposition not published",
+    "country_iso3": null,
+    "source_id": "IPCC_AR6",
+    "cell_ref": "WGI Tier 1 default for tropical deforestation carbon stock loss",
+    "publisher": "Intergovernmental Panel on Climate Change",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/afolu.luc.tropical_deforestation@2026.187"
+   }
+  },
+  {
+   "id": "atmospheric.ch4.tg_per_ppb",
+   "section": "atmospheric",
+   "question": "What is the greenhouse-gas emission factor for Atmospheric CH4 — teragrammes of methane per ppb, per ppb (1 Tg = 1 Mt; dry-air mole fraction)?",
+   "truth": {
+    "value": 2.75,
+    "unit": "Tg CH4 per ppb (1 Tg = 1 Mt; dry-air mole fraction)",
+    "gas": "CH4",
+    "gwp_set": null,
+    "basis": "Global Methane Budget standing conversion: 1 ppb CH4 = 2.75 Tg CH4, after Prather et al. (2012). ppb is the DRY-AIR MOLE FRACTION (nmol/mol) reported by the surface observing networks, NOT ppb by mass. The value is a mass of METHANE; no GWP is applied.",
+    "country_iso3": null,
+    "source_id": "GMB_2025",
+    "cell_ref": "Saunois et al. (2025) Global Methane Budget 2000-2020 — \"the conversion factor of 2.75 Tg CH4 ppb-1 given by Prather et al. (2012)\"",
+    "publisher": "Global Carbon Project — Saunois, M. et al., Earth System Science Data 17, 1873–1958",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/atmospheric.ch4.tg_per_ppb@2026.187"
+   }
+  },
+  {
+   "id": "building_energy.gbr.floorband.151_to_200.gas",
+   "section": "building_energy",
+   "question": "What is the greenhouse-gas emission factor for UK residential gas intensity - floor area 151 to 200 m2, per year?",
+   "truth": {
+    "value": 102.1,
+    "unit": "kWh per m2 per year",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "Derived: mean per-dwelling metered gas / floor-area band midpoint",
+    "country_iso3": "gbr",
+    "source_id": "NEED_2025",
+    "cell_ref": "Derived: NEED 2025 Table 1b (gas by floor area), 2023 '151 to 200 m2' mean 17861 kWh / 175 m2 band midpoint",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/building_energy.gbr.floorband.151_to_200.gas@2026.187"
+   }
+  },
+  {
+   "id": "business_travel.land.car.segment.supermini.bev",
+   "section": "business_travel",
+   "question": "What is the greenhouse-gas emission factor for DEFRA business travel land car (Supermini, bev) — kgCO2e per km, per km?",
+   "truth": {
+    "value": 0.02771,
+    "unit": "kg CO2e per km",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "gbr",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'Business travel- land'!AF27",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/business_travel.land.car.segment.supermini.bev@2026.187"
+   }
+  },
+  {
+   "id": "carbon_pricing.swe.carbon_tax",
+   "section": "carbon_pricing",
+   "question": "What is the greenhouse-gas emission factor for Sweden carbon tax — carbon price?",
+   "truth": {
+    "value": 144.62,
+    "unit": "USD/tCO2e",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "World Bank Carbon Pricing Dashboard — price on 1 April 2025 (or latest available prior), US$/tCO2e comparable metric. Not directly comparable across instruments (coverage / compliance / compensation differ).",
+    "country_iso3": "swe",
+    "source_id": "WORLD_BANK_CARBON_PRICING_DASHBOARD",
+    "cell_ref": "Compliance_Gen Info!Tax_SE — Price on 1 April 2025",
+    "publisher": "World Bank Group (Climate Change Group), Carbon Pricing Dashboard",
+    "source_name": "CC BY 4.0 — World Bank Open Data",
+    "proof_url": "https://verify.greencalculus.com/carbon_pricing.swe.carbon_tax@2026.187"
+   }
+  },
+  {
+   "id": "cbam.country.rus.7207_11_16.semi_finished_products",
+   "section": "cbam",
+   "question": "What is the greenhouse-gas emission factor for CBAM Annex I — Russia, CN 7207 11 16 Semi-finished products, of iron or non-alloy steel, containi, per tonne of good (direct emissions)?",
+   "truth": {
+    "value": 3.21,
+    "unit": "tCO2e per tonne of good (direct emissions)",
+    "gas": "CO2e",
+    "gwp_set": "AR6_100",
+    "basis": "CBAM Implementing Reg (EU) 2026/1740 Annex I direct-emission default for Russia, CN code 7207 11 16 (Semi-finished products, of iron or non-alloy steel, containi); indirect emissions = N/A (excluded from CBAM scope for this product); underlying production route (C) Carbon Steel based on BF/BOF",
+    "country_iso3": "rus",
+    "source_id": "CBAM_DEFAULT_2026",
+    "cell_ref": "Reg (EU) 2026/1740 Annex I — Russia — CN 7207 11 16 (Semi-finished products, of iron or non-alloy steel, containi)",
+    "publisher": "European Commission DG TAXUD",
+    "source_name": "EU Official Journal — free use with attribution",
+    "proof_url": "https://verify.greencalculus.com/cbam.country.rus.7207_11_16.semi_finished_products@2026.187"
+   }
+  },
+  {
+   "id": "chp.reference_efficiency.ghg_protocol.heat",
+   "section": "chp",
+   "question": "What is the greenhouse-gas emission factor for CHP allocation — assumed efficiency of separate HEAT/STEAM production, per kWh fuel input)?",
+   "truth": {
+    "value": 0.8,
+    "unit": "fraction (kWh useful heat output per kWh fuel input)",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "GHG Protocol CHP allocation guidance (WRI/WBCSD, Sept 2006, v1.0) recommended US default assumed efficiency of separate heat production e_H = 80%, net calorific value (LHV/NCV) basis. Used in the efficiency-method denominator term H/e_H.",
+    "country_iso3": null,
+    "source_id": "GHGP_CHP_2006",
+    "cell_ref": "GHG Protocol CHP guidance v1.0 (Sept 2006) §V — \"recommended default values for the US ... 80% for heat production\", p.9",
+    "publisher": "World Resources Institute / WBCSD — GHG Protocol Initiative",
+    "source_name": "GHG Protocol Initiative — free use with attribution",
+    "proof_url": "https://verify.greencalculus.com/chp.reference_efficiency.ghg_protocol.heat@2026.187"
+   }
+  },
+  {
+   "id": "commuting.car.size.average.hybrid",
+   "section": "commuting",
+   "question": "What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Average car, hybrid) — kgCO2e per km, per km?",
+   "truth": {
+    "value": 0.12961,
+    "unit": "kg CO2e per km",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "gbr",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'Passenger vehicles'!L54",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/commuting.car.size.average.hybrid@2026.187"
+   }
+  },
+  {
+   "id": "reporting.csrd.threshold.listed_sme.first_report_fy",
+   "section": "csrd_esrs_e1",
+   "question": "What is the greenhouse-gas emission factor for CSRD filer threshold — listed SMEs first reporting financial year?",
+   "truth": {
+    "value": 2026,
+    "unit": "calendar year (first financial year for listed SME CSRD reporting; report due 2027)",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "CSRD: listed small and medium-sized undertakings on EU regulated markets have a first reporting cycle covering FY2026 (with two-year opt-out permitted to FY2028). Listed micro-undertakings are excluded entirely",
+    "country_iso3": null,
+    "source_id": "CSRD_ESRS_E1",
+    "cell_ref": "CSRD Directive (EU) 2022/2464 §5(c)",
+    "publisher": "European Commission / EFRAG",
+    "source_name": "EU Official Journal — free use with attribution",
+    "proof_url": "https://verify.greencalculus.com/reporting.csrd.threshold.listed_sme.first_report_fy@2026.187"
+   }
+  },
+  {
+   "id": "delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt",
+   "section": "delivery_vehicles",
+   "question": "What is the greenhouse-gas emission factor for DEFRA WTT delivery HGV (Rigid (>3.5 - 7.5 tonnes), average laden, diesel) — kgCO2e per km, per km?",
+   "truth": {
+    "value": 0.11851,
+    "unit": "kg CO2e per km",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "gbr",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'WTT- delivery vehs & freight'!D38",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt@2026.187"
+   }
+  },
+  {
+   "id": "digital.gcp.region.europe-west9",
+   "section": "digital",
+   "question": "What is the greenhouse-gas emission factor for Google Cloud europe-west9, per kWh?",
+   "truth": {
+    "value": 16,
+    "unit": "g CO2e per kWh",
+    "gas": "CO2e",
+    "gwp_set": "AR6_100",
+    "basis": "hourly grid mix from Electricity Maps, aggregated to annual average for region; not third-party assured",
+    "country_iso3": "fra",
+    "source_id": "GCP_REGION_CARBON_2024",
+    "cell_ref": "GCP region-carbon table 2024 — region europe-west9 (Paris, France)",
+    "publisher": "Google LLC",
+    "source_name": "CC BY 4.0 (cloud.google.com content licence)",
+    "proof_url": "https://verify.greencalculus.com/digital.gcp.region.europe-west9@2026.187"
+   }
+  },
+  {
+   "id": "district_heating.usa.steam_heat.mmbtu",
+   "section": "district_heating",
+   "question": "What is the greenhouse-gas emission factor for EPA, per mmBtu?",
+   "truth": {
+    "value": 66.398125,
+    "unit": "kg CO2e per mmBtu",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "usa",
+    "source_id": "EPA_GHG_HUB_2025",
+    "cell_ref": "Emission Factors Hub!D410:F410",
+    "publisher": "US Environmental Protection Agency, Center for Corporate Climate Leadership",
+    "source_name": "US Government public domain",
+    "proof_url": "https://verify.greencalculus.com/district_heating.usa.steam_heat.mmbtu@2026.187"
+   }
+  },
+  {
+   "id": "equivalencies.usa.waste_recycled_short_ton",
+   "section": "equivalencies",
+   "question": "What is the greenhouse-gas emission factor for US equivalency - one short ton of waste recycled vs landfilled, per short ton of waste recycled instead of landfilled?",
+   "truth": {
+    "value": 2.83,
+    "unit": "metric tonnes CO2e avoided per short ton of waste recycled instead of landfilled",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "EPA WARM v16 (2024): mixed-recyclables life-cycle emissions avoided vs landfilling",
+    "country_iso3": null,
+    "source_id": "EPA_GHG_EQUIVALENCIES_2024",
+    "cell_ref": "EPA GHG Equivalencies (2024) - tons of waste recycled instead of landfilled; EPA 2024 WARM v16",
+    "publisher": "U.S. Environmental Protection Agency (EPA), Energy and the Environment, 2024",
+    "source_name": "U.S. Government work — public domain (fair-use citation)",
+    "proof_url": "https://verify.greencalculus.com/equivalencies.usa.waste_recycled_short_ton@2026.187"
+   }
+  },
+  {
+   "id": "ev_charging.car.segment.supermini.bev.energy_use_secr",
+   "section": "ev_charging",
+   "question": "What is the greenhouse-gas emission factor for DEFRA SECR EV energy use (BEV, Supermini) — kWh per km, per km?",
+   "truth": {
+    "value": 0.19157,
+    "unit": "kWh per km",
+    "gas": null,
+    "gwp_set": null,
+    "basis": null,
+    "country_iso3": "gbr",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'SECR kWh UK electricity for EVs'!E26",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/ev_charging.car.segment.supermini.bev.energy_use_secr@2026.187"
+   }
+  },
+  {
+   "id": "food.diet.mixed.annual",
+   "section": "food",
+   "question": "What is the greenhouse-gas emission factor for Dietary carbon footprint — mixed / average diet, per year?",
+   "truth": {
+    "value": 2733.85,
+    "unit": "kg CO2e per person per year",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": "Scarborough et al. 2023: 7.49 kg CO2e/day (2,000 kcal-standardised UK medium-meat diet, 50–99 g/day) × 365.",
+    "country_iso3": null,
+    "source_id": "SCARBOROUGH_2023",
+    "cell_ref": "Scarborough et al. 2023 (Nature Food 4:565-574) — GHG kg CO2e/day by diet group, 2,000 kcal/day: medium meat-eaters 7.49.",
+    "publisher": "P. Scarborough, M. Clark, L. Cobiac et al., Nature Food 4:565-574",
+    "source_name": "Nature Food — open access (CC BY 4.0); citation with attribution",
+    "proof_url": "https://verify.greencalculus.com/food.diet.mixed.annual@2026.187"
+   }
+  },
+  {
+   "id": "food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed",
+   "section": "food_pcf",
+   "question": "What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Biscuit sponge cake with fruits covering, pre-packed, per kg product?",
+   "truth": {
+    "value": 2.92,
+    "unit": "kg CO2e per kg product",
+    "gas": "CO2e",
+    "gwp_set": null,
+    "basis": "cradle-to-plate",
+    "country_iso3": "fra",
+    "source_id": "ADEME_AGRIBALYSE_V32",
+    "cell_ref": "AGRIBALYSE v3.2 Synthese — Code_AGB 24678 — Biscuit sec (génoise) nappage aux fruits, type barquette",
+    "publisher": "Agence de la transition écologique (ADEME) / INRAE",
+    "source_name": "Licence Ouverte / Open Licence (Etalab)",
+    "proof_url": "https://verify.greencalculus.com/food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed@2026.187"
+   }
+  },
+  {
+   "id": "freight.rail.tonne_km",
+   "section": "freight",
+   "question": "What is the greenhouse-gas emission factor for Freight — rail, generic average, per tonne-km?",
+   "truth": {
+    "value": 0.0184,
+    "unit": "kg CO2e per tonne-km",
+    "gas": "CO2e",
+    "gwp_set": "AR6_100",
+    "basis": "GWP-100",
+    "country_iso3": null,
+    "source_id": "GLEC_FRAMEWORK_v3_2",
+    "cell_ref": "Generic representative of freight_detailed.rail.eu.mixed.average — GLEC v3.2 EU average (traction unknown), WTW 0.0184 kg CO2e/t-km.",
+    "publisher": "Smart Freight Centre",
+    "source_name": "Smart Freight Centre — free use with attribution, factor tables reproducible",
+    "proof_url": "https://verify.greencalculus.com/freight.rail.tonne_km@2026.187"
+   }
+  },
+  {
+   "id": "freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo",
+   "section": "freight_detailed",
+   "question": "What is the greenhouse-gas emission factor for Sea freight — chemical tanker 10000-19999 dwt, MDO, per tonne-km?",
+   "truth": {
+    "value": 0.0178,
+    "unit": "kg CO2e per tonne-km",
+    "gas": "CO2e",
+    "gwp_set": "AR6_100",
+    "basis": "GWP-100",
+    "country_iso3": null,
+    "source_id": "GLEC_FRAMEWORK_v3_2",
+    "cell_ref": "GLEC v3.2 Table 15 — chemical tanker, 10000-19999 dwt, MDO: WTW 17.8 g CO2e/t-km (WTT 2.8 + TTW 15.0); With 15% DAF WTW 20.4.",
+    "publisher": "Smart Freight Centre",
+    "source_name": "Smart Freight Centre — free use with attribution, factor tables reproducible",
+    "proof_url": "https://verify.greencalculus.com/freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo@2026.187"
+   }
+  },
+  {
+   "id": "fuel_properties.lpg.gross_cv_gj_tonne",
+   "section": "fuel_properties",
+   "question": "What is the greenhouse-gas emission factor for LPG — gross calorific value, per tonne?",
+   "truth": {
+    "value": 49.333,
+    "unit": "GJ per tonne",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "GCV",
+    "country_iso3": null,
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'Fuel properties' tab — LPG",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/fuel_properties.lpg.gross_cv_gj_tonne@2026.187"
+   }
+  },
+  {
+   "id": "fuels.ipcc.liquefied_petroleum_gases.litre",
+   "section": "fuels",
+   "question": "What is the greenhouse-gas emission factor for IPCC Liquefied Petroleum Gases — stationary combustion, per litre?",
+   "truth": {
+    "value": 1.58247,
+    "unit": "kg CO2e per litre",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": "NCV",
+    "country_iso3": null,
+    "source_id": "IPCC_2006_GL_V2",
+    "cell_ref": "V2 Ch1 Table 1.4 (CO2 EF) + Table 1.2 (NCV) + Ch2 Table 2.3 (CH4/N2O); NCV 47.3 MJ/kg x density 0.52975 kg/L x 1e-6",
+    "publisher": "IPCC / IGES",
+    "source_name": "IPCC use terms — free use with attribution",
+    "proof_url": "https://verify.greencalculus.com/fuels.ipcc.liquefied_petroleum_gases.litre@2026.187"
+   }
+  },
+  {
+   "id": "fuels.can.kerosene.wtt.litre",
+   "section": "fuels_wtt",
+   "question": "What is the greenhouse-gas emission factor for Canada Kerosene — well-to-tank, per litre?",
+   "truth": {
+    "value": 0.69068782,
+    "unit": "kg CO2e per litre",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": "well-to-tank: extraction, processing, transport and distribution to the end user; combustion EXCLUDED; higher heating value",
+    "country_iso3": "can",
+    "source_id": "ECCC_FUEL_LCA_MODEL_2024",
+    "cell_ref": "Fuel_LCA_Model_Database_August2024.zip, process \"Kerosene, at end user\" (Data Library/Fossil fuels/Non-combusted fossil fuels, at end user), characterised with the bundled FuelLCAModelLCIA_AR5 method",
+    "publisher": "Environment and Climate Change Canada (ECCC)",
+    "source_name": "Open Government Licence - Canada",
+    "proof_url": "https://verify.greencalculus.com/fuels.can.kerosene.wtt.litre@2026.187"
+   }
+  },
+  {
+   "id": "fugitive_coal_methane.cmm.post_mining_underground",
+   "section": "fugitive_coal_methane",
+   "question": "What is the greenhouse-gas emission factor for Post-mining CMM — underground-source coal, per tonne coal handled?",
+   "truth": {
+    "value": 46.9,
+    "unit": "kg CO2e per tonne coal handled",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": "GWP-100",
+    "country_iso3": null,
+    "source_id": "IPCC_2019_REFINEMENT_v1",
+    "cell_ref": "Vol 2 Ch 4 Eq 4.1.4 (p. 4.20); CH4 2.5 m3/t Average x density 0.67 kg/m3. No CO2 component published for this category.",
+    "publisher": "IPCC",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/fugitive_coal_methane.cmm.post_mining_underground@2026.187"
+   }
+  },
+  {
+   "id": "grid.fra.electricity.location_based",
+   "section": "grid",
+   "question": "What is the greenhouse-gas emission factor for France grid electricity — location-based, continental France, per kWh?",
+   "truth": {
+    "value": 0.035,
+    "unit": "kg CO2e per kWh",
+    "gas": "CO2e",
+    "gwp_set": null,
+    "basis": "combustion at the power station only, CONSUMPTION basis — per kWh delivered, not per kWh generated; upstream fuel supply and plant amortisation (Amont poste) EXCLUDED, transmission and distribution losses (separate poste) EXCLUDED; four-year smoothing of 2021-2024",
+    "country_iso3": "fra",
+    "source_id": "ADEME_BASE_CARBONE_2026",
+    "cell_ref": "ADEME Base Carbone, element id 43642 'Electricite > Mix reseau electrique > France continentale > Moyen', attribut '2024 - mix moyen', poste 'Combustion a la centrale' = 0.035 kgCO2e/kWh. Incertitude 10% as published. Postes sum to the element total: 0.035 + 0.0131 (Amont) + 0.0038 (Transport et distribution) = 0.0519.",
+    "publisher": "Agence de la transition écologique (ADEME)",
+    "source_name": "Licence Ouverte / Open Licence (Etalab)",
+    "proof_url": "https://verify.greencalculus.com/grid.fra.electricity.location_based@2026.187"
+   }
+  },
+  {
+   "id": "grid.bhr.electricity.lifecycle_intensity",
+   "section": "grid_lifecycle",
+   "question": "What is the greenhouse-gas emission factor for Bahrain grid electricity — lifecycle intensity, per kWh?",
+   "truth": {
+    "value": 0.90224,
+    "unit": "kg CO2e per kWh",
+    "gas": "CO2e",
+    "gwp_set": "MIXED_AR5_SAR21",
+    "basis": "full lifecycle: fuel supply chain, plant manufacture and combustion; net generation — transmission and distribution losses and net imports EXCLUDED",
+    "country_iso3": "bhr",
+    "source_id": "EMBER_YEARLY_ELECTRICITY_2025",
+    "cell_ref": "yearly_full_release_long_format.csv: ISO 3 code=BHR, Variable=CO2 intensity, Year=2024",
+    "publisher": "Ember Climate",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/grid.bhr.electricity.lifecycle_intensity@2026.187"
+   }
+  },
+  {
+   "id": "heating_systems.heat_pump_spf.ashp",
+   "section": "heating_systems",
+   "question": "What is the greenhouse-gas emission factor for Air-source heat pump - seasonal performance factor?",
+   "truth": {
+    "value": 2.9,
+    "unit": "ratio (useful heat out / electricity in, seasonal)",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "Electrification of Heat Demonstration Project 2024 - median ASHP SPFH2 2.93 (real-world, GB field monitoring)",
+    "country_iso3": null,
+    "source_id": "EOH_HEAT_PUMP_PERFORMANCE_2024",
+    "cell_ref": "Electrification of Heat (ESC 2024) - median ASHP SPFH2 = 2.93, IQR 2.67-3.19, n=428",
+    "publisher": "Energy Systems Catapult, for the Department for Energy Security & Net Zero (DESNZ), 2024",
+    "source_name": "Energy Systems Catapult / Crown copyright — fair-use citation for published figures",
+    "proof_url": "https://verify.greencalculus.com/heating_systems.heat_pump_spf.ashp@2026.187"
+   }
+  },
+  {
+   "id": "homeworking.gbr.combined",
+   "section": "homeworking",
+   "question": "What is the greenhouse-gas emission factor for DEFRA homeworking (Homeworking (office equipment + heating), UK) — kgCO2e per FTE working hour, per FTE working hour?",
+   "truth": {
+    "value": 0.32393,
+    "unit": "kg CO2e per FTE working hour",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "gbr",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'Homeworking'!C24",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/homeworking.gbr.combined@2026.187"
+   }
+  },
+  {
+   "id": "hotel_stay.portugal",
+   "section": "hotel_stay",
+   "question": "What is the greenhouse-gas emission factor for DEFRA hotel stay (Portugal) — kgCO2e per room per night, per room.night?",
+   "truth": {
+    "value": 19,
+    "unit": "kg CO2e per room.night",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "prt",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'Hotel stay'!D66",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/hotel_stay.portugal@2026.187"
+   }
+  },
+  {
+   "id": "industrial_processes_refinement.hydrogen.steam_reforming_lpg",
+   "section": "industrial_processes",
+   "question": "What is the greenhouse-gas emission factor for Hydrogen — steam reforming of LPG (Tier 1 CCF), 2019 Refinement, per GJ feedstock?",
+   "truth": {
+    "value": 0.0172,
+    "unit": "tonne C per GJ feedstock",
+    "gas": "CO2",
+    "gwp_set": null,
+    "basis": "Tier 1 carbon content factor (CCF) for hydrogen production via steam reforming lpg",
+    "country_iso3": null,
+    "source_id": "IPCC_2019_REFINEMENT",
+    "cell_ref": "Vol 3 Ch 3 Table 3.30 (NEW)",
+    "publisher": "IPCC",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/industrial_processes_refinement.hydrogen.steam_reforming_lpg@2026.187"
+   }
+  },
+  {
+   "id": "lca.biogenic.gwp_bio.short_rotation_pef",
+   "section": "lca",
+   "question": "What is the greenhouse-gas emission factor for Biogenic carbon — short-rotation biomass GWPbio?",
+   "truth": {
+    "value": 0.7,
+    "unit": "dimensionless (GWP equivalent for short-rotation biogenic CO2)",
+    "gas": null,
+    "gwp_set": "AR6_100",
+    "basis": "EU PEF Method Annex I §4.4.10 — biogenic CO2 from short-rotation biomass (e.g., annual crops, energy crops) carries GWPbio = +0.7 to reflect non-zero net warming during the rotation",
+    "country_iso3": null,
+    "source_id": "EU_PEF_REC_2021_2279",
+    "cell_ref": "Commission Recommendation (EU) 2021/2279 Annex I §4.4.10",
+    "publisher": "European Commission DG ENV / JRC",
+    "source_name": "EU Official Journal — free use with attribution",
+    "proof_url": "https://verify.greencalculus.com/lca.biogenic.gwp_bio.short_rotation_pef@2026.187"
+   }
+  },
+  {
+   "id": "managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel",
+   "section": "managed_assets",
+   "question": "What is the greenhouse-gas emission factor for DEFRA managed assets HGV refrigerated (All artics, 50% laden, diesel) — kgCO2e per km, per km?",
+   "truth": {
+    "value": 0.99926,
+    "unit": "kg CO2e per km",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "gbr",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'Managed assets- vehicles'!L85",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel@2026.187"
+   }
+  },
+  {
+   "id": "materials.cbam.iron_steel.crude_steel_ingot",
+   "section": "materials",
+   "question": "What is the greenhouse-gas emission factor for CBAM default — crude steel ingot, per kg of good?",
+   "truth": {
+    "value": 8.21,
+    "unit": "kg CO2e per kg of good",
+    "gas": "CO2e",
+    "gwp_set": "AR6_100",
+    "basis": "CBAM Annex IV catch-all default; underlying technical highest default value without sector mark-up",
+    "country_iso3": null,
+    "source_id": "CBAM_DEFAULT_2026",
+    "cell_ref": "Reg (EU) 2026/1740 Annex II (replacing Reg (EU) 2025/2621 Annex IV) — CN 7206 10 00; 'Highest default value' column (kg CO2e per kg)",
+    "publisher": "European Commission DG TAXUD",
+    "source_name": "EU Official Journal — free use with attribution",
+    "proof_url": "https://verify.greencalculus.com/materials.cbam.iron_steel.crude_steel_ingot@2026.187"
+   }
+  },
+  {
+   "id": "mobile_combustion.usa.diesel.gallon",
+   "section": "mobile_combustion",
+   "question": "What is the greenhouse-gas emission factor for EPA, per gallon?",
+   "truth": {
+    "value": 10.21,
+    "unit": "kg CO2 per gallon",
+    "gas": "CO2",
+    "gwp_set": null,
+    "basis": null,
+    "country_iso3": "usa",
+    "source_id": "EPA_GHG_HUB_2025",
+    "cell_ref": "Emission Factors Hub!D107",
+    "publisher": "US Environmental Protection Agency, Center for Corporate Climate Leadership",
+    "source_name": "US Government public domain",
+    "proof_url": "https://verify.greencalculus.com/mobile_combustion.usa.diesel.gallon@2026.187"
+   }
+  },
+  {
+   "id": "reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030",
+   "section": "ngfs_scenarios",
+   "question": "What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Fragmented World · World · 2030?",
+   "truth": {
+    "value": 1,
+    "unit": "US$2010/tCO2e",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "NGFS Phase 5 (Nov 2024) shadow carbon price: marginal abatement cost of an incremental tonne of CO2e, weighted-global (World). Model GCAM 6.0 NGFS, scenario Fragmented World, year 2030. Value as published by the NGFS Phase 5 Scenario Explorer (IIASA), variable Price|Carbon",
+    "country_iso3": null,
+    "source_id": "NGFS_PHASE5_2024",
+    "cell_ref": "NGFS Phase 5 Scenario Explorer (IIASA) — variable Price|Carbon, region World, model GCAM 6.0 NGFS, scenario Fragmented World, year 2030",
+    "publisher": "Network for Greening the Financial System (NGFS) / IIASA + PIK + UMD + Climate Analytics + NIESR",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030@2026.187"
+   }
+  },
+  {
+   "id": "oil_gas.throughput.gas_production.onshore_high_emitting",
+   "section": "oil_gas",
+   "question": "What is the greenhouse-gas emission factor for Natural gas production — onshore, higher-emitting technologies, per million m3 gas production?",
+   "truth": {
+    "value": 4.09,
+    "unit": "tonnes CH4 per million m3 gas production",
+    "gas": "CH4_fossil",
+    "gwp_set": null,
+    "basis": "IPCC 2019 Refinement Tier 1 gas-mass EF",
+    "country_iso3": null,
+    "source_id": "IPCC_2019_REFINEMENT_v1",
+    "cell_ref": "Vol 2 Ch 4 Table 4.2.4g (p. 4.70) natural gas production onshore higher-emitting + disaggregation Table 4A.2.5 (p. 4.132)",
+    "publisher": "IPCC",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/oil_gas.throughput.gas_production.onshore_high_emitting@2026.187"
+   }
+  },
+  {
+   "id": "passenger_vehicles.motorbike.medium.petrol",
+   "section": "passenger_vehicles",
+   "question": "What is the greenhouse-gas emission factor for DEFRA motorbike (Medium, petrol) — kgCO2e per km, per km?",
+   "truth": {
+    "value": 0.10107000000000001,
+    "unit": "kg CO2e per km",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "gbr",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'Passenger vehicles'!D62",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/passenger_vehicles.motorbike.medium.petrol@2026.187"
+   }
+  },
+  {
+   "id": "refrigerants.r_290",
+   "section": "refrigerants",
+   "question": "What is the greenhouse-gas emission factor for R-290, per kg leaked?",
+   "truth": {
+    "value": 0.02,
+    "unit": "kg CO2e per kg leaked",
+    "gas": "HC",
+    "gwp_set": "AR6_100",
+    "basis": "GWP-100",
+    "country_iso3": null,
+    "source_id": "IPCC_AR6",
+    "cell_ref": "IPCC AR6 WGI Ch 7 Table 7.SM.7 (propane GWP-100)",
+    "publisher": "Intergovernmental Panel on Climate Change",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/refrigerants.r_290@2026.187"
+   }
+  },
+  {
+   "id": "reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m",
+   "section": "regulatory_thresholds",
+   "question": "What is the greenhouse-gas emission factor for CA SB-253 filer threshold — total annual revenue?",
+   "truth": {
+    "value": 1000,
+    "unit": "USD million ($1,000,000,000 = $1B total annual revenue threshold)",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "CA SB-253 Climate Corporate Data Accountability Act: applies to US companies with total annual revenues in excess of $1,000,000,000 that do business in California. Applicability is determined by total annual revenue threshold, not California-only revenue. Public AND private companies are in scope",
+    "country_iso3": "usa",
+    "source_id": "CA_SB253",
+    "cell_ref": "California Senate Bill 253 (Stern, 2023; effective 2024-01-01 with implementation Jan 2025) §38531(b)(1)",
+    "publisher": "California Legislature / California Air Resources Board (CARB)",
+    "source_name": "California public record",
+    "proof_url": "https://verify.greencalculus.com/reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m@2026.187"
+   }
+  },
+  {
+   "id": "renewable_generation.reference.specific_yield.irl",
+   "section": "renewable_generation",
+   "question": "What is the greenhouse-gas emission factor for Solar PV specific yield - Ireland, per year (first-year, pre-degradation)?",
+   "truth": {
+    "value": 900,
+    "unit": "kWh per kWp per year (first-year, pre-degradation)",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "World Bank / Solargis Global Solar Atlas - practical PV power potential (PVOUT), country average",
+    "country_iso3": null,
+    "source_id": "WORLDBANK_GSA_SOLARGIS_2020",
+    "cell_ref": "Global Photovoltaic Power Potential by Country (World Bank/ESMAP/Solargis, 2020) - Ireland practical PVOUT ~2.5 kWh/kWp/day x 365",
+    "publisher": "World Bank / ESMAP, prepared by Solargis (Global Solar Atlas 2.0), 2020",
+    "source_name": "CC BY 4.0 (World Bank / ESMAP / Solargis)",
+    "proof_url": "https://verify.greencalculus.com/renewable_generation.reference.specific_yield.irl@2026.187"
+   }
+  },
+  {
+   "id": "reusable_vs_single_use.reference.handwash_tap.water_per_item",
+   "section": "reusable_vs_single_use",
+   "question": "What is the greenhouse-gas emission factor for Hand washing under a running hot tap - water per item, per item?",
+   "truth": {
+    "value": 4,
+    "unit": "litres per item",
+    "gas": null,
+    "gwp_set": null,
+    "basis": "Derived: running tap ~6 L/min (Energy Saving Trust / Which?) x ~40 s per item. Behaviour-dominated, editable. Multiplied by water.gbr.supply.mains + water.gbr.treatment.wastewater.",
+    "country_iso3": null,
+    "source_id": "ENERGY_SAVING_TRUST",
+    "cell_ref": "Energy Saving Trust / Which? - kitchen tap ~6 L/min running",
+    "publisher": "Energy Saving Trust (UK)",
+    "source_name": "Public guidance",
+    "proof_url": "https://verify.greencalculus.com/reusable_vs_single_use.reference.handwash_tap.water_per_item@2026.187"
+   }
+  },
+  {
+   "id": "tft_fpd.tier1.sf6",
+   "section": "semiconductor_gases",
+   "question": "What is the greenhouse-gas emission factor for TFT-FPD manufacturing — SF6, per m2 glass?",
+   "truth": {
+    "value": 4,
+    "unit": "g SF6 per m2 glass",
+    "gas": "SF6",
+    "gwp_set": null,
+    "basis": null,
+    "country_iso3": null,
+    "source_id": "IPCC_2006_VOL3",
+    "cell_ref": "Vol 3 Ch 6 Table 6.2",
+    "publisher": "IPCC",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/tft_fpd.tier1.sf6@2026.187"
+   }
+  },
+  {
+   "id": "spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers",
+   "section": "spend_based",
+   "question": "What is the greenhouse-gas emission factor for Spend-based GHG intensity — US NAICS-6 424110 Printing and Writing Paper Merchant Wholesalers, per 2024 USD purchaser price?",
+   "truth": {
+    "value": 0.126629,
+    "unit": "kg CO2e per 2024 USD purchaser price",
+    "gas": null,
+    "gwp_set": "AR5_100",
+    "basis": "purchaser price (2024 USD), margins-inclusive; USEEIO SCF v1.4.0 NAICS-6 recomputed on AR5 GWP-100 from the published per-gas sheet",
+    "country_iso3": "usa",
+    "source_id": "USEEIO_SC_FACTORS_v1_4_0",
+    "cell_ref": "SupplyChainGHGEmissionFactorsv1.4.0.xlsx, sheet byGHG — NAICS 424110 (all gases), recomputed on AR5",
+    "publisher": "Ingwersen, W. and Young, B. — the EPA USEEIO authors; published via Zenodo, generated from USEEIO v2.6.0",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers@2026.187"
+   }
+  },
+  {
+   "id": "transmission_distribution.aus.state.vic.electricity",
+   "section": "transmission_distribution",
+   "question": "What is the greenhouse-gas emission factor for Victoria electricity transmission & distribution losses — network operator view, per kWh?",
+   "truth": {
+    "value": 0.08,
+    "unit": "kg CO2e per kWh",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "aus",
+    "source_id": "DCCEEW_NGA_2025",
+    "cell_ref": "DCCEEW National Greenhouse Accounts Factors 2025 (Australian Government), Table 25 (Appendix 4), row \"Victoria\"; kg CO2-e/kWh. AR5 GWP-100 per the publication's Appendix 2. Applies to the 2024-25 Australian financial year.",
+    "publisher": "Department of Climate Change, Energy, the Environment and Water (DCCEEW), Australian Government",
+    "source_name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "proof_url": "https://verify.greencalculus.com/transmission_distribution.aus.state.vic.electricity@2026.187"
+   }
+  },
+  {
+   "id": "waste.landfill.doc.industrial.rubber",
+   "section": "waste",
+   "question": "What is the greenhouse-gas emission factor for Degradable Organic Carbon (DOC) — industrial waste: rubber — wet-weight basis?",
+   "truth": {
+    "value": 0.39,
+    "unit": "fraction (kg C / kg wet waste)",
+    "gas": null,
+    "gwp_set": null,
+    "basis": null,
+    "country_iso3": null,
+    "source_id": "IPCC_WASTE_2006_VOL5",
+    "cell_ref": "Ch 2 Table 2.5 — Default DOC and fossil carbon content in industrial waste (percentage in wet waste produced), row \"rubber\", DOC column",
+    "publisher": "IPCC",
+    "source_name": "CC BY 4.0",
+    "proof_url": "https://verify.greencalculus.com/waste.landfill.doc.industrial.rubber@2026.187"
+   }
+  },
+  {
+   "id": "waste_disposal.usa.pla.landfilled",
+   "section": "waste_disposal",
+   "question": "What is the greenhouse-gas emission factor for EPA, per short ton?",
+   "truth": {
+    "value": 20,
+    "unit": "kg CO2e per short ton",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "usa",
+    "source_id": "EPA_GHG_HUB_2025",
+    "cell_ref": "Emission Factors Hub!E448",
+    "publisher": "US Environmental Protection Agency, Center for Corporate Climate Leadership",
+    "source_name": "US Government public domain",
+    "proof_url": "https://verify.greencalculus.com/waste_disposal.usa.pla.landfilled@2026.187"
+   }
+  },
+  {
+   "id": "water.gbr.supply.mains",
+   "section": "water",
+   "question": "What is the greenhouse-gas emission factor for UK mains water — supply, per m3?",
+   "truth": {
+    "value": 0.1913,
+    "unit": "kg CO2e per m3",
+    "gas": "CO2e",
+    "gwp_set": "AR5_100",
+    "basis": null,
+    "country_iso3": "gbr",
+    "source_id": "DEFRA_2026",
+    "cell_ref": "'Water supply'!D18",
+    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
+    "source_name": "Open Government Licence v3.0",
+    "proof_url": "https://verify.greencalculus.com/water.gbr.supply.mains@2026.187"
+   }
+  }
+ ]
+}

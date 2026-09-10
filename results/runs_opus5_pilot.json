@@ -1,0 +1,182 @@
+[
+ {
+  "id": "afolu.luc.tropical_deforestation",
+  "answer": "Roughly 500-700 tCO2e per hectare for humid tropical forest conversion (I'd give ~600 tCO2e/ha as a central figure). IPCC 2006 Guidelines Vol. 4 Ch. 4 default biomass stocks. I do not know the exact single value."
+ },
+ {
+  "id": "atmospheric.ch4.tg_per_ppb",
+  "answer": "2.75 Tg CH4 per ppb of dry-air mole fraction; IPCC AR6 WG1 Chapter 7 / Annex III conversion tables."
+ },
+ {
+  "id": "building_energy.gbr.floorband.151_to_200.gas",
+  "answer": "Approximately 22,000-24,000 kWh of gas per dwelling per year for the 151-200 m2 band. Source BEIS/DESNZ National Energy Efficiency Data-Framework (NEED). I am not confident in the precise banded figure."
+ },
+ {
+  "id": "business_travel.land.car.segment.supermini.bev",
+  "answer": "About 0.045 kgCO2e per km. DEFRA/DESNZ UK Government GHG Conversion Factors, business travel land BEV sheet. Moderate confidence only."
+ },
+ {
+  "id": "carbon_pricing.swe.carbon_tax",
+  "answer": "About SEK 1,470-1,500 per tonne CO2, roughly USD 130-140/tCO2. Swedish Ministry of Finance / World Bank State and Trends of Carbon Pricing."
+ },
+ {
+  "id": "cbam.country.rus.7207_11_16.semi_finished_products",
+  "answer": "I don't know this value. A plausible order of magnitude is ~2 tCO2e per tonne of good, but I cannot recall the Russia-specific CN 7207 11 16 figure."
+ },
+ {
+  "id": "chp.reference_efficiency.ghg_protocol.heat",
+  "answer": "80% (0.80) efficiency assumed for separate production of heat/steam, per the GHG Protocol CHP allocation guidance."
+ },
+ {
+  "id": "commuting.car.size.average.hybrid",
+  "answer": "Approximately 0.12 kgCO2e per km for an average-size hybrid car. DEFRA/DESNZ UK Government GHG Conversion Factors."
+ },
+ {
+  "id": "reporting.csrd.threshold.listed_sme.first_report_fy",
+  "answer": "Financial year 2026, with opt-out until FY2028; CSRD Directive (EU) 2022/2464. Post-omnibus FY2028."
+ },
+ {
+  "id": "delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt",
+  "answer": "Around 0.115-0.125 kgCO2e per km well-to-tank. DEFRA/DESNZ WTT delivery vehicles sheet. Low-to-moderate confidence."
+ },
+ {
+  "id": "digital.gcp.region.europe-west9",
+  "answer": "Roughly 0.05-0.08 kgCO2e per kWh; Google Cloud published grid carbon intensity around 55-80 gCO2e/kWh. I don't recall the exact published number."
+ },
+ {
+  "id": "district_heating.usa.steam_heat.mmbtu",
+  "answer": "About 66.3 kgCO2e per mmBtu of steam/heat purchased. EPA GHG Emission Factors Hub, Steam and Heat table."
+ },
+ {
+  "id": "equivalencies.usa.waste_recycled_short_ton",
+  "answer": "About 2.89 metric tons CO2e avoided per short ton of waste recycled instead of landfilled. EPA Greenhouse Gas Equivalencies Calculator / WARM."
+ },
+ {
+  "id": "ev_charging.car.segment.supermini.bev.energy_use_secr",
+  "answer": "Approximately 0.16 kWh per km. DEFRA/DESNZ SECR kWh pass and delivery vehs sheet. Moderate confidence."
+ },
+ {
+  "id": "food.diet.mixed.annual",
+  "answer": "Approximately 2.0-2.5 tCO2e per person per year for a mixed diet; Scarborough et al. I'd give ~2.2 tCO2e per year."
+ },
+ {
+  "id": "food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed",
+  "answer": "I don't recall this specific AGRIBALYSE line item; best guess roughly 2 kgCO2e per kg of product - treat as low confidence."
+ },
+ {
+  "id": "freight.rail.tonne_km",
+  "answer": "About 0.0256 kgCO2e per tonne-km. DEFRA/BEIS UK Government GHG Conversion Factors, Freighting goods Rail."
+ },
+ {
+  "id": "freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo",
+  "answer": "Roughly 0.017 kgCO2e per tonne-km for a 10,000-19,999 dwt chemical tanker on MDO. DEFRA cargo-ship detailed table; not confident of exact digits."
+ },
+ {
+  "id": "fuel_properties.lpg.gross_cv_gj_tonne",
+  "answer": "About 49.6 GJ per tonne gross CV. DEFRA fuel-properties table / DUKES."
+ },
+ {
+  "id": "fuels.ipcc.liquefied_petroleum_gases.litre",
+  "answer": "About 1.61 kgCO2 per litre, derived from IPCC 2006 Guidelines defaults."
+ },
+ {
+  "id": "fuels.can.kerosene.wtt.litre",
+  "answer": "I don't reliably recall the Canadian well-to-tank value; best estimate ~0.5-0.6 kgCO2e per litre, consistent with ECCC/NIR-derived WTT factors."
+ },
+ {
+  "id": "fugitive_coal_methane.cmm.post_mining_underground",
+  "answer": "IPCC 2006 Tier 1 default: 0.9 m3 CH4 per tonne of coal, about 17 kgCO2e per tonne coal handled at GWP100 = 28."
+ },
+ {
+  "id": "grid.fra.electricity.location_based",
+  "answer": "About 0.055 kgCO2e per kWh for continental France location-based. ADEME Base Empreinte / Base Carbone."
+ },
+ {
+  "id": "grid.bhr.electricity.lifecycle_intensity",
+  "answer": "I don't recall a published Bahrain lifecycle figure; estimate ~0.70 kgCO2e per kWh - low confidence."
+ },
+ {
+  "id": "heating_systems.heat_pump_spf.ashp",
+  "answer": "Approximately 2.7 seasonal performance factor for a UK air-source heat pump; BEIS/DESNZ and Element Energy field-trial derived."
+ },
+ {
+  "id": "homeworking.gbr.combined",
+  "answer": "I don't recall the exact DEFRA figure; best estimate ~0.3 kgCO2e per FTE working hour - low confidence."
+ },
+ {
+  "id": "hotel_stay.portugal",
+  "answer": "Roughly 22 kgCO2e per room per night. DEFRA hotel-stay table, from the Cornell Hotel Sustainability Benchmarking index; not confident of exact value."
+ },
+ {
+  "id": "industrial_processes_refinement.hydrogen.steam_reforming_lpg",
+  "answer": "About 63 kgCO2 per GJ of LPG feedstock, following the IPCC 2019 Refinement Tier 1 carbon-content approach."
+ },
+ {
+  "id": "lca.biogenic.gwp_bio.short_rotation_pef",
+  "answer": "I don't have a firm recalled PEF value; roughly 0.03-0.1, best estimate ~0.05 - low confidence."
+ },
+ {
+  "id": "managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel",
+  "answer": "About 1.03 kgCO2e per km. DEFRA UK GHG Conversion Factors, refrigerated HGV all artics 50% laden diesel."
+ },
+ {
+  "id": "materials.cbam.iron_steel.crude_steel_ingot",
+  "answer": "Best estimate ~2.1 kgCO2e per kg of crude steel ingot. European Commission CBAM transitional-period default values."
+ },
+ {
+  "id": "mobile_combustion.usa.diesel.gallon",
+  "answer": "10.21 kg CO2 per gallon of diesel. US EPA Emission Factors for Greenhouse Gas Inventories (GHG Emission Factors Hub)."
+ },
+ {
+  "id": "reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030",
+  "answer": "I do not reliably know this value. Rough impression 15-25 USD/tCO2 in 2030, but I would not stand behind that number."
+ },
+ {
+  "id": "oil_gas.throughput.gas_production.onshore_high_emitting",
+  "answer": "I don't know. This is an IPCC Tier 1 fugitive factor but I cannot recall the value with any confidence."
+ },
+ {
+  "id": "passenger_vehicles.motorbike.medium.petrol",
+  "answer": "Approximately 0.101 kgCO2e per km, medium motorbike petrol, UK DEFRA/DESNZ GHG conversion factors."
+ },
+ {
+  "id": "refrigerants.r_290",
+  "answer": "3 kgCO2e per kg leaked - R-290 is propane, GWP100 = 3 under IPCC AR5. This is the value DEFRA publishes."
+ },
+ {
+  "id": "reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m",
+  "answer": "1,000 USD million (revenue above 1 billion USD), from California SB-253."
+ },
+ {
+  "id": "renewable_generation.reference.specific_yield.irl",
+  "answer": "Roughly 900 kWh per kWp per year first-year specific yield for solar PV in Ireland; my own estimate consistent with PVGIS."
+ },
+ {
+  "id": "reusable_vs_single_use.reference.handwash_tap.water_per_item",
+  "answer": "I don't know this with confidence. Best guess 1-2 litres of water per item, but I cannot name the source."
+ },
+ {
+  "id": "tft_fpd.tier1.sf6",
+  "answer": "Best estimate ~0.4 g SF6 per m2 of glass, IPCC 2006 Guidelines Vol. 3 Ch. 6 Tier 1 default; low confidence."
+ },
+ {
+  "id": "spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers",
+  "answer": "Best estimate ~0.15 kgCO2e per 2024 USD purchaser price, likely derived from EPA USEEIO. Low confidence."
+ },
+ {
+  "id": "transmission_distribution.aus.state.vic.electricity",
+  "answer": "Best estimate ~0.06 kgCO2e per kWh for Victorian T&D network losses, from the Australian NGA Factors; not confident."
+ },
+ {
+  "id": "waste.landfill.doc.industrial.rubber",
+  "answer": "0.39 kg C per kg wet waste for rubber/leather, from the IPCC 2006 Guidelines Vol. 5 Ch. 2 default DOC tables."
+ },
+ {
+  "id": "waste_disposal.usa.pla.landfilled",
+  "answer": "Approximately 0.02 metric tons CO2e per short ton landfilled, from EPA WARM / EPA GHG Emission Factors Hub. Moderate confidence."
+ },
+ {
+  "id": "water.gbr.supply.mains",
+  "answer": "0.149 kgCO2e per m3 for UK mains water supply, UK DEFRA/DESNZ GHG conversion factors."
+ }
+]

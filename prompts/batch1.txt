@@ -1,0 +1,15 @@
+1. [afolu.luc.tropical_deforestation] What is the greenhouse-gas emission factor for Land use change — tropical deforestation, per hectare?
+2. [atmospheric.ch4.tg_per_ppb] What is the greenhouse-gas emission factor for Atmospheric CH4 — teragrammes of methane per ppb, per ppb (1 Tg = 1 Mt; dry-air mole fraction)?
+3. [building_energy.gbr.floorband.151_to_200.gas] What is the greenhouse-gas emission factor for UK residential gas intensity - floor area 151 to 200 m2, per year?
+4. [business_travel.land.car.segment.supermini.bev] What is the greenhouse-gas emission factor for DEFRA business travel land car (Supermini, bev) — kgCO2e per km, per km?
+5. [carbon_pricing.swe.carbon_tax] What is the greenhouse-gas emission factor for Sweden carbon tax — carbon price?
+6. [cbam.country.rus.7207_11_16.semi_finished_products] What is the greenhouse-gas emission factor for CBAM Annex I — Russia, CN 7207 11 16 Semi-finished products, of iron or non-alloy steel, containi, per tonne of good (direct emissions)?
+7. [chp.reference_efficiency.ghg_protocol.heat] What is the greenhouse-gas emission factor for CHP allocation — assumed efficiency of separate HEAT/STEAM production, per kWh fuel input)?
+8. [commuting.car.size.average.hybrid] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Average car, hybrid) — kgCO2e per km, per km?
+9. [reporting.csrd.threshold.listed_sme.first_report_fy] What is the greenhouse-gas emission factor for CSRD filer threshold — listed SMEs first reporting financial year?
+10. [delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt] What is the greenhouse-gas emission factor for DEFRA WTT delivery HGV (Rigid (>3.5 - 7.5 tonnes), average laden, diesel) — kgCO2e per km, per km?
+11. [digital.gcp.region.europe-west9] What is the greenhouse-gas emission factor for Google Cloud europe-west9, per kWh?
+12. [district_heating.usa.steam_heat.mmbtu] What is the greenhouse-gas emission factor for EPA, per mmBtu?
+13. [equivalencies.usa.waste_recycled_short_ton] What is the greenhouse-gas emission factor for US equivalency - one short ton of waste recycled vs landfilled, per short ton of waste recycled instead of landfilled?
+14. [ev_charging.car.segment.supermini.bev.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR EV energy use (BEV, Supermini) — kWh per km, per km?
+15. [food.diet.mixed.annual] What is the greenhouse-gas emission factor for Dietary carbon footprint — mixed / average diet, per year?

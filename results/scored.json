@@ -1,0 +1,807 @@
+{
+ "summary": {
+  "n": 45,
+  "answered_pct": 100.0,
+  "declined_pct": 0.0,
+  "within_10pct_of_all": 35.6,
+  "within_10pct_of_answered": 35.6,
+  "within_50pct_of_answered": 60.0,
+  "cited_a_source_pct": 77.8,
+  "citation_correct_of_cited": 82.9,
+  "confidently_wrong_pct": 40.0
+ },
+ "detail": [
+  {
+   "id": "afolu.luc.tropical_deforestation",
+   "section": "afolu",
+   "answered": true,
+   "declined": false,
+   "got": 500.0,
+   "expected": 165000,
+   "rel_error": 0.996969696969697,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "IPCC"
+   ],
+   "expected_family": "IPCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "atmospheric.ch4.tg_per_ppb",
+   "section": "atmospheric",
+   "answered": true,
+   "declined": false,
+   "got": 2.75,
+   "expected": 2.75,
+   "rel_error": 0.0,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "IPCC"
+   ],
+   "expected_family": "GMB",
+   "citation_correct": false,
+   "citation_wrong": true
+  },
+  {
+   "id": "building_energy.gbr.floorband.151_to_200.gas",
+   "section": "building_energy",
+   "answered": true,
+   "declined": false,
+   "got": 22000.0,
+   "expected": 102.1,
+   "rel_error": 214.47502448579826,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "NEED",
+   "citation_correct": false,
+   "citation_wrong": true
+  },
+  {
+   "id": "business_travel.land.car.segment.supermini.bev",
+   "section": "business_travel",
+   "answered": true,
+   "declined": false,
+   "got": 0.045,
+   "expected": 0.02771,
+   "rel_error": 0.623962468422952,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "carbon_pricing.swe.carbon_tax",
+   "section": "carbon_pricing",
+   "answered": true,
+   "declined": false,
+   "got": 1470.0,
+   "expected": 144.62,
+   "rel_error": 9.164569215876089,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "WORLD_BANK"
+   ],
+   "expected_family": "WORLD_BANK",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "cbam.country.rus.7207_11_16.semi_finished_products",
+   "section": "cbam",
+   "answered": true,
+   "declined": false,
+   "got": 2.0,
+   "expected": 3.21,
+   "rel_error": 0.37694704049844235,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "CBAM",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "chp.reference_efficiency.ghg_protocol.heat",
+   "section": "chp",
+   "answered": true,
+   "declined": false,
+   "got": 80.0,
+   "expected": 0.8,
+   "rel_error": 99.0,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "EPA"
+   ],
+   "expected_family": "GHGP",
+   "citation_correct": false,
+   "citation_wrong": true
+  },
+  {
+   "id": "commuting.car.size.average.hybrid",
+   "section": "commuting",
+   "answered": true,
+   "declined": false,
+   "got": 0.12,
+   "expected": 0.12961,
+   "rel_error": 0.07414551346346739,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "reporting.csrd.threshold.listed_sme.first_report_fy",
+   "section": "csrd_esrs_e1",
+   "answered": true,
+   "declined": false,
+   "got": 2464.0,
+   "expected": 2026,
+   "rel_error": 0.21618953603158933,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "CSRD",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt",
+   "section": "delivery_vehicles",
+   "answered": true,
+   "declined": false,
+   "got": 0.115,
+   "expected": 0.11851,
+   "rel_error": 0.029617753776052646,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "digital.gcp.region.europe-west9",
+   "section": "digital",
+   "answered": true,
+   "declined": false,
+   "got": 0.05,
+   "expected": 16,
+   "rel_error": 0.996875,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "GCP",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "district_heating.usa.steam_heat.mmbtu",
+   "section": "district_heating",
+   "answered": true,
+   "declined": false,
+   "got": 66.3,
+   "expected": 66.398125,
+   "rel_error": 0.0014778278754105788,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "EPA"
+   ],
+   "expected_family": "EPA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "equivalencies.usa.waste_recycled_short_ton",
+   "section": "equivalencies",
+   "answered": true,
+   "declined": false,
+   "got": 2.89,
+   "expected": 2.83,
+   "rel_error": 0.021201413427561856,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "EPA"
+   ],
+   "expected_family": "EPA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "ev_charging.car.segment.supermini.bev.energy_use_secr",
+   "section": "ev_charging",
+   "answered": true,
+   "declined": false,
+   "got": 0.16,
+   "expected": 0.19157,
+   "rel_error": 0.16479615806232703,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "food.diet.mixed.annual",
+   "section": "food",
+   "answered": true,
+   "declined": false,
+   "got": 2.0,
+   "expected": 2733.85,
+   "rel_error": 0.9992684309673171,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "SCARBOROUGH",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed",
+   "section": "food_pcf",
+   "answered": true,
+   "declined": false,
+   "got": 2.0,
+   "expected": 2.92,
+   "rel_error": 0.3150684931506849,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "ADEME"
+   ],
+   "expected_family": "ADEME",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "freight.rail.tonne_km",
+   "section": "freight",
+   "answered": true,
+   "declined": false,
+   "got": 0.0256,
+   "expected": 0.0184,
+   "rel_error": 0.39130434782608703,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "GLEC",
+   "citation_correct": false,
+   "citation_wrong": true
+  },
+  {
+   "id": "freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo",
+   "section": "freight_detailed",
+   "answered": true,
+   "declined": false,
+   "got": 0.017,
+   "expected": 0.0178,
+   "rel_error": 0.044943820224719024,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "GLEC",
+   "citation_correct": false,
+   "citation_wrong": true
+  },
+  {
+   "id": "fuel_properties.lpg.gross_cv_gj_tonne",
+   "section": "fuel_properties",
+   "answered": true,
+   "declined": false,
+   "got": 49.6,
+   "expected": 49.333,
+   "rel_error": 0.005412198731072569,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "fuels.ipcc.liquefied_petroleum_gases.litre",
+   "section": "fuels",
+   "answered": true,
+   "declined": false,
+   "got": 1.61,
+   "expected": 1.58247,
+   "rel_error": 0.01739685428475741,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "IPCC"
+   ],
+   "expected_family": "IPCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "fuels.can.kerosene.wtt.litre",
+   "section": "fuels_wtt",
+   "answered": true,
+   "declined": false,
+   "got": 0.5,
+   "expected": 0.69068782,
+   "rel_error": 0.2760839477377782,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "ECCC"
+   ],
+   "expected_family": "ECCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "fugitive_coal_methane.cmm.post_mining_underground",
+   "section": "fugitive_coal_methane",
+   "answered": true,
+   "declined": false,
+   "got": 1.0,
+   "expected": 46.9,
+   "rel_error": 0.9786780383795309,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "IPCC"
+   ],
+   "expected_family": "IPCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "grid.fra.electricity.location_based",
+   "section": "grid",
+   "answered": true,
+   "declined": false,
+   "got": 0.055,
+   "expected": 0.035,
+   "rel_error": 0.5714285714285713,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "ADEME"
+   ],
+   "expected_family": "ADEME",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "grid.bhr.electricity.lifecycle_intensity",
+   "section": "grid_lifecycle",
+   "answered": true,
+   "declined": false,
+   "got": 0.7,
+   "expected": 0.90224,
+   "rel_error": 0.22415321865579013,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "EMBER",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "heating_systems.heat_pump_spf.ashp",
+   "section": "heating_systems",
+   "answered": true,
+   "declined": false,
+   "got": 2.7,
+   "expected": 2.9,
+   "rel_error": 0.06896551724137923,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "EOH",
+   "citation_correct": false,
+   "citation_wrong": true
+  },
+  {
+   "id": "homeworking.gbr.combined",
+   "section": "homeworking",
+   "answered": true,
+   "declined": false,
+   "got": 0.3,
+   "expected": 0.32393,
+   "rel_error": 0.07387398512024206,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "hotel_stay.portugal",
+   "section": "hotel_stay",
+   "answered": true,
+   "declined": false,
+   "got": 22.0,
+   "expected": 19,
+   "rel_error": 0.15789473684210525,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "industrial_processes_refinement.hydrogen.steam_reforming_lpg",
+   "section": "industrial_processes",
+   "answered": true,
+   "declined": false,
+   "got": 63.0,
+   "expected": 0.0172,
+   "rel_error": 3661.7906976744184,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "IPCC"
+   ],
+   "expected_family": "IPCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "lca.biogenic.gwp_bio.short_rotation_pef",
+   "section": "lca",
+   "answered": true,
+   "declined": false,
+   "got": 0.03,
+   "expected": 0.7,
+   "rel_error": 0.9571428571428571,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "EU",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel",
+   "section": "managed_assets",
+   "answered": true,
+   "declined": false,
+   "got": 1.03,
+   "expected": 0.99926,
+   "rel_error": 0.0307627644456898,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "materials.cbam.iron_steel.crude_steel_ingot",
+   "section": "materials",
+   "answered": true,
+   "declined": false,
+   "got": 2.1,
+   "expected": 8.21,
+   "rel_error": 0.7442143727161998,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "CBAM"
+   ],
+   "expected_family": "CBAM",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "mobile_combustion.usa.diesel.gallon",
+   "section": "mobile_combustion",
+   "answered": true,
+   "declined": false,
+   "got": 10.21,
+   "expected": 10.21,
+   "rel_error": 0.0,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "EPA"
+   ],
+   "expected_family": "EPA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030",
+   "section": "ngfs_scenarios",
+   "answered": true,
+   "declined": false,
+   "got": 15.0,
+   "expected": 1,
+   "rel_error": 14.0,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "NGFS",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "oil_gas.throughput.gas_production.onshore_high_emitting",
+   "section": "oil_gas",
+   "answered": true,
+   "declined": false,
+   "got": 1.0,
+   "expected": 4.09,
+   "rel_error": 0.7555012224938875,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "IPCC"
+   ],
+   "expected_family": "IPCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "passenger_vehicles.motorbike.medium.petrol",
+   "section": "passenger_vehicles",
+   "answered": true,
+   "declined": false,
+   "got": 0.101,
+   "expected": 0.10107000000000001,
+   "rel_error": 0.0006925892945483389,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "refrigerants.r_290",
+   "section": "refrigerants",
+   "answered": true,
+   "declined": false,
+   "got": 3.0,
+   "expected": 0.02,
+   "rel_error": 149.0,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "DEFRA",
+    "IPCC"
+   ],
+   "expected_family": "IPCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m",
+   "section": "regulatory_thresholds",
+   "answered": true,
+   "declined": false,
+   "got": 1000.0,
+   "expected": 1000,
+   "rel_error": 0.0,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "CA",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "renewable_generation.reference.specific_yield.irl",
+   "section": "renewable_generation",
+   "answered": true,
+   "declined": false,
+   "got": 900.0,
+   "expected": 900,
+   "rel_error": 0.0,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "WORLDBANK",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "reusable_vs_single_use.reference.handwash_tap.water_per_item",
+   "section": "reusable_vs_single_use",
+   "answered": true,
+   "declined": false,
+   "got": 1.0,
+   "expected": 4,
+   "rel_error": 0.75,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": false,
+   "cited_families": [],
+   "expected_family": "ENERGY",
+   "citation_correct": false,
+   "citation_wrong": false
+  },
+  {
+   "id": "tft_fpd.tier1.sf6",
+   "section": "semiconductor_gases",
+   "answered": true,
+   "declined": false,
+   "got": 0.4,
+   "expected": 4,
+   "rel_error": 0.9,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "IPCC"
+   ],
+   "expected_family": "IPCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers",
+   "section": "spend_based",
+   "answered": true,
+   "declined": false,
+   "got": 0.15,
+   "expected": 0.126629,
+   "rel_error": 0.18456277787868502,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "EPA",
+    "USEEIO"
+   ],
+   "expected_family": "USEEIO",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "transmission_distribution.aus.state.vic.electricity",
+   "section": "transmission_distribution",
+   "answered": true,
+   "declined": false,
+   "got": 0.06,
+   "expected": 0.08,
+   "rel_error": 0.25000000000000006,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DCCEEW"
+   ],
+   "expected_family": "DCCEEW",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "waste.landfill.doc.industrial.rubber",
+   "section": "waste",
+   "answered": true,
+   "declined": false,
+   "got": 0.39,
+   "expected": 0.39,
+   "rel_error": 0.0,
+   "within_10pct": true,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "IPCC"
+   ],
+   "expected_family": "IPCC",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "waste_disposal.usa.pla.landfilled",
+   "section": "waste_disposal",
+   "answered": true,
+   "declined": false,
+   "got": 0.02,
+   "expected": 20,
+   "rel_error": 0.999,
+   "within_10pct": false,
+   "within_50pct": false,
+   "cited": true,
+   "cited_families": [
+    "EPA"
+   ],
+   "expected_family": "EPA",
+   "citation_correct": true,
+   "citation_wrong": false
+  },
+  {
+   "id": "water.gbr.supply.mains",
+   "section": "water",
+   "answered": true,
+   "declined": false,
+   "got": 0.149,
+   "expected": 0.1913,
+   "rel_error": 0.22111866178776793,
+   "within_10pct": false,
+   "within_50pct": true,
+   "cited": true,
+   "cited_families": [
+    "DEFRA"
+   ],
+   "expected_family": "DEFRA",
+   "citation_correct": true,
+   "citation_wrong": false
+  }
+ ]
+}

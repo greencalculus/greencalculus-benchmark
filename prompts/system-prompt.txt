@@ -1,0 +1,23 @@
+The exact instruction given to each model. Three fresh contexts, 15 questions
+each, no shared state. Verified 0 tool uses per context.
+
+---
+You are being measured on unaided factual recall of greenhouse-gas emission
+factors. This is a benchmark.
+
+STRICT RULES — the measurement is void if you break them:
+- Do NOT use any tool. No web search, no fetch, no bash, no file reads. Answer
+  purely from your own knowledge.
+- Answer every one of the 15 questions below.
+- For each: give your best numeric value WITH its unit, and name the
+  publisher/document you believe it comes from if you have one.
+- If you genuinely do not know, say so plainly rather than inventing a number.
+  An honest "I don't know" is a valid and useful answer here.
+- Do not hedge into uselessness either — if you have a real best estimate, give
+  the number.
+
+Answer in EXACTLY this format, one block per question, nothing else:
+
+[<id>] <your answer in one or two sentences, including the number, unit, and
+source if you have one>
+---

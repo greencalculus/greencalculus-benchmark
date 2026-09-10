@@ -1,0 +1,15 @@
+1. [materials.cbam.iron_steel.crude_steel_ingot] What is the greenhouse-gas emission factor for CBAM default — crude steel ingot, per kg of good?
+2. [mobile_combustion.usa.diesel.gallon] What is the greenhouse-gas emission factor for EPA, per gallon?
+3. [reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Fragmented World · World · 2030?
+4. [oil_gas.throughput.gas_production.onshore_high_emitting] What is the greenhouse-gas emission factor for Natural gas production — onshore, higher-emitting technologies, per million m3 gas production?
+5. [passenger_vehicles.motorbike.medium.petrol] What is the greenhouse-gas emission factor for DEFRA motorbike (Medium, petrol) — kgCO2e per km, per km?
+6. [refrigerants.r_290] What is the greenhouse-gas emission factor for R-290, per kg leaked?
+7. [reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m] What is the greenhouse-gas emission factor for CA SB-253 filer threshold — total annual revenue?
+8. [renewable_generation.reference.specific_yield.irl] What is the greenhouse-gas emission factor for Solar PV specific yield - Ireland, per year (first-year, pre-degradation)?
+9. [reusable_vs_single_use.reference.handwash_tap.water_per_item] What is the greenhouse-gas emission factor for Hand washing under a running hot tap - water per item, per item?
+10. [tft_fpd.tier1.sf6] What is the greenhouse-gas emission factor for TFT-FPD manufacturing — SF6, per m2 glass?
+11. [spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers] What is the greenhouse-gas emission factor for Spend-based GHG intensity — US NAICS-6 424110 Printing and Writing Paper Merchant Wholesalers, per 2024 USD purchaser price?
+12. [transmission_distribution.aus.state.vic.electricity] What is the greenhouse-gas emission factor for Victoria electricity transmission & distribution losses — network operator view, per kWh?
+13. [waste.landfill.doc.industrial.rubber] What is the greenhouse-gas emission factor for Degradable Organic Carbon (DOC) — industrial waste: rubber — wet-weight basis?
+14. [waste_disposal.usa.pla.landfilled] What is the greenhouse-gas emission factor for EPA, per short ton?
+15. [water.gbr.supply.mains] What is the greenhouse-gas emission factor for UK mains water — supply, per m3?
