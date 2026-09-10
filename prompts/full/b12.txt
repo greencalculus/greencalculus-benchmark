@@ -1,0 +1,30 @@
+1. [reporting.ngfs.carbon_price.messageix_globiom.below_2c.world.2045] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — MESSAGEix-GLOBIOM 2.0-M-R12-NGFS · Below 2°C · World · 2045?
+2. [reporting.ngfs.carbon_price.gcam.delayed_transition.world.2035] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Delayed transition · World · 2035?
+3. [reporting.ngfs.carbon_price.messageix_globiom.low_demand.world.2030] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — MESSAGEix-GLOBIOM 2.0-M-R12-NGFS · Low demand · World · 2030?
+4. [reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Fragmented World · World · 2030?
+5. [reporting.ngfs.carbon_price.gcam.below_2c.world.2035] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Below 2°C · World · 2035?
+6. [reporting.ngfs.carbon_price.gcam.fragmented_world.world.2045] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Fragmented World · World · 2045?
+7. [reporting.ngfs.carbon_price.messageix_globiom.delayed_transition.world.2025] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — MESSAGEix-GLOBIOM 2.0-M-R12-NGFS · Delayed transition · World · 2025?
+8. [reporting.ngfs.carbon_price.gcam.net_zero_2050.world.2025] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Net Zero 2050 · World · 2025?
+9. [reporting.ngfs.carbon_price.gcam.fragmented_world.world.2035] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Fragmented World · World · 2035?
+10. [reporting.ngfs.carbon_price.messageix_globiom.low_demand.world.2045] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — MESSAGEix-GLOBIOM 2.0-M-R12-NGFS · Low demand · World · 2045?
+11. [reporting.ngfs.carbon_price.gcam.delayed_transition.world.2040] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Delayed transition · World · 2040?
+12. [reporting.ngfs.carbon_price.gcam.ndcs.world.2050] What is the greenhouse-gas emission factor for NGFS Phase 5 shadow carbon price — GCAM 6.0 NGFS · Nationally Determined Contributions (NDCs) · World · 2050?
+13. [oil_gas.throughput.oil_transport.tanks] What is the greenhouse-gas emission factor for Oil transport — tanks, per thousand m3 crude oil fed?
+14. [oil_gas.throughput.gas_distribution.limited_ldar] What is the greenhouse-gas emission factor for Gas distribution — <50% plastic pipe, limited/no leak detection & repair, per million m3 gas consumption?
+15. [oil_gas.throughput.gas_transmission.extensive_ldar] What is the greenhouse-gas emission factor for Gas transmission — extensive LDAR, ~50%+ centrifugal dry seals, per million m3 gas consumption?
+16. [oil_gas.throughput.gas_production.onshore_low_emitting] What is the greenhouse-gas emission factor for Natural gas production — onshore, lower-emitting technologies, per million m3 gas production?
+17. [oil_gas.throughput.oil_transport.offshore_loading_no_vru] What is the greenhouse-gas emission factor for Oil transport — offshore loading onto tanker ships, no VRU, per thousand m3 loaded?
+18. [oil_gas.throughput.oil_transport.tanker_truck_rail] What is the greenhouse-gas emission factor for Oil transport — tanker trucks and rail cars, per thousand m3 transported?
+19. [oil_gas.throughput.gas_storage.extensive_ldar] What is the greenhouse-gas emission factor for Gas storage — extensive LDAR, lower-emitting, per million m3 gas consumption?
+20. [oil_gas.throughput.gas_production.onshore_high_emitting] What is the greenhouse-gas emission factor for Natural gas production — onshore, higher-emitting technologies, per million m3 gas production?
+21. [oil_gas.throughput.oil_transport.pipelines] What is the greenhouse-gas emission factor for Oil transport — pipelines, per thousand m3 transported?
+22. [oil_gas.throughput.oil_production.onshore_high_emitting] What is the greenhouse-gas emission factor for Oil production — onshore, higher-emitting technologies, per thousand m3 oil production?
+23. [oil_gas.throughput.gas_production.offshore] What is the greenhouse-gas emission factor for Natural gas production — offshore, per million m3 gas production?
+24. [oil_gas.throughput.gas_storage.limited_ldar] What is the greenhouse-gas emission factor for Gas storage — limited LDAR, higher-emitting, per million m3 gas consumption?
+25. [passenger_vehicles.motorbike.medium.petrol] What is the greenhouse-gas emission factor for DEFRA motorbike (Medium, petrol) — kgCO2e per km, per km?
+26. [passenger_vehicles.motorbike.average.petrol.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, motorbike (Average, petrol) — kWh per km, per km?
+27. [passenger_vehicles.car.segment.sports.diesel.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, car (Sports, diesel) — kWh per km, per km?
+28. [passenger_vehicles.car.segment.executive.petrol.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, car (Executive, petrol) — kWh per km, per km?
+29. [passenger_vehicles.car.segment.dual_purpose_4x4.petrol.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, car (Dual purpose 4X4, petrol) — kWh per km, per km?
+30. [passenger_vehicles.car.segment.mpv.diesel.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, car (MPV, diesel) — kWh per km, per km?

@@ -26,13 +26,16 @@ The fourth row is the story. A model that cites DEFRA for an EPA figure is more
 dangerous than one that cites nothing, because the citation is what makes a
 reader stop checking.
 
-## Pilot result
+## Result — Claude Opus 5, 467 questions, unaided
 
-Claude Opus 5, unaided, 45 questions, 0 tool uses: **47.2% within 10%** of the
-sourced value (of 36 scoreable; 8 had units too ambiguous to reconcile and are
-excluded rather than counted wrong). 84% named a source and 90% of those named
-the right one — but **when it named the right source, the number was still wrong
-51.7% of the time.** See [FINDINGS-pilot.md](./FINDINGS-pilot.md).
+**46.3% within 10%** of the sourced value. It named a source 75% of the time and
+named the *right* one 90% of those — **but 55% of the correctly-attributed
+answers carried a wrong number.** It is best on textbook fuel factors (92%) and
+worst on anything jurisdiction-specific or recent (food PCF 8%, NGFS 9%).
+
+Full write-up, exemplars, and the evidence that the scorer itself is sound:
+**[FINDINGS.md](./FINDINGS.md)**. Earlier 45-question pilot:
+[FINDINGS-pilot.md](./FINDINGS-pilot.md).
 
 ## Status
 

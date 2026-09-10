@@ -1,0 +1,30 @@
+1. [district_heating.eu_framework.renewable_share_eu27] What is the greenhouse-gas emission factor for District Heating renewable + waste-heat share — EU-27 aggregate?
+2. [district_heating.gbr.onsite_wtt] What is the greenhouse-gas emission factor for UK WTT- heat and steam, per kWh?
+3. [equivalencies.ref.person_day] What is the greenhouse-gas emission factor for Reference — one average person-day of emissions, per person-day (global average, all GHG excl. LULUCF)?
+4. [equivalencies.gbr.ref.car_annual_distance_km] What is the greenhouse-gas emission factor for Reference — average distance driven per car per year, per year (Great Britain)?
+5. [equivalencies.gbr.flight_london_new_york_return] What is the greenhouse-gas emission factor for GB equivalency - return flight London-New York, per return economy flight London-New York (incl. radiative forcing)?
+6. [equivalencies.usa.home_energy_year] What is the greenhouse-gas emission factor for US equivalency - home energy use for one year, per year (all energy)?
+7. [equivalencies.usa.oil_barrel] What is the greenhouse-gas emission factor for US equivalency - one barrel of oil consumed, per barrel of oil consumed?
+8. [equivalencies.usa.railcar_coal] What is the greenhouse-gas emission factor for US equivalency - one railcar of coal burned, per railcar of coal burned?
+9. [equivalencies.usa.natural_gas_therm] What is the greenhouse-gas emission factor for US equivalency - one therm of natural gas, per therm of natural gas?
+10. [equivalencies.usa.waste_recycled_short_ton] What is the greenhouse-gas emission factor for US equivalency - one short ton of waste recycled vs landfilled, per short ton of waste recycled instead of landfilled?
+11. [equivalencies.usa.propane_cylinder] What is the greenhouse-gas emission factor for US equivalency - one propane cylinder, per propane cylinder used for home barbecue (16 lb)?
+12. [equivalencies.usa.forest_acre_sequestration_year] What is the greenhouse-gas emission factor for US equivalency - one acre of US forest sequestering for a year, per year?
+13. [equivalencies.usa.smartphone_charged] What is the greenhouse-gas emission factor for US equivalency - one smartphone charged, per smartphone charged?
+14. [equivalencies.ref.tree_seedling.sequestration_10yr] What is the greenhouse-gas emission factor for Reference — urban tree seedling grown 10 years, per urban tree seedling grown for 10 years?
+15. [ev_charging.van.class_iii.bev.td_loss_uk] What is the greenhouse-gas emission factor for DEFRA UK EV T&D loss (BEV van, Class III (1.74 to 3.5 tonnes)) — kgCO2e per km, per km?
+16. [ev_charging.car.segment.supermini.bev.charging_uk] What is the greenhouse-gas emission factor for DEFRA UK EV charging (BEV, Supermini) — kgCO2e per km, per km?
+17. [ev_charging.car.segment.supermini.bev.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR EV energy use (BEV, Supermini) — kWh per km, per km?
+18. [ev_charging.car.segment.lower_medium.phev.charging_uk] What is the greenhouse-gas emission factor for DEFRA UK EV charging (PHEV, Lower medium) — kgCO2e per km, per km?
+19. [ev_charging.car.segment.dual_purpose_4x4.bev.charging_uk] What is the greenhouse-gas emission factor for DEFRA UK EV charging (BEV, Dual purpose 4X4) — kgCO2e per km, per km?
+20. [ev_charging.car.segment.mpv.phev.td_loss_uk] What is the greenhouse-gas emission factor for DEFRA UK EV T&D loss (PHEV, MPV) — kgCO2e per km, per km?
+21. [ev_charging.car.segment.upper_medium.bev.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR EV energy use (BEV, Upper medium) — kWh per km, per km?
+22. [ev_charging.car.segment.dual_purpose_4x4.bev.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR EV energy use (BEV, Dual purpose 4X4) — kWh per km, per km?
+23. [ev_charging.car.size.large.phev.td_loss_uk] What is the greenhouse-gas emission factor for DEFRA UK EV T&D loss (PHEV, Large car) — kgCO2e per km, per km?
+24. [ev_charging.car.segment.luxury.bev.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR EV energy use (BEV, Luxury) — kWh per km, per km?
+25. [ev_charging.car.segment.mpv.bev.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR EV energy use (BEV, MPV) — kWh per km, per km?
+26. [ev_charging.van.class_ii.bev.charging_uk] What is the greenhouse-gas emission factor for DEFRA UK EV charging (BEV, Class II (1.305 to 1.74 tonnes)) — kgCO2e per km, per km?
+27. [food.diet.high_meat.annual] What is the greenhouse-gas emission factor for Dietary carbon footprint — high-meat diet, per year?
+28. [food.diet.mixed.annual] What is the greenhouse-gas emission factor for Dietary carbon footprint — mixed / average diet, per year?
+29. [food.diet.low_meat.annual] What is the greenhouse-gas emission factor for Dietary carbon footprint — low-meat diet, per year?
+30. [food.diet.vegan.annual] What is the greenhouse-gas emission factor for Dietary carbon footprint — vegan / plant-based diet, per year?

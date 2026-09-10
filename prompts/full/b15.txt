@@ -1,0 +1,30 @@
+1. [semiconductors.tier1.c2f6] What is the greenhouse-gas emission factor for Semiconductor manufacturing — C2F6, per m2 silicon?
+2. [spend_based.defra.sectors.paper_products] What is the greenhouse-gas emission factor for Spend-based GHG intensity — Paper and paper products, per 2025 GBP purchaser price incl. VAT?
+3. [spend_based.uk.sic.c.manufacturing] What is the greenhouse-gas emission factor for Spend-based GHG intensity — UK SIC 2007 section C Manufacturing, per GBP gross value added (current basic prices)?
+4. [spend_based.us.naics6.333515.cutting_tool_and_machine_tool_accessory_manufacturing] What is the greenhouse-gas emission factor for Spend-based GHG intensity — US NAICS-6 333515 Cutting Tool and Machine Tool Accessory Manufacturing, per 2024 USD purchaser price?
+5. [spend_based.can.ioic.bs23c20.oil_and_gas_engineering_construction] What is the greenhouse-gas emission factor for Spend-based GHG intensity — Canada IOIC BS23C20 Oil and gas engineering construction, per CAD of industry production (current dollars)?
+6. [spend_based.eu.rou.nace.k.financial_and_insurance_activities] What is the greenhouse-gas emission factor for Spend-based GHG intensity — Romania NACE Rev. 2 K Financial and insurance activities, per EUR gross value added (current basic prices)?
+7. [spend_based.useeio.sectors.cement_manufacturing] What is the greenhouse-gas emission factor for Spend-based GHG intensity — Cement manufacturing, per 2022 USD purchaser price?
+8. [spend_based.defra.sectors.real_estate] What is the greenhouse-gas emission factor for Spend-based GHG intensity — Real estate activities, per 2025 GBP purchaser price incl. VAT?
+9. [spend_based.uk.sic.r.arts_entertainment_and_recreation] What is the greenhouse-gas emission factor for Spend-based GHG intensity — UK SIC 2007 section R Arts, entertainment and recreation, per GBP gross value added (current basic prices)?
+10. [spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers] What is the greenhouse-gas emission factor for Spend-based GHG intensity — US NAICS-6 424110 Printing and Writing Paper Merchant Wholesalers, per 2024 USD purchaser price?
+11. [spend_based.can.ioic.bs81300.professional_and_similar_organisations] What is the greenhouse-gas emission factor for Spend-based GHG intensity — Canada IOIC BS81300 Professional and similar organisations, per CAD of industry production (current dollars)?
+12. [spend_based.eu.svk.nace.c29.manufacture_of_motor_vehicles_trailers_and_semi_tr] What is the greenhouse-gas emission factor for Spend-based GHG intensity — Slovakia NACE Rev. 2 C29 Manufacture of motor vehicles, trailers and semi-trailers, per EUR gross value added (current basic prices)?
+13. [spend_based.useeio.sectors.pharmaceuticals] What is the greenhouse-gas emission factor for Spend-based GHG intensity — Pharmaceutical and medicine manufacturing, per 2022 USD purchaser price?
+14. [transmission_distribution.gbr.district_heat] What is the greenhouse-gas emission factor for UK Distribution - district heat & steam, per kWh?
+15. [transmission_distribution.aus.state.wa_nwis.electricity] What is the greenhouse-gas emission factor for Western Australia — North Western Interconnected System, per kWh?
+16. [transmission_distribution.fra.electricity] What is the greenhouse-gas emission factor for ADEME, per kWh?
+17. [transmission_distribution.cuw.loss_rate] What is the greenhouse-gas emission factor for Electricity T&D loss rate — Curacao?
+18. [transmission_distribution.gbr.electricity] What is the greenhouse-gas emission factor for UK T&D- UK electricity, per kWh?
+19. [transmission_distribution.aus.state.vic.electricity] What is the greenhouse-gas emission factor for Victoria electricity transmission & distribution losses — network operator view, per kWh?
+20. [transmission_distribution.col.loss_rate] What is the greenhouse-gas emission factor for Electricity T&D loss rate — Colombia?
+21. [transmission_distribution.gbr.electricity] What is the greenhouse-gas emission factor for UK T&D- UK electricity, per kWh?
+22. [transmission_distribution.aus.state.nt_dkis.electricity] What is the greenhouse-gas emission factor for Northern Territory — Darwin Katherine Interconnected System, per kWh?
+23. [transmission_distribution.ukr.loss_rate] What is the greenhouse-gas emission factor for Electricity T&D loss rate — Ukraine?
+24. [transmission_distribution.gbr.district_heat] What is the greenhouse-gas emission factor for UK Distribution - district heat & steam, per kWh?
+25. [transmission_distribution.aus.state.qld.electricity] What is the greenhouse-gas emission factor for Queensland electricity transmission & distribution losses — network operator view, per kWh?
+26. [waste.incineration.co2.cc.msw.garden_park] What is the greenhouse-gas emission factor for Total carbon content — MSW component: garden and park waste — fraction of dry weight?
+27. [waste.wastewater.domestic.mcf.treated.latrine_dry_communal] What is the greenhouse-gas emission factor for Methane Correction Factor (MCF) — domestic wastewater — treated — latrine, dry climate, communal (many users), GW table lower than latrine?
+28. [waste.incineration.co2.cc.msw.other_inert] What is the greenhouse-gas emission factor for Total carbon content — MSW component: other inert waste — fraction of dry weight?
+29. [waste.landfill.ox.uncovered] What is the greenhouse-gas emission factor for Oxidation Factor (OX) — uncovered SWDS cover?
+30. [waste.wastewater.domestic.mcf.treated.latrine_dry_small] What is the greenhouse-gas emission factor for Methane Correction Factor (MCF) — domestic wastewater — treated — latrine, dry climate, small family (3-5 persons), GW table lower than latrine?

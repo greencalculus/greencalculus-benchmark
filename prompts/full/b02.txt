@@ -1,0 +1,30 @@
+1. [business_travel.fra.road.car_diesel] What is the greenhouse-gas emission factor for ADEME (France) business travel / commuting — Car, diesel, per km?
+2. [business_travel.sea.ferry.average] What is the greenhouse-gas emission factor for DEFRA business travel sea ferry (Average (all passenger)) — kgCO2e per passenger.km, per passenger.km?
+3. [business_travel.usa.rail.transit] What is the greenhouse-gas emission factor for EPA, per passenger.mile?
+4. [business_travel.aus.road.hire_car.by_drive.internal_combustion_engine_light_bus.per_vehicle_km] What is the greenhouse-gas emission factor for Australian Government ERF hire car — Internal combustion engine, Light bus, per vehicle.km?
+5. [business_travel.fra.rail.ter] What is the greenhouse-gas emission factor for ADEME, per passenger.km?
+6. [business_travel.land.car.segment.supermini.bev] What is the greenhouse-gas emission factor for DEFRA business travel land car (Supermini, bev) — kgCO2e per km, per km?
+7. [business_travel.usa.air.short_haul] What is the greenhouse-gas emission factor for EPA, per passenger.mile?
+8. [business_travel.aus.road.hire_car.by_fuel.electric_diesel_wagon.per_vehicle_km] What is the greenhouse-gas emission factor for Australian Government ERF hire car — Electric/Diesel, Wagon, per vehicle.km?
+9. [carbon_pricing.jpn_tokyo.ets] What is the greenhouse-gas emission factor for Tokyo CaT — carbon price?
+10. [carbon_pricing.eu.ets] What is the greenhouse-gas emission factor for EU ETS — carbon price?
+11. [carbon_pricing.twn.carbon_tax] What is the greenhouse-gas emission factor for Taiwan, China carbon fee — carbon price?
+12. [carbon_pricing.nor.carbon_tax] What is the greenhouse-gas emission factor for Norway carbon tax — carbon price?
+13. [carbon_pricing.usa_rggi.ets] What is the greenhouse-gas emission factor for RGGI — carbon price?
+14. [carbon_pricing.esp.carbon_tax] What is the greenhouse-gas emission factor for Spain carbon tax — carbon price?
+15. [carbon_pricing.swe.carbon_tax] What is the greenhouse-gas emission factor for Sweden carbon tax — carbon price?
+16. [carbon_pricing.hun.carbon_tax] What is the greenhouse-gas emission factor for Hungary carbon tax — carbon price?
+17. [carbon_pricing.aus.ets] What is the greenhouse-gas emission factor for Australia Safeguard Mechanism — carbon price?
+18. [carbon_pricing.mex_queretaro.carbon_tax] What is the greenhouse-gas emission factor for Queretaro carbon tax — carbon price?
+19. [carbon_pricing.nld.carbon_tax] What is the greenhouse-gas emission factor for Netherlands carbon tax — carbon price?
+20. [carbon_pricing.zaf.carbon_tax] What is the greenhouse-gas emission factor for South Africa carbon tax — carbon price?
+21. [cbam.country.ind.7326_90_94.articles_iron] What is the greenhouse-gas emission factor for CBAM Annex I — India, CN 7326 90 94 Articles of iron or steel, closed-die forged, n.e.s., per tonne of good (direct emissions)?
+22. [reporting.cbam.indirect.namibia] What is the greenhouse-gas emission factor for CBAM Annex II per-country indirect emission factor — Namibia?
+23. [cbam.country.chn.7609_00_00.aluminium_tube_pipe] What is the greenhouse-gas emission factor for CBAM Annex I — China, CN 7609 00 00 Aluminium tube or pipe fittings, per tonne of good (direct emissions)?
+24. [reporting.cbam.indirect.turkiye] What is the greenhouse-gas emission factor for CBAM Annex II per-country indirect emission factor — Türkiye?
+25. [cbam.country.rus.7207_11_90.semi_finished_products] What is the greenhouse-gas emission factor for CBAM Annex I — Russia, CN 7207 11 90 Semi-finished products of iron or non-alloy steel, containin, per tonne of good (direct emissions)?
+26. [reporting.cbam.indirect.tanzania_united] What is the greenhouse-gas emission factor for CBAM Annex II per-country indirect emission factor — Tanzania, United Republic of?
+27. [cbam.country.rus.7207_11_16.semi_finished_products] What is the greenhouse-gas emission factor for CBAM Annex I — Russia, CN 7207 11 16 Semi-finished products, of iron or non-alloy steel, containi, per tonne of good (direct emissions)?
+28. [reporting.cbam.indirect.zambia] What is the greenhouse-gas emission factor for CBAM Annex II per-country indirect emission factor — Zambia?
+29. [cbam.country.ind.7307_92.threaded_elbows_bends] What is the greenhouse-gas emission factor for CBAM Annex I — India, CN 7307 92 Threaded elbows, bends and sleeves, of stainless steel, per tonne of good (direct emissions)?
+30. [reporting.cbam.indirect.georgia] What is the greenhouse-gas emission factor for CBAM Annex II per-country indirect emission factor — Georgia?

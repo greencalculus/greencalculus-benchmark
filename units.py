@@ -31,7 +31,7 @@ CURRENCY = {"usd": 1.0, "us$": 1.0, "$": 1.0, "eur": 1.0, "gbp": 1.0, "sek": Non
 # carbon-species conversion: 1 kg C == 44/12 kg CO2
 C_TO_CO2 = 44.0 / 12.0
 
-_ALIAS = [(r"co2e|co2-e|co₂e|co2 eq\w*|carbon dioxide equivalent", "co2e"),
+_ALIAS = [(r"co2e|co2eq\w*|co2-e|co₂e|co2 eq\w*|carbon dioxide equivalent", "co2e"),
           (r"\bco2\b|co₂", "co2"),
           (r"\bch4\b|methane", "ch4"), (r"\bn2o\b", "n2o"), (r"\bsf6\b", "sf6"),
           (r"\bcarbon\b(?! dioxide)|\bc\b(?!o)", "c")]
@@ -40,10 +40,12 @@ _ALIAS = [(r"co2e|co2-e|co₂e|co2 eq\w*|carbon dioxide equivalent", "co2e"),
 def _clean(u):
     u = (u or "").lower().strip()
     u = u.replace("−", "-").replace("·", " ").replace("/", " per ")
+    # "room.night", "passenger.km", "vehicle.km" join two words with a dot
+    u = re.sub(r"(?<=[a-z])[.\-](?=[a-z])", " ", u)
     u = re.sub(r"\(.*?\)", " ", u)
     u = re.sub(r"[^a-z0-9%$ .\-]+", " ", u)
     # "kgco2e" / "tco2" / "gsf6" arrive glued; split the mass prefix off the species
-    u = re.sub(r"\b(mg|kg|g|t|tonne|kt|gg|tg)(co2e|co2|ch4|n2o|sf6|c)\b", r"\1 \2", u)
+    u = re.sub(r"\b(mg|kg|g|t|tonne|tonnes|kt|gg|tg)(co2eq|co2e|co2|ch4|n2o|sf6|c)\b", r"\1 \2", u)
     return re.sub(r"\s+", " ", u).strip()
 
 

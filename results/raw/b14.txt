@@ -1,0 +1,30 @@
+[renewable_generation.reference.specific_yield.irl] Solar PV specific yield for Ireland is roughly 900 kWh/kWp/year (first-year). Typically derived from PVGIS / Global Solar Atlas country averages.
+[renewable_generation.reference.degradation_pct.solar_pv_rooftop] Rooftop solar PV output degradation is about 0.7 % per year (NREL PV degradation review; some datasets use 0.5 %/yr).
+[renewable_generation.reference.specific_yield.ita] Solar PV specific yield for Italy is roughly 1,300 kWh/kWp/year. Source: PVGIS / Global Solar Atlas.
+[renewable_generation.reference.degradation_pct.solar_pv_utility] Utility-scale solar PV degradation is about 0.5 % per year (NREL Jordan & Kurtz degradation-rate review).
+[renewable_generation.reference.specific_yield.swe] Solar PV specific yield for Sweden is roughly 900 kWh/kWp/year (PVGIS). I am not confident whether the dataset uses ~880 or ~950.
+[renewable_generation.reference.degradation_pct.wind_onshore] Onshore wind annual output degradation is about 0.5 % per year (Staffell & Green, "How does wind farm performance decline with age?", ~1.6 %/yr load-factor decline is the higher published figure — I am not confident which the dataset uses).
+[renewable_generation.reference.specific_yield.zaf] Solar PV specific yield for South Africa is roughly 1,650 kWh/kWp/year. Source: Global Solar Atlas / PVGIS.
+[renewable_generation.reference.specific_yield.fra] Solar PV specific yield for France is roughly 1,200 kWh/kWp/year. Source: PVGIS.
+[renewable_generation.reference.specific_yield.nld] Solar PV specific yield for the Netherlands is roughly 950 kWh/kWp/year. Source: PVGIS.
+[renewable_generation.reference.specific_yield.pol] Solar PV specific yield for Poland is roughly 1,000 kWh/kWp/year. Source: PVGIS.
+[renewable_generation.reference.specific_yield.bra] Solar PV specific yield for Brazil is roughly 1,550 kWh/kWp/year. Source: Global Solar Atlas.
+[renewable_generation.reference.specific_yield.chn] Solar PV specific yield for China is roughly 1,300 kWh/kWp/year (national average; wide regional spread). Source: Global Solar Atlas.
+[reusable_vs_single_use.reference.handwash_tap.energy_per_item] Hand washing under a running hot tap: roughly 0.05 kWh of energy per item washed. I do not know the exact dataset value with confidence.
+[reusable_vs_single_use.reference.dishwasher.place_settings_per_cycle] Domestic dishwasher standard capacity is 13 place settings per full cycle (EU Ecodesign/energy-label reference for a standard 60 cm dishwasher; 12 is the older pre-2021 reference).
+[reusable_vs_single_use.reference.handwash_tap.water_per_item] Hand washing under a running hot tap: roughly 6 litres of water per item. I do not know the exact dataset value.
+[reusable_vs_single_use.reference.dishwasher.water_per_cycle] Domestic dishwasher water use is about 10 litres per full eco-programme cycle (EU energy-label eco programme, 60 cm, 13 place settings).
+[reusable_vs_single_use.reference.handwash_basin.energy_per_item] Hand washing in a filled basin/sink: roughly 0.015 kWh of energy per item. I do not know the exact dataset value.
+[reusable_vs_single_use.reference.dishwasher.energy_per_cycle] Domestic dishwasher energy is about 0.75 kWh per full eco-programme cycle (EU energy label; class-A 60 cm machines are nearer 0.65 kWh).
+[reusable_vs_single_use.reference.handwash_basin.water_per_item] Hand washing in a filled basin/sink: roughly 1.5 litres of water per item (a ~10 L basin shared across several items). I do not know the exact dataset value.
+[semiconductors.tier1.cf4] Semiconductor manufacturing CF4, IPCC 2006/2019 Tier 1: approximately 0.9 kg CF4 per m2 of silicon.
+[tft_fpd.tier1.nf3] TFT-FPD manufacturing NF3, IPCC Tier 1: approximately 0.05 kg NF3 per m2 of glass (IPCC 2006 GL Vol.3 Ch.6, Table 6.6).
+[tft_fpd.tier1.sf6] TFT-FPD manufacturing SF6, IPCC Tier 1: approximately 0.02 kg SF6 per m2 of glass (IPCC 2006 GL Vol.3 Ch.6).
+[semiconductors.tier1.sf6] Semiconductor manufacturing SF6, IPCC Tier 1: approximately 0.2 kg SF6 per m2 of silicon.
+[tft_fpd.tier1.cf4] TFT-FPD manufacturing CF4, IPCC Tier 1: approximately 0.005 kg CF4 per m2 of glass. Low confidence on the exact figure.
+[pv_cells.tier1.cf4] PV-cell manufacturing CF4, IPCC 2006 GL Tier 1: approximately 0.002 kg CF4 per m2 of silicon. Low confidence.
+[semiconductors.tier1.chf3] Semiconductor manufacturing CHF3, IPCC Tier 1: approximately 0.04 kg CHF3 per m2 of silicon.
+[semiconductors.tier1.c3f8] Semiconductor manufacturing C3F8, IPCC Tier 1: approximately 0.05 kg C3F8 per m2 of silicon. Low confidence.
+[semiconductors.tier1.nf3] Semiconductor manufacturing NF3, IPCC Tier 1: approximately 0.9 kg NF3 per m2 of silicon.
+[pv_cells.tier1.c2f6] PV-cell manufacturing C2F6, IPCC Tier 1: approximately 0.003 kg C2F6 per m2 of silicon. Low confidence.
+[heat_transfer_fluids.tier1.c6f14_proxy] Electronics heat transfer fluids, aggregate fluorinated-compound (C6F14 proxy) Tier 1: approximately 0.2 kg per m2 of silicon. Low confidence — I do not reliably recall this IPCC default.

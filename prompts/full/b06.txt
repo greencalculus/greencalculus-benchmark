@@ -1,0 +1,30 @@
+1. [food.diet.vegetarian.annual] What is the greenhouse-gas emission factor for Dietary carbon footprint — vegetarian diet, per year?
+2. [food.diet.pescatarian.annual] What is the greenhouse-gas emission factor for Dietary carbon footprint — pescatarian / fish-eater diet, per year?
+3. [food_pcf.fra.madeleine_cake_pure_butter] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Madeleine cake, pure butter, per kg product?
+4. [food_pcf.fra.cheese_souffle] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Cheese soufflé, per kg product?
+5. [food_pcf.fra.parsley_dried] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Parsley, dried, per kg product?
+6. [food_pcf.fra.spanish_style_tortilla_with_onions_omelette_with_potatoes_an] What is the greenhouse-gas emission factor for AGRIBALYSE, per kg product?
+7. [food_pcf.fra.grapeseed_oil] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Grapeseed oil, per kg product?
+8. [food_pcf.fra.coconut_oil_coprah] What is the greenhouse-gas emission factor for AGRIBALYSE, per kg product?
+9. [food_pcf.fra.orange_juice_home_made] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Orange juice, home-made, per kg product?
+10. [food_pcf.fra.kombu_or_japanese_kelp_laminaria_japonica_dried_or_dehydrate] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Kombu or Japanese kelp (Laminaria japonica), dried or dehydrated, per kg product?
+11. [food_pcf.fra.mussel_boiled_cooked_in_water] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Mussel, boiled/cooked in water, per kg product?
+12. [food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Biscuit sponge cake with fruits covering, pre-packed, per kg product?
+13. [food_pcf.fra.soup_tomatoes_prepacked_to_be_reheated] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Soup, tomatoes, prepacked, to be reheated, per kg product?
+14. [food_pcf.fra.brioche_filled_with_chocolate_drops] What is the greenhouse-gas emission factor for AGRIBALYSE (France) food PCF — Brioche, filled with chocolate drops, per kg product?
+15. [freight.sea.tonne_km] What is the greenhouse-gas emission factor for Freight — sea bulk carrier, Panamax generic, per tonne-km?
+16. [freight.road_hgv.tonne_km] What is the greenhouse-gas emission factor for Freight — road HGV, generic average laden, per tonne-km?
+17. [freight.air.tonne_km] What is the greenhouse-gas emission factor for Freight — air belly, long-haul, per tonne-km?
+18. [freight.rail.tonne_km] What is the greenhouse-gas emission factor for Freight — rail, generic average, per tonne-km?
+19. [freight_detailed.sea.container.intra_north_america.reefer] What is the greenhouse-gas emission factor for Sea freight — container, Intra North America EC/Gulf/WC, Reefer, per TEU-km?
+20. [freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo] What is the greenhouse-gas emission factor for Sea freight — chemical tanker 10000-19999 dwt, MDO, per tonne-km?
+21. [freight_detailed.road.na.ltl_dry_van.diesel] What is the greenhouse-gas emission factor for Road freight — NA LTL / dry van, diesel, per tonne-km?
+22. [freight_detailed.sea.container.asia_to_north_oceania.dry] What is the greenhouse-gas emission factor for Sea freight — container, Asia to/from North Oceania, Dry, per TEU-km?
+23. [freight_detailed.sea.refrigerated_bulk.dwt_6000_9999.vlsfo] What is the greenhouse-gas emission factor for Sea freight — refrigerated bulk 6000-9999 dwt, VLSFO, per tonne-km?
+24. [freight_detailed.sea.ferry_ropax.gt_2000_4999.hfo] What is the greenhouse-gas emission factor for Sea freight — Ferry-RoPax 2000-4999 GT, HFO, per tonne-km?
+25. [freight_detailed.sea.bulk_carrier.dwt_60000_99999.vlsfo] What is the greenhouse-gas emission factor for Sea freight — bulk carrier 60000-99999 dwt, VLSFO, per tonne-km?
+26. [freight_detailed.sea.refrigerated_bulk.dwt_2000_5999.hfo] What is the greenhouse-gas emission factor for Sea freight — refrigerated bulk 2000-5999 dwt, HFO, per tonne-km?
+27. [freight_detailed.rail.eu.diesel.cars] What is the greenhouse-gas emission factor for Rail freight — EU diesel traction, cars/vehicles, per tonne-km?
+28. [freight_detailed.road.china.dump.mdt_4_5_5_5t.diesel] What is the greenhouse-gas emission factor for Road freight — China dump truck MDT 4.5–5.5t GVW, diesel, per tonne-km?
+29. [freight_detailed.road.eu_sa.rigid_7_5_12t.avg.electric] What is the greenhouse-gas emission factor for Road freight — EU/SA rigid truck 7.5–12t GVW, avg/mixed, electric, per tonne-km?
+30. [freight_detailed.sea.general_cargo.dwt_gt_20000.vlsfo] What is the greenhouse-gas emission factor for Sea freight — general cargo 20000+ dwt, VLSFO, per tonne-km?

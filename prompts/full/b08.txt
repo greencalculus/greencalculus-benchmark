@@ -1,0 +1,30 @@
+1. [grid.usa.ba.southwest_power_pool.wtt_generation_residual_mix] What is the greenhouse-gas emission factor for US Southwest Power Pool grid electricity — well-to-tank, residual mix, per kWh?
+2. [grid.aus.state.tas.scope3_indirect] What is the greenhouse-gas emission factor for Tasmania grid electricity — well-to-tank indirect scope 3: upstream fuel + network losses, per kWh?
+3. [fuels.can.kerosene.wtt.litre] What is the greenhouse-gas emission factor for Canada Kerosene — well-to-tank, per litre?
+4. [fuels.gbr.bio.grass_straw.wtt.kwh] What is the greenhouse-gas emission factor for UK Grass/straw — well-to-tank, per kWh?
+5. [fuels.fra.propane.wtt.kwh_ncv] What is the greenhouse-gas emission factor for ADEME, per kWh?
+6. [grid.usa.ba.florida_power_light_co.wtt_generation] What is the greenhouse-gas emission factor for US Florida Power & Light Co. grid electricity — well-to-tank, consumption mix, per kWh?
+7. [fugitive_coal_methane.cmm.post_mining_surface] What is the greenhouse-gas emission factor for Post-mining CMM — surface-source coal, per tonne coal handled?
+8. [fugitive_coal_methane.cmm.post_mining_underground] What is the greenhouse-gas emission factor for Post-mining CMM — underground-source coal, per tonne coal handled?
+9. [fugitive_coal_methane.cmm.surface_mining] What is the greenhouse-gas emission factor for Coal mine methane — surface mining, per tonne coal mined?
+10. [fugitive_coal_methane.cmm.underground_mining] What is the greenhouse-gas emission factor for Coal mine methane — underground mining, per tonne coal mined?
+11. [grid.can.province.on.location_based] What is the greenhouse-gas emission factor for Canada — Ontario grid electricity, location-based, per kWh?
+12. [grid.gbr.electricity.location_based] What is the greenhouse-gas emission factor for UK grid electricity — location-based, per kWh?
+13. [grid.fra.electricity.location_based] What is the greenhouse-gas emission factor for France grid electricity — location-based, continental France, per kWh?
+14. [grid.aus.electricity.residual_mix] What is the greenhouse-gas emission factor for Australia grid electricity — residual mix, market-based scope 2, per kWh?
+15. [grid.usa.subregion.nycw.residual_mix] What is the greenhouse-gas emission factor for US eGRID subregion NYCW, per kWh?
+16. [grid.usa.state.wy.location_based] What is the greenhouse-gas emission factor for US state WY (Wyoming) grid electricity — location-based, per kWh?
+17. [grid.prt.electricity.residual_mix] What is the greenhouse-gas emission factor for Portugal grid electricity — residual mix, per kWh?
+18. [grid.nld.electricity.location_based] What is the greenhouse-gas emission factor for Netherlands grid electricity — location-based, national, per kWh?
+19. [grid.can.province.ns.location_based] What is the greenhouse-gas emission factor for Canada — Nova Scotia grid electricity, location-based, per kWh?
+20. [grid.gbr.electricity.biogenic.kwh] What is the greenhouse-gas emission factor for UK Electricity: UK — biogenic CO2 memo, per kWh?
+21. [grid.aus.electricity.location_based] What is the greenhouse-gas emission factor for Australia grid electricity — location-based, national scope 2, per kWh?
+22. [grid.usa.subregion.newe.residual_mix] What is the greenhouse-gas emission factor for US eGRID subregion NEWE, per kWh?
+23. [grid.esp.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Spain grid electricity — lifecycle intensity, per kWh?
+24. [grid.usa.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for United States grid electricity — lifecycle intensity, per kWh?
+25. [grid.irn.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Iran, per kWh?
+26. [grid.aze.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Azerbaijan grid electricity — lifecycle intensity, per kWh?
+27. [grid.sgp.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Singapore grid electricity — lifecycle intensity, per kWh?
+28. [grid.bhr.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Bahrain grid electricity — lifecycle intensity, per kWh?
+29. [grid.ltu.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Lithuania grid electricity — lifecycle intensity, per kWh?
+30. [grid.flk.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Falkland Islands, per kWh?

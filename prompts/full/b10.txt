@@ -1,0 +1,30 @@
+1. [chemicals.acrylonitrile.ch4_default] What is the greenhouse-gas emission factor for Acrylonitrile — CH4, per tonne acrylonitrile?
+2. [industrial_processes_refinement.fluorochemical.nf3_cf4_byproduct] What is the greenhouse-gas emission factor for NF3 production EF — CF4 by-product (Tier 1), 2019 Refinement, per kg NF3 produced?
+3. [minerals.cement.cao_default_fraction] What is the greenhouse-gas emission factor for Cement clinker — default CaO content fraction, per tonne clinker?
+4. [industrial_processes_refinement.hydrogen.steam_reforming_lpg] What is the greenhouse-gas emission factor for Hydrogen — steam reforming of LPG (Tier 1 CCF), 2019 Refinement, per GJ feedstock?
+5. [minerals.glass.specialty_tv_panel] What is the greenhouse-gas emission factor for Glass production — Specialty, per tonne glass melted?
+6. [industrial_processes_refinement.nitric_acid.old_pre_1975] What is the greenhouse-gas emission factor for Nitric acid — old (pre-1975) plants (all processes), 2019 Refinement, per tonne 100% nitric acid?
+7. [chemicals.ethylene_oxide.ch4_thermal_treatment] What is the greenhouse-gas emission factor for Ethylene oxide — CH4, thermal treatment of process vents, per tonne ethylene oxide?
+8. [industrial_processes_refinement.hydrogen.steam_reforming_methanol] What is the greenhouse-gas emission factor for Hydrogen — steam reforming of methanol (Tier 1 CCF), 2019 Refinement, per GJ feedstock?
+9. [minerals.cement.clinker_pre_ckd] What is the greenhouse-gas emission factor for Cement clinker — base emission factor, per tonne clinker?
+10. [industrial_processes_refinement.hfc23_hcfc22.recent_design] What is the greenhouse-gas emission factor for HFC-23 emission from HCFC-22 production — recent design plants (not specifically optimised), 2019 Refinement, per kg HCFC-22 produced?
+11. [metals.iron_steel.blast_furnace_pig_iron] What is the greenhouse-gas emission factor for Blast furnace iron production — CO2, per tonne pig iron?
+12. [industrial_processes_refinement.nitric_acid.single_low_pressure] What is the greenhouse-gas emission factor for Nitric acid — single low pressure plants (L/L), 2019 Refinement, per tonne 100% nitric acid?
+13. [lca.pef.data_quality.dqr_fair_max] What is the greenhouse-gas emission factor for EU PEF Method — DQR fair quality threshold?
+14. [lca.pef.normalisation.required] What is the greenhouse-gas emission factor for EU PEF Method — normalisation required?
+15. [lca.pef.recycling.cff_required] What is the greenhouse-gas emission factor for EU PEF Method — Circular Footprint Formula (CFF) required for end-of-life modelling?
+16. [lca.pef.data_quality.dqr_dimensions_count] What is the greenhouse-gas emission factor for EU PEF Method — Data Quality Rating (DQR) dimension count?
+17. [lca.pef.climate_change.includes_biogenic_separate_subindicator] What is the greenhouse-gas emission factor for EU PEF Method — biogenic GHG reported as separate climate-change sub-indicator?
+18. [lca.pef.climate_change.includes_fossil] What is the greenhouse-gas emission factor for EU PEF Method — fossil GHG emissions included in climate-change category?
+19. [lca.pef.data_quality.dqr_excellent_max] What is the greenhouse-gas emission factor for EU PEF Method — DQR excellent quality threshold?
+20. [lca.pef.impact_categories_count] What is the greenhouse-gas emission factor for EU PEF Method — Environmental Footprint impact categories count?
+21. [lca.pef.climate_change.includes_land_use_change_subindicator] What is the greenhouse-gas emission factor for EU PEF Method — land-use-change GHG reported as separate climate-change sub-indicator?
+22. [lca.pef.electricity.residual_mix_default] What is the greenhouse-gas emission factor for EU PEF Method — residual electricity mix as default when contractual instruments absent?
+23. [lca.pef.data_quality.dqr_poor_threshold] What is the greenhouse-gas emission factor for EU PEF Method — DQR poor quality threshold?
+24. [lca.biogenic.gwp_bio.short_rotation_pef] What is the greenhouse-gas emission factor for Biogenic carbon — short-rotation biomass GWPbio?
+25. [managed_assets.van.class_iii.diesel] What is the greenhouse-gas emission factor for DEFRA managed assets van (Class III (1.74 to 3.5 tonnes), diesel) — kgCO2e per km, per km?
+26. [managed_assets.car.size.average.hybrid] What is the greenhouse-gas emission factor for DEFRA managed assets car (Average car, hybrid) — kgCO2e per km, per km?
+27. [managed_assets.hgv_refrigerated.rigid_all.0pct_laden.diesel] What is the greenhouse-gas emission factor for DEFRA managed assets HGV refrigerated (All rigids, 0% laden, diesel) — kgCO2e per km, per km?
+28. [managed_assets.hgv_refrigerated.rigid_gt_17t.50pct_laden.diesel] What is the greenhouse-gas emission factor for DEFRA managed assets HGV refrigerated (Rigid (>17 tonnes), 50% laden, diesel) — kgCO2e per km, per km?
+29. [managed_assets.car.segment.executive.diesel] What is the greenhouse-gas emission factor for DEFRA managed assets car (Executive, diesel) — kgCO2e per km, per km?
+30. [managed_assets.car.segment.mini.petrol] What is the greenhouse-gas emission factor for DEFRA managed assets car (Mini, petrol) — kgCO2e per km, per km?

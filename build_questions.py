@@ -63,7 +63,7 @@ def main():
         by_section[r.get("section") or "other"].append(r)
 
     rng = random.Random(SEED)
-    picked = []
+    picked, taken = [], set()
     for section in sorted(by_section):
         pool = by_section[section]
         # spread across publishers within the section
@@ -80,6 +80,10 @@ def main():
                 i += 1
                 continue
             r = cand.pop(rng.randrange(len(cand)))
+            if r["key"] in taken:
+                i += 1
+                continue
+            taken.add(r["key"])
             f, s = r["factor"], r.get("source") or {}
             picked.append({
                 "id": r["key"],

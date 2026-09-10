@@ -1,0 +1,30 @@
+1. [grid.bhs.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Bahamas, per kWh?
+2. [grid.tcd.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Chad grid electricity — lifecycle intensity, per kWh?
+3. [grid.gib.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Gibraltar grid electricity — lifecycle intensity, per kWh?
+4. [grid.gnq.electricity.lifecycle_intensity] What is the greenhouse-gas emission factor for Equatorial Guinea grid electricity — lifecycle intensity, per kWh?
+5. [heating_systems.boiler_efficiency.gas_non_condensing] What is the greenhouse-gas emission factor for Gas non-condensing boiler - seasonal efficiency?
+6. [heating_systems.heat_pump_spf.ashp] What is the greenhouse-gas emission factor for Air-source heat pump - seasonal performance factor?
+7. [heating_systems.reference.lifetime_years.boiler] What is the greenhouse-gas emission factor for Gas/oil boiler - reference operating lifetime?
+8. [heating_systems.boiler_efficiency.oil_non_condensing] What is the greenhouse-gas emission factor for Oil non-condensing boiler - seasonal efficiency?
+9. [heating_systems.boiler_efficiency.gas_condensing] What is the greenhouse-gas emission factor for Gas condensing boiler - seasonal efficiency?
+10. [heating_systems.boiler_efficiency.lpg_condensing] What is the greenhouse-gas emission factor for LPG condensing boiler - seasonal efficiency?
+11. [heating_systems.direct_electric.efficiency] What is the greenhouse-gas emission factor for Direct electric resistance heating - point-of-use efficiency?
+12. [heating_systems.boiler_efficiency.oil_condensing] What is the greenhouse-gas emission factor for Oil condensing boiler - seasonal efficiency?
+13. [homeworking.gbr.office_equipment] What is the greenhouse-gas emission factor for DEFRA homeworking (Office Equipment, UK) — kgCO2e per FTE working hour, per FTE working hour?
+14. [homeworking.gbr.combined] What is the greenhouse-gas emission factor for DEFRA homeworking (Homeworking (office equipment + heating), UK) — kgCO2e per FTE working hour, per FTE working hour?
+15. [homeworking.gbr.office_equipment] What is the greenhouse-gas emission factor for DEFRA homeworking (Office Equipment, UK) — kgCO2e per FTE working hour, per FTE working hour?
+16. [homeworking.gbr.heating] What is the greenhouse-gas emission factor for DEFRA homeworking (Heating, UK) — kgCO2e per FTE working hour, per FTE working hour?
+17. [homeworking.gbr.combined] What is the greenhouse-gas emission factor for DEFRA homeworking (Homeworking (office equipment + heating), UK) — kgCO2e per FTE working hour, per FTE working hour?
+18. [homeworking.gbr.heating] What is the greenhouse-gas emission factor for DEFRA homeworking (Heating, UK) — kgCO2e per FTE working hour, per FTE working hour?
+19. [hotel_stay.gbr] What is the greenhouse-gas emission factor for DEFRA hotel stay (UK) — kgCO2e per room per night, per room.night?
+20. [hotel_stay.oman] What is the greenhouse-gas emission factor for DEFRA hotel stay (Oman) — kgCO2e per room per night, per room.night?
+21. [hotel_stay.thailand] What is the greenhouse-gas emission factor for DEFRA hotel stay (Thailand) — kgCO2e per room per night, per room.night?
+22. [hotel_stay.malaysia] What is the greenhouse-gas emission factor for DEFRA hotel stay (Malaysia) — kgCO2e per room per night, per room.night?
+23. [hotel_stay.hong_kong_china] What is the greenhouse-gas emission factor for DEFRA hotel stay (Hong Kong, China) — kgCO2e per room per night, per room.night?
+24. [hotel_stay.costa_rica] What is the greenhouse-gas emission factor for DEFRA hotel stay (Costa Rica) — kgCO2e per room per night, per room.night?
+25. [hotel_stay.belgium] What is the greenhouse-gas emission factor for DEFRA hotel stay (Belgium) — kgCO2e per room per night, per room.night?
+26. [hotel_stay.chile] What is the greenhouse-gas emission factor for DEFRA hotel stay (Chile) — kgCO2e per room per night, per room.night?
+27. [hotel_stay.vietnam] What is the greenhouse-gas emission factor for DEFRA hotel stay (Vietnam) — kgCO2e per room per night, per room.night?
+28. [hotel_stay.switzerland] What is the greenhouse-gas emission factor for DEFRA hotel stay (Switzerland) — kgCO2e per room per night, per room.night?
+29. [hotel_stay.china] What is the greenhouse-gas emission factor for DEFRA hotel stay (China) — kgCO2e per room per night, per room.night?
+30. [hotel_stay.portugal] What is the greenhouse-gas emission factor for DEFRA hotel stay (Portugal) — kgCO2e per room per night, per room.night?

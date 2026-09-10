@@ -1,0 +1,30 @@
+[fuel_properties.lpg.gross_cv_gj_tonne] Approximately 49.4 GJ per tonne (gross/higher heating value) for LPG, per UK DESNZ/DEFRA fuel properties tables.
+[fuel_properties.hydrogen.gross_cv_gj_tonne] Approximately 142 GJ per tonne (gross CV) for hydrogen, per UK DESNZ/DEFRA fuel properties; this corresponds to the well-known HHV of ~142 MJ/kg.
+[fuel_properties.diesel.net_cv_gj_tonne] Approximately 43.0 GJ per tonne net CV for diesel (100% mineral), per UK DESNZ/DEFRA fuel properties (IPCC default is 43.0 GJ/t NCV for gas/diesel oil).
+[fuel_properties.hydrogen.net_cv_gj_tonne] Approximately 120 GJ per tonne net CV for hydrogen (LHV ~120 MJ/kg), per UK DESNZ/DEFRA fuel properties.
+[fuel_properties.gas_oil.gross_cv_gj_tonne] Approximately 45.6 GJ per tonne gross CV for gas oil, per UK DESNZ/DEFRA fuel properties.
+[fuel_properties.gas_oil.net_cv_gj_tonne] Approximately 42.8 GJ per tonne net CV for gas oil, per UK DESNZ/DEFRA fuel properties (roughly 6% below gross).
+[fuel_properties.petrol.density_kg_m3] Approximately 745 kg per m3 for petrol, per UK DESNZ/DEFRA fuel properties (typical range 740-750 kg/m3).
+[fuel_properties.natural_gas.gross_cv_kwh_kg] Approximately 15.4 kWh per kg gross CV for natural gas, per UK DESNZ/DEFRA fuel properties (~55.5 GJ/t GCV).
+[fuel_properties.petrol.density_kg_litre] Approximately 0.745 kg per litre for petrol, per UK DESNZ/DEFRA fuel properties.
+[fuel_properties.lpg.density_kg_litre] Approximately 0.51 kg per litre for LPG, per UK DESNZ/DEFRA fuel properties (LPG density ~510 kg/m3).
+[fuel_properties.diesel_100_mineral.gross_cv_kwh_litre] Approximately 10.7 kWh per litre gross CV for 100% mineral diesel, per UK DESNZ/DEFRA fuel properties (~38.6 MJ/litre GCV).
+[fuel_properties.diesel_100_mineral.litres_per_tonne] Approximately 1,190 litres per tonne of 100% mineral diesel, per UK DESNZ/DEFRA fuel properties (density ~0.84 kg/l).
+[fuels.gbr.bio.methanol_bio.litre] Approximately 0.66-0.67 kg CO2e per litre for bio-methanol on a direct combustion basis, but the UK DESNZ table reports bio-methanol scope 1 CO2e as effectively outside gross scope 1 (biogenic CO2 ~1.54 kg/litre reported separately). I am not confident of the exact published figure.
+[fuels.usa.residual_fuel_oil_no_6.gallon] Approximately 11.3 kg CO2 per gallon (about 11.4 kg CO2e including CH4 and N2O), per US EPA Emission Factors for Greenhouse Gas Inventories (Table 1, stationary combustion).
+[fuels.ipcc.liquefied_petroleum_gases.litre] Approximately 1.61 kg CO2e per litre, derived from the IPCC 2006 Guidelines default of 63,100 kg CO2/TJ (NCV) with LPG NCV ~47.3 GJ/t and density ~0.54 kg/l.
+[fuels.can.ethane.litre] Approximately 1.0 kg CO2e per litre for ethane combustion, per Canada's National Inventory Report (ECCC) - I am not confident of the exact value; ethane is more commonly reported per m3 (~1.0 kg CO2/m3 range differs), so treat this as low confidence.
+[fuels.fra.heating_oil.litre] Approximately 2.68 kg CO2e per litre combustion (direct) for fioul domestique, per ADEME Base Carbone / Base Empreinte.
+[fuels.aus.burning_oil.litre] Approximately 2.60 kg CO2e per litre for kerosene/burning oil, per Australian National Greenhouse Accounts Factors (roughly 37.5 GJ/kl x ~69.4 kg CO2e/GJ).
+[fuels.gbr.waste_oils.tonne] Approximately 3,220 kg CO2e per tonne for waste oils, per UK DESNZ/DEFRA greenhouse gas conversion factors.
+[fuels.usa.liquefied_petroleum_gases.mmbtu] Approximately 61.7 kg CO2 per mmBtu (about 62.0 kg CO2e with CH4 and N2O), per US EPA Emission Factors for Greenhouse Gas Inventories Table 1.
+[fuels.ipcc.anthracite.kwh_ncv] Approximately 0.354 kg CO2e per kWh (NCV basis), from the IPCC 2006 Guidelines default of 98,300 kg CO2/TJ for anthracite (98.3 g/MJ x 3.6 MJ/kWh).
+[fuels.can.propane.litre] Approximately 1.55 kg CO2e per litre for propane combustion, per ECCC National Inventory Report / Canada GHG quantification guidance (about 1.51 kg CO2 plus small CH4/N2O).
+[fuels.fra.propane.kwh_ncv] Approximately 0.227 kg CO2e per kWh NCV for propane combustion, per ADEME Base Carbone / Base Empreinte.
+[fuels.aus.gas_oil.kwh_gcv] Approximately 0.257 kg CO2e per kWh on a gross CV basis for gas oil/diesel, per Australian National Greenhouse Accounts Factors (~69.9 kg CO2e/GJ x 0.0036 GJ/kWh).
+[fuels.fra.diesel_road.wtt.litre] Approximately 0.62 kg CO2e per litre upstream (well-to-tank) for road diesel, per ADEME Base Carbone / Base Empreinte (amont of ~3.1 kg CO2e/l total).
+[grid.usa.ba.public_utility_district_no_2_of_grant_county_washington.wtt_generation] I don't know this value. Grant County PUD is overwhelmingly hydro, so the WTT/upstream generation factor would be very small (order of a few g CO2e per kWh), but I cannot give a reliable published number.
+[fuels.aus.natural_gas.sa.non_metro.wtt.gj] I don't know the exact South Australia non-metropolitan natural gas upstream (scope 3) factor; the Australian National Greenhouse Accounts scope 3 gas factors are typically in the range of about 12-18 kg CO2e per GJ, but I cannot pin the SA non-metro value.
+[fuels.can.kerosene.wtt.mj] I don't know this value with confidence; upstream kerosene factors are typically around 0.015-0.020 kg CO2e per MJ, but I cannot cite a specific Canadian published figure.
+[grid.gbr.electricity.wtt_generation] Approximately 0.03-0.04 kg CO2e per kWh for WTT generation of UK grid electricity, per UK DESNZ/DEFRA conversion factors; recent editions are near 0.033 kg CO2e/kWh, but I am not confident of the exact current-year value.
+[fuels.fra.heating_oil.wtt.litre] Approximately 0.55 kg CO2e per litre upstream (amont) for fioul domestique, per ADEME Base Carbone / Base Empreinte.

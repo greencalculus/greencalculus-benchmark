@@ -1,0 +1,23 @@
+1. [waste.wastewater.domestic.bod_per_capita.deu] What is the greenhouse-gas emission factor for BOD5 per capita — domestic wastewater — Germany?
+2. [waste.wastewater.industrial.mcf.treated.aerobic_well_managed] What is the greenhouse-gas emission factor for Methane Correction Factor (MCF) — industrial wastewater — treated — aerobic plant, well managed?
+3. [waste.incineration.co2.dm.msw.other_inert] What is the greenhouse-gas emission factor for Dry matter content — MSW component: other inert waste — fraction of wet weight?
+4. [waste.landfill.k.paper_textiles.boreal_temperate_wet] What is the greenhouse-gas emission factor for First-order decay rate?
+5. [waste.wastewater.n2o.advanced_centralized_plant.per_capita] What is the greenhouse-gas emission factor for N2O emission factor — advanced centralised wastewater treatment plants — per-capita basis?
+6. [waste.landfill.doc.industrial.rubber] What is the greenhouse-gas emission factor for Degradable Organic Carbon (DOC) — industrial waste: rubber — wet-weight basis?
+7. [waste.landfill.k.wood_straw.tropical_moist_wet] What is the greenhouse-gas emission factor for First-order decay rate?
+8. [waste_disposal.usa.yard_trimmings.landfilled] What is the greenhouse-gas emission factor for EPA, per short ton?
+9. [waste_disposal.aus.commercial_industrial.landfill] What is the greenhouse-gas emission factor for Australia — commercial and industrial waste disposed to landfill, per tonne?
+10. [waste_disposal.fra.recyclage_granules.plastique_rigide_pp.per_tonne] What is the greenhouse-gas emission factor for ADEME Base Carbone (France) Rigid PP plastic — recycling to pellets (per tonne) [Plastique rigide PP], per tonne?
+11. [waste_disposal.gbr.refuse.commercial_and_industrial_waste.combustion] What is the greenhouse-gas emission factor for UK waste — Commercial and industrial waste, per tonne?
+12. [waste_disposal.can.incineration.industrial_batch_fluidized_bed] What is the greenhouse-gas emission factor for Canada — industrial waste, batch fluidized bed incineration, per tonne?
+13. [waste_disposal.usa.pla.landfilled] What is the greenhouse-gas emission factor for EPA, per short ton?
+14. [waste_disposal.aus.construction_demolition.landfill] What is the greenhouse-gas emission factor for Australia — construction and demolition waste disposed to landfill, per tonne?
+15. [waste_disposal.fra.fin_de_vie_moyenne.cuivre.per_tonne] What is the greenhouse-gas emission factor for ADEME Base Carbone (France) Copper — average end-of-life (per tonne) [Cuivre], per tonne?
+16. [waste_disposal.gbr.plastic.pp.closed_loop] What is the greenhouse-gas emission factor for UK waste — Plastics: PP, per tonne?
+17. [waste_disposal.can.composting.municipal_solid_waste] What is the greenhouse-gas emission factor for Canada — municipal solid waste composting, per tonne?
+18. [waste_disposal.usa.aluminum_cans.combusted] What is the greenhouse-gas emission factor for EPA, per short ton?
+19. [waste_disposal.aus.municipal_solid_waste.landfill] What is the greenhouse-gas emission factor for Australia — municipal solid waste disposed to landfill, per tonne?
+20. [water.fra.supply.mains] What is the greenhouse-gas emission factor for France mains water supply — treatment and distribution, per m3?
+21. [water.gbr.treatment.wastewater] What is the greenhouse-gas emission factor for UK water — wastewater treatment, per m3?
+22. [water.fra.treatment.wastewater] What is the greenhouse-gas emission factor for France wastewater treatment, per m3?
+23. [water.gbr.supply.mains] What is the greenhouse-gas emission factor for UK mains water — supply, per m3?

@@ -1,0 +1,30 @@
+[grid.bhs.electricity.lifecycle_intensity] Bahamas grid electricity lifecycle intensity: roughly 0.70 kgCO2e/kWh (oil-fired grid). I'm not confident of the exact published figure; a typical cited value is ~0.68–0.72 kgCO2e/kWh (IEA/Ember-derived lifecycle intensity).
+[grid.tcd.electricity.lifecycle_intensity] Chad grid electricity lifecycle intensity: roughly 0.62 kgCO2e/kWh (near-entirely oil/diesel generation). Low confidence on the exact value; source would be IEA/Ember-derived lifecycle intensity.
+[grid.gib.electricity.lifecycle_intensity] Gibraltar grid electricity lifecycle intensity: roughly 0.55–0.60 kgCO2e/kWh (LNG/diesel generation). I don't know the precise published figure.
+[grid.gnq.electricity.lifecycle_intensity] Equatorial Guinea grid electricity lifecycle intensity: roughly 0.45 kgCO2e/kWh (gas-dominated with some hydro). Low confidence on the exact number.
+[heating_systems.boiler_efficiency.gas_non_condensing] Gas non-condensing boiler seasonal efficiency: about 0.80 (80%), typical UK SAP/BEIS convention for older non-condensing gas boilers.
+[heating_systems.heat_pump_spf.ashp] Air-source heat pump seasonal performance factor (SPF): about 2.8 (dimensionless), a common UK space-heating SPF assumption (BEIS/SAP-type value); newer installations are often quoted at 2.7–3.0.
+[heating_systems.reference.lifetime_years.boiler] Gas/oil boiler reference operating lifetime: 15 years.
+[heating_systems.boiler_efficiency.oil_non_condensing] Oil non-condensing boiler seasonal efficiency: about 0.80 (80%).
+[heating_systems.boiler_efficiency.gas_condensing] Gas condensing boiler seasonal efficiency: about 0.90 (90%) seasonal, typical SAP/BEIS assumption for a modern condensing gas boiler.
+[heating_systems.boiler_efficiency.lpg_condensing] LPG condensing boiler seasonal efficiency: about 0.90 (90%).
+[heating_systems.direct_electric.efficiency] Direct electric resistance heating point-of-use efficiency: 1.00 (100%).
+[heating_systems.boiler_efficiency.oil_condensing] Oil condensing boiler seasonal efficiency: about 0.89 (89%), i.e. slightly below the gas condensing figure.
+[homeworking.gbr.office_equipment] DEFRA homeworking, Office Equipment (UK): 0.00519 kgCO2e per FTE working hour (DEFRA/DESNZ GHG conversion factors, homeworking dataset).
+[homeworking.gbr.combined] DEFRA homeworking combined (office equipment + heating), UK: approximately 0.325 kgCO2e per FTE working hour, being the sum of the office-equipment and heating rows in the DEFRA homeworking dataset. Moderate confidence.
+[homeworking.gbr.office_equipment] DEFRA homeworking, Office Equipment (UK): 0.00519 kgCO2e per FTE working hour (DEFRA/DESNZ GHG conversion factors).
+[homeworking.gbr.heating] DEFRA homeworking, Heating (UK): approximately 0.32 kgCO2e per FTE working hour (DEFRA/DESNZ homeworking dataset). Moderate confidence on the exact decimals.
+[homeworking.gbr.combined] DEFRA homeworking combined (office equipment + heating), UK: approximately 0.325 kgCO2e per FTE working hour (DEFRA/DESNZ homeworking dataset).
+[homeworking.gbr.heating] DEFRA homeworking, Heating (UK): approximately 0.32 kgCO2e per FTE working hour (DEFRA/DESNZ GHG conversion factors).
+[hotel_stay.gbr] DEFRA hotel stay, UK: 10.4 kgCO2e per room per night (DEFRA/DESNZ GHG conversion factors, hotel stay dataset). Recent editions have been in the 10–13 range.
+[hotel_stay.oman] DEFRA hotel stay, Oman: I don't know the exact value; Gulf-state hotel factors in the DEFRA set are among the highest, plausibly ~90–100 kgCO2e per room-night, but I can't give a reliable figure.
+[hotel_stay.thailand] DEFRA hotel stay, Thailand: roughly 45 kgCO2e per room per night (DEFRA/DESNZ hotel stay dataset). Low confidence on the exact number.
+[hotel_stay.malaysia] DEFRA hotel stay, Malaysia: roughly 47 kgCO2e per room per night (DEFRA/DESNZ hotel stay dataset). Low confidence.
+[hotel_stay.hong_kong_china] DEFRA hotel stay, Hong Kong (China): roughly 60 kgCO2e per room per night. Low confidence on the exact published value.
+[hotel_stay.costa_rica] DEFRA hotel stay, Costa Rica: roughly 10 kgCO2e per room per night (very low-carbon grid). Low confidence.
+[hotel_stay.belgium] DEFRA hotel stay, Belgium: roughly 20 kgCO2e per room per night. Low confidence.
+[hotel_stay.chile] DEFRA hotel stay, Chile: roughly 20 kgCO2e per room per night. Low confidence.
+[hotel_stay.vietnam] DEFRA hotel stay, Vietnam: roughly 40 kgCO2e per room per night. Low confidence.
+[hotel_stay.switzerland] DEFRA hotel stay, Switzerland: roughly 6 kgCO2e per room per night — one of the lowest in the DEFRA set because of the low-carbon Swiss grid. Low confidence on the exact value.
+[hotel_stay.china] DEFRA hotel stay, China: roughly 55 kgCO2e per room per night. Low confidence.
+[hotel_stay.portugal] DEFRA hotel stay, Portugal: roughly 17 kgCO2e per room per night. Low confidence.

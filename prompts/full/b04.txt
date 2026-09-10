@@ -1,0 +1,30 @@
+1. [delivery_vehicles.hgv_refrigerated.rigid_gt_17t.average_laden.diesel] What is the greenhouse-gas emission factor for DEFRA delivery HGV refrigerated (Rigid (>17 tonnes), average laden, diesel) — kgCO2e per km, per km?
+2. [delivery_vehicles.hgv_refrigerated.rigid_all.0pct_laden.diesel.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, HGV refrigerated (All rigids, 0% laden, diesel) — kWh per km, per km?
+3. [delivery_vehicles.hgv_refrigerated.all.0pct_laden.diesel.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, HGV refrigerated (All HGVs, 0% laden, diesel) — kWh per km, per km?
+4. [delivery_vehicles.hgv.rigid_3_5_to_7_5t.50pct_laden.diesel] What is the greenhouse-gas emission factor for DEFRA delivery HGV (Rigid (>3.5 - 7.5 tonnes), 50% laden, diesel) — kgCO2e per km, per km?
+5. [delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt] What is the greenhouse-gas emission factor for DEFRA WTT delivery HGV (Rigid (>3.5 - 7.5 tonnes), average laden, diesel) — kgCO2e per km, per km?
+6. [delivery_vehicles.hgv.rigid_gt_17t.100pct_laden.diesel] What is the greenhouse-gas emission factor for DEFRA delivery HGV (Rigid (>17 tonnes), 100% laden, diesel) — kgCO2e per km, per km?
+7. [delivery_vehicles.van.average.diesel.wtt] What is the greenhouse-gas emission factor for DEFRA WTT delivery van (Average (up to 3.5 tonnes), diesel) — kgCO2e per km, per km?
+8. [delivery_vehicles.hgv_refrigerated.artic_all.average_laden.diesel.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, HGV refrigerated (All artics, average laden, diesel) — kWh per km, per km?
+9. [digital.gcp.region.europe-southwest1] What is the greenhouse-gas emission factor for Google Cloud europe-southwest1, per kWh?
+10. [digital.data_centre.pue.enterprise.low] What is the greenhouse-gas emission factor for Data centre PUE — older/enterprise-operated?
+11. [digital.storage.network.egress.kwh_per_gb] What is the greenhouse-gas emission factor for Cloud storage data egress — network energy intensity, per GB (data transferred)?
+12. [digital.end_user_device.composite_user_pc.operational.digst_constant] What is the greenhouse-gas emission factor for User-PC operational power (mean of laptop and desktop) — Digst framework constant, per device (operational power coefficient)?
+13. [digital.gcp.region.europe-north2] What is the greenhouse-gas emission factor for Google Cloud europe-north2, per kWh?
+14. [digital.data_centre.electricity_demand.global.2025_twh] What is the greenhouse-gas emission factor for Global data centre electricity demand — 2025 baseline?
+15. [digital.storage.embodied.hdd.useful_life_years] What is the greenhouse-gas emission factor for Cloud storage embodied amortization period — HDD useful life?
+16. [digital.gcp.region.europe-west9] What is the greenhouse-gas emission factor for Google Cloud europe-west9, per kWh?
+17. [digital.data_centre.pue.hyperscale.low] What is the greenhouse-gas emission factor for Data centre PUE — best-in-class hyperscale?
+18. [digital.storage.redundancy.object_erasure.default_factor] What is the greenhouse-gas emission factor for Cloud storage redundancy multiplier — object erasure coding?
+19. [digital.gcp.region.me-central1] What is the greenhouse-gas emission factor for Google Cloud me-central1, per kWh?
+20. [digital.data_centre.pue.hyperscale.high] What is the greenhouse-gas emission factor for Data centre PUE — hyperscale?
+21. [district_heating.usa.steam_heat.mmbtu] What is the greenhouse-gas emission factor for EPA, per mmBtu?
+22. [district_heating.eu_framework.fossil_dh_baseline_ef] What is the greenhouse-gas emission factor for Fossil District Heating baseline emission factor — natural-gas-dominated EU DH system, per kWh of delivered district heat (fossil portion baseline)?
+23. [district_heating.eu_framework.hre4_scenario_methodology] What is the greenhouse-gas emission factor for Heat Roadmap Europe 4 (HRE4) — modelled deep-decarbonisation pathway methodology pointer?
+24. [district_heating.ita.eurostat.renewable_share] What is the greenhouse-gas emission factor for District Heating sector — Italy — renewable + waste-heat share?
+25. [district_heating.gbr.onsite] What is the greenhouse-gas emission factor for UK Onsite heat and steam, per kWh?
+26. [district_heating.usa.steam_heat.kwh_gcv] What is the greenhouse-gas emission factor for EPA, per kWh?
+27. [district_heating.cyp.eurostat.renewable_share] What is the greenhouse-gas emission factor for District Heating sector — Cyprus — renewable + waste-heat share?
+28. [district_heating.gbr.onsite_wtt] What is the greenhouse-gas emission factor for UK WTT- heat and steam, per kWh?
+29. [district_heating.kos.eurostat.renewable_share] What is the greenhouse-gas emission factor for District Heating sector — Kosovo* — renewable + waste-heat share?
+30. [district_heating.gbr.district] What is the greenhouse-gas emission factor for UK District heat and steam, per kWh?

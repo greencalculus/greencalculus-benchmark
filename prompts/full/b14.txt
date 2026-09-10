@@ -1,0 +1,30 @@
+1. [renewable_generation.reference.specific_yield.irl] What is the greenhouse-gas emission factor for Solar PV specific yield - Ireland, per year (first-year, pre-degradation)?
+2. [renewable_generation.reference.degradation_pct.solar_pv_rooftop] What is the greenhouse-gas emission factor for Rooftop solar PV annual output degradation rate, per year?
+3. [renewable_generation.reference.specific_yield.ita] What is the greenhouse-gas emission factor for Solar PV specific yield - Italy, per year (first-year, pre-degradation)?
+4. [renewable_generation.reference.degradation_pct.solar_pv_utility] What is the greenhouse-gas emission factor for Utility solar PV annual output degradation rate, per year?
+5. [renewable_generation.reference.specific_yield.swe] What is the greenhouse-gas emission factor for Solar PV specific yield - Sweden, per year (first-year, pre-degradation)?
+6. [renewable_generation.reference.degradation_pct.wind_onshore] What is the greenhouse-gas emission factor for Onshore wind annual output degradation rate, per year?
+7. [renewable_generation.reference.specific_yield.zaf] What is the greenhouse-gas emission factor for Solar PV specific yield - South Africa, per year (first-year, pre-degradation)?
+8. [renewable_generation.reference.specific_yield.fra] What is the greenhouse-gas emission factor for Solar PV specific yield - France, per year (first-year, pre-degradation)?
+9. [renewable_generation.reference.specific_yield.nld] What is the greenhouse-gas emission factor for Solar PV specific yield - Netherlands, per year (first-year, pre-degradation)?
+10. [renewable_generation.reference.specific_yield.pol] What is the greenhouse-gas emission factor for Solar PV specific yield - Poland, per year (first-year, pre-degradation)?
+11. [renewable_generation.reference.specific_yield.bra] What is the greenhouse-gas emission factor for Solar PV specific yield - Brazil, per year (first-year, pre-degradation)?
+12. [renewable_generation.reference.specific_yield.chn] What is the greenhouse-gas emission factor for Solar PV specific yield - China, per year (first-year, pre-degradation)?
+13. [reusable_vs_single_use.reference.handwash_tap.energy_per_item] What is the greenhouse-gas emission factor for Hand washing under a running hot tap - energy per item, per item?
+14. [reusable_vs_single_use.reference.dishwasher.place_settings_per_cycle] What is the greenhouse-gas emission factor for Domestic dishwasher standard capacity, per full cycle?
+15. [reusable_vs_single_use.reference.handwash_tap.water_per_item] What is the greenhouse-gas emission factor for Hand washing under a running hot tap - water per item, per item?
+16. [reusable_vs_single_use.reference.dishwasher.water_per_cycle] What is the greenhouse-gas emission factor for Domestic dishwasher water per full eco-programme cycle, per full cycle?
+17. [reusable_vs_single_use.reference.handwash_basin.energy_per_item] What is the greenhouse-gas emission factor for Hand washing in a filled basin/sink - energy per item, per item?
+18. [reusable_vs_single_use.reference.dishwasher.energy_per_cycle] What is the greenhouse-gas emission factor for Domestic dishwasher energy per full eco-programme cycle, per full cycle?
+19. [reusable_vs_single_use.reference.handwash_basin.water_per_item] What is the greenhouse-gas emission factor for Hand washing in a filled basin/sink - water per item, per item?
+20. [semiconductors.tier1.cf4] What is the greenhouse-gas emission factor for Semiconductor manufacturing — CF4, per m2 silicon?
+21. [tft_fpd.tier1.nf3] What is the greenhouse-gas emission factor for TFT-FPD manufacturing — NF3, per m2 glass?
+22. [tft_fpd.tier1.sf6] What is the greenhouse-gas emission factor for TFT-FPD manufacturing — SF6, per m2 glass?
+23. [semiconductors.tier1.sf6] What is the greenhouse-gas emission factor for Semiconductor manufacturing — SF6, per m2 silicon?
+24. [tft_fpd.tier1.cf4] What is the greenhouse-gas emission factor for TFT-FPD manufacturing — CF4, per m2 glass?
+25. [pv_cells.tier1.cf4] What is the greenhouse-gas emission factor for PV-cell manufacturing — CF4, per m2 silicon?
+26. [semiconductors.tier1.chf3] What is the greenhouse-gas emission factor for Semiconductor manufacturing — CHF3, per m2 silicon?
+27. [semiconductors.tier1.c3f8] What is the greenhouse-gas emission factor for Semiconductor manufacturing — C3F8, per m2 silicon?
+28. [semiconductors.tier1.nf3] What is the greenhouse-gas emission factor for Semiconductor manufacturing — NF3, per m2 silicon?
+29. [pv_cells.tier1.c2f6] What is the greenhouse-gas emission factor for PV-cell manufacturing — C2F6, per m2 silicon?
+30. [heat_transfer_fluids.tier1.c6f14_proxy] What is the greenhouse-gas emission factor for Electronics heat transfer fluids — aggregate FC, per m2 silicon?

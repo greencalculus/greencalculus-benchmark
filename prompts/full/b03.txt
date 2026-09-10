@@ -1,0 +1,30 @@
+1. [cbam.country.kor.7217_20.wire_iron] What is the greenhouse-gas emission factor for CBAM Annex I — South Korea, CN 7217 20 Wire of iron or non-alloy steel, in coils, plated or coated, per tonne of good (direct emissions)?
+2. [reporting.cbam.indirect.congo_democratic] What is the greenhouse-gas emission factor for CBAM Annex II per-country indirect emission factor — Congo, Democratic Republic of?
+3. [chp.reference_efficiency.ghg_protocol.electricity] What is the greenhouse-gas emission factor for CHP allocation — assumed efficiency of separate ELECTRICITY production, per kWh fuel input)?
+4. [chp.reference_efficiency.ghg_protocol.heat] What is the greenhouse-gas emission factor for CHP allocation — assumed efficiency of separate HEAT/STEAM production, per kWh fuel input)?
+5. [commuting.car.size.average.diesel] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Average car, diesel) — kgCO2e per km, per km?
+6. [commuting.rail.national_rail] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting rail (National rail) — kgCO2e per passenger.km, per passenger.km?
+7. [commuting.car.size.large.petrol] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Large car, petrol) — kgCO2e per km, per km?
+8. [commuting.car.size.medium.hybrid] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Medium car, hybrid) — kgCO2e per km, per km?
+9. [commuting.car.size.average.hybrid] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Average car, hybrid) — kgCO2e per km, per km?
+10. [commuting.bus.local_average] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting bus (Average local bus) — kgCO2e per passenger.km, per passenger.km?
+11. [commuting.car.size.small.diesel] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Small car, diesel) — kgCO2e per km, per km?
+12. [commuting.car.size.medium.petrol] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Medium car, petrol) — kgCO2e per km, per km?
+13. [commuting.car.size.small.hybrid] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Small car, hybrid) — kgCO2e per km, per km?
+14. [commuting.car.size.large.hybrid] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting car (Large car, hybrid) — kgCO2e per km, per km?
+15. [commuting.bus.local_london] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting bus (Local London bus) — kgCO2e per passenger.km, per passenger.km?
+16. [commuting.rail.international_rail] What is the greenhouse-gas emission factor for DEFRA-derived employee commuting rail (International rail) — kgCO2e per passenger.km, per passenger.km?
+17. [reporting.csrd.threshold.large_undertaking.turnover_eur_m] What is the greenhouse-gas emission factor for CSRD filer threshold — large undertaking?
+18. [reporting.csrd.threshold.non_eu_group.eu_revenue_eur_m] What is the greenhouse-gas emission factor for CSRD filer threshold — non-EU groups?
+19. [reporting.csrd.threshold.listed_sme.first_report_fy] What is the greenhouse-gas emission factor for CSRD filer threshold — listed SMEs first reporting financial year?
+20. [reporting.csrd.threshold.large_undertaking.balance_sheet_eur_m] What is the greenhouse-gas emission factor for CSRD filer threshold — large undertaking?
+21. [reporting.csrd.calendar.listed_sme.first_report_fy] What is the greenhouse-gas emission factor for CSRD first reporting cycle — listed SMEs?
+22. [reporting.csrd.calendar.non_eu_group.first_report_fy] What is the greenhouse-gas emission factor for CSRD first reporting cycle — non-EU groups?
+23. [reporting.csrd.calendar.large_undertaking.first_report_fy] What is the greenhouse-gas emission factor for CSRD first reporting cycle — other large undertakings?
+24. [reporting.csrd.e1_9.phase_in_year_1_qualitative] What is the greenhouse-gas emission factor for ESRS E1-9 phase-in — qualitative-only permitted in year 1 of mandatory application?
+25. [reporting.csrd.calendar.large_pie.first_report_fy] What is the greenhouse-gas emission factor for CSRD first reporting cycle — large public-interest entities?
+26. [reporting.csrd.threshold.large_undertaking.employees] What is the greenhouse-gas emission factor for CSRD filer threshold — large undertaking?
+27. [delivery_vehicles.hgv.all.50pct_laden.diesel.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, HGV (All HGVs, 50% laden, diesel) — kWh per km, per km?
+28. [delivery_vehicles.hgv_refrigerated.rigid_7_5_to_17t.average_laden.diesel.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, HGV refrigerated (Rigid (>7.5 tonnes-17 tonnes), average laden, diesel) — kWh per km, per km?
+29. [delivery_vehicles.hgv.rigid_gt_17t.average_laden.diesel.wtt] What is the greenhouse-gas emission factor for DEFRA WTT delivery HGV (Rigid (>17 tonnes), average laden, diesel) — kgCO2e per km, per km?
+30. [delivery_vehicles.hgv.artic_3_5_to_33t.0pct_laden.diesel.energy_use_secr] What is the greenhouse-gas emission factor for DEFRA SECR energy use, HGV (Articulated (>3.5 - 33t), 0% laden, diesel) — kWh per km, per km?

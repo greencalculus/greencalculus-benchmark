@@ -1,0 +1,23 @@
+[waste.wastewater.domestic.bod_per_capita.deu] Germany BOD5 generation is about 60 g BOD/person/day (IPCC 2006 Guidelines Vol.5 Ch.6, Table 6.4 gives Germany 62 g/person/day), i.e. roughly 22.6 kg BOD/person/year. I am not confident this is a CO2e factor rather than a BOD load parameter.
+[waste.wastewater.industrial.mcf.treated.aerobic_well_managed] MCF = 0 (dimensionless, range 0–0.1) for a well-managed aerobic treatment plant, per IPCC 2006 Guidelines Vol.5 Ch.6 Table 6.8.
+[waste.incineration.co2.dm.msw.other_inert] Dry matter content of "other, inert waste" in MSW is about 90% of wet weight (0.90 fraction), per IPCC 2006 Guidelines Vol.5 Ch.2 Table 2.4 (default 90, range 50–100).
+[waste.landfill.k.paper_textiles.boreal_temperate_wet] k = 0.06 yr⁻¹ for paper/textiles in boreal and temperate wet climate (MAP/PET > 1), per IPCC 2006 Guidelines Vol.5 Ch.3 Table 3.3 (range 0.05–0.07).
+[waste.wastewater.n2o.advanced_centralized_plant.per_capita] 3.2 g N2O per person per year for advanced centralised wastewater treatment plants with controlled nitrification/denitrification, per IPCC 2006 Guidelines Vol.5 Ch.6 (Section 6.3.1.2).
+[waste.landfill.doc.industrial.rubber] I don't know a reliable DOC value for rubber industrial waste; IPCC treats rubber/plastics as essentially non-degradable in landfills, so DOC is effectively 0 (fossil carbon only), but I cannot cite a specific wet-weight table value.
+[waste.landfill.k.wood_straw.tropical_moist_wet] k = 0.035 yr⁻¹ for wood and straw in tropical moist/wet climate, per IPCC 2006 Guidelines Vol.5 Ch.3 Table 3.3 (range 0.02–0.04).
+[waste_disposal.usa.yard_trimmings.landfilled] Approximately -0.25 to -0.27 metric tons CO2e per short ton for landfilled yard trimmings (net, including carbon storage), per US EPA WARM / GHG Emission Factors Hub. I am not confident on the exact current value.
+[waste_disposal.aus.commercial_industrial.landfill] Roughly 1.0–1.3 t CO2e per tonne of commercial and industrial waste to landfill, per the Australian National Greenhouse Accounts Factors. I don't know the precise published value.
+[waste_disposal.fra.recyclage_granules.plastique_rigide_pp.per_tonne] I don't know the ADEME Base Carbone value for rigid PP recycling to pellets.
+[waste_disposal.gbr.refuse.commercial_and_industrial_waste.combustion] Around 21.3 kg CO2e per tonne for commercial and industrial waste sent to combustion/energy-from-waste, per UK DESNZ/DEFRA GHG conversion factors (waste disposal). Low confidence on the exact figure.
+[waste_disposal.can.incineration.industrial_batch_fluidized_bed] I don't know this Canadian batch fluidized-bed industrial waste incineration factor.
+[waste_disposal.usa.pla.landfilled] I don't know the EPA WARM landfilled PLA factor with confidence; it is a small net-negative value (carbon storage dominant), on the order of -0.2 metric tons CO2e per short ton.
+[waste_disposal.aus.construction_demolition.landfill] Roughly 0.3–0.5 t CO2e per tonne of construction and demolition waste to landfill, per the Australian National Greenhouse Accounts Factors. Low confidence.
+[waste_disposal.fra.fin_de_vie_moyenne.cuivre.per_tonne] I don't know the ADEME Base Carbone average end-of-life factor for copper.
+[waste_disposal.gbr.plastic.pp.closed_loop] 21.3 kg CO2e per tonne for PP plastics sent to closed-loop recycling, per UK DESNZ/DEFRA GHG conversion factors (all closed-loop recycling factors share this transport-only value in recent editions). Moderate confidence.
+[waste_disposal.can.composting.municipal_solid_waste] I don't know the Canadian MSW composting factor per tonne.
+[waste_disposal.usa.aluminum_cans.combusted] Approximately 0.02–0.05 metric tons CO2e per short ton for combusted aluminium cans (aluminium does not combust; emissions are near zero, with some transport), per US EPA WARM. Low confidence.
+[waste_disposal.aus.municipal_solid_waste.landfill] Roughly 1.2–1.4 t CO2e per tonne of municipal solid waste to landfill, per the Australian National Greenhouse Accounts Factors. Low confidence on the exact value.
+[water.fra.supply.mains] I don't know the French mains water supply factor; ADEME Base Carbone values are on the order of 0.1–0.3 kg CO2e per m3.
+[water.gbr.treatment.wastewater] 0.272 kg CO2e per m3 for wastewater treatment, per UK DESNZ/DEFRA GHG conversion factors (water treatment). Moderate confidence — the value has been near 0.27 for several editions.
+[water.fra.treatment.wastewater] I don't know the French wastewater treatment factor per m3; plausibly around 0.2–0.4 kg CO2e/m3 in ADEME Base Carbone.
+[water.gbr.supply.mains] 0.149 kg CO2e per m3 for mains water supply, per UK DESNZ/DEFRA GHG conversion factors (water supply). Moderate confidence.

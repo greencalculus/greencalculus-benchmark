@@ -1,0 +1,30 @@
+1. [fuel_properties.lpg.gross_cv_gj_tonne] What is the greenhouse-gas emission factor for LPG — gross calorific value, per tonne?
+2. [fuel_properties.hydrogen.gross_cv_gj_tonne] What is the greenhouse-gas emission factor for Hydrogen — gross calorific value, per tonne?
+3. [fuel_properties.diesel.net_cv_gj_tonne] What is the greenhouse-gas emission factor for Diesel, per tonne?
+4. [fuel_properties.hydrogen.net_cv_gj_tonne] What is the greenhouse-gas emission factor for Hydrogen — net calorific value, per tonne?
+5. [fuel_properties.gas_oil.gross_cv_gj_tonne] What is the greenhouse-gas emission factor for Gas oil, per tonne?
+6. [fuel_properties.gas_oil.net_cv_gj_tonne] What is the greenhouse-gas emission factor for Gas oil, per tonne?
+7. [fuel_properties.petrol.density_kg_m3] What is the greenhouse-gas emission factor for Petrol, per m3?
+8. [fuel_properties.natural_gas.gross_cv_kwh_kg] What is the greenhouse-gas emission factor for Natural gas — gross calorific value, per kg?
+9. [fuel_properties.petrol.density_kg_litre] What is the greenhouse-gas emission factor for Petrol, per litre?
+10. [fuel_properties.lpg.density_kg_litre] What is the greenhouse-gas emission factor for LPG — density, per litre?
+11. [fuel_properties.diesel_100_mineral.gross_cv_kwh_litre] What is the greenhouse-gas emission factor for Diesel, per litre?
+12. [fuel_properties.diesel_100_mineral.litres_per_tonne] What is the greenhouse-gas emission factor for Diesel, per tonne?
+13. [fuels.gbr.bio.methanol_bio.litre] What is the greenhouse-gas emission factor for UK Methanol, per litre?
+14. [fuels.usa.residual_fuel_oil_no_6.gallon] What is the greenhouse-gas emission factor for US Residual Fuel Oil No. 6 — stationary combustion, per gallon?
+15. [fuels.ipcc.liquefied_petroleum_gases.litre] What is the greenhouse-gas emission factor for IPCC Liquefied Petroleum Gases — stationary combustion, per litre?
+16. [fuels.can.ethane.litre] What is the greenhouse-gas emission factor for Canada Ethane — combustion, per litre?
+17. [fuels.fra.heating_oil.litre] What is the greenhouse-gas emission factor for ADEME, per litre?
+18. [fuels.aus.burning_oil.litre] What is the greenhouse-gas emission factor for NGA, per litre?
+19. [fuels.gbr.waste_oils.tonne] What is the greenhouse-gas emission factor for UK Waste oils — combustion, per tonne?
+20. [fuels.usa.liquefied_petroleum_gases.mmbtu] What is the greenhouse-gas emission factor for US Liquefied Petroleum Gases, per mmBtu?
+21. [fuels.ipcc.anthracite.kwh_ncv] What is the greenhouse-gas emission factor for IPCC Anthracite — stationary combustion, per kWh?
+22. [fuels.can.propane.litre] What is the greenhouse-gas emission factor for Canada Propane — combustion, per litre?
+23. [fuels.fra.propane.kwh_ncv] What is the greenhouse-gas emission factor for ADEME, per kWh?
+24. [fuels.aus.gas_oil.kwh_gcv] What is the greenhouse-gas emission factor for NGA, per kWh?
+25. [fuels.fra.diesel_road.wtt.litre] What is the greenhouse-gas emission factor for ADEME, per litre?
+26. [grid.usa.ba.public_utility_district_no_2_of_grant_county_washington.wtt_generation] What is the greenhouse-gas emission factor for US Public Utility District No. 2 of Grant County, Washington grid electricity — well-to-tank, consumption mix, per kWh?
+27. [fuels.aus.natural_gas.sa.non_metro.wtt.gj] What is the greenhouse-gas emission factor for Australia, per GJ?
+28. [fuels.can.kerosene.wtt.mj] What is the greenhouse-gas emission factor for Canada Kerosene — well-to-tank, per MJ?
+29. [grid.gbr.electricity.wtt_generation] What is the greenhouse-gas emission factor for UK WTT- UK electricity, per kWh?
+30. [fuels.fra.heating_oil.wtt.litre] What is the greenhouse-gas emission factor for ADEME, per litre?

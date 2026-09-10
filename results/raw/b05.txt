@@ -1,0 +1,30 @@
+[district_heating.eu_framework.renewable_share_eu27] I don't know a firm figure for this — it is a share, not a kgCO2e factor. My best recollection is that renewables plus waste heat make up roughly 30–35% of EU-27 district heat input (Eurostat / Euroheat & Power), but I cannot give a confident single number.
+[district_heating.gbr.onsite_wtt] Approximately 0.0327 kgCO2e/kWh for WTT heat and steam (UK DESNZ/DEFRA GHG conversion factors, "WTT- heat and steam" table). Recent vintages sit in the 0.031–0.035 kgCO2e/kWh range.
+[equivalencies.ref.person_day] Roughly 18 kgCO2e per person-day, from global anthropogenic GHG of about 50–53 GtCO2e/yr excluding LULUCF divided by ~8 billion people and 365 days (derived from IPCC AR6 / EDGAR global totals).
+[equivalencies.gbr.ref.car_annual_distance_km] Approximately 11,500 km per car per year (about 7,100 miles), from UK DfT National Travel Survey / vehicle mileage statistics.
+[equivalencies.gbr.flight_london_new_york_return] Approximately 1,700 kgCO2e per return economy flight including radiative forcing (about 5,550 km each way at roughly 0.15 kgCO2e/pax-km with RF uplift, DEFRA/DESNZ long-haul economy factors). Values quoted commonly range 1.6–1.8 tCO2e.
+[equivalencies.usa.home_energy_year] Approximately 11,400 kgCO2e per home per year for all energy use (US EPA Greenhouse Gas Equivalencies Calculator; recent versions give roughly 11.0–12.0 tCO2e per home-year).
+[equivalencies.usa.oil_barrel] Approximately 430 kgCO2e per barrel of oil consumed (0.43 metric tons CO2), US EPA Greenhouse Gas Equivalencies Calculator.
+[equivalencies.usa.railcar_coal] Approximately 200,000 kgCO2e (about 200 metric tons CO2) per railcar of coal burned, US EPA Greenhouse Gas Equivalencies Calculator (roughly 100.6 short tons of coal per railcar).
+[equivalencies.usa.natural_gas_therm] Approximately 5.3 kgCO2e per therm of natural gas (0.0053 metric tons CO2), US EPA Greenhouse Gas Equivalencies Calculator.
+[equivalencies.usa.waste_recycled_short_ton] Approximately 2,890 kgCO2e avoided per short ton of mixed waste recycled instead of landfilled (about 2.89 metric tons CO2e), US EPA WARM model as used in the Greenhouse Gas Equivalencies Calculator.
+[equivalencies.usa.propane_cylinder] Approximately 43 kgCO2e per 16 lb propane cylinder (0.043 metric tons CO2), US EPA Greenhouse Gas Equivalencies Calculator.
+[equivalencies.usa.forest_acre_sequestration_year] Approximately 800 kgCO2e sequestered per acre of average US forest per year (0.80 metric tons CO2/acre/yr), US EPA Greenhouse Gas Equivalencies Calculator. Recent versions cite roughly 0.82 t CO2/acre/yr.
+[equivalencies.usa.smartphone_charged] Approximately 0.0083 kgCO2e per smartphone charged (8.3 grams CO2e), US EPA Greenhouse Gas Equivalencies Calculator (about 0.012 kWh per charge).
+[equivalencies.ref.tree_seedling.sequestration_10yr] Approximately 60 kgCO2e sequestered per urban tree seedling grown for 10 years (0.060 metric tons CO2), US EPA Greenhouse Gas Equivalencies Calculator.
+[ev_charging.van.class_iii.bev.td_loss_uk] Approximately 0.020 kgCO2e/km for T&D losses for a Class III BEV van (DEFRA/DESNZ UK GHG conversion factors, "Battery electric vehicles" van table). I am not confident to three significant figures.
+[ev_charging.car.segment.supermini.bev.charging_uk] Approximately 0.031 kgCO2e/km for a supermini BEV (DEFRA/DESNZ UK GHG conversion factors, battery electric cars by market segment). Recent vintages fall in the 0.029–0.035 range.
+[ev_charging.car.segment.supermini.bev.energy_use_secr] Approximately 0.16 kWh/km for a supermini BEV (DEFRA/DESNZ SECR kWh pass-through table).
+[ev_charging.car.segment.lower_medium.phev.charging_uk] Approximately 0.017 kgCO2e/km for the electricity-charging portion of a lower-medium PHEV (DEFRA/DESNZ UK GHG conversion factors, plug-in hybrid car table). Low confidence on the exact value.
+[ev_charging.car.segment.dual_purpose_4x4.bev.charging_uk] Approximately 0.042 kgCO2e/km for a dual-purpose 4x4 BEV (DEFRA/DESNZ UK GHG conversion factors). Low confidence on the exact digits.
+[ev_charging.car.segment.mpv.phev.td_loss_uk] Approximately 0.0017 kgCO2e/km T&D loss for an MPV PHEV (DEFRA/DESNZ UK GHG conversion factors). T&D losses run roughly 8–9% of the charging factor; low confidence.
+[ev_charging.car.segment.upper_medium.bev.energy_use_secr] Approximately 0.19 kWh/km for an upper-medium BEV (DEFRA/DESNZ SECR EV energy-use table).
+[ev_charging.car.segment.dual_purpose_4x4.bev.energy_use_secr] Approximately 0.21 kWh/km for a dual-purpose 4x4 BEV (DEFRA/DESNZ SECR EV energy-use table).
+[ev_charging.car.size.large.phev.td_loss_uk] Approximately 0.0021 kgCO2e/km T&D loss for a large PHEV car (DEFRA/DESNZ UK GHG conversion factors, size-based PHEV table). Low confidence.
+[ev_charging.car.segment.luxury.bev.energy_use_secr] Approximately 0.24 kWh/km for a luxury BEV (DEFRA/DESNZ SECR EV energy-use table).
+[ev_charging.car.segment.mpv.bev.energy_use_secr] Approximately 0.20 kWh/km for an MPV BEV (DEFRA/DESNZ SECR EV energy-use table).
+[ev_charging.van.class_ii.bev.charging_uk] Approximately 0.045 kgCO2e/km for a Class II (1.305–1.74 t) BEV van (DEFRA/DESNZ UK GHG conversion factors, battery electric vans). Low confidence on the exact digits.
+[food.diet.high_meat.annual] Approximately 2,600 kgCO2e per person per year for a high-meat diet (>100 g meat/day), from Scarborough et al. (2014/2023, Oxford, EPIC-Oxford cohort) — roughly 7.2 kgCO2e/day.
+[food.diet.mixed.annual] Approximately 1,900 kgCO2e per person per year for a medium/mixed-meat diet (Scarborough et al., Oxford) — roughly 5.2 kgCO2e/day.
+[food.diet.low_meat.annual] Approximately 1,700 kgCO2e per person per year for a low-meat diet (<50 g meat/day), from Scarborough et al. (Oxford) — roughly 4.7 kgCO2e/day.
+[food.diet.vegan.annual] Approximately 1,050 kgCO2e per person per year for a vegan diet (Scarborough et al., Oxford) — roughly 2.9 kgCO2e/day.

@@ -1,0 +1,30 @@
+1. [afolu.removals.forestry.temperate_conifer] What is the greenhouse-gas emission factor for Forestry — temperate conifer sequestration, per year?
+2. [afolu.manure_ch4.other_cattle.tier1.high_productivity.anaerobic_digestion_biogas.cool] What is the greenhouse-gas emission factor for Other cattle — manure CH4, anaerobic digestion — biogas, Cool climate, per kg VS?
+3. [afolu_refinement.enteric.swine.tier1.low_productivity] What is the greenhouse-gas emission factor for Swine — low productivity systems — enteric fermentation (Tier 1), 2019 Refinement, per year?
+4. [afolu.manure_ch4.pigs.tier1.global] What is the greenhouse-gas emission factor for Pigs — manure management CH4, per year?
+5. [afolu.wetlands.coastal.mangrove.agb_growth.tropical_dry] What is the greenhouse-gas emission factor for AGB growth — mangrove Tropical Dry, per yr?
+6. [afolu.fertiliser.organic_nitrogen.aggregate] What is the greenhouse-gas emission factor for Organic nitrogen fertiliser — combined direct + indirect N2O, per kg N applied?
+7. [afolu.luc.tropical_deforestation] What is the greenhouse-gas emission factor for Land use change — tropical deforestation, per hectare?
+8. [afolu.forest_land.agb_stock.plantation.subtropical.subtropical_steppe.americas.tectona_grandis.all] What is the greenhouse-gas emission factor for AGB stock (plantation) — Subtropical Steppe, Americas, tectona grandis, all, per hectare?
+9. [afolu_refinement.enteric.horses.tier1] What is the greenhouse-gas emission factor for Horses — enteric fermentation (Tier 1), 2019 Refinement, per year?
+10. [afolu.enteric.poultry.tier1.global] What is the greenhouse-gas emission factor for Poultry — enteric fermentation CH4, per year?
+11. [afolu.wetlands.drained.plantations_oil_palm.tropical_subtropical.n2o] What is the greenhouse-gas emission factor for N2O EF — Plantation oil palm, per yr?
+12. [afolu.fertiliser.synthetic_nitrogen.aggregate] What is the greenhouse-gas emission factor for Synthetic nitrogen fertiliser — combined direct + indirect N2O, per kg N applied?
+13. [atmospheric.ch4.tg_per_ppb] What is the greenhouse-gas emission factor for Atmospheric CH4 — teragrammes of methane per ppb, per ppb (1 Tg = 1 Mt; dry-air mole fraction)?
+14. [atmospheric.co2.gtc_per_ppm] What is the greenhouse-gas emission factor for Atmospheric CO2 — gigatonnes of carbon per ppm, per ppm CO2 (dry-air mole fraction)?
+15. [building_energy.gbr.floorband.151_to_200.gas] What is the greenhouse-gas emission factor for UK residential gas intensity - floor area 151 to 200 m2, per year?
+16. [building_energy.gbr.dwelling.converted_flat.gas] What is the greenhouse-gas emission factor for UK residential gas use - Converted flat, per year?
+17. [building_energy.gbr.floorband.upto_50.electricity] What is the greenhouse-gas emission factor for UK residential electricity intensity - floor area 50 m2 or less, per year?
+18. [building_energy.gbr.dwelling.semi_detached.electricity] What is the greenhouse-gas emission factor for UK residential electricity use - Semi detached, per year?
+19. [building_energy.gbr.dwelling.bungalow.gas] What is the greenhouse-gas emission factor for UK residential gas use - Bungalow, per year?
+20. [building_energy.gbr.dwelling.purpose_built_flat.electricity] What is the greenhouse-gas emission factor for UK residential electricity use - Purpose built flat, per year?
+21. [building_energy.gbr.epc.d.electricity] What is the greenhouse-gas emission factor for UK residential electricity use - EPC band D, per year?
+22. [building_energy.gbr.epc.g.electricity] What is the greenhouse-gas emission factor for UK residential electricity use - EPC band G, per year?
+23. [building_energy.gbr.dwelling.mid_terrace.gas] What is the greenhouse-gas emission factor for UK residential gas use - Mid terrace, per year?
+24. [building_energy.gbr.floorband.51_to_100.gas] What is the greenhouse-gas emission factor for UK residential gas intensity - floor area 51 to 100 m2, per year?
+25. [building_energy.gbr.floorband.51_to_100.electricity] What is the greenhouse-gas emission factor for UK residential electricity intensity - floor area 51 to 100 m2, per year?
+26. [building_energy.gbr.floorband.upto_50.gas] What is the greenhouse-gas emission factor for UK residential gas intensity - floor area 50 m2 or less, per year?
+27. [business_travel.fra.road.car_average] What is the greenhouse-gas emission factor for ADEME (France) business travel / commuting — Car, average motorisation, per km?
+28. [business_travel.air.domestic.average.wtt] What is the greenhouse-gas emission factor for DEFRA WTT business travel air (Domestic, to/from UK, Average passenger) — kgCO2e per passenger.km, per passenger.km?
+29. [business_travel.usa.air.long_haul] What is the greenhouse-gas emission factor for EPA, per passenger.mile?
+30. [business_travel.aus.road.hire_car.by_fuel.diesel_sedan.per_vehicle_km] What is the greenhouse-gas emission factor for Australian Government ERF hire car — Diesel, Sedan, per vehicle.km?
