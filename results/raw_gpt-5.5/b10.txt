@@ -1,0 +1,59 @@
+[minerals.glass.specialty_tv_panel] I don't know the numeric factor.
+
+[industrial_processes_refinement.nitric_acid.old_pre_1975] 9 kg N2O per tonne 100% nitric acid, from the IPCC 2019 Refinement to the 2006 IPCC Guidelines, Volume 3, nitric acid production defaults.
+
+[chemicals.ethylene_oxide.ch4_thermal_treatment] I don't know the numeric factor.
+
+[industrial_processes_refinement.hydrogen.steam_reforming_methanol] 68.9 kg CO2 per GJ feedstock, equivalent to about 18.8 kg C/GJ for methanol, from the IPCC 2019 Refinement, Volume 3 hydrogen production Tier 1 carbon-content defaults.
+
+[minerals.cement.clinker_pre_ckd] 0.510 t CO2 per tonne clinker, from the 2006 IPCC Guidelines, Volume 3, Chapter 2, cement clinker default base emission factor before CKD correction.
+
+[industrial_processes_refinement.hfc23_hcfc22.recent_design] 0.03 kg HFC-23 per kg HCFC-22 produced, from the IPCC 2019 Refinement to the 2006 IPCC Guidelines default factors for HCFC-22 production.
+
+[metals.iron_steel.blast_furnace_pig_iron] 1.35 t CO2 per tonne pig iron, from the 2006 IPCC Guidelines, Volume 3, Chapter 4, iron and steel production default factors.
+
+[industrial_processes_refinement.nitric_acid.single_low_pressure] 4 kg N2O per tonne 100% nitric acid, from the IPCC 2019 Refinement to the 2006 IPCC Guidelines nitric acid production defaults.
+
+[lca.pef.data_quality.dqr_fair_max] 4.0 DQR score, dimensionless, from the European Commission Product Environmental Footprint method data-quality rating scale.
+
+[lca.pef.normalisation.required] 1 dimensionless required flag, from the European Commission Product Environmental Footprint method.
+
+[lca.pef.recycling.cff_required] 1 dimensionless required flag, from the European Commission Product Environmental Footprint method Circular Footprint Formula rules.
+
+[lca.pef.data_quality.dqr_dimensions_count] 5 dimensions, dimensionless count, from the European Commission Product Environmental Footprint method DQR formula.
+
+[lca.pef.climate_change.includes_biogenic_separate_subindicator] 1 dimensionless yes flag, from the European Commission Product Environmental Footprint method climate-change sub-indicators.
+
+[lca.pef.climate_change.includes_fossil] 1 dimensionless yes flag, from the European Commission Product Environmental Footprint method climate-change category.
+
+[lca.pef.data_quality.dqr_excellent_max] 1.5 DQR score, dimensionless, from the European Commission Product Environmental Footprint method data-quality rating scale.
+
+[lca.pef.impact_categories_count] 16 impact categories, dimensionless count, from the European Commission Environmental Footprint / Product Environmental Footprint method.
+
+[lca.pef.climate_change.includes_land_use_change_subindicator] 1 dimensionless yes flag, from the European Commission Product Environmental Footprint method climate-change sub-indicators.
+
+[lca.pef.electricity.residual_mix_default] 1 dimensionless yes flag, from the European Commission Product Environmental Footprint method electricity modelling rules.
+
+[lca.pef.data_quality.dqr_poor_threshold] >4.0 DQR score, dimensionless, from the European Commission Product Environmental Footprint method data-quality rating scale.
+
+[lca.biogenic.gwp_bio.short_rotation_pef] 0 kg CO2e per kg biogenic CO2, from the European Commission Product Environmental Footprint treatment of short-cycle biogenic carbon.
+
+[managed_assets.van.class_iii.diesel] I don't know the numeric factor.
+
+[managed_assets.car.size.average.hybrid] I don't know the numeric factor.
+
+[managed_assets.hgv_refrigerated.rigid_all.0pct_laden.diesel] I don't know the numeric factor.
+
+[managed_assets.hgv_refrigerated.rigid_gt_17t.50pct_laden.diesel] I don't know the numeric factor.
+
+[managed_assets.car.segment.executive.diesel] I don't know the numeric factor.
+
+[managed_assets.car.segment.mini.petrol] I don't know the numeric factor.
+
+[managed_assets.van.class_i.diesel] I don't know the numeric factor.
+
+[managed_assets.van.class_ii.diesel] I don't know the numeric factor.
+
+[managed_assets.hgv.rigid_7_5_to_17t.0pct_laden.diesel] I don't know the numeric factor.
+
+[managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel] I don't know the numeric factor.

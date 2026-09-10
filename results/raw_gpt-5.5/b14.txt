@@ -1,0 +1,59 @@
+[renewable_generation.reference.specific_yield.swe] 950 kWh/kWp/year, first-year pre-degradation; best estimate from Global Solar Atlas / World Bank country PV yield data.
+
+[renewable_generation.reference.degradation_pct.wind_onshore] 1.6% per year; I associate this with Staffell & Green, “How does wind farm performance decline with age?” Energy Policy, 2014.
+
+[renewable_generation.reference.specific_yield.zaf] 1,800 kWh/kWp/year, first-year pre-degradation; best estimate from Global Solar Atlas / World Bank country PV yield data.
+
+[renewable_generation.reference.specific_yield.fra] 1,200 kWh/kWp/year, first-year pre-degradation; best estimate from Global Solar Atlas / World Bank country PV yield data.
+
+[renewable_generation.reference.specific_yield.nld] 950 kWh/kWp/year, first-year pre-degradation; best estimate from Global Solar Atlas / World Bank country PV yield data.
+
+[renewable_generation.reference.specific_yield.pol] 1,000 kWh/kWp/year, first-year pre-degradation; best estimate from Global Solar Atlas / World Bank country PV yield data.
+
+[renewable_generation.reference.specific_yield.bra] 1,600 kWh/kWp/year, first-year pre-degradation; best estimate from Global Solar Atlas / World Bank country PV yield data.
+
+[renewable_generation.reference.specific_yield.chn] 1,300 kWh/kWp/year, first-year pre-degradation; best estimate from Global Solar Atlas / World Bank country PV yield data.
+
+[reusable_vs_single_use.reference.handwash_tap.energy_per_item] I do not know the numeric value.
+
+[reusable_vs_single_use.reference.dishwasher.place_settings_per_cycle] 13 place settings per full cycle; typical EU domestic dishwasher standard capacity / energy-label reference value.
+
+[reusable_vs_single_use.reference.handwash_tap.water_per_item] I do not know the numeric value.
+
+[reusable_vs_single_use.reference.dishwasher.water_per_cycle] 9.5 L per full eco-programme cycle; typical EU domestic dishwasher energy-label / ecodesign reference value.
+
+[reusable_vs_single_use.reference.handwash_basin.energy_per_item] I do not know the numeric value.
+
+[reusable_vs_single_use.reference.dishwasher.energy_per_cycle] 0.83 kWh per full eco-programme cycle; typical EU domestic dishwasher energy-label / ecodesign reference value.
+
+[reusable_vs_single_use.reference.handwash_basin.water_per_item] I do not know the numeric value.
+
+[semiconductors.tier1.cf4] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[tft_fpd.tier1.nf3] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[tft_fpd.tier1.sf6] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[semiconductors.tier1.sf6] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[tft_fpd.tier1.cf4] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[pv_cells.tier1.cf4] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[semiconductors.tier1.chf3] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[semiconductors.tier1.c3f8] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[semiconductors.tier1.nf3] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[pv_cells.tier1.c2f6] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[heat_transfer_fluids.tier1.c6f14_proxy] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[semiconductors.tier1.c2f6] I do not know the numeric value; the source is likely IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, electronics industry Tier 1 defaults.
+
+[spend_based.defra.sectors.paper_products] I do not know the numeric value; the source is likely UK DESNZ/DEFRA Greenhouse gas reporting: conversion factors, spend-based factors.
+
+[spend_based.uk.sic.c.manufacturing] I do not know the numeric value; the source is likely UK ONS atmospheric emissions / environmental accounts intensity by SIC section.
+
+[spend_based.us.naics6.333515.cutting_tool_and_machine_tool_accessory_manufacturing] I do not know the numeric value; the source is likely US EPA Supply Chain Greenhouse Gas Emission Factors for US Industries and Commodities.

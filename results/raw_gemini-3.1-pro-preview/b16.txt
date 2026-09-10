@@ -1,0 +1,33 @@
+[waste.landfill.k.wood_straw.tropical_moist_wet] My best estimate is 0.035 yr^-1, based on the IPCC 2006 Guidelines for National Greenhouse Gas Inventories.
+
+[waste_disposal.usa.yard_trimmings.landfilled] I don't know.
+
+[waste_disposal.aus.commercial_industrial.landfill] I don't know.
+
+[waste_disposal.fra.recyclage_granules.plastique_rigide_pp.per_tonne] I don't know.
+
+[waste_disposal.gbr.refuse.commercial_and_industrial_waste.combustion] I don't know.
+
+[waste_disposal.can.incineration.industrial_batch_fluidized_bed] I don't know.
+
+[waste_disposal.usa.pla.landfilled] I don't know.
+
+[waste_disposal.aus.construction_demolition.landfill] I don't know.
+
+[waste_disposal.fra.fin_de_vie_moyenne.cuivre.per_tonne] I don't know.
+
+[waste_disposal.gbr.plastic.pp.closed_loop] I don't know.
+
+[waste_disposal.can.composting.municipal_solid_waste] I don't know.
+
+[waste_disposal.usa.aluminum_cans.combusted] I don't know.
+
+[waste_disposal.aus.municipal_solid_waste.landfill] I don't know.
+
+[water.fra.supply.mains] I don't know.
+
+[water.gbr.treatment.wastewater] My best estimate is 0.272 kg CO2e per m3, based on the UK DEFRA/DESNZ GHG Conversion Factors.
+
+[water.fra.treatment.wastewater] I don't know.
+
+[water.gbr.supply.mains] My best estimate is 0.149 kg CO2e per m3, based on the UK DEFRA/DESNZ GHG Conversion Factors.

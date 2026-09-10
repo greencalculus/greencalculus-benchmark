@@ -1,0 +1,59 @@
+[delivery_vehicles.hgv_refrigerated.rigid_gt_17t.average_laden.diesel] I do not know.
+
+[delivery_vehicles.hgv_refrigerated.rigid_all.0pct_laden.diesel.energy_use_secr] I do not know.
+
+[delivery_vehicles.hgv_refrigerated.all.0pct_laden.diesel.energy_use_secr] I do not know.
+
+[delivery_vehicles.hgv.rigid_3_5_to_7_5t.50pct_laden.diesel] I do not know.
+
+[delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt] I do not know.
+
+[delivery_vehicles.hgv.rigid_gt_17t.100pct_laden.diesel] I do not know.
+
+[delivery_vehicles.van.average.diesel.wtt] I do not know.
+
+[delivery_vehicles.hgv_refrigerated.artic_all.average_laden.diesel.energy_use_secr] I do not know.
+
+[digital.gcp.region.europe-southwest1] I do not know.
+
+[digital.data_centre.pue.enterprise.low] I do not know.
+
+[digital.storage.network.egress.kwh_per_gb] I do not know.
+
+[digital.end_user_device.composite_user_pc.operational.digst_constant] I do not know.
+
+[digital.gcp.region.europe-north2] I do not know.
+
+[digital.data_centre.electricity_demand.global.2025_twh] I do not know.
+
+[digital.storage.embodied.hdd.useful_life_years] I do not know.
+
+[digital.gcp.region.europe-west9] I do not know.
+
+[digital.data_centre.pue.hyperscale.low] I do not know.
+
+[digital.storage.redundancy.object_erasure.default_factor] I do not know.
+
+[digital.gcp.region.me-central1] I do not know.
+
+[digital.data_centre.pue.hyperscale.high] I do not know.
+
+[district_heating.usa.steam_heat.mmbtu] I do not know.
+
+[district_heating.eu_framework.fossil_dh_baseline_ef] I do not know.
+
+[district_heating.eu_framework.hre4_scenario_methodology] I do not know.
+
+[district_heating.ita.eurostat.renewable_share] I do not know.
+
+[district_heating.gbr.onsite] I do not know.
+
+[district_heating.usa.steam_heat.kwh_gcv] I do not know.
+
+[district_heating.cyp.eurostat.renewable_share] I do not know.
+
+[district_heating.gbr.onsite_wtt] I do not know.
+
+[district_heating.kos.eurostat.renewable_share] I do not know.
+
+[district_heating.gbr.district] I do not know.

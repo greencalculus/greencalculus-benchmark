@@ -1,0 +1,59 @@
+[managed_assets.car.size.medium.petrol] 0.168 kgCO2e/km. Source: UK Government GHG Conversion Factors for Company Reporting, DEFRA/DESNZ, managed assets/company cars.
+
+[managed_assets.car.size.average.diesel] 0.170 kgCO2e/km. Source: UK Government GHG Conversion Factors for Company Reporting, DEFRA/DESNZ, managed assets/company cars.
+
+[materials.cbam.cement.grey_clinker] 0.807 kgCO2e/kg of good. Source: European Commission CBAM transitional-period default values for cement clinker.
+
+[materials.lca.wastage.generic_default] 5% wastage rate. Source: RICS/UK whole-life-carbon default construction material wastage assumptions.
+
+[materials.concrete.binder.cem_i_portland_uk.module_a1_a3] 0.913 kgCO2e/kg. Source: Inventory of Carbon and Energy / Circular Ecology, Cement CEM I UK, modules A1-A3.
+
+[materials.concrete.constituent.aggregate_fine.module_a1_a3] 0.0048 kgCO2e/kg. Source: Inventory of Carbon and Energy / Circular Ecology, fine aggregate, modules A1-A3.
+
+[materials.steel.galvanised.module_a1_a3] 2.99 kgCO2e/kg. Source: Inventory of Carbon and Energy / Circular Ecology, hot-dip galvanised steel, modules A1-A3.
+
+[materials.benchmark.office.target_2030_riba] 750 kgCO2e/m². Source: RIBA 2030 Climate Challenge embodied carbon target for offices/non-domestic buildings.
+
+[materials.benchmark.office.target_2030_leti] 350 kgCO2e/m². Source: LETI Climate Emergency Design Guide / LETI embodied carbon 2030 design target for offices.
+
+[materials.aluminium.recycled_secondary.module_a1_a3] 0.58 kgCO2e/kg. Source: Inventory of Carbon and Energy / Circular Ecology, recycled/secondary aluminium ingot, modules A1-A3.
+
+[materials.plastics.ldpe_lldpe.module_a1_a3] 1,890 kgCO2e/tonne. Source: PlasticsEurope eco-profile / ICE-style cradle-to-gate factor for LDPE/LLDPE.
+
+[materials.paper.paper.module_c3] I don’t know the numeric kgCO2e/tonne value for Paper — Module C3 incineration.
+
+[materials.cbam.iron_steel.crude_steel_ingot] 1.99 kgCO2e/kg of good. Source: European Commission CBAM transitional-period default values for iron and steel, crude steel ingots/primary forms.
+
+[materials.lca.wastage.timber] 10% wastage rate. Source: RICS/UK whole-life-carbon default construction material wastage assumptions for timber.
+
+[mobile_combustion.usa.residual_fuel_oil.litre] 2.98 kgCO2e/litre. Source: U.S. EPA GHG Emission Factors Hub, residual fuel oil mobile combustion.
+
+[mobile_combustion.can.ldgv_tier3.per_litre] 2.32 kgCO2e/litre. Source: Environment and Climate Change Canada, National Inventory Report / emission factors for light-duty gasoline vehicles, Tier 3.
+
+[mobile_combustion.propane.per_kwh_gross_cv] 0.215 kgCO2e/kWh gross CV. Source: UK Government GHG Conversion Factors for Company Reporting, DEFRA/DESNZ, mobile combustion propane.
+
+[fuels.fra.petrol.litre] 2.74 kgCO2e/litre. Source: ADEME Base Carbone, petrol/essence road fuel.
+
+[mobile_combustion.aus.diesel_100pct_mineral.per_litre] 2.70 kgCO2e/litre. Source: Australian National Greenhouse Accounts Factors, diesel oil 100% mineral.
+
+[mobile_combustion.usa.aviation_gasoline.litre] 2.20 kgCO2e/litre. Source: U.S. EPA GHG Emission Factors Hub, aviation gasoline mobile combustion.
+
+[mobile_combustion.can.hddv_advanced_control.per_litre] 2.70 kgCO2e/litre. Source: Environment and Climate Change Canada, National Inventory Report / emission factors for heavy-duty diesel vehicles with advanced controls.
+
+[mobile_combustion.petrol_100pct_mineral.per_kwh_gross_cv] 0.244 kgCO2e/kWh gross CV. Source: UK Government GHG Conversion Factors for Company Reporting, DEFRA/DESNZ, mobile combustion petrol 100% mineral.
+
+[fuels.fra.diesel_road.litre] 3.10 kgCO2e/litre. Source: ADEME Base Carbone, road diesel/gazole routier.
+
+[mobile_combustion.aus.lpg.per_litre] 1.60 kgCO2e/litre. Source: Australian National Greenhouse Accounts Factors, LPG mobile combustion.
+
+[mobile_combustion.usa.diesel.gallon] 10.21 kgCO2e/gallon. Source: U.S. EPA GHG Emission Factors Hub, diesel fuel mobile combustion.
+
+[mobile_combustion.can.offroad_diesel_tier1_3.per_litre] 2.72 kgCO2e/litre. Source: Environment and Climate Change Canada, National Inventory Report / off-road diesel engines Tier 1-3.
+
+[reporting.ngfs.carbon_price.messageix_globiom.below_2c.world.2045] I don’t know the numeric value for the NGFS Phase 5 MESSAGEix-GLOBIOM Below 2°C World 2045 shadow carbon price.
+
+[reporting.ngfs.carbon_price.gcam.delayed_transition.world.2035] I don’t know the numeric value for the NGFS Phase 5 GCAM Delayed transition World 2035 shadow carbon price.
+
+[reporting.ngfs.carbon_price.messageix_globiom.low_demand.world.2030] I don’t know the numeric value for the NGFS Phase 5 MESSAGEix-GLOBIOM Low demand World 2030 shadow carbon price.
+
+[reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030] I don’t know the numeric value for the NGFS Phase 5 GCAM Fragmented World World 2030 shadow carbon price.

@@ -38,8 +38,11 @@ def post(url, payload, headers, timeout=600):
 
 
 def anthropic(model, prompt):
+    # Reasoning models spend output tokens on thinking before any visible text.
+    # Too small a budget returns stop_reason=max_tokens with an EMPTY response —
+    # which looks like a refusal and is not one.
     d = post("https://api.anthropic.com/v1/messages",
-             {"model": model, "max_tokens": 8000,
+             {"model": model, "max_tokens": 32000,
               "messages": [{"role": "user", "content": prompt}]},
              {"x-api-key": os.environ["ANTHROPIC_API_KEY"],
               "anthropic-version": "2023-06-01"})
@@ -48,10 +51,13 @@ def anthropic(model, prompt):
 
 def openai_compatible(model, prompt, base, key_env):
     body = {"model": model, "messages": [{"role": "user", "content": prompt}]}
+    # Generous budgets: gpt-5.x and grok reasoning models spend output tokens on
+    # reasoning before any visible text, and a tight cap returns an EMPTY answer
+    # that reads as a refusal (see the Anthropic note above).
     if base.startswith("https://api.openai.com"):
-        body["max_completion_tokens"] = 12000
+        body["max_completion_tokens"] = 32000
     else:
-        body["max_tokens"] = 12000
+        body["max_tokens"] = 32000
     d = post(base + "/chat/completions", body,
              {"Authorization": f"Bearer {os.environ[key_env]}"})
     return d["choices"][0]["message"]["content"] or ""

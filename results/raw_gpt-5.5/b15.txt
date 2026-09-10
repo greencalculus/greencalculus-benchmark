@@ -1,0 +1,59 @@
+[spend_based.can.ioic.bs23c20.oil_and_gas_engineering_construction] I don't know this emission factor.
+
+[spend_based.eu.rou.nace.k.financial_and_insurance_activities] I don't know this emission factor.
+
+[spend_based.useeio.sectors.cement_manufacturing] I don't know the exact value; my rough best estimate is about 0.7 kg CO2e per 2022 USD purchaser price, likely from USEEIO/US EPA Supply Chain GHG Emission Factors.
+
+[spend_based.defra.sectors.real_estate] I don't know this emission factor.
+
+[spend_based.uk.sic.r.arts_entertainment_and_recreation] I don't know this emission factor.
+
+[spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers] I don't know this emission factor.
+
+[spend_based.can.ioic.bs81300.professional_and_similar_organisations] I don't know this emission factor.
+
+[spend_based.eu.svk.nace.c29.manufacture_of_motor_vehicles_trailers_and_semi_tr] I don't know this emission factor.
+
+[spend_based.useeio.sectors.pharmaceuticals] I don't know the exact value; my rough best estimate is about 0.25 kg CO2e per 2022 USD purchaser price, likely from USEEIO/US EPA Supply Chain GHG Emission Factors.
+
+[transmission_distribution.gbr.district_heat] I don't know the exact value; my rough best estimate is about 0.018 kg CO2e per kWh, from the UK Government GHG Conversion Factors for Company Reporting.
+
+[transmission_distribution.aus.state.wa_nwis.electricity] I don't know this emission factor.
+
+[transmission_distribution.fra.electricity] I don't know the exact value; my rough best estimate is about 0.005 kg CO2e per kWh, from ADEME Base Carbone.
+
+[transmission_distribution.cuw.loss_rate] I don't know this loss-rate factor.
+
+[transmission_distribution.gbr.electricity] I don't know the exact value; my rough best estimate is about 0.018 kg CO2e per kWh, from the UK Government GHG Conversion Factors for Company Reporting.
+
+[transmission_distribution.aus.state.vic.electricity] I don't know the exact value; my rough best estimate is about 0.07 kg CO2e per kWh, from the Australian National Greenhouse Accounts Factors.
+
+[transmission_distribution.col.loss_rate] I don't know this loss-rate factor.
+
+[transmission_distribution.aus.state.nt_dkis.electricity] I don't know this emission factor.
+
+[transmission_distribution.ukr.loss_rate] I don't know this loss-rate factor.
+
+[transmission_distribution.aus.state.qld.electricity] I don't know the exact value; my rough best estimate is about 0.06 kg CO2e per kWh, from the Australian National Greenhouse Accounts Factors.
+
+[waste.incineration.co2.cc.msw.garden_park] 0.49 fraction of dry weight total carbon content, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, incineration defaults.
+
+[waste.wastewater.domestic.mcf.treated.latrine_dry_communal] 0.5 dimensionless MCF, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, domestic wastewater defaults.
+
+[waste.incineration.co2.cc.msw.other_inert] 0.03 fraction of dry weight total carbon content, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, incineration defaults.
+
+[waste.landfill.ox.uncovered] 0 dimensionless oxidation factor, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, solid waste disposal defaults.
+
+[waste.wastewater.domestic.mcf.treated.latrine_dry_small] 0.1 dimensionless MCF, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, domestic wastewater defaults.
+
+[waste.wastewater.domestic.bod_per_capita.deu] 62 g BOD5 per person per day, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, country-specific domestic wastewater BOD defaults.
+
+[waste.wastewater.industrial.mcf.treated.aerobic_well_managed] 0 dimensionless MCF, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, industrial wastewater defaults.
+
+[waste.incineration.co2.dm.msw.other_inert] 0.90 fraction of wet weight dry matter content, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, incineration defaults.
+
+[waste.landfill.k.paper_textiles.boreal_temperate_wet] 0.06 yr^-1 first-order decay rate k, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, solid waste disposal defaults.
+
+[waste.wastewater.n2o.advanced_centralized_plant.per_capita] 0.0032 kg N2O per person per year, from the IPCC 2019 Refinement to the 2006 Guidelines, Volume 5, Waste, wastewater N2O defaults.
+
+[waste.landfill.doc.industrial.rubber] 0.39 fraction of wet weight DOC, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5, Waste, industrial waste DOC defaults.

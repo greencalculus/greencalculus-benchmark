@@ -1,0 +1,59 @@
+[delivery_vehicles.hgv_refrigerated.rigid_gt_17t.average_laden.diesel] Best estimate: 1.43 kgCO2e/km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, Delivery vehicles, refrigerated HGVs.
+
+[delivery_vehicles.hgv_refrigerated.rigid_all.0pct_laden.diesel.energy_use_secr] Best estimate: 3.97 kWh/km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, SECR kWh pass-through factors for refrigerated HGVs.
+
+[delivery_vehicles.hgv_refrigerated.all.0pct_laden.diesel.energy_use_secr] Best estimate: 3.78 kWh/km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, SECR kWh pass-through factors for refrigerated HGVs.
+
+[delivery_vehicles.hgv.rigid_3_5_to_7_5t.50pct_laden.diesel] Best estimate: 0.61 kgCO2e/km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, Delivery vehicles, HGVs.
+
+[delivery_vehicles.hgv.rigid_3_5_to_7_5t.average_laden.diesel.wtt] Best estimate: 0.14 kgCO2e/km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, WTT Delivery vehicles, HGVs.
+
+[delivery_vehicles.hgv.rigid_gt_17t.100pct_laden.diesel] Best estimate: 1.27 kgCO2e/km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, Delivery vehicles, HGVs.
+
+[delivery_vehicles.van.average.diesel.wtt] Best estimate: 0.061 kgCO2e/km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, WTT Delivery vehicles, vans.
+
+[delivery_vehicles.hgv_refrigerated.artic_all.average_laden.diesel.energy_use_secr] Best estimate: 4.70 kWh/km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, SECR kWh pass-through factors for refrigerated HGVs.
+
+[digital.gcp.region.europe-southwest1] Best estimate: 0.154 kgCO2e/kWh, from Google Cloud region electricity emissions-factor data.
+
+[digital.data_centre.pue.enterprise.low] Best estimate: 1.5 dimensionless PUE, commonly cited for lower-end older/enterprise-operated data centres.
+
+[digital.storage.network.egress.kwh_per_gb] Best estimate: 0.001 kWh/GB transferred, from cloud carbon-accounting methodology constants often used for network data transfer.
+
+[digital.end_user_device.composite_user_pc.operational.digst_constant] Best estimate: 0.06 kWh/device-hour, as a composite laptop/desktop user-PC operational-power constant in digital carbon-footprint frameworks.
+
+[digital.gcp.region.europe-north2] Best estimate: 0.009 kgCO2e/kWh, from Google Cloud region electricity emissions-factor data.
+
+[digital.data_centre.electricity_demand.global.2025_twh] Best estimate: 450 TWh/year, from IEA-style global data-centre electricity-demand baseline/projection figures.
+
+[digital.storage.embodied.hdd.useful_life_years] Best estimate: 5 years, commonly used as the HDD embodied-emissions amortization lifetime in cloud storage carbon methodologies.
+
+[digital.gcp.region.europe-west9] Best estimate: 0.052 kgCO2e/kWh, from Google Cloud region electricity emissions-factor data.
+
+[digital.data_centre.pue.hyperscale.low] Best estimate: 1.1 dimensionless PUE, commonly cited for best-in-class hyperscale data centres.
+
+[digital.storage.redundancy.object_erasure.default_factor] Best estimate: 1.5 dimensionless redundancy multiplier, commonly used for object-storage erasure coding.
+
+[digital.gcp.region.me-central1] Best estimate: 0.55 kgCO2e/kWh, from Google Cloud region electricity emissions-factor data.
+
+[digital.data_centre.pue.hyperscale.high] Best estimate: 1.2 dimensionless PUE, commonly cited for hyperscale data centres.
+
+[district_heating.usa.steam_heat.mmbtu] Best estimate: 66.33 kgCO2e/MMBtu, from the U.S. EPA GHG Emission Factors Hub for purchased steam/heat.
+
+[district_heating.eu_framework.fossil_dh_baseline_ef] Best estimate: 0.25 kgCO2e/kWh delivered heat, as a natural-gas-dominated fossil district-heating baseline factor used in EU district-heating decarbonisation frameworks.
+
+[district_heating.eu_framework.hre4_scenario_methodology] I don’t know a numeric kgCO2e factor; Heat Roadmap Europe 4 is a scenario/modelling methodology reference rather than a single emission factor.
+
+[district_heating.ita.eurostat.renewable_share] Best estimate: 0.28 share, i.e. 28%, renewable plus waste-heat share for Italy district heating from Eurostat-style district-heating energy-balance data.
+
+[district_heating.gbr.onsite] Best estimate: 0.183 kgCO2e/kWh, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, heat and steam generated onsite.
+
+[district_heating.usa.steam_heat.kwh_gcv] Best estimate: 0.226 kgCO2e/kWh, converted from the U.S. EPA steam heat factor of about 66.33 kgCO2e/MMBtu.
+
+[district_heating.cyp.eurostat.renewable_share] Best estimate: 0 share, i.e. 0%, renewable plus waste-heat share for Cyprus district heating from Eurostat-style district-heating energy-balance data.
+
+[district_heating.gbr.onsite_wtt] Best estimate: 0.042 kgCO2e/kWh, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, WTT heat and steam generated onsite.
+
+[district_heating.kos.eurostat.renewable_share] I don’t know the numeric Eurostat renewable plus waste-heat share for Kosovo district heating.
+
+[district_heating.gbr.district] Best estimate: 0.171 kgCO2e/kWh, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, district heat and steam.

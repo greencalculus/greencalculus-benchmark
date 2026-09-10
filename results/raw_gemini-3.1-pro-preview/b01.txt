@@ -1,0 +1,59 @@
+[afolu.removals.forestry.temperate_conifer] I genuinely do not know the exact emission factor for this category.
+
+[afolu.manure_ch4.other_cattle.tier1.high_productivity.anaerobic_digestion_biogas.cool] I do not know this specific emission factor.
+
+[afolu_refinement.enteric.swine.tier1.low_productivity] I genuinely do not know the exact emission factor for this category.
+
+[afolu.manure_ch4.pigs.tier1.global] I do not know this specific emission factor.
+
+[afolu.wetlands.coastal.mangrove.agb_growth.tropical_dry] I do not know the exact emission factor for this category.
+
+[afolu.fertiliser.organic_nitrogen.aggregate] I do not know the exact combined aggregate emission factor.
+
+[afolu.luc.tropical_deforestation] I genuinely do not know the exact emission factor for tropical deforestation per hectare.
+
+[afolu.forest_land.agb_stock.plantation.subtropical.subtropical_steppe.americas.tectona_grandis.all] I do not know this highly specific emission factor.
+
+[afolu_refinement.enteric.horses.tier1] I genuinely do not know the exact updated 2019 Refinement emission factor for this category.
+
+[afolu.enteric.poultry.tier1.global] The greenhouse-gas emission factor for poultry enteric fermentation CH4 is 0 kg CH4/head/year, as enteric fermentation in poultry is considered negligible by the IPCC 2006 Guidelines for National Greenhouse Gas Inventories.
+
+[afolu.wetlands.drained.plantations_oil_palm.tropical_subtropical.n2o] I genuinely do not know the exact emission factor for this category.
+
+[afolu.fertiliser.synthetic_nitrogen.aggregate] I do not know the exact combined aggregate emission factor.
+
+[atmospheric.ch4.tg_per_ppb] The conversion factor is approximately 2.78 Tg CH4 per ppb, according to the IPCC Assessment Reports (AR5/AR6).
+
+[atmospheric.co2.gtc_per_ppm] The conversion factor is 2.12 GtC (gigatonnes of carbon) per ppm CO2, according to the IPCC Assessment Reports (AR5/AR6).
+
+[building_energy.gbr.floorband.151_to_200.gas] I genuinely do not know the exact emission factor for this UK residential gas intensity category.
+
+[building_energy.gbr.dwelling.converted_flat.gas] I do not know this specific UK residential energy factor.
+
+[building_energy.gbr.floorband.upto_50.electricity] I do not know this specific UK residential energy factor.
+
+[building_energy.gbr.dwelling.semi_detached.electricity] I genuinely do not know the exact emission factor for this UK residential electricity category.
+
+[building_energy.gbr.dwelling.bungalow.gas] I do not know this specific UK residential energy factor.
+
+[building_energy.gbr.dwelling.purpose_built_flat.electricity] I do not know the exact emission factor for this UK residential category.
+
+[building_energy.gbr.epc.d.electricity] I genuinely do not know this specific UK EPC residential electricity use factor.
+
+[building_energy.gbr.epc.g.electricity] I genuinely do not know this specific UK EPC residential electricity use factor.
+
+[building_energy.gbr.dwelling.mid_terrace.gas] I do not know this specific UK residential energy factor.
+
+[building_energy.gbr.floorband.51_to_100.gas] I do not know this specific UK residential energy factor.
+
+[building_energy.gbr.floorband.51_to_100.electricity] I do not know this specific UK residential energy factor.
+
+[building_energy.gbr.floorband.upto_50.gas] I do not know this specific UK residential energy factor.
+
+[business_travel.fra.road.car_average] I do not know the exact emission factor for this ADEME business travel category.
+
+[business_travel.air.domestic.average.wtt] I genuinely do not know the exact DEFRA WTT emission factor for domestic air travel.
+
+[business_travel.usa.air.long_haul] I genuinely do not know the exact EPA emission factor for long-haul air travel.
+
+[business_travel.aus.road.hire_car.by_fuel.diesel_sedan.per_vehicle_km] I do not know this specific Australian Government ERF hire car emission factor.

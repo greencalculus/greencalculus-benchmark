@@ -1,0 +1,30 @@
+[district_heating.eu_framework.renewable_share_eu27] I don't know.
+[equivalencies.ref.person_day] I don't know.
+[equivalencies.gbr.ref.car_annual_distance_km] I don't know.
+[equivalencies.gbr.flight_london_new_york_return] I don't know.
+[equivalencies.usa.home_energy_year] I don't know.
+[equivalencies.usa.oil_barrel] The emission factor is 0.43 metric tons CO2 per barrel of oil consumed, according to the US EPA Greenhouse Gas Equivalencies Calculator.
+[equivalencies.usa.railcar_coal] I don't know.
+[equivalencies.usa.natural_gas_therm] The emission factor is 0.0053 metric tons CO2 per therm of natural gas, according to the US EPA Greenhouse Gas Equivalencies Calculator.
+[equivalencies.usa.waste_recycled_short_ton] I don't know.
+[equivalencies.usa.propane_cylinder] I don't know.
+[equivalencies.usa.forest_acre_sequestration_year] The sequestration factor is 0.84 metric tons CO2 sequestered per acre per year, according to the US EPA Greenhouse Gas Equivalencies Calculator.
+[equivalencies.usa.smartphone_charged] The emission factor is 0.00000822 metric tons CO2 (8.22 grams CO2) per smartphone charged, according to the US EPA Greenhouse Gas Equivalencies Calculator.
+[equivalencies.ref.tree_seedling.sequestration_10yr] The sequestration factor is 0.060 metric tons CO2 per urban tree seedling grown for 10 years, according to the US EPA Greenhouse Gas Equivalencies Calculator.
+[ev_charging.van.class_iii.bev.td_loss_uk] I don't know.
+[ev_charging.car.segment.supermini.bev.charging_uk] I don't know.
+[ev_charging.car.segment.supermini.bev.energy_use_secr] I don't know.
+[ev_charging.car.segment.lower_medium.phev.charging_uk] I don't know.
+[ev_charging.car.segment.dual_purpose_4x4.bev.charging_uk] I don't know.
+[ev_charging.car.segment.mpv.phev.td_loss_uk] I don't know.
+[ev_charging.car.segment.upper_medium.bev.energy_use_secr] I don't know.
+[ev_charging.car.segment.dual_purpose_4x4.bev.energy_use_secr] I don't know.
+[ev_charging.car.size.large.phev.td_loss_uk] I don't know.
+[ev_charging.car.segment.luxury.bev.energy_use_secr] I don't know.
+[ev_charging.car.segment.mpv.bev.energy_use_secr] I don't know.
+[ev_charging.van.class_ii.bev.charging_uk] I don't know.
+[food.diet.high_meat.annual] I don't know.
+[food.diet.mixed.annual] I don't know.
+[food.diet.low_meat.annual] I don't know.
+[food.diet.vegan.annual] I don't know.
+[food.diet.vegetarian.annual] I don't know.

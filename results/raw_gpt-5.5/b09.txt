@@ -1,0 +1,59 @@
+[grid.tcd.electricity.lifecycle_intensity] I don't know the numeric value.
+
+[grid.gib.electricity.lifecycle_intensity] I don't know the numeric value.
+
+[grid.gnq.electricity.lifecycle_intensity] I don't know the numeric value.
+
+[heating_systems.boiler_efficiency.gas_non_condensing] 80% seasonal efficiency, from UK/SAP-style default heating-system assumptions.
+
+[heating_systems.heat_pump_spf.ashp] 2.8 seasonal performance factor, from UK/SAP-style default heat-pump assumptions.
+
+[heating_systems.reference.lifetime_years.boiler] 15 years operating lifetime, from common UK building/heating-system reference lifetime assumptions.
+
+[heating_systems.boiler_efficiency.oil_non_condensing] 85% seasonal efficiency, from UK/SAP-style default heating-system assumptions.
+
+[heating_systems.boiler_efficiency.gas_condensing] 90% seasonal efficiency, from UK/SAP-style default heating-system assumptions.
+
+[heating_systems.boiler_efficiency.lpg_condensing] 90% seasonal efficiency, from UK/SAP-style default heating-system assumptions.
+
+[heating_systems.direct_electric.efficiency] 100% point-of-use efficiency, from standard direct electric resistance heating assumption.
+
+[heating_systems.boiler_efficiency.oil_condensing] 90% seasonal efficiency, from UK/SAP-style default heating-system assumptions.
+
+[homeworking.gbr.office_equipment] My best recall is 0.024 kgCO2e per FTE working hour, from UK Government/DEFRA GHG Conversion Factors for Company Reporting, Homeworking.
+
+[homeworking.gbr.combined] My best recall is 0.36 kgCO2e per FTE working hour, from UK Government/DEFRA GHG Conversion Factors for Company Reporting, Homeworking.
+
+[homeworking.gbr.heating] My best recall is 0.34 kgCO2e per FTE working hour, from UK Government/DEFRA GHG Conversion Factors for Company Reporting, Homeworking.
+
+[hotel_stay.gbr] My best recall is 10.4 kgCO2e per room night, from UK Government/DEFRA GHG Conversion Factors for Company Reporting, Hotel Stay.
+
+[hotel_stay.oman] I don't know the numeric value.
+
+[hotel_stay.thailand] I don't know the numeric value.
+
+[hotel_stay.malaysia] I don't know the numeric value.
+
+[hotel_stay.hong_kong_china] I don't know the numeric value.
+
+[hotel_stay.costa_rica] I don't know the numeric value.
+
+[hotel_stay.belgium] I don't know the numeric value.
+
+[hotel_stay.chile] I don't know the numeric value.
+
+[hotel_stay.vietnam] I don't know the numeric value.
+
+[hotel_stay.switzerland] I don't know the numeric value.
+
+[hotel_stay.china] I don't know the numeric value.
+
+[hotel_stay.portugal] I don't know the numeric value.
+
+[chemicals.acrylonitrile.ch4_default] 0.18 kg CH4 per tonne acrylonitrile, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 3, chemical industry default factors.
+
+[industrial_processes_refinement.fluorochemical.nf3_cf4_byproduct] I don't know the numeric value.
+
+[minerals.cement.cao_default_fraction] 0.65 tonne CaO per tonne clinker, from IPCC 2006 Guidelines for National Greenhouse Gas Inventories, cement clinker default CaO fraction.
+
+[industrial_processes_refinement.hydrogen.steam_reforming_lpg] 63.1 kg CO2 per GJ feedstock, from IPCC 2019 Refinement Tier 1 carbon-content factor for LPG used in hydrogen steam reforming.

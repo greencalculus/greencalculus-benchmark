@@ -1,0 +1,59 @@
+[passenger_vehicles.car.segment.luxury.diesel.energy_use_secr] I don't know the exact DEFRA SECR energy use factor for a luxury diesel car.
+
+[passenger_vehicles.car.segment.upper_medium.petrol] I don't know the exact emission factor for a DEFRA upper medium petrol passenger car.
+
+[refrigerants.r_422d] The global warming potential (emission factor) for R-422D is 2,729 kgCO2e per kg leaked, based on the IPCC Fourth Assessment Report (AR4).
+
+[refrigerants.hcfc_1224yd] I don't know the exact emission factor for HCFC-1224yd.
+
+[refrigerants.r_134a] The global warming potential (emission factor) for R-134a is 1,430 kgCO2e per kg leaked, according to the IPCC Fourth Assessment Report (AR4).
+
+[refrigerants.pfc_4_1_14] I don't know the exact emission factor for PFC-4-1-14.
+
+[refrigerants.r_290] The global warming potential (emission factor) for R-290 (propane) is 3 kgCO2e per kg leaked, based on the IPCC Fourth Assessment Report (AR4).
+
+[refrigerants.pfc_n_methylmorpholine] I don't know the exact emission factor for Perfluoro-N-methylmorpholine.
+
+[refrigerants.r_717] The global warming potential (emission factor) for R-717 (ammonia) is 0 kgCO2e per kg leaked, as it is not a greenhouse gas under standard IPCC accounting.
+
+[refrigerants.hfk_perfluoro_butanone] I don't know the exact emission factor for 1,1,1,3,4,4,4-Heptafluoro-3-.
+
+[refrigerants.r_718] The global warming potential (emission factor) for R-718 (water) is 0 kgCO2e per kg leaked.
+
+[refrigerants.pfc_c_c3f6] I don't know the exact emission factor for Perfluorocyclopropane.
+
+[refrigerants.r_1336mzz_z] I don't know the exact emission factor for R-1336mzz.
+
+[refrigerants.hfc_nonafluoro_tfm_pentene] I don't know the exact emission factor for Nonafluoro-(trifluoromethyl)pent-2-ene and isomers.
+
+[reporting.aasb_s2.group3.applicability] I don't know the exact numerical thresholds for the AASB S2 Group 3 applicability size test.
+
+[reporting.sb_253_261.sb261.threshold.annual_revenue_usd_m] The filer threshold for California SB-261 is $500,000,000 ($500 million) in total annual revenue.
+
+[reporting.sgx_acra.listed_non_sti_ge_1bn] I don't know the exact numeric parameter requested for this Singapore SGX climate disclosure cohort.
+
+[reporting.uk_secr.threshold.employees] The UK SECR filer threshold for a large company or LLP includes having more than 250 employees.
+
+[reporting.eu_ets.price.eua_average_eur_per_t.2013] I don't know the exact average price for an EU ETS EUA in 2013, though it was approximately €4.50 per tonne.
+
+[reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m] The filer threshold for California SB-253 is $1,000,000,000 ($1 billion) in total annual revenue.
+
+[reporting.sec.rule.assurance.limited_phase_in_years] I don't know the exact phase-in period in years for limited assurance under the final SEC Climate Rule.
+
+[reporting.aasb_s2.scenario_analysis.requirement] I don't know the exact numeric parameter required beyond the standard mandate to use at least two climate scenarios.
+
+[reporting.aasb_s2.group1.applicability] I don't know the exact numeric thresholds for the AASB S2 Group 1 applicability size test.
+
+[reporting.sb_253_261.sb261.cadence.years] The reporting cadence for California SB-261 is every 2 years (biennial).
+
+[reporting.sgx_acra.scenario_analysis.requirement] I don't know the exact parameter requested for the Singapore SGX/ACRA climate scenario analysis requirement.
+
+[reporting.uk_secr.exemption.low_energy_kwh] The UK SECR low energy user exemption ceiling is 40,000 kWh per year.
+
+[renewable_generation.reference.specific_yield.irl] I don't know the exact reference specific yield for solar PV in Ireland.
+
+[renewable_generation.reference.degradation_pct.solar_pv_rooftop] The standard annual output degradation rate for rooftop solar PV is typically estimated at 0.5% per year, often sourced from the National Renewable Energy Laboratory (NREL).
+
+[renewable_generation.reference.specific_yield.ita] I don't know the exact reference specific yield for solar PV in Italy.
+
+[renewable_generation.reference.degradation_pct.solar_pv_utility] The standard annual output degradation rate for utility-scale solar PV is typically estimated at 0.5% per year, based on modeling by the National Renewable Energy Laboratory (NREL).

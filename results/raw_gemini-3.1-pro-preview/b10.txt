@@ -1,0 +1,59 @@
+[minerals.glass.specialty_tv_panel] I don't know.
+
+[industrial_processes_refinement.nitric_acid.old_pre_1975] I don't know.
+
+[chemicals.ethylene_oxide.ch4_thermal_treatment] I don't know.
+
+[industrial_processes_refinement.hydrogen.steam_reforming_methanol] I don't know.
+
+[minerals.cement.clinker_pre_ckd] The base emission factor for cement clinker is 0.52 tonnes CO2 per tonne of clinker, according to the IPCC 2006 Guidelines.
+
+[industrial_processes_refinement.hfc23_hcfc22.recent_design] I don't know.
+
+[metals.iron_steel.blast_furnace_pig_iron] I don't know.
+
+[industrial_processes_refinement.nitric_acid.single_low_pressure] I don't know.
+
+[lca.pef.data_quality.dqr_fair_max] This is a methodology rule rather than an emission factor; the maximum Data Quality Rating (DQR) threshold for "fair" quality in the EU PEF Method is 4.0.
+
+[lca.pef.normalisation.required] This is a methodology rule rather than an emission factor; in the EU PEF Method, normalisation is an optional step, so it is not required (False).
+
+[lca.pef.recycling.cff_required] This is a methodology rule rather than an emission factor; yes (True), the Circular Footprint Formula (CFF) is strictly required for end-of-life modelling in the EU PEF Method.
+
+[lca.pef.data_quality.dqr_dimensions_count] This is a methodology rule rather than an emission factor; there are 4 dimensions (Technological, Geographical, Time representativeness, and Precision) used to calculate the Data Quality Rating (DQR) in the EU PEF Method.
+
+[lca.pef.climate_change.includes_biogenic_separate_subindicator] This is a methodology rule rather than an emission factor; yes (True), biogenic GHG emissions must be reported as a separate climate-change sub-indicator in the EU PEF Method.
+
+[lca.pef.climate_change.includes_fossil] This is a methodology rule rather than an emission factor; yes (True), fossil GHG emissions are included as a main component of the climate-change category in the EU PEF Method.
+
+[lca.pef.data_quality.dqr_excellent_max] This is a methodology rule rather than an emission factor; the maximum Data Quality Rating (DQR) threshold for "excellent" quality in the EU PEF Method is 1.6.
+
+[lca.pef.impact_categories_count] This is a methodology rule rather than an emission factor; there are 16 environmental impact categories evaluated in the EU PEF Method.
+
+[lca.pef.climate_change.includes_land_use_change_subindicator] This is a methodology rule rather than an emission factor; yes (True), land-use-change GHG emissions must be reported as a separate climate-change sub-indicator in the EU PEF Method.
+
+[lca.pef.electricity.residual_mix_default] This is a methodology rule rather than an emission factor; yes (True), the residual electricity mix must be used as the default when specific contractual instruments are absent in the EU PEF Method.
+
+[lca.pef.data_quality.dqr_poor_threshold] This is a methodology rule rather than an emission factor; the threshold for a "poor" Data Quality Rating (DQR) in the EU PEF Method is a score greater than 4.0.
+
+[lca.biogenic.gwp_bio.short_rotation_pef] I don't know.
+
+[managed_assets.van.class_iii.diesel] I don't know.
+
+[managed_assets.car.size.average.hybrid] I don't know.
+
+[managed_assets.hgv_refrigerated.rigid_all.0pct_laden.diesel] I don't know.
+
+[managed_assets.hgv_refrigerated.rigid_gt_17t.50pct_laden.diesel] I don't know.
+
+[managed_assets.car.segment.executive.diesel] I don't know.
+
+[managed_assets.car.segment.mini.petrol] I don't know.
+
+[managed_assets.van.class_i.diesel] I don't know.
+
+[managed_assets.van.class_ii.diesel] I don't know.
+
+[managed_assets.hgv.rigid_7_5_to_17t.0pct_laden.diesel] I don't know.
+
+[managed_assets.hgv_refrigerated.artic_all.50pct_laden.diesel] I don't know.

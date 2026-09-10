@@ -1,0 +1,33 @@
+[waste.landfill.k.wood_straw.tropical_moist_wet] 0.035 yr⁻¹ for the first-order decay rate k; source: IPCC 2006 Guidelines for National Greenhouse Gas Inventories, Volume 5 Waste, default k values.
+
+[waste_disposal.usa.yard_trimmings.landfilled] My best recall is -0.12 metric tons CO2e per short ton; source: U.S. EPA WARM model emission factors.
+
+[waste_disposal.aus.commercial_industrial.landfill] My best estimate is 1.4 t CO2e per tonne of commercial and industrial waste landfilled; source: Australian National Greenhouse Accounts Factors.
+
+[waste_disposal.fra.recyclage_granules.plastique_rigide_pp.per_tonne] I do not know the numeric factor.
+
+[waste_disposal.gbr.refuse.commercial_and_industrial_waste.combustion] 21.294 kg CO2e per tonne; source: UK Government GHG Conversion Factors for Company Reporting, waste disposal factors.
+
+[waste_disposal.can.incineration.industrial_batch_fluidized_bed] I do not know the numeric factor.
+
+[waste_disposal.usa.pla.landfilled] I do not know the numeric factor.
+
+[waste_disposal.aus.construction_demolition.landfill] My best estimate is 0.2 t CO2e per tonne of construction and demolition waste landfilled; source: Australian National Greenhouse Accounts Factors.
+
+[waste_disposal.fra.fin_de_vie_moyenne.cuivre.per_tonne] I do not know the numeric factor.
+
+[waste_disposal.gbr.plastic.pp.closed_loop] 21.294 kg CO2e per tonne; source: UK Government GHG Conversion Factors for Company Reporting, waste disposal factors.
+
+[waste_disposal.can.composting.municipal_solid_waste] I do not know the numeric factor.
+
+[waste_disposal.usa.aluminum_cans.combusted] My best recall is 0.04 metric tons CO2e per short ton; source: U.S. EPA WARM model emission factors.
+
+[waste_disposal.aus.municipal_solid_waste.landfill] My best estimate is 1.2 t CO2e per tonne of municipal solid waste landfilled; source: Australian National Greenhouse Accounts Factors.
+
+[water.fra.supply.mains] 0.132 kg CO2e per m3; source: ADEME Base Carbone, France mains water supply/treatment and distribution.
+
+[water.gbr.treatment.wastewater] 0.272 kg CO2e per m3; source: UK Government GHG Conversion Factors for Company Reporting, water treatment.
+
+[water.fra.treatment.wastewater] My best recall is 0.275 kg CO2e per m3; source: ADEME Base Carbone, France wastewater treatment.
+
+[water.gbr.supply.mains] 0.149 kg CO2e per m3; source: UK Government GHG Conversion Factors for Company Reporting, water supply.

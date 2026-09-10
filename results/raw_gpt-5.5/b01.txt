@@ -1,0 +1,59 @@
+[afolu.removals.forestry.temperate_conifer] My best estimate is -6.4 t CO2e/ha/year for temperate conifer forest sequestration, from IPCC-style forest carbon stock-change defaults; I do not recall a more exact source value.
+
+[afolu.manure_ch4.other_cattle.tier1.high_productivity.anaerobic_digestion_biogas.cool] My best estimate is 0.011 kg CH4/kg volatile solids, based on IPCC 2006/2019 Tier 1 manure CH4 defaults using Bo × MCF for other cattle in anaerobic digestion/biogas systems.
+
+[afolu_refinement.enteric.swine.tier1.low_productivity] 1.0 kg CH4/head/year, from the IPCC 2019 Refinement to the 2006 IPCC Guidelines, Tier 1 enteric fermentation defaults.
+
+[afolu.manure_ch4.pigs.tier1.global] My best estimate is 3 kg CH4/head/year for pigs manure management CH4, from IPCC 2006 Tier 1 default manure management factors; I do not recall the exact “global” table value.
+
+[afolu.wetlands.coastal.mangrove.agb_growth.tropical_dry] My best estimate is 2.4 tonnes dry matter/ha/year for above-ground biomass growth in tropical dry mangroves, from the IPCC 2013 Wetlands Supplement.
+
+[afolu.fertiliser.organic_nitrogen.aggregate] My best estimate is 6.7 kg CO2e/kg N applied for combined direct and indirect N2O from organic nitrogen fertiliser, using IPCC 2006 defaults and AR4 GWP100.
+
+[afolu.luc.tropical_deforestation] My best estimate is 500 t CO2e/ha for tropical deforestation land-use change; I do not recall the exact publisher value.
+
+[afolu.forest_land.agb_stock.plantation.subtropical.subtropical_steppe.americas.tectona_grandis.all] I don't know the exact value for this plantation above-ground biomass stock factor.
+
+[afolu_refinement.enteric.horses.tier1] 18 kg CH4/head/year, from the IPCC 2019 Refinement to the 2006 IPCC Guidelines, Tier 1 enteric fermentation defaults.
+
+[afolu.enteric.poultry.tier1.global] 0 kg CH4/head/year; IPCC Tier 1 enteric fermentation accounting generally treats poultry enteric CH4 as negligible/not estimated.
+
+[afolu.wetlands.drained.plantations_oil_palm.tropical_subtropical.n2o] 1.2 kg N2O-N/ha/year, from the IPCC 2013 Wetlands Supplement default N2O emission factor for drained tropical/subtropical organic soils under oil palm plantations.
+
+[afolu.fertiliser.synthetic_nitrogen.aggregate] My best estimate is 6.2 kg CO2e/kg N applied for combined direct and indirect N2O from synthetic nitrogen fertiliser, using IPCC 2006 defaults and AR4 GWP100.
+
+[atmospheric.ch4.tg_per_ppb] 2.84 Tg CH4/ppb, from the dry-atmosphere mole-fraction conversion used in atmospheric chemistry/IPCC-style burden calculations.
+
+[atmospheric.co2.gtc_per_ppm] 2.12 GtC/ppm CO2, the standard atmospheric CO2 burden conversion commonly cited by IPCC/NOAA.
+
+[building_energy.gbr.floorband.151_to_200.gas] My best estimate is 3,900 kg CO2e/dwelling/year, derived from about 21,200 kWh gas/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.dwelling.converted_flat.gas] My best estimate is 1,580 kg CO2e/dwelling/year, derived from about 8,600 kWh gas/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.floorband.upto_50.electricity] My best estimate is 470 kg CO2e/dwelling/year, derived from about 2,220 kWh electricity/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.dwelling.semi_detached.electricity] My best estimate is 675 kg CO2e/dwelling/year, derived from about 3,180 kWh electricity/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.dwelling.bungalow.gas] My best estimate is 2,050 kg CO2e/dwelling/year, derived from about 11,100 kWh gas/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.dwelling.purpose_built_flat.electricity] My best estimate is 535 kg CO2e/dwelling/year, derived from about 2,520 kWh electricity/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.epc.d.electricity] My best estimate is 645 kg CO2e/dwelling/year, derived from about 3,040 kWh electricity/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.epc.g.electricity] My best estimate is 900 kg CO2e/dwelling/year, derived from about 4,250 kWh electricity/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.dwelling.mid_terrace.gas] My best estimate is 1,685 kg CO2e/dwelling/year, derived from about 9,160 kWh gas/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.floorband.51_to_100.gas] My best estimate is 1,870 kg CO2e/dwelling/year, derived from about 10,150 kWh gas/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.floorband.51_to_100.electricity] My best estimate is 645 kg CO2e/dwelling/year, derived from about 3,050 kWh electricity/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[building_energy.gbr.floorband.upto_50.gas] My best estimate is 1,220 kg CO2e/dwelling/year, derived from about 6,630 kWh gas/year in DESNZ/BEIS NEED data and UK Government GHG Conversion Factors.
+
+[business_travel.fra.road.car_average] 0.218 kg CO2e/km, from ADEME Base Carbone/Base Empreinte for an average-motorisation passenger car.
+
+[business_travel.air.domestic.average.wtt] My best estimate is 0.0388 kg CO2e/passenger-km, from UK Government/DEFRA GHG Conversion Factors, WTT business travel air, domestic average passenger.
+
+[business_travel.usa.air.long_haul] 0.163 kg CO2e/passenger-mile, from the U.S. EPA Center for Corporate Climate Leadership emission factors for long-haul air travel.
+
+[business_travel.aus.road.hire_car.by_fuel.diesel_sedan.per_vehicle_km] My best estimate is 0.192 kg CO2e/vehicle-km, from Australian Government National Greenhouse Accounts/Climate Active-style hire-car factors for a diesel sedan.

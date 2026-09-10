@@ -1,0 +1,30 @@
+[business_travel.fra.road.car_diesel] I genuinely do not know the exact emission factor for this category.
+[business_travel.sea.ferry.average] I genuinely do not know the exact emission factor for this category.
+[business_travel.usa.rail.transit] I genuinely do not know the exact emission factor for this category.
+[business_travel.aus.road.hire_car.by_drive.internal_combustion_engine_light_bus.per_vehicle_km] I genuinely do not know the exact emission factor for this category.
+[business_travel.fra.rail.ter] I genuinely do not know the exact emission factor for this category.
+[business_travel.land.car.segment.supermini.bev] I genuinely do not know the exact emission factor for this category.
+[business_travel.usa.air.short_haul] I genuinely do not know the exact emission factor for this category.
+[business_travel.aus.road.hire_car.by_fuel.electric_diesel_wagon.per_vehicle_km] I genuinely do not know the exact emission factor for this category.
+[carbon_pricing.jpn_tokyo.ets] I genuinely do not know the exact carbon price for this system.
+[carbon_pricing.eu.ets] I genuinely do not know the current exact carbon price for the EU ETS.
+[carbon_pricing.twn.carbon_tax] I genuinely do not know the exact carbon price for this tax.
+[carbon_pricing.nor.carbon_tax] I genuinely do not know the exact carbon price for this tax.
+[carbon_pricing.usa_rggi.ets] I genuinely do not know the exact current carbon price for RGGI.
+[carbon_pricing.esp.carbon_tax] I genuinely do not know the exact carbon price for this tax.
+[carbon_pricing.swe.carbon_tax] I genuinely do not know the exact carbon price for this tax.
+[carbon_pricing.hun.carbon_tax] I genuinely do not know the exact carbon price for this tax.
+[carbon_pricing.aus.ets] I genuinely do not know the exact carbon price for this mechanism.
+[carbon_pricing.mex_queretaro.carbon_tax] I genuinely do not know the exact carbon price for this tax.
+[carbon_pricing.nld.carbon_tax] I genuinely do not know the exact carbon price for this tax.
+[carbon_pricing.zaf.carbon_tax] I genuinely do not know the exact carbon price for this tax.
+[cbam.country.ind.7326_90_94.articles_iron] I genuinely do not know the exact CBAM emission factor for this product.
+[reporting.cbam.indirect.namibia] I genuinely do not know the exact CBAM indirect emission factor for this country.
+[cbam.country.chn.7609_00_00.aluminium_tube_pipe] I genuinely do not know the exact CBAM emission factor for this product.
+[reporting.cbam.indirect.turkiye] I genuinely do not know the exact CBAM indirect emission factor for this country.
+[cbam.country.rus.7207_11_90.semi_finished_products] I genuinely do not know the exact CBAM emission factor for this product.
+[reporting.cbam.indirect.tanzania_united] I genuinely do not know the exact CBAM indirect emission factor for this country.
+[cbam.country.rus.7207_11_16.semi_finished_products] I genuinely do not know the exact CBAM emission factor for this product.
+[reporting.cbam.indirect.zambia] I genuinely do not know the exact CBAM indirect emission factor for this country.
+[cbam.country.ind.7307_92.threaded_elbows_bends] I genuinely do not know the exact CBAM emission factor for this product.
+[reporting.cbam.indirect.georgia] I genuinely do not know the exact CBAM indirect emission factor for this country.

@@ -1,0 +1,59 @@
+[district_heating.eu_framework.renewable_share_eu27] I don't know the numeric value for the EU-27 district-heating renewable-plus-waste-heat share.
+
+[equivalencies.ref.person_day] My best estimate is 18 kgCO2e per person-day, based on global annual GHG emissions excluding LULUCF divided by world population and 365 days; I associate this with EDGAR/UNEP-style global emissions datasets.
+
+[equivalencies.gbr.ref.car_annual_distance_km] My best estimate is 11,500 km per car-year, from UK/Great Britain average annual car mileage statistics such as DfT vehicle mileage or MOT-based data.
+
+[equivalencies.gbr.flight_london_new_york_return] My best estimate is 1,600 kgCO2e per return economy passenger flight London–New York including radiative forcing, from UK government/DESNZ GHG Conversion Factors flight methodology.
+
+[equivalencies.usa.home_energy_year] 7.94 metric tons CO2e per home-year, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.oil_barrel] 0.43 metric tons CO2 per barrel of oil consumed, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.railcar_coal] 181 metric tons CO2e per railcar of coal burned, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.natural_gas_therm] 5.3 kg CO2 per therm of natural gas, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.waste_recycled_short_ton] 2.94 metric tons CO2e avoided per short ton of waste recycled instead of landfilled, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.propane_cylinder] 22 kg CO2 per 16 lb propane cylinder used for home barbecue, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.forest_acre_sequestration_year] 0.84 metric tons CO2 sequestered per acre of U.S. forest per year, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.usa.smartphone_charged] 0.00822 kg CO2e per smartphone charged, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[equivalencies.ref.tree_seedling.sequestration_10yr] 0.060 metric tons CO2 sequestered per urban tree seedling grown for 10 years, from the U.S. EPA Greenhouse Gas Equivalencies Calculator.
+
+[ev_charging.van.class_iii.bev.td_loss_uk] My best estimate is 0.0067 kgCO2e per km, from the UK government/DESNZ GHG Conversion Factors for electric vehicles, T&D losses.
+
+[ev_charging.car.segment.supermini.bev.charging_uk] My best estimate is 0.0327 kgCO2e per km, from the UK government/DESNZ GHG Conversion Factors for electric vehicle charging.
+
+[ev_charging.car.segment.supermini.bev.energy_use_secr] My best estimate is 0.158 kWh per km, from the UK government/DESNZ GHG Conversion Factors SECR electric-vehicle energy-use table.
+
+[ev_charging.car.segment.lower_medium.phev.charging_uk] My best estimate is 0.033 kgCO2e per km, from the UK government/DESNZ GHG Conversion Factors for electric vehicle charging.
+
+[ev_charging.car.segment.dual_purpose_4x4.bev.charging_uk] My best estimate is 0.048 kgCO2e per km, from the UK government/DESNZ GHG Conversion Factors for electric vehicle charging.
+
+[ev_charging.car.segment.mpv.phev.td_loss_uk] My best estimate is 0.0040 kgCO2e per km, from the UK government/DESNZ GHG Conversion Factors for electric vehicles, T&D losses.
+
+[ev_charging.car.segment.upper_medium.bev.energy_use_secr] My best estimate is 0.19 kWh per km, from the UK government/DESNZ GHG Conversion Factors SECR electric-vehicle energy-use table.
+
+[ev_charging.car.segment.dual_purpose_4x4.bev.energy_use_secr] My best estimate is 0.23 kWh per km, from the UK government/DESNZ GHG Conversion Factors SECR electric-vehicle energy-use table.
+
+[ev_charging.car.size.large.phev.td_loss_uk] My best estimate is 0.0036 kgCO2e per km, from the UK government/DESNZ GHG Conversion Factors for electric vehicles, T&D losses.
+
+[ev_charging.car.segment.luxury.bev.energy_use_secr] My best estimate is 0.23 kWh per km, from the UK government/DESNZ GHG Conversion Factors SECR electric-vehicle energy-use table.
+
+[ev_charging.car.segment.mpv.bev.energy_use_secr] My best estimate is 0.22 kWh per km, from the UK government/DESNZ GHG Conversion Factors SECR electric-vehicle energy-use table.
+
+[ev_charging.van.class_ii.bev.charging_uk] My best estimate is 0.054 kgCO2e per km, from the UK government/DESNZ GHG Conversion Factors for electric vehicle charging.
+
+[food.diet.high_meat.annual] 2.62 metric tons CO2e per year, based on 7.19 kgCO2e per day for a high-meat diet in Scarborough et al., Climatic Change, 2014.
+
+[food.diet.mixed.annual] 2.05 metric tons CO2e per year, based on 5.63 kgCO2e per day for a medium-meat/mixed diet in Scarborough et al., Climatic Change, 2014.
+
+[food.diet.low_meat.annual] 1.70 metric tons CO2e per year, based on 4.67 kgCO2e per day for a low-meat diet in Scarborough et al., Climatic Change, 2014.
+
+[food.diet.vegan.annual] 1.05 metric tons CO2e per year, based on 2.89 kgCO2e per day for a vegan diet in Scarborough et al., Climatic Change, 2014.
+
+[food.diet.vegetarian.annual] 1.39 metric tons CO2e per year, based on 3.81 kgCO2e per day for a vegetarian diet in Scarborough et al., Climatic Change, 2014.

@@ -1,0 +1,30 @@
+[cbam.country.kor.7217_20.wire_iron] I don't know.
+[reporting.cbam.indirect.congo_democratic] I don't know.
+[chp.reference_efficiency.ghg_protocol.electricity] The assumed efficiency of separate electricity production is 35% (or 0.35 efficiency ratio), according to the GHG Protocol's Allocation of GHG Emissions from a Combined Heat and Power (CHP) Plant tool.
+[chp.reference_efficiency.ghg_protocol.heat] The assumed efficiency of separate heat/steam production is 80% (or 0.80 efficiency ratio), according to the GHG Protocol's Allocation of GHG Emissions from a Combined Heat and Power (CHP) Plant tool.
+[commuting.car.size.average.diesel] I don't know.
+[commuting.rail.national_rail] I don't know.
+[commuting.car.size.large.petrol] I don't know.
+[commuting.car.size.medium.hybrid] I don't know.
+[commuting.car.size.average.hybrid] I don't know.
+[commuting.bus.local_average] I don't know.
+[commuting.car.size.small.diesel] I don't know.
+[commuting.car.size.medium.petrol] I don't know.
+[commuting.car.size.small.hybrid] I don't know.
+[commuting.car.size.large.hybrid] I don't know.
+[commuting.bus.local_london] I don't know.
+[commuting.rail.international_rail] I don't know.
+[reporting.csrd.threshold.large_undertaking.turnover_eur_m] The CSRD filer turnover threshold for a large undertaking is €50 million (recently increased from €40 million to account for inflation).
+[reporting.csrd.threshold.non_eu_group.eu_revenue_eur_m] The CSRD filer threshold for non-EU groups requires generating a net turnover of more than €150 million within the EU for each of the last two consecutive financial years.
+[reporting.csrd.threshold.listed_sme.first_report_fy] The first reporting financial year for listed SMEs under the CSRD is financial year 2026 (for reports published in 2027).
+[reporting.csrd.threshold.large_undertaking.balance_sheet_eur_m] The CSRD filer balance sheet total threshold for a large undertaking is €25 million (recently increased from €20 million to account for inflation).
+[reporting.csrd.calendar.listed_sme.first_report_fy] The first CSRD reporting cycle for listed SMEs begins in financial year 2026 (for reports published in 2027).
+[reporting.csrd.calendar.non_eu_group.first_report_fy] The first CSRD reporting cycle for in-scope non-EU groups begins in financial year 2028 (for reports published in 2029).
+[reporting.csrd.calendar.large_undertaking.first_report_fy] The first CSRD reporting cycle for other large undertakings (those not already subject to the NFRD) begins in financial year 2025 (for reports published in 2026).
+[reporting.csrd.e1_9.phase_in_year_1_qualitative] Under ESRS phase-in rules, undertakings are permitted to report only qualitative disclosures for the anticipated financial effects from climate-related risks (ESRS E1-9) for their first year of mandatory application.
+[reporting.csrd.calendar.large_pie.first_report_fy] The first CSRD reporting cycle for large public-interest entities already subject to the NFRD begins in financial year 2024 (for reports published in 2025).
+[reporting.csrd.threshold.large_undertaking.employees] The CSRD filer employee threshold for a large undertaking is an average of 250 employees during the financial year.
+[delivery_vehicles.hgv.all.50pct_laden.diesel.energy_use_secr] I don't know.
+[delivery_vehicles.hgv_refrigerated.rigid_7_5_to_17t.average_laden.diesel.energy_use_secr] I don't know.
+[delivery_vehicles.hgv.rigid_gt_17t.average_laden.diesel.wtt] I don't know.
+[delivery_vehicles.hgv.artic_3_5_to_33t.0pct_laden.diesel.energy_use_secr] I don't know.

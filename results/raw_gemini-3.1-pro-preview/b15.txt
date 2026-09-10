@@ -1,0 +1,59 @@
+[spend_based.can.ioic.bs23c20.oil_and_gas_engineering_construction] I genuinely do not know this specific emission factor.
+
+[spend_based.eu.rou.nace.k.financial_and_insurance_activities] I genuinely do not know this specific emission factor.
+
+[spend_based.useeio.sectors.cement_manufacturing] I genuinely do not know this specific emission factor.
+
+[spend_based.defra.sectors.real_estate] I genuinely do not know this specific emission factor.
+
+[spend_based.uk.sic.r.arts_entertainment_and_recreation] I genuinely do not know this specific emission factor.
+
+[spend_based.us.naics6.424110.printing_and_writing_paper_merchant_wholesalers] I genuinely do not know this specific emission factor.
+
+[spend_based.can.ioic.bs81300.professional_and_similar_organisations] I genuinely do not know this specific emission factor.
+
+[spend_based.eu.svk.nace.c29.manufacture_of_motor_vehicles_trailers_and_semi_tr] I genuinely do not know this specific emission factor.
+
+[spend_based.useeio.sectors.pharmaceuticals] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.gbr.district_heat] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.aus.state.wa_nwis.electricity] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.fra.electricity] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.cuw.loss_rate] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.gbr.electricity] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.aus.state.vic.electricity] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.col.loss_rate] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.aus.state.nt_dkis.electricity] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.ukr.loss_rate] I genuinely do not know this specific emission factor.
+
+[transmission_distribution.aus.state.qld.electricity] I genuinely do not know this specific emission factor.
+
+[waste.incineration.co2.cc.msw.garden_park] I genuinely do not know this specific emission factor.
+
+[waste.wastewater.domestic.mcf.treated.latrine_dry_communal] I genuinely do not know this specific emission factor.
+
+[waste.incineration.co2.cc.msw.other_inert] I genuinely do not know this specific emission factor.
+
+[waste.landfill.ox.uncovered] The Oxidation Factor (OX) for an uncovered solid waste disposal site is 0 (dimensionless fraction), according to the IPCC Guidelines for National Greenhouse Gas Inventories.
+
+[waste.wastewater.domestic.mcf.treated.latrine_dry_small] I genuinely do not know this specific emission factor.
+
+[waste.wastewater.domestic.bod_per_capita.deu] I genuinely do not know this specific emission factor.
+
+[waste.wastewater.industrial.mcf.treated.aerobic_well_managed] The Methane Correction Factor (MCF) for industrial wastewater treated in a well-managed aerobic plant is 0 (dimensionless fraction), according to the IPCC Guidelines for National Greenhouse Gas Inventories.
+
+[waste.incineration.co2.dm.msw.other_inert] I genuinely do not know this specific emission factor.
+
+[waste.landfill.k.paper_textiles.boreal_temperate_wet] I genuinely do not know this specific emission factor.
+
+[waste.wastewater.n2o.advanced_centralized_plant.per_capita] I genuinely do not know this specific emission factor.
+
+[waste.landfill.doc.industrial.rubber] I genuinely do not know this specific emission factor.

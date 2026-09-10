@@ -1,0 +1,59 @@
+[fuel_properties.hydrogen.gross_cv_gj_tonne] The gross calorific value for hydrogen is approximately 141.8 GJ per tonne, according to standard UK DEFRA conversion properties.
+
+[fuel_properties.diesel.net_cv_gj_tonne] The net calorific value for diesel is approximately 42.6 GJ per tonne, based on standard UK DEFRA fuel property datasets.
+
+[fuel_properties.hydrogen.net_cv_gj_tonne] The net calorific value for hydrogen is approximately 120.0 GJ per tonne, according to UK DEFRA standard engineering properties.
+
+[fuel_properties.gas_oil.gross_cv_gj_tonne] The gross calorific value for gas oil is approximately 45.3 GJ per tonne, based on standard UK DEFRA conversion factors.
+
+[fuel_properties.gas_oil.net_cv_gj_tonne] The net calorific value for gas oil is approximately 42.8 GJ per tonne, according to standard UK DEFRA fuel properties.
+
+[fuel_properties.petrol.density_kg_m3] The density of petrol is roughly 740 kg per m3 (typically cited between 730-745 kg/m3) according to UK DEFRA conversion factors.
+
+[fuel_properties.natural_gas.gross_cv_kwh_kg] The gross calorific value for natural gas is approximately 14.7 kWh per kg, according to the UK DEFRA conversion guidelines.
+
+[fuel_properties.petrol.density_kg_litre] The density of petrol is roughly 0.74 kg per litre, based on the UK DEFRA fuel property guidelines.
+
+[fuel_properties.lpg.density_kg_litre] The density of LPG is roughly 0.54 kg per litre, according to the UK DEFRA GHG conversion factors.
+
+[fuel_properties.diesel_100_mineral.gross_cv_kwh_litre] The gross calorific value for 100% mineral diesel is approximately 10.6 kWh per litre, according to UK DEFRA.
+
+[fuel_properties.diesel_100_mineral.litres_per_tonne] Standard mineral diesel has a volume-to-mass ratio of approximately 1,195 litres per tonne, based on UK DEFRA density assumptions.
+
+[fuels.gbr.bio.methanol_bio.litre] I genuinely do not know the exact greenhouse-gas emission factor for UK bio-methanol per litre.
+
+[fuels.usa.residual_fuel_oil_no_6.gallon] I genuinely do not know the exact greenhouse-gas emission factor for US Residual Fuel Oil No. 6 per gallon.
+
+[fuels.ipcc.liquefied_petroleum_gases.litre] I genuinely do not know the exact per-litre emission factor for IPCC Liquefied Petroleum Gases, as the 2006 IPCC Guidelines default of 63,100 kg CO2/TJ requires specific density and heating value assumptions to convert to litres.
+
+[fuels.can.ethane.litre] I genuinely do not know the exact Canadian emission factor for ethane combustion per litre.
+
+[fuels.fra.heating_oil.litre] I genuinely do not know the exact greenhouse-gas emission factor for French heating oil per litre from the ADEME database.
+
+[fuels.aus.burning_oil.litre] I genuinely do not know the exact Australian NGA greenhouse-gas emission factor for burning oil per litre.
+
+[fuels.gbr.waste_oils.tonne] I genuinely do not know the exact UK DEFRA emission factor for waste oils combustion per tonne.
+
+[fuels.usa.liquefied_petroleum_gases.mmbtu] The greenhouse-gas emission factor for US LPG is approximately 61.46 kg CO2 per mmBtu, according to the US EPA GHG Emission Factors Hub.
+
+[fuels.ipcc.anthracite.kwh_ncv] The emission factor for Anthracite stationary combustion is approximately 0.354 kg CO2 per kWh, derived from the 2006 IPCC Guidelines default of 98,300 kg CO2 per TJ.
+
+[fuels.can.propane.litre] The emission factor for propane combustion in Canada is approximately 1.51 kg CO2 per litre, according to Canada's National Inventory Report (ECCC).
+
+[fuels.fra.propane.kwh_ncv] I genuinely do not know the exact French ADEME emission factor for propane per kWh NCV.
+
+[fuels.aus.gas_oil.kwh_gcv] I genuinely do not know the exact Australian NGA emission factor for gas oil per kWh GCV.
+
+[fuels.fra.diesel_road.wtt.litre] I genuinely do not know the exact well-to-tank emission factor for diesel road fuel per litre from the ADEME database.
+
+[grid.usa.ba.public_utility_district_no_2_of_grant_county_washington.wtt_generation] I genuinely do not know the well-to-tank generation emission factor for this specific US utility.
+
+[fuels.aus.natural_gas.sa.non_metro.wtt.gj] I genuinely do not know the well-to-tank emission factor for natural gas in non-metro South Australia.
+
+[fuels.can.kerosene.wtt.mj] I genuinely do not know the exact well-to-tank emission factor for Canadian kerosene per MJ.
+
+[grid.gbr.electricity.wtt_generation] I genuinely do not know the exact WTT (well-to-tank) emission factor for UK electricity per kWh, as it fluctuates annually in the DEFRA dataset.
+
+[fuels.fra.heating_oil.wtt.litre] I genuinely do not know the exact well-to-tank emission factor for heating oil per litre from the ADEME database.
+
+[grid.usa.ba.southwest_power_pool.wtt_generation_residual_mix] I genuinely do not know the exact well-to-tank generation residual mix emission factor for the US Southwest Power Pool.

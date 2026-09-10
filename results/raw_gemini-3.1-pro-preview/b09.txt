@@ -1,0 +1,59 @@
+[grid.tcd.electricity.lifecycle_intensity] I do not know the exact emission factor.
+
+[grid.gib.electricity.lifecycle_intensity] I do not know the exact emission factor.
+
+[grid.gnq.electricity.lifecycle_intensity] I do not know the exact emission factor.
+
+[heating_systems.boiler_efficiency.gas_non_condensing] I do not know the exact emission factor.
+
+[heating_systems.heat_pump_spf.ashp] I do not know the exact emission factor.
+
+[heating_systems.reference.lifetime_years.boiler] I do not know the exact emission factor.
+
+[heating_systems.boiler_efficiency.oil_non_condensing] I do not know the exact emission factor.
+
+[heating_systems.boiler_efficiency.gas_condensing] I do not know the exact emission factor.
+
+[heating_systems.boiler_efficiency.lpg_condensing] I do not know the exact emission factor.
+
+[heating_systems.direct_electric.efficiency] I do not know the exact emission factor.
+
+[heating_systems.boiler_efficiency.oil_condensing] I do not know the exact emission factor.
+
+[homeworking.gbr.office_equipment] I do not know the exact emission factor.
+
+[homeworking.gbr.combined] I do not know the exact emission factor.
+
+[homeworking.gbr.heating] I do not know the exact emission factor.
+
+[hotel_stay.gbr] I do not know the exact emission factor.
+
+[hotel_stay.oman] I do not know the exact emission factor.
+
+[hotel_stay.thailand] I do not know the exact emission factor.
+
+[hotel_stay.malaysia] I do not know the exact emission factor.
+
+[hotel_stay.hong_kong_china] I do not know the exact emission factor.
+
+[hotel_stay.costa_rica] I do not know the exact emission factor.
+
+[hotel_stay.belgium] I do not know the exact emission factor.
+
+[hotel_stay.chile] I do not know the exact emission factor.
+
+[hotel_stay.vietnam] I do not know the exact emission factor.
+
+[hotel_stay.switzerland] I do not know the exact emission factor.
+
+[hotel_stay.china] I do not know the exact emission factor.
+
+[hotel_stay.portugal] I do not know the exact emission factor.
+
+[chemicals.acrylonitrile.ch4_default] I do not know the exact emission factor.
+
+[industrial_processes_refinement.fluorochemical.nf3_cf4_byproduct] I do not know the exact emission factor.
+
+[minerals.cement.cao_default_fraction] The default CaO content fraction for cement clinker is 0.65 tonnes of CaO per tonne of clinker, according to the IPCC 2006 Guidelines for National Greenhouse Gas Inventories.
+
+[industrial_processes_refinement.hydrogen.steam_reforming_lpg] I do not know the exact emission factor.

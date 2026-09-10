@@ -1,0 +1,30 @@
+[managed_assets.car.size.medium.petrol] I do not know the exact figure, but it is approximately 0.19 kgCO2e per km according to recent DEFRA UK Government GHG Conversion Factors.
+[managed_assets.car.size.average.diesel] I do not know the exact figure, but it is approximately 0.17 kgCO2e per km according to recent DEFRA UK Government GHG Conversion Factors.
+[materials.cbam.cement.grey_clinker] I do not know the exact precision, but the EU CBAM default value is approximately 0.833 tonnes CO2e per tonne (or 0.833 kgCO2e per kg) of grey clinker.
+[materials.lca.wastage.generic_default] I genuinely do not know.
+[materials.concrete.binder.cem_i_portland_uk.module_a1_a3] The emission factor is approximately 0.86 kgCO2e per kg for UK CEM I Portland Cement, according to the University of Bath ICE database (v3.0).
+[materials.concrete.constituent.aggregate_fine.module_a1_a3] The emission factor is approximately 0.005 kgCO2e per kg, based on the University of Bath ICE database.
+[materials.steel.galvanised.module_a1_a3] I do not know the exact figure, but it is roughly 2.8 to 2.9 kgCO2e per kg based on general ICE database averages.
+[materials.benchmark.office.target_2030_riba] The 2030 target for embodied carbon in offices is 530 kgCO2e per square meter (Modules A1-A5), published in the RIBA 2030 Climate Challenge.
+[materials.benchmark.office.target_2030_leti] The 2030 upfront embodied carbon target (Modules A1-A5) for commercial offices is 350 kgCO2e per square meter, according to the LETI Climate Emergency Design Guide.
+[materials.aluminium.recycled_secondary.module_a1_a3] I do not know the exact figure, but it is approximately 1.7 kgCO2e per kg according to the ICE database.
+[materials.plastics.ldpe_lldpe.module_a1_a3] I genuinely do not know.
+[materials.paper.paper.module_c3] I genuinely do not know.
+[materials.cbam.iron_steel.crude_steel_ingot] I genuinely do not know.
+[materials.lca.wastage.timber] I genuinely do not know.
+[mobile_combustion.usa.residual_fuel_oil.litre] I genuinely do not know.
+[mobile_combustion.can.ldgv_tier3.per_litre] I genuinely do not know.
+[mobile_combustion.propane.per_kwh_gross_cv] I do not know the exact figure, but it is approximately 0.214 kgCO2e per kWh (Gross CV) according to DEFRA GHG Conversion Factors.
+[fuels.fra.petrol.litre] I genuinely do not know.
+[mobile_combustion.aus.diesel_100pct_mineral.per_litre] I do not know the exact figure, but it is approximately 2.72 kgCO2e per litre for transport diesel according to the Australian National Greenhouse Accounts (NGA) Factors.
+[mobile_combustion.usa.aviation_gasoline.litre] I genuinely do not know.
+[mobile_combustion.can.hddv_advanced_control.per_litre] I genuinely do not know.
+[mobile_combustion.petrol_100pct_mineral.per_kwh_gross_cv] I genuinely do not know.
+[fuels.fra.diesel_road.litre] I genuinely do not know.
+[mobile_combustion.aus.lpg.per_litre] I do not know the exact figure, but it is approximately 1.56 kgCO2e per litre for transport LPG according to the Australian National Greenhouse Accounts (NGA) Factors.
+[mobile_combustion.usa.diesel.gallon] The emission factor is approximately 10.21 kg CO2 per gallon of transport diesel fuel, as published by the US EPA.
+[mobile_combustion.can.offroad_diesel_tier1_3.per_litre] I genuinely do not know.
+[reporting.ngfs.carbon_price.messageix_globiom.below_2c.world.2045] I genuinely do not know.
+[reporting.ngfs.carbon_price.gcam.delayed_transition.world.2035] I genuinely do not know.
+[reporting.ngfs.carbon_price.messageix_globiom.low_demand.world.2030] I genuinely do not know.
+[reporting.ngfs.carbon_price.gcam.fragmented_world.world.2030] I genuinely do not know.

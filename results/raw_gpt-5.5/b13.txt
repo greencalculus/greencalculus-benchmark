@@ -1,0 +1,59 @@
+[passenger_vehicles.car.segment.luxury.diesel.energy_use_secr] My best estimate is 0.80 kWh/km, from the UK Government/DEFRA “Greenhouse gas reporting: conversion factors” SECR energy-use passenger car factors.
+
+[passenger_vehicles.car.segment.upper_medium.petrol] My best estimate is 0.177 kgCO2e/km, from the UK Government/DEFRA “Greenhouse gas reporting: conversion factors” passenger car factors.
+
+[refrigerants.r_422d] My best estimate is 2,473 kgCO2e/kg leaked, using IPCC AR5/UK Government refrigerant GWP factors for R-422D.
+
+[refrigerants.hcfc_1224yd] My best estimate is 0.88 kgCO2e/kg leaked, from IPCC AR6/ASHRAE-style GWP100 values for HCFO/HCFC-1224yd(Z).
+
+[refrigerants.r_134a] My best estimate is 1,300 kgCO2e/kg leaked, from IPCC AR5/UK Government conversion factors for HFC-134a.
+
+[refrigerants.pfc_4_1_14] My best estimate is 8,550 kgCO2e/kg leaked, from IPCC AR5 GWP100 values for perfluoropentane/PFC-4-1-14.
+
+[refrigerants.r_290] My best estimate is 3 kgCO2e/kg leaked, from common refrigerant GWP100 values for propane/R-290.
+
+[refrigerants.pfc_n_methylmorpholine] I don’t know the numeric greenhouse-gas emission factor for Perfluoro-N-methylmorpholine.
+
+[refrigerants.r_717] The value is 0 kgCO2e/kg leaked, for ammonia/R-717 in common refrigerant GWP tables.
+
+[refrigerants.hfk_perfluoro_butanone] My best estimate is 1 kgCO2e/kg leaked, for FK-5-1-12/Novec 1230-type fluoroketone, from common fire-suppression refrigerant GWP tables.
+
+[refrigerants.r_718] The value is 0 kgCO2e/kg leaked, for water/R-718 in common refrigerant GWP tables.
+
+[refrigerants.pfc_c_c3f6] My best estimate is 9,200 kgCO2e/kg leaked, from IPCC-style GWP100 values for perfluorocyclopropane.
+
+[refrigerants.r_1336mzz_z] My best estimate is 2 kgCO2e/kg leaked, from IPCC/ASHRAE-style GWP100 values for HFO-1336mzz(Z).
+
+[refrigerants.hfc_nonafluoro_tfm_pentene] I don’t know the numeric greenhouse-gas emission factor for Nonafluoro-(trifluoromethyl)pent-2-ene and isomers.
+
+[reporting.aasb_s2.group3.applicability] The value is Group 3 from financial years commencing on or after 1 July 2027, with the size test generally 2 of 3: A$50 million revenue, A$25 million assets, or 100 employees; source: Australian Treasury/AASB S2 climate reporting regime.
+
+[reporting.sb_253_261.sb261.threshold.annual_revenue_usd_m] The CA SB-261 threshold is more than US$500 million total annual revenue, from California SB-261.
+
+[reporting.sgx_acra.listed_non_sti_ge_1bn] My best estimate is FY2025 commencement for mandatory climate reporting for listed issuers, including non-STI issuers with market capitalisation at least S$1 billion, from the Singapore SGX/ACRA climate reporting roadmap.
+
+[reporting.uk_secr.threshold.employees] The UK SECR large-company employee threshold is more than 250 employees, as one of the Companies Act large-company tests used for SECR.
+
+[reporting.eu_ets.price.eua_average_eur_per_t.2013] My best estimate is €4.53/tCO2, for the 2013 average EU ETS EUA price, from European Commission/EEA-style EU ETS market summaries.
+
+[reporting.sb_253_261.sb253.threshold.annual_revenue_usd_m] The CA SB-253 threshold is more than US$1,000 million total annual revenue, from California SB-253.
+
+[reporting.sec.rule.assurance.limited_phase_in_years] My best estimate is 3 years, meaning limited assurance phases in about three fiscal years after initial Scope 1 and Scope 2 disclosure, from the SEC Climate Disclosure Rule.
+
+[reporting.aasb_s2.scenario_analysis.requirement] The value is 2 scenarios, commonly expressed as at least two climate scenarios under the Australian AASB S2 climate-reporting requirements.
+
+[reporting.aasb_s2.group1.applicability] The value is Group 1 from financial years commencing on or after 1 January 2025, with the size test generally 2 of 3: A$500 million revenue, A$1 billion assets, or 500 employees; source: Australian Treasury/AASB S2 climate reporting regime.
+
+[reporting.sb_253_261.sb261.cadence.years] The CA SB-261 reporting cadence is every 2 years, from California SB-261.
+
+[reporting.sgx_acra.scenario_analysis.requirement] My best estimate is 2 scenarios, under the Singapore SGX/ACRA ISSB-aligned climate disclosure roadmap’s scenario-analysis requirement.
+
+[reporting.uk_secr.exemption.low_energy_kwh] The UK SECR low-energy-user exemption ceiling is 40,000 kWh/year, from UK Government SECR guidance.
+
+[renewable_generation.reference.specific_yield.irl] My best estimate is 900 kWh/kWp/year, for first-year solar PV specific yield in Ireland, consistent with SEAI/PVGIS-style reference yields.
+
+[renewable_generation.reference.degradation_pct.solar_pv_rooftop] My best estimate is 0.5%/year, a common rooftop solar PV annual output degradation assumption used in NREL/PV performance references.
+
+[renewable_generation.reference.specific_yield.ita] My best estimate is 1,400 kWh/kWp/year, for first-year solar PV specific yield in Italy, consistent with PVGIS-style reference yields.
+
+[renewable_generation.reference.degradation_pct.solar_pv_utility] My best estimate is 0.5%/year, a common utility-scale solar PV annual output degradation assumption used in NREL/PV performance references.

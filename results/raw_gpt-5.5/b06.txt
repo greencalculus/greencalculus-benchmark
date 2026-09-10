@@ -1,0 +1,59 @@
+[food.diet.pescatarian.annual] 1.43 tCO2e/person/year, from Scarborough et al. 2014 dietary GHG estimates as commonly reproduced for “fish-eater” diets.
+
+[food_pcf.fra.madeleine_cake_pure_butter] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.cheese_souffle] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.parsley_dried] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.spanish_style_tortilla_with_onions_omelette_with_potatoes_an] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.grapeseed_oil] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.coconut_oil_coprah] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.orange_juice_home_made] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.kombu_or_japanese_kelp_laminaria_japonica_dried_or_dehydrate] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.mussel_boiled_cooked_in_water] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.biscuit_sponge_cake_with_fruits_covering_pre_packed] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.soup_tomatoes_prepacked_to_be_reheated] I don't know the numeric AGRIBALYSE factor for this item.
+
+[food_pcf.fra.brioche_filled_with_chocolate_drops] I don't know the numeric AGRIBALYSE factor for this item.
+
+[freight.sea.tonne_km] 0.0033 kgCO2e/tonne-km, my best recall for a Panamax bulk carrier from Smart Freight Centre / GLEC-style factors.
+
+[freight.road_hgv.tonne_km] 0.106 kgCO2e/tonne-km, my best recall for average laden HGV freight from UK Government GHG Conversion Factors / DEFRA-BEIS.
+
+[freight.air.tonne_km] 0.60 kgCO2e/tonne-km, my best recall for long-haul air freight from UK Government GHG Conversion Factors / DEFRA-BEIS.
+
+[freight.rail.tonne_km] 0.0278 kgCO2e/tonne-km, from UK Government GHG Conversion Factors / DEFRA-BEIS rail freight.
+
+[freight_detailed.sea.container.intra_north_america.reefer] I don't know the numeric factor for this detailed sea-freight route/equipment case.
+
+[freight_detailed.sea.chemical_tanker.dwt_10000_19999.mdo] I don't know the numeric factor for this detailed sea-freight vessel/fuel case.
+
+[freight_detailed.road.na.ltl_dry_van.diesel] I don't know the numeric factor for this detailed road-freight case.
+
+[freight_detailed.sea.container.asia_to_north_oceania.dry] I don't know the numeric factor for this detailed sea-freight route/equipment case.
+
+[freight_detailed.sea.refrigerated_bulk.dwt_6000_9999.vlsfo] I don't know the numeric factor for this detailed sea-freight vessel/fuel case.
+
+[freight_detailed.sea.ferry_ropax.gt_2000_4999.hfo] I don't know the numeric factor for this detailed sea-freight vessel/fuel case.
+
+[freight_detailed.sea.bulk_carrier.dwt_60000_99999.vlsfo] I don't know the numeric factor for this detailed sea-freight vessel/fuel case.
+
+[freight_detailed.sea.refrigerated_bulk.dwt_2000_5999.hfo] I don't know the numeric factor for this detailed sea-freight vessel/fuel case.
+
+[freight_detailed.rail.eu.diesel.cars] I don't know the numeric factor for this detailed rail-freight case.
+
+[freight_detailed.road.china.dump.mdt_4_5_5_5t.diesel] I don't know the numeric factor for this detailed road-freight case.
+
+[freight_detailed.road.eu_sa.rigid_7_5_12t.avg.electric] I don't know the numeric factor for this detailed road-freight case.
+
+[freight_detailed.sea.general_cargo.dwt_gt_20000.vlsfo] I don't know the numeric factor for this detailed sea-freight vessel/fuel case.
+
+[fuel_properties.lpg.gross_cv_gj_tonne] 49.6 GJ/tonne, my best recall for LPG gross calorific value from UK Government GHG Conversion Factors fuel properties.

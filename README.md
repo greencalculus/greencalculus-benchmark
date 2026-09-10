@@ -26,24 +26,27 @@ The fourth row is the story. A model that cites DEFRA for an EPA figure is more
 dangerous than one that cites nothing, because the citation is what makes a
 reader stop checking.
 
-## Result — three models, 467 questions, no tools
+## Result — five models, 467 questions, no tools
 
-| Model | Answered | Within 10% *when it answered* | Correct *of all 467* | Right source, wrong number |
+| Model | Answered | Right *when it answered* | Right *of all 467* | Right source, wrong number |
 |---|---:|---:|---:|---:|
-| Claude Opus 5 | 456/467 | 45.9% | **33.6%** | 55.2% |
-| Gemini 3.6 Flash | 436/467 | 43.5% | 28.5% | 58.2% |
-| Grok 4.6 | 150/467 | **66.7%** | 12.0% | 29.8% |
+| Gemini 3.1 Pro | 85 | **67.3%** | 7.1% | 30.6% |
+| Grok 4.6 | 150 | 66.7% | 12.0% | 29.8% |
+| GPT-5.5 | 341 | 58.0% | 31.9% | 41.0% |
+| Claude Opus 5 | 456 | 45.9% | **33.6%** | 55.2% |
+| Gemini 3.6 Flash | 436 | 43.5% | 28.5% | 58.2% |
 
-Those two middle columns rank in opposite orders, and that is the point. **Grok
-refused 317 of 467 questions** and was right two-thirds of the time when it did
-answer. Claude refused 11 and answers nearly everything — most correct answers
-overall, and the most confidently wrong ones.
+Those middle columns rank in opposite orders. **The more a model answers, the
+less each answer is worth** — and the last column sorts with talkativeness almost
+perfectly.
 
-And for both talkative models, **the majority of correctly-attributed answers
-still carry a wrong number.** A wrong figure with no source gets caught. A wrong
-figure under the right publisher's name looks like diligence.
+The cleanest evidence is one vendor at two tiers: **Gemini Pro answers 85
+questions at 67% accuracy; Gemini Flash answers 436 at 43.5%.** Same company,
+same knowledge — and the fast tier, the one that actually gets deployed behind a
+production pipeline, is wrong about the number *more often than not* even when it
+names the right publisher.
 
-Full write-up, caveats, and the record of the scorer's own bugs:
+Full write-up, caveats, and the record of the scorer's own four bugs:
 **[FINDINGS.md](./FINDINGS.md)**.
 
 ## Status

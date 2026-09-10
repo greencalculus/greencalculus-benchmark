@@ -1,0 +1,59 @@
+[grid.aus.state.tas.scope3_indirect] 0.02 kg CO2e/kWh; Australian National Greenhouse Accounts Factors, DCCEEW.
+
+[fuels.can.kerosene.wtt.litre] 0.54 kg CO2e/litre; best estimate, based on well-to-tank liquid-fuel factors comparable to UK Government GHG Conversion Factors.
+
+[fuels.gbr.bio.grass_straw.wtt.kwh] 0.0068 kg CO2e/kWh; UK Government GHG Conversion Factors for Company Reporting, DESNZ/Defra.
+
+[fuels.fra.propane.wtt.kwh_ncv] 0.038 kg CO2e/kWh NCV; ADEME Base Carbone/Base Empreinte.
+
+[grid.usa.ba.florida_power_light_co.wtt_generation] 0.061 kg CO2e/kWh; best estimate for well-to-tank generation emissions derived from EPA eGRID-style utility mix factors.
+
+[fugitive_coal_methane.cmm.post_mining_surface] 1.9 kg CO2e/tonne coal handled; IPCC 2006 Guidelines default post-mining surface coal factor, converted from 0.1 m3 CH4/t using AR5 GWP100.
+
+[fugitive_coal_methane.cmm.post_mining_underground] 47 kg CO2e/tonne coal handled; IPCC 2006 Guidelines default post-mining underground coal factor, converted from 2.5 m3 CH4/t using AR5 GWP100.
+
+[fugitive_coal_methane.cmm.surface_mining] 23 kg CO2e/tonne coal mined; IPCC 2006 Guidelines default surface mining factor, converted from 1.2 m3 CH4/t using AR5 GWP100.
+
+[fugitive_coal_methane.cmm.underground_mining] 338 kg CO2e/tonne coal mined; IPCC 2006 Guidelines default underground mining factor, converted from 18 m3 CH4/t using AR5 GWP100.
+
+[grid.can.province.on.location_based] 0.025 kg CO2e/kWh; Environment and Climate Change Canada National Inventory Report electricity intensity tables.
+
+[grid.gbr.electricity.location_based] 0.207 kg CO2e/kWh; UK Government GHG Conversion Factors for Company Reporting, DESNZ/Defra.
+
+[grid.fra.electricity.location_based] 0.052 kg CO2e/kWh; ADEME Base Carbone/Base Empreinte average consumption mix for continental France.
+
+[grid.aus.electricity.residual_mix] 0.73 kg CO2e/kWh; Australian National Greenhouse Accounts Factors / Climate Active residual mix factor.
+
+[grid.usa.subregion.nycw.residual_mix] 0.32 kg CO2e/kWh; best estimate based on US eGRID/Green-e residual mix style factors for NYCW.
+
+[grid.usa.state.wy.location_based] 0.78 kg CO2e/kWh; EPA eGRID state electricity emission factor for Wyoming.
+
+[grid.prt.electricity.residual_mix] 0.46 kg CO2e/kWh; Association of Issuing Bodies European Residual Mixes.
+
+[grid.nld.electricity.location_based] 0.328 kg CO2e/kWh; Netherlands national grid/location-based factor, commonly reported from AIB/CO2emissiefactoren.nl-type sources.
+
+[grid.can.province.ns.location_based] 0.69 kg CO2e/kWh; Environment and Climate Change Canada National Inventory Report electricity intensity tables.
+
+[grid.gbr.electricity.biogenic.kwh] 0.052 kg biogenic CO2/kWh; UK Government GHG Conversion Factors for Company Reporting, outside-of-scopes electricity memo factor.
+
+[grid.aus.electricity.location_based] 0.65 kg CO2e/kWh; Australian National Greenhouse Accounts Factors, national scope 2 electricity factor.
+
+[grid.usa.subregion.newe.residual_mix] 0.30 kg CO2e/kWh; best estimate based on US eGRID/Green-e residual mix style factors for NEWE.
+
+[grid.esp.electricity.lifecycle_intensity] 0.16 kg CO2e/kWh; best estimate from Electricity Maps-style lifecycle grid intensity factors.
+
+[grid.usa.electricity.lifecycle_intensity] 0.47 kg CO2e/kWh; best estimate from Electricity Maps-style lifecycle grid intensity factors.
+
+[grid.irn.electricity.lifecycle_intensity] 0.65 kg CO2e/kWh; best estimate from country grid lifecycle intensity datasets such as Electricity Maps/IEA-derived factors.
+
+[grid.aze.electricity.lifecycle_intensity] 0.58 kg CO2e/kWh; best estimate from country grid lifecycle intensity datasets such as Electricity Maps/IEA-derived factors.
+
+[grid.sgp.electricity.lifecycle_intensity] 0.50 kg CO2e/kWh; best estimate from country grid lifecycle intensity datasets such as Electricity Maps/IEA-derived factors.
+
+[grid.bhr.electricity.lifecycle_intensity] 0.73 kg CO2e/kWh; best estimate from country grid lifecycle intensity datasets such as Electricity Maps/IEA-derived factors.
+
+[grid.ltu.electricity.lifecycle_intensity] 0.15 kg CO2e/kWh; best estimate from country grid lifecycle intensity datasets such as Electricity Maps/IEA-derived factors.
+
+[grid.flk.electricity.lifecycle_intensity] 0.86 kg CO2e/kWh; best estimate for diesel-dominated island grid lifecycle electricity intensity.
+
+[grid.bhs.electricity.lifecycle_intensity] 0.88 kg CO2e/kWh; best estimate for oil-fired island grid lifecycle electricity intensity.

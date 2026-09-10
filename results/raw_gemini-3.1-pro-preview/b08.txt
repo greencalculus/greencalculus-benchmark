@@ -1,0 +1,59 @@
+[grid.aus.state.tas.scope3_indirect] I genuinely do not know this emission factor.
+
+[fuels.can.kerosene.wtt.litre] I genuinely do not know this emission factor.
+
+[fuels.gbr.bio.grass_straw.wtt.kwh] I genuinely do not know this emission factor.
+
+[fuels.fra.propane.wtt.kwh_ncv] I genuinely do not know this emission factor.
+
+[grid.usa.ba.florida_power_light_co.wtt_generation] I genuinely do not know this emission factor.
+
+[fugitive_coal_methane.cmm.post_mining_surface] I genuinely do not know this emission factor.
+
+[fugitive_coal_methane.cmm.post_mining_underground] I genuinely do not know this emission factor.
+
+[fugitive_coal_methane.cmm.surface_mining] I genuinely do not know this emission factor.
+
+[fugitive_coal_methane.cmm.underground_mining] I genuinely do not know this emission factor.
+
+[grid.can.province.on.location_based] My best estimate is approximately 0.030 kg CO2e/kWh, based on Environment and Climate Change Canada's National Inventory Report (NIR).
+
+[grid.gbr.electricity.location_based] The location-based greenhouse-gas emission factor for UK grid electricity is approximately 0.207 kg CO2e/kWh, according to the UK DESNZ/DEFRA 2023 greenhouse gas reporting conversion factors.
+
+[grid.fra.electricity.location_based] My best estimate is approximately 0.055 kg CO2e/kWh (55 g CO2e/kWh) for continental France, typically published by ADEME in the Base Empreinte.
+
+[grid.aus.electricity.residual_mix] I genuinely do not know this emission factor.
+
+[grid.usa.subregion.nycw.residual_mix] I genuinely do not know this emission factor.
+
+[grid.usa.state.wy.location_based] I genuinely do not know the exact emission factor, though Wyoming's coal-heavy grid typically results in an eGRID factor around 0.85 kg CO2e/kWh.
+
+[grid.prt.electricity.residual_mix] I genuinely do not know this emission factor.
+
+[grid.nld.electricity.location_based] I genuinely do not know this emission factor.
+
+[grid.can.province.ns.location_based] I genuinely do not know this emission factor.
+
+[grid.gbr.electricity.biogenic.kwh] I genuinely do not know this emission factor.
+
+[grid.aus.electricity.location_based] My best estimate for the Australian national location-based scope 2 grid factor is approximately 0.68 kg CO2e/kWh, sourced from the Australian National Greenhouse Accounts (NGA) Factors.
+
+[grid.usa.subregion.newe.residual_mix] I genuinely do not know this emission factor.
+
+[grid.esp.electricity.lifecycle_intensity] I genuinely do not know this emission factor.
+
+[grid.usa.electricity.lifecycle_intensity] I genuinely do not know this emission factor.
+
+[grid.irn.electricity.lifecycle_intensity] I genuinely do not know this emission factor.
+
+[grid.aze.electricity.lifecycle_intensity] I genuinely do not know this emission factor.
+
+[grid.sgp.electricity.lifecycle_intensity] I genuinely do not know this emission factor.
+
+[grid.bhr.electricity.lifecycle_intensity] I genuinely do not know this emission factor.
+
+[grid.ltu.electricity.lifecycle_intensity] I genuinely do not know this emission factor.
+
+[grid.flk.electricity.lifecycle_intensity] I genuinely do not know this emission factor.
+
+[grid.bhs.electricity.lifecycle_intensity] I genuinely do not know this emission factor.

@@ -1,0 +1,59 @@
+[business_travel.fra.road.car_diesel] My best recall is 0.203 kgCO2e per km, from ADEME Base Carbone/Base Empreinte for diesel passenger car travel.
+
+[business_travel.sea.ferry.average] My best recall is 0.111 kgCO2e per passenger.km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, business travel sea ferry average passenger.
+
+[business_travel.usa.rail.transit] My best recall is 0.100 kgCO2e per passenger-mile, from the U.S. EPA GHG Emission Factors Hub for transit rail business travel.
+
+[business_travel.aus.road.hire_car.by_drive.internal_combustion_engine_light_bus.per_vehicle_km] I don't know.
+
+[business_travel.fra.rail.ter] My best recall is 0.0294 kgCO2e per passenger.km, from ADEME Base Carbone/Base Empreinte for TER regional rail.
+
+[business_travel.land.car.segment.supermini.bev] My best recall is 0.040 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting for a supermini battery-electric car.
+
+[business_travel.usa.air.short_haul] My best recall is 0.207 kgCO2e per passenger-mile, from the U.S. EPA GHG Emission Factors Hub for short-haul air travel.
+
+[business_travel.aus.road.hire_car.by_fuel.electric_diesel_wagon.per_vehicle_km] I don't know.
+
+[carbon_pricing.jpn_tokyo.ets] My best recall is about 4 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for Tokyo Cap-and-Trade.
+
+[carbon_pricing.eu.ets] My best recall is about 67 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for the EU ETS.
+
+[carbon_pricing.twn.carbon_tax] My best recall is about 9 USD per tCO2e, from the announced Taiwan carbon fee level of TWD 300 per tCO2e.
+
+[carbon_pricing.nor.carbon_tax] My best recall is about 96 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for Norway’s carbon tax.
+
+[carbon_pricing.usa_rggi.ets] My best recall is about 16 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for RGGI.
+
+[carbon_pricing.esp.carbon_tax] My best recall is about 16 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for Spain’s carbon tax.
+
+[carbon_pricing.swe.carbon_tax] My best recall is about 127 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for Sweden’s carbon tax.
+
+[carbon_pricing.hun.carbon_tax] My best recall is about 43 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for Hungary’s carbon tax.
+
+[carbon_pricing.aus.ets] My best recall is about 22 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for Australia’s Safeguard Mechanism.
+
+[carbon_pricing.mex_queretaro.carbon_tax] My best recall is about 34 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for Querétaro’s carbon tax.
+
+[carbon_pricing.nld.carbon_tax] My best recall is about 78 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for the Netherlands carbon tax/CO2 levy.
+
+[carbon_pricing.zaf.carbon_tax] My best recall is about 10 USD per tCO2e, from the World Bank Carbon Pricing Dashboard/State and Trends of Carbon Pricing for South Africa’s carbon tax.
+
+[cbam.country.ind.7326_90_94.articles_iron] I don't know.
+
+[reporting.cbam.indirect.namibia] I don't know.
+
+[cbam.country.chn.7609_00_00.aluminium_tube_pipe] I don't know.
+
+[reporting.cbam.indirect.turkiye] I don't know.
+
+[cbam.country.rus.7207_11_90.semi_finished_products] I don't know.
+
+[reporting.cbam.indirect.tanzania_united] I don't know.
+
+[cbam.country.rus.7207_11_16.semi_finished_products] I don't know.
+
+[reporting.cbam.indirect.zambia] I don't know.
+
+[cbam.country.ind.7307_92.threaded_elbows_bends] I don't know.
+
+[reporting.cbam.indirect.georgia] I don't know.

@@ -1,0 +1,59 @@
+[cbam.country.kor.7217_20.wire_iron] I don't know.
+
+[reporting.cbam.indirect.congo_democratic] I don't know.
+
+[chp.reference_efficiency.ghg_protocol.electricity] 0.35 kWh electricity per kWh fuel input, from the GHG Protocol CHP allocation method guidance/tool assumptions for separate electricity production efficiency.
+
+[chp.reference_efficiency.ghg_protocol.heat] 0.80 kWh heat/steam per kWh fuel input, from the GHG Protocol CHP allocation method guidance/tool assumptions for separate heat/steam production efficiency.
+
+[commuting.car.size.average.diesel] 0.168 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, passenger cars by size/fuel.
+
+[commuting.rail.national_rail] 0.0355 kgCO2e per passenger.km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, rail.
+
+[commuting.car.size.large.petrol] 0.278 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, passenger cars by size/fuel.
+
+[commuting.car.size.medium.hybrid] 0.110 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, passenger cars by size/fuel.
+
+[commuting.car.size.average.hybrid] 0.120 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, passenger cars by size/fuel.
+
+[commuting.bus.local_average] 0.102 kgCO2e per passenger.km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, bus.
+
+[commuting.car.size.small.diesel] 0.137 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, passenger cars by size/fuel.
+
+[commuting.car.size.medium.petrol] 0.167 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, passenger cars by size/fuel.
+
+[commuting.car.size.small.hybrid] 0.104 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, passenger cars by size/fuel.
+
+[commuting.car.size.large.hybrid] 0.151 kgCO2e per km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, passenger cars by size/fuel.
+
+[commuting.bus.local_london] 0.077 kgCO2e per passenger.km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, bus.
+
+[commuting.rail.international_rail] 0.0045 kgCO2e per passenger.km, from the UK Government/DEFRA GHG Conversion Factors for Company Reporting, international rail.
+
+[reporting.csrd.threshold.large_undertaking.turnover_eur_m] €50 million net turnover, from the EU Accounting Directive thresholds as amended by Commission Delegated Directive (EU) 2023/2775 and applied in CSRD scoping.
+
+[reporting.csrd.threshold.non_eu_group.eu_revenue_eur_m] €150 million EU net turnover, from Directive (EU) 2022/2464, the Corporate Sustainability Reporting Directive.
+
+[reporting.csrd.threshold.listed_sme.first_report_fy] FY 2026, from Directive (EU) 2022/2464, the Corporate Sustainability Reporting Directive timetable for listed SMEs.
+
+[reporting.csrd.threshold.large_undertaking.balance_sheet_eur_m] €25 million balance sheet total, from the EU Accounting Directive thresholds as amended by Commission Delegated Directive (EU) 2023/2775 and applied in CSRD scoping.
+
+[reporting.csrd.calendar.listed_sme.first_report_fy] FY 2026, from Directive (EU) 2022/2464, the Corporate Sustainability Reporting Directive timetable for listed SMEs.
+
+[reporting.csrd.calendar.non_eu_group.first_report_fy] FY 2028, from Directive (EU) 2022/2464, the Corporate Sustainability Reporting Directive timetable for non-EU groups.
+
+[reporting.csrd.calendar.large_undertaking.first_report_fy] FY 2025, from Directive (EU) 2022/2464, the Corporate Sustainability Reporting Directive timetable for other large undertakings.
+
+[reporting.csrd.e1_9.phase_in_year_1_qualitative] 1 reporting year, from Commission Delegated Regulation (EU) 2023/2772 adopting ESRS, ESRS 1 Appendix C phase-in for ESRS E1-9.
+
+[reporting.csrd.calendar.large_pie.first_report_fy] FY 2024, from Directive (EU) 2022/2464, the Corporate Sustainability Reporting Directive timetable for large public-interest entities already under NFRD.
+
+[reporting.csrd.threshold.large_undertaking.employees] 250 employees, from the EU Accounting Directive large-undertaking criteria as applied in CSRD scoping.
+
+[delivery_vehicles.hgv.all.50pct_laden.diesel.energy_use_secr] I don't know.
+
+[delivery_vehicles.hgv_refrigerated.rigid_7_5_to_17t.average_laden.diesel.energy_use_secr] I don't know.
+
+[delivery_vehicles.hgv.rigid_gt_17t.average_laden.diesel.wtt] I don't know.
+
+[delivery_vehicles.hgv.artic_3_5_to_33t.0pct_laden.diesel.energy_use_secr] I don't know.
