@@ -3,7 +3,7 @@
  "data_version": "2026.187",
  "data_updated": "2026-09-09",
  "seed": 20260910,
- "n": 473,
+ "n": 467,
  "sections": [
   "afolu",
   "atmospheric",
@@ -2228,24 +2228,6 @@
     "publisher": "European Statistical Office (EUROSTAT) — DG Eurostat",
     "source_name": "CC BY 4.0 — EUROSTAT Open Data",
     "proof_url": "https://verify.greencalculus.com/district_heating.eu_framework.renewable_share_eu27@2026.187"
-   }
-  },
-  {
-   "id": "district_heating.gbr.onsite_wtt",
-   "section": "district_heating",
-   "question": "What is the greenhouse-gas emission factor for UK WTT- heat and steam, per kWh?",
-   "truth": {
-    "value": 0.03341,
-    "unit": "kg CO2e per kWh",
-    "gas": "CO2e",
-    "gwp_set": "AR5_100",
-    "basis": null,
-    "country_iso3": "gbr",
-    "source_id": "DEFRA_2026",
-    "cell_ref": "'WTT- heat and steam'!E19",
-    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
-    "source_name": "Open Government Licence v3.0",
-    "proof_url": "https://verify.greencalculus.com/district_heating.gbr.onsite_wtt@2026.187"
    }
   },
   {
@@ -4604,60 +4586,6 @@
     "publisher": "Department for Energy Security and Net Zero (DESNZ)",
     "source_name": "Open Government Licence v3.0",
     "proof_url": "https://verify.greencalculus.com/homeworking.gbr.office_equipment@2026.187"
-   }
-  },
-  {
-   "id": "homeworking.gbr.combined",
-   "section": "homeworking",
-   "question": "What is the greenhouse-gas emission factor for DEFRA homeworking (Homeworking (office equipment + heating), UK) — kgCO2e per FTE working hour, per FTE working hour?",
-   "truth": {
-    "value": 0.32393,
-    "unit": "kg CO2e per FTE working hour",
-    "gas": "CO2e",
-    "gwp_set": "AR5_100",
-    "basis": null,
-    "country_iso3": "gbr",
-    "source_id": "DEFRA_2026",
-    "cell_ref": "'Homeworking'!C24",
-    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
-    "source_name": "Open Government Licence v3.0",
-    "proof_url": "https://verify.greencalculus.com/homeworking.gbr.combined@2026.187"
-   }
-  },
-  {
-   "id": "homeworking.gbr.office_equipment",
-   "section": "homeworking",
-   "question": "What is the greenhouse-gas emission factor for DEFRA homeworking (Office Equipment, UK) — kgCO2e per FTE working hour, per FTE working hour?",
-   "truth": {
-    "value": 0.02159,
-    "unit": "kg CO2e per FTE working hour",
-    "gas": "CO2e",
-    "gwp_set": "AR5_100",
-    "basis": null,
-    "country_iso3": "gbr",
-    "source_id": "DEFRA_2026",
-    "cell_ref": "'Homeworking'!C22",
-    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
-    "source_name": "Open Government Licence v3.0",
-    "proof_url": "https://verify.greencalculus.com/homeworking.gbr.office_equipment@2026.187"
-   }
-  },
-  {
-   "id": "homeworking.gbr.heating",
-   "section": "homeworking",
-   "question": "What is the greenhouse-gas emission factor for DEFRA homeworking (Heating, UK) — kgCO2e per FTE working hour, per FTE working hour?",
-   "truth": {
-    "value": 0.30234,
-    "unit": "kg CO2e per FTE working hour",
-    "gas": "CO2e",
-    "gwp_set": "AR5_100",
-    "basis": null,
-    "country_iso3": "gbr",
-    "source_id": "DEFRA_2026",
-    "cell_ref": "'Homeworking'!C23",
-    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
-    "source_name": "Open Government Licence v3.0",
-    "proof_url": "https://verify.greencalculus.com/homeworking.gbr.heating@2026.187"
    }
   },
   {
@@ -7973,24 +7901,6 @@
    }
   },
   {
-   "id": "transmission_distribution.gbr.electricity",
-   "section": "transmission_distribution",
-   "question": "What is the greenhouse-gas emission factor for UK T&D- UK electricity, per kWh?",
-   "truth": {
-    "value": 0.01299,
-    "unit": "kg CO2e per kWh",
-    "gas": "CO2e",
-    "gwp_set": "AR5_100",
-    "basis": null,
-    "country_iso3": "gbr",
-    "source_id": "DEFRA_2026",
-    "cell_ref": "'Transmission and distribution'!E22",
-    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
-    "source_name": "Open Government Licence v3.0",
-    "proof_url": "https://verify.greencalculus.com/transmission_distribution.gbr.electricity@2026.187"
-   }
-  },
-  {
    "id": "transmission_distribution.aus.state.nt_dkis.electricity",
    "section": "transmission_distribution",
    "question": "What is the greenhouse-gas emission factor for Northern Territory — Darwin Katherine Interconnected System, per kWh?",
@@ -8024,24 +7934,6 @@
     "publisher": "World Bank Group (compiled from IEA Statistics + national grid operators)",
     "source_name": "CC BY 4.0 — World Bank Open Data",
     "proof_url": "https://verify.greencalculus.com/transmission_distribution.ukr.loss_rate@2026.187"
-   }
-  },
-  {
-   "id": "transmission_distribution.gbr.district_heat",
-   "section": "transmission_distribution",
-   "question": "What is the greenhouse-gas emission factor for UK Distribution - district heat & steam, per kWh?",
-   "truth": {
-    "value": 0.00945,
-    "unit": "kg CO2e per kWh",
-    "gas": "CO2e",
-    "gwp_set": "AR5_100",
-    "basis": null,
-    "country_iso3": "gbr",
-    "source_id": "DEFRA_2026",
-    "cell_ref": "'Transmission and distribution'!E27",
-    "publisher": "Department for Energy Security and Net Zero (DESNZ)",
-    "source_name": "Open Government Licence v3.0",
-    "proof_url": "https://verify.greencalculus.com/transmission_distribution.gbr.district_heat@2026.187"
    }
   },
   {

@@ -3,7 +3,7 @@
 How wrong are language models when you ask them for an emission factor with no
 tools — and, worse, how often do they name the wrong source for a number?
 
-**473 questions, 45 sections, 75 publishers**, generated deterministically
+**467 questions, 45 sections, 75 publishers**, generated deterministically
 (seed 20260910) from data version 2026.187. Only factors we may republish are
 used, so the answer key ships with the benchmark.
 
@@ -64,19 +64,33 @@ Full write-up, caveats, and the log of the scorer's own six bugs:
 
 ## Status
 
-- `build_questions.py` — generates `questions.json`. **Run and verified.**
-- `score.py` — scoring and summary. **Verified against 8 synthetic answers**
-  covering exact, close-but-wrong-source, confidently wrong, refusal, and a
-  bare year (which must not be read as a value).
-- **Pilot run** against Claude Opus 5 (45 of 473 questions) — see above.
-- **Not yet run against other vendors.** GPT/Gemini need API keys and spend money.
-- **`score.py` now does unit reconciliation** ([`units.py`](./units.py)) and
-  unit-aware, range-aware extraction. Validated against independent hand
-  adjudication of the pilot: automated 47.2% vs hand-read ~47%.
+Everything above has been run. Nothing here is a projection.
 
-A known scoring bias was found and fixed during development: a refusal that
-name-drops a publisher ("consult the DEFRA tables") was counting as a correct
-citation. Citations now only count on answers that actually gave a number.
+- **All five models, all 467 questions, unaided** — Claude Opus 5, GPT-5.5,
+  Gemini 3.1 Pro, Gemini 3.6 Flash, Grok 4.6. Raw replies are in
+  [`results/`](./results), one directory per model, so any number in this README
+  can be re-scored from the answers that produced it.
+- **The paired tool run** — 90 questions, two models, with and without the two
+  keyless lookup tools ([`results/paired.json`](./results/paired.json)).
+- `build_questions.py` — generates `questions.json`. Run and verified.
+- `score.py` — scoring and summary. Verified against 8 synthetic answers
+  covering exact, close-but-wrong-source, confidently wrong, refusal, and a
+  bare year (which must not be read as a value). Does unit reconciliation
+  ([`units.py`](./units.py)) and unit-aware, range-aware extraction; validated
+  against independent hand adjudication of the pilot — automated 46.9% vs
+  hand-read ~47%.
+
+Two bugs found in our own harness, both fixed, both worth knowing about:
+
+- A refusal that name-drops a publisher ("consult the DEFRA tables") was
+  counting as a correct citation. Citations now only count on answers that
+  actually gave a number.
+- `questions.json` was published with 6 duplicate rows — the section listing
+  the API serves can repeat a key, and the generator's dedup arrived one commit
+  after the file. Scoring keys on the factor key, so the duplicates always
+  collapsed and no published result changes; the file now says 467 like
+  everything else. Six more, all in unit handling, are logged in
+  [FINDINGS.md](./FINDINGS.md).
 
 ## Run
 
