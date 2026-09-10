@@ -1,0 +1,278 @@
+<!-- wp:html -->
+<article class="grn">
+
+[gc_meta_header]
+
+<h1>Where AI Is Reliable on Emission Factors &mdash; and Where It Isn&rsquo;t</h1>
+
+[gc_pin_card alt="Where AI is reliable on emission factors, broken down by category and publisher" desc="Of 38 emission-factor categories, AI answers reliably on 5. It recalls fuel properties and combustion factors well and fabricates CBAM defaults, scenario prices and food footprints. The full breakdown by category and publisher, from 867 scored answers."]
+
+<p class="hook">We asked five frontier language models 467 emission-factor questions and scored every answer against a corpus where each value is traced to a named document and an exact cell. The headline number &mdash; a little under half correct &mdash; hides something more useful. Accuracy is not spread evenly. It runs from 100% in one category to 9% in another, and the difference decides whether a model is a reasonable shortcut or a liability. This is the breakdown, category by category and publisher by publisher.</p>
+
+<div class="quick-ans">
+<span class="qa-label">Quick Answer</span>
+<p>Of 38 emission-factor categories with enough data to score, AI is reliable on 5. It recalls fuel properties, combustion factors and IPCC waste defaults well. It fabricates CBAM defaults, NGFS scenario prices, food product footprints and cloud-region intensities.</p>
+</div>
+
+<nav class="toc" aria-label="On this page">
+<span class="toc-label">On this page</span>
+<ol>
+<li><a href="#five">Five categories out of thirty-eight</a></li>
+<li><a href="#trust">Where you can trust it</a></li>
+<li><a href="#fail">Where it fails outright</a></li>
+<li><a href="#categories">The full category reference</a></li>
+<li><a href="#publishers">By publisher</a></li>
+<li><a href="#why">Why &mdash; and two explanations we tested and rejected</a></li>
+<li><a href="#use">How to use this</a></li>
+<li><a href="#method">Method and limits</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ol>
+</nav>
+
+<p>This page is the companion to our <a href="/guides/ai-emission-factors-accuracy/">measurement of how accurate AI is on emission factors</a>. That one is the study: what we did, what the models scored, and what a sourced lookup fixes. This one is the reference you check before deciding whether to let a model near a particular number.</p>
+
+<h2 id="five">Five categories out of thirty-eight</h2>
+
+<p>Pooling the three models that answer most questions &mdash; Claude Opus 5, GPT-5.5 and Gemini 3.6 Flash &mdash; gives 867 scored answers across 38 categories.</p>
+
+<div class="big-num">
+<span class="bn-value">5 of 38</span>
+<span class="bn-label">categories where AI answers correctly at least 80% of the time</span>
+<span class="bn-delta">27 of 38 are below 50%</span>
+</div>
+
+<p>Six more sit in a middle band between 50% and 80%, which in practice means a coin toss with better odds. Twenty-seven categories &mdash; the clear majority of the subject &mdash; are below half.</p>
+
+<div class="callout key">
+<span class="callout-label">Key Point</span>
+<p>&ldquo;Can AI do emission factors?&rdquo; has no single answer. It is close to solved for the numbers in every engineering textbook and close to useless for anything a regulator published recently.</p>
+</div>
+
+<h2 id="trust">Where you can trust it</h2>
+
+<p>The reliable five are all the same kind of number: long-established, physically constrained, and reprinted in thousands of documents.</p>
+
+<div class="table-wrap">
+<table>
+<caption>The categories AI recalls reliably</caption>
+<thead><tr><th scope="col">Category</th><th scope="col">Correct</th><th scope="col">What these numbers have in common</th></tr></thead>
+<tbody>
+<tr><td>Waste &mdash; landfill and treatment defaults</td><td>100%</td><td>IPCC 2006 defaults, unchanged for twenty years</td></tr>
+<tr><td>Fuel properties</td><td>94%</td><td>Calorific values and densities &mdash; physical constants</td></tr>
+<tr><td>Fuels &mdash; combustion</td><td>88%</td><td>Stoichiometry sets the answer; vintages barely move</td></tr>
+<tr><td>Renewable generation yields</td><td>86%</td><td>Solar irradiance is measured, not legislated</td></tr>
+<tr><td>Mobile combustion</td><td>82%</td><td>Diesel per gallon is in every reference on the shelf</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Even here, treat the result as a sanity check rather than a source. An 82% category still means roughly one answer in five is wrong, and the model gives no signal about which one.</p>
+
+<h2 id="fail">Where it fails outright</h2>
+
+<div class="table-wrap">
+<table>
+<caption>The categories AI should not be asked about</caption>
+<thead><tr><th scope="col">Category</th><th scope="col">Correct</th><th scope="col">Why it matters</th></tr></thead>
+<tbody>
+<tr><td>NGFS scenario prices</td><td>9%</td><td>Used in CSRD and TCFD-style scenario disclosure</td></tr>
+<tr><td>Spend-based EEIO</td><td>16%</td><td>The default method for most of Scope 3</td></tr>
+<tr><td>Food product footprints</td><td>17%</td><td>Product-level claims, directly consumer-facing</td></tr>
+<tr><td>Semiconductor process gases</td><td>17%</td><td>High-GWP gases; small errors are large tonnages</td></tr>
+<tr><td>EV charging</td><td>21%</td><td>Fleet transition business cases rest on these</td></tr>
+<tr><td>AFOLU</td><td>21%</td><td>Land-sector accounting, FLAG targets</td></tr>
+<tr><td>CBAM default values</td><td>27%</td><td>A live EU import obligation with financial consequences</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+<span class="callout-label">The uncomfortable overlap</span>
+<p>The categories where AI is least reliable are, almost exactly, the categories where regulatory pressure is rising fastest. CBAM, CSRD scenario analysis and Scope 3 product footprints are the numbers most likely to be asked of a model, and the numbers a model is least able to recall.</p>
+</div>
+
+<h2 id="categories">The full category reference</h2>
+
+<p>Every category with at least nine scored answers. &ldquo;Correct&rdquo; means within 10% of the published value after unit reconciliation.</p>
+
+<div class="table-wrap">
+<table class="table-compare">
+<caption>AI accuracy by factor category, three models pooled</caption>
+<thead><tr><th scope="col">Category</th><th scope="col">Correct</th><th scope="col">Answers scored</th><th scope="col">Verdict</th></tr></thead>
+<tbody>
+<tr><td>Waste — landfill and treatment defaults</td><td><strong>100%</strong></td><td>13</td><td>Reliable</td></tr>
+<tr><td>Fuel properties (calorific values, densities)</td><td><strong>94%</strong></td><td>33</td><td>Reliable</td></tr>
+<tr><td>Fuels — combustion</td><td><strong>88%</strong></td><td>33</td><td>Reliable</td></tr>
+<tr><td>Renewable generation yields</td><td><strong>86%</strong></td><td>36</td><td>Reliable</td></tr>
+<tr><td>Mobile combustion</td><td><strong>82%</strong></td><td>33</td><td>Reliable</td></tr>
+<tr><td>Passenger vehicles</td><td><strong>69%</strong></td><td>36</td><td>Mixed</td></tr>
+<tr><td>Managed assets (fleet)</td><td><strong>69%</strong></td><td>26</td><td>Mixed</td></tr>
+<tr><td>Commuting</td><td><strong>67%</strong></td><td>36</td><td>Mixed</td></tr>
+<tr><td>Equivalencies</td><td><strong>67%</strong></td><td>18</td><td>Mixed</td></tr>
+<tr><td>District heating</td><td><strong>62%</strong></td><td>24</td><td>Mixed</td></tr>
+<tr><td>Industrial processes</td><td><strong>60%</strong></td><td>30</td><td>Mixed</td></tr>
+<tr><td>Business travel</td><td><strong>48%</strong></td><td>25</td><td>Unreliable</td></tr>
+<tr><td>Refrigerants</td><td><strong>46%</strong></td><td>26</td><td>Unreliable</td></tr>
+<tr><td>Reusable vs single-use</td><td><strong>45%</strong></td><td>11</td><td>Unreliable</td></tr>
+<tr><td>Homeworking</td><td><strong>44%</strong></td><td>9</td><td>Unreliable</td></tr>
+<tr><td>Carbon prices</td><td><strong>44%</strong></td><td>16</td><td>Unreliable</td></tr>
+<tr><td>Grid electricity — lifecycle</td><td><strong>43%</strong></td><td>30</td><td>Unreliable</td></tr>
+<tr><td>Hotel stays</td><td><strong>40%</strong></td><td>25</td><td>Unreliable</td></tr>
+<tr><td>Delivery vehicles</td><td><strong>38%</strong></td><td>32</td><td>Unreliable</td></tr>
+<tr><td>Fugitive coal methane</td><td><strong>33%</strong></td><td>12</td><td>Unreliable</td></tr>
+<tr><td>Grid electricity — location-based</td><td><strong>33%</strong></td><td>33</td><td>Unreliable</td></tr>
+<tr><td>Fuels — well-to-tank</td><td><strong>31%</strong></td><td>29</td><td>Unreliable</td></tr>
+<tr><td>Digital and data centres</td><td><strong>29%</strong></td><td>17</td><td>Unreliable</td></tr>
+<tr><td>Construction materials</td><td><strong>29%</strong></td><td>31</td><td>Unreliable</td></tr>
+<tr><td>Building energy intensity</td><td><strong>29%</strong></td><td>28</td><td>Unreliable</td></tr>
+<tr><td>CBAM default values</td><td><strong>27%</strong></td><td>11</td><td>Unreliable</td></tr>
+<tr><td>Water supply and treatment</td><td><strong>25%</strong></td><td>12</td><td>Unreliable</td></tr>
+<tr><td>T&D losses</td><td><strong>23%</strong></td><td>22</td><td>Unreliable</td></tr>
+<tr><td>Freight — generic</td><td><strong>22%</strong></td><td>9</td><td>Unreliable</td></tr>
+<tr><td>Waste disposal by material</td><td><strong>21%</strong></td><td>14</td><td>Unreliable</td></tr>
+<tr><td>Freight — detailed modes</td><td><strong>21%</strong></td><td>19</td><td>Unreliable</td></tr>
+<tr><td>AFOLU (agriculture, forestry, land use)</td><td><strong>21%</strong></td><td>24</td><td>Unreliable</td></tr>
+<tr><td>EV charging</td><td><strong>21%</strong></td><td>34</td><td>Unreliable</td></tr>
+<tr><td>Diets</td><td><strong>20%</strong></td><td>15</td><td>Unreliable</td></tr>
+<tr><td>Food product footprints</td><td><strong>17%</strong></td><td>23</td><td>Unreliable</td></tr>
+<tr><td>Semiconductor process gases</td><td><strong>17%</strong></td><td>12</td><td>Unreliable</td></tr>
+<tr><td>Spend-based EEIO</td><td><strong>16%</strong></td><td>19</td><td>Unreliable</td></tr>
+<tr><td>NGFS scenario prices</td><td><strong>9%</strong></td><td>11</td><td>Unreliable</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="publishers">By publisher</h2>
+
+<p>The same data cut by who published the number rather than what it describes. This cut is the more useful one if you already know your source.</p>
+
+<div class="table-wrap">
+<table class="table-compare">
+<caption>AI accuracy by publisher, three models pooled</caption>
+<thead><tr><th scope="col">Publisher</th><th scope="col">Correct</th><th scope="col">Answers scored</th><th scope="col">Verdict</th></tr></thead>
+<tbody>
+<tr><td>World Bank / Solargis — Global Solar Atlas</td><td><strong>96%</strong></td><td>27</td><td>Reliable</td></tr>
+<tr><td>IPCC 2006 Guidelines, Vol. 5 (waste)</td><td><strong>87%</strong></td><td>15</td><td>Reliable</td></tr>
+<tr><td>US EPA — GHG Emission Factors Hub</td><td><strong>83%</strong></td><td>30</td><td>Reliable</td></tr>
+<tr><td>Environment and Climate Change Canada — NIR</td><td><strong>73%</strong></td><td>15</td><td>Mixed</td></tr>
+<tr><td>US EPA — Equivalencies Calculator</td><td><strong>60%</strong></td><td>15</td><td>Mixed</td></tr>
+<tr><td>Australia DCCEEW — NGA Factors</td><td><strong>58%</strong></td><td>33</td><td>Mixed</td></tr>
+<tr><td>IPCC 2019 Refinement</td><td><strong>57%</strong></td><td>21</td><td>Mixed</td></tr>
+<tr><td>NREL — PV degradation review</td><td><strong>56%</strong></td><td>9</td><td>Mixed</td></tr>
+<tr><td>UK DESNZ — conversion factors 2026</td><td><strong>51%</strong></td><td>280</td><td>Mixed</td></tr>
+<tr><td>IPCC 2006 Guidelines, Vol. 3</td><td><strong>46%</strong></td><td>26</td><td>Unreliable</td></tr>
+<tr><td>ADEME — Base Carbone</td><td><strong>44%</strong></td><td>43</td><td>Unreliable</td></tr>
+<tr><td>IPCC AR6</td><td><strong>44%</strong></td><td>16</td><td>Unreliable</td></tr>
+<tr><td>World Bank — Carbon Pricing Dashboard</td><td><strong>44%</strong></td><td>16</td><td>Unreliable</td></tr>
+<tr><td>Ember — Yearly Electricity Data</td><td><strong>43%</strong></td><td>30</td><td>Unreliable</td></tr>
+<tr><td>EU F-Gas Regulation</td><td><strong>36%</strong></td><td>14</td><td>Unreliable</td></tr>
+<tr><td>IPCC 2019 Refinement (v1)</td><td><strong>31%</strong></td><td>13</td><td>Unreliable</td></tr>
+<tr><td>UK NEED framework</td><td><strong>29%</strong></td><td>28</td><td>Unreliable</td></tr>
+<tr><td>Smart Freight Centre — GLEC v3.2</td><td><strong>21%</strong></td><td>28</td><td>Unreliable</td></tr>
+<tr><td>Scarborough et al. (diets)</td><td><strong>20%</strong></td><td>15</td><td>Unreliable</td></tr>
+<tr><td>ADEME — AGRIBALYSE 3.2</td><td><strong>17%</strong></td><td>23</td><td>Unreliable</td></tr>
+<tr><td>UK DESNZ — conversion factors 2025</td><td><strong>11%</strong></td><td>9</td><td>Unreliable</td></tr>
+<tr><td>NGFS Phase 5 scenarios</td><td><strong>9%</strong></td><td>11</td><td>Unreliable</td></tr>
+<tr><td>European Commission — CBAM defaults</td><td><strong>0%</strong></td><td>11</td><td>Unreliable</td></tr>
+<tr><td>Google Cloud — region carbon data</td><td><strong>0%</strong></td><td>10</td><td>Unreliable</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>The spread is wider than the category view: from 96% on the World Bank&rsquo;s Global Solar Atlas to zero on the European Commission&rsquo;s CBAM defaults and Google&rsquo;s own cloud-region data. Two sources score exactly nothing across every question we asked.</p>
+
+<h2 id="why">Why &mdash; and two explanations we tested and rejected</h2>
+
+<p>The obvious story is that models recall famous publishers and invent obscure ones. It is a tidy story and the data does not support it. DEFRA is as famous as emission-factor publishers get, and it scores 51%.</p>
+
+<p>We tested two more specific explanations and both failed.</p>
+
+<div class="callout tip">
+<span class="callout-label">Rejected: bigger sources are harder</span>
+<p>The intuition is that a source with thousands of finely-subdivided rows is harder to memorise than one with a handful. Correlating corpus size against accuracy across 24 publishers gives <strong>r = &minus;0.12</strong> &mdash; essentially no relationship. A three-row source scores 56%, a nineteen-row source scores 96%, and a 1,424-row source scores 51%.</p>
+</div>
+
+<div class="callout tip">
+<span class="callout-label">Rejected: models confuse vintages</span>
+<p>An older DEFRA vintage in our corpus scores 11% against the current year&rsquo;s 51%, which looked like models quoting the wrong edition. Reading the individual answers killed it: the sample is five questions, all on unusually obscure aggregates, and none of the answers resembles another vintage of the same factor. Eleven per cent of five is noise, not a finding.</p>
+</div>
+
+<p>What is left is a pattern we can describe but have not isolated: the reliable numbers are old, physically constrained and reprinted everywhere; the unreliable ones are recent, jurisdiction-specific and published once. That is consistent with how much a value appears in training data, which we cannot measure from the outside.</p>
+
+<p>We are stating it as a pattern rather than a mechanism on purpose. Two plausible explanations already died on contact with the data, and a third that merely sounds right has not earned more confidence than those did.</p>
+
+<h2 id="use">How to use this</h2>
+
+<p>Three rules that follow from the numbers rather than from principle.</p>
+
+<div class="callout key">
+<span class="callout-label">1. Use the category, not the model, to decide</span>
+<p>The variation between categories is far larger than the variation between models. Which model you use matters less than what you ask it about. A model that is 94% right on calorific values is the same model that is 9% right on scenario prices.</p>
+</div>
+
+<div class="callout key">
+<span class="callout-label">2. A confident answer carries no signal</span>
+<p>Models do not hedge more in the categories where they are wrong. In our study they named the correct publisher around 90% of the time overall &mdash; including in the categories that score below 20%. The tone is identical whether the number is right or invented.</p>
+</div>
+
+<div class="callout key">
+<span class="callout-label">3. Anything going into a disclosure needs a source, not a recall</span>
+<p>Even the best category here leaves roughly one answer in five wrong, with no way to tell which. That is an acceptable error rate for a first estimate and an unacceptable one for a filed number. Connect the model to a sourced dataset and, in our paired test, accuracy went to 99&ndash;100%.</p>
+</div>
+
+<h2 id="method">Method and limits</h2>
+
+<p>467 questions across 45 categories and 75 publishers, drawn deterministically from data version 2026.187 and phrased the way a practitioner asks rather than as database keys. Models answered with no tools and no web access, in batches of thirty. Scoring is dimensional, so an answer in kg CO<sub>2</sub>/GJ against a truth in tonne C/GJ is compared as the same quantity; pairs of units that cannot be reconciled mechanically are excluded rather than counted wrong.</p>
+
+<p>The tables above pool <strong>three</strong> models, not five. Gemini 3.1 Pro and Grok 4.6 declined so many questions &mdash; 390 and 323 of 467 respectively &mdash; that they have too few scored answers to break down by category. Their caution is itself a finding, and it is covered in <a href="/guides/ai-emission-factors-accuracy/">the main study</a>.</p>
+
+<p>Categories with fewer than nine scored answers are omitted. Percentages on the smaller categories carry real uncertainty: at nine answers, a single question moves the figure by eleven points. Read the large categories as measurements and the small ones as indications.</p>
+
+<p>&ldquo;Correct&rdquo; throughout this page means <strong>within 10% of the published value</strong> after unit reconciliation. That threshold is a choice, not a measurement, and a category sitting near a boundary would move under a different one. Where two units cannot be reconciled mechanically &mdash; a local-currency answer against a US-dollar figure, or a value given with no denominator &mdash; the answer is marked unscoreable and dropped rather than counted wrong. That removed 112 of 467 answers, which is the softest part of the method and is why we report the scored sample size beside every percentage.</p>
+
+<div class="callout key">
+<span class="callout-label">Every percentage here can be reconstructed</span>
+<p>Nothing on this page rests on our word. The questions are generated deterministically from a published seed (<a href="https://github.com/greencalculus/greencalculus-benchmark/blob/main/questions.json">questions.json</a>), every model&rsquo;s raw output is committed verbatim (<a href="https://github.com/greencalculus/greencalculus-benchmark/tree/main/results">results/</a>), the scoring and unit reconciliation are open code (<a href="https://github.com/greencalculus/greencalculus-benchmark/blob/main/score.py">score.py</a>, <a href="https://github.com/greencalculus/greencalculus-benchmark/blob/main/units.py">units.py</a>), and every ground-truth value resolves to a named document and an exact cell through the API. Re-run <code>compare.py</code> and you get these tables.</p>
+</div>
+
+<p>The scorer itself has been wrong six times, and all six are documented in <a href="https://github.com/greencalculus/greencalculus-benchmark/blob/main/FINDINGS.md">FINDINGS.md</a> &mdash; four of them were understating the result rather than flattering it. An independent hand-audit of 45 answers agreed with the automated figure to within about a point. That is one check, not a proof, and we would rather say so than imply the code is beyond question.</p>
+
+<p>Questions were drawn only from factors we are <a href="/guides/emission-factor-licences/">licensed to republish</a>, so the answer key ships with the benchmark and anyone can re-run it.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+
+<div class="faq">
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Can I trust AI for DEFRA conversion factors?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>Only as a sanity check. Across 280 scored answers on DEFRA 2026 factors, the three models we broke down were correct 51% of the time. That is the single largest sample in the study, so the figure is solid &mdash; and it means roughly half of the DEFRA numbers a model gives you are wrong, with no signal about which half.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Which emission factors is AI actually good at?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>Five categories score 80% or better: waste treatment defaults (100%), fuel properties (94%), fuel combustion (88%), renewable generation yields (86%) and mobile combustion (82%). They share a shape &mdash; long-established, physically constrained values reprinted in many places. By publisher, the World Bank Global Solar Atlas (96%), IPCC waste guidelines (87%) and the US EPA GHG Hub (83%) lead.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Why is AI so bad at CBAM values?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>CBAM defaults scored 27% by category, and the European Commission&rsquo;s own default dataset scored zero across every question we asked of it. These are recent, jurisdiction-specific values published once in an Official Journal annex, subdivided by country and customs code. We can describe that pattern but we have not isolated the mechanism &mdash; two explanations we tested both failed.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Does it matter which AI model I use?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>Less than you would expect. The variation between categories is much larger than the variation between models. The more consequential difference is how often a model declines: in the wider study, Gemini 3.1 Pro refused 390 of 467 questions and was right two-thirds of the time when it did answer, while Claude Opus 5 refused 37 and was right 46% of the time.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Why do the tables only cover three models?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>Gemini 3.1 Pro and Grok 4.6 declined most questions &mdash; 390 and 323 of 467 &mdash; leaving 46 and 66 scored answers, far too few to split across 38 categories. Reporting a category percentage from two answers would be worse than reporting nothing. The three included models each have between 206 and 315 scored answers.</p>
+</div></div>
+</div>
+</div>
+
+</article>
+<!-- /wp:html -->

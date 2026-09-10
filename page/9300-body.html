@@ -1,0 +1,307 @@
+<!-- wp:html -->
+<div class="hook">
+<p>Ask a frontier AI model for an emission factor and it will almost always give you one. It will usually name the right publisher too &mdash; DEFRA, the EPA, the IPCC.</p>
+<p>More than half the time, the number beside that correct citation is wrong.</p>
+</div>
+
+<div class="quick-ans">
+<span class="qa-label">Quick Answer</span>
+<p>We asked five frontier AI models 467 emission-factor questions with no lookups. They answered correctly 42&ndash;65% of the time. When they named the right source, the number was still wrong in up to 59% of cases.</p>
+</div>
+
+<nav class="toc">
+<span class="toc-label">In this article</span>
+<ol>
+<li><a href="#results">What we found</a></li>
+<li><a href="#trap">The trap: right source, wrong number</a></li>
+<li><a href="#calibration">The more a model answers, the less each answer is worth</a></li>
+<li><a href="#tiers">Same vendor, two tiers &mdash; and you deploy the wrong one</a></li>
+<li><a href="#where">Where AI is reliable, and where it invents</a></li>
+<li><a href="#r290">One factor, in detail</a></li>
+<li><a href="#fix">What fixes it</a></li>
+<li><a href="#method">How we tested</a></li>
+<li><a href="#scorer">What our own scorer got wrong</a></li>
+<li><a href="#limits">Limitations</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ol>
+</nav>
+
+<p>Carbon accounting is moving into software, and software is moving into language models. Sustainability teams are asking chatbots for conversion factors. Developers are wiring models into reporting pipelines. The assumption underneath both is that a model which can explain the GHG Protocol can also recall the numbers inside it.</p>
+
+<p>We were in an unusual position to check. GreenCalculus maintains a corpus of <strong>16,673 emission factors</strong>, each one traced to a named publisher, a specific document and an exact cell in that document. That gives us something most people writing about AI accuracy do not have: a verified answer key.</p>
+
+<p>So we built one. 467 questions, drawn from 45 categories and 75 publishers. Five frontier models. No tools, no web access, no retrieval &mdash; just the model and its own knowledge, which is exactly what you get when someone types a question into a chat window.</p>
+
+<h2 id="results">What we found</h2>
+
+<div class="big-num">
+<span class="bn-value">54%</span>
+<span class="bn-label">of Claude Opus 5&rsquo;s correctly-attributed answers carried the wrong number</span>
+<span class="bn-delta">Gemini 3.6 Flash: 59%</span>
+</div>
+
+<p>Two measures matter, and they rank the models in opposite orders. The first asks: when a model gives you a number, is it right? The second asks: across all 467 questions, how many did it actually get right &mdash; counting refusals as misses, because a refusal still leaves you without an answer.</p>
+
+<div class="table-wrap">
+<table class="table-compare">
+<thead><tr><th>Model</th><th>Answered</th><th>Right when it answered</th><th>Right, of all 467</th><th>Right source, wrong number</th></tr></thead>
+<tbody>
+<tr><td>Gemini 3.1 Pro</td><td>77</td><td><strong>65.2%</strong></td><td>6.4%</td><td>35.3%</td></tr>
+<tr><td>Grok 4.6</td><td>144</td><td>62.1%</td><td>8.8%</td><td>31.6%</td></tr>
+<tr><td>GPT-5.5</td><td>326</td><td>58.2%</td><td><strong>31.9%</strong></td><td>41.0%</td></tr>
+<tr><td>Claude Opus 5</td><td>430</td><td>45.7%</td><td>30.8%</td><td>54.1%</td></tr>
+<tr><td>Gemini 3.6 Flash</td><td>404</td><td>41.9%</td><td>28.3%</td><td>58.8%</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Quote either column on its own and you have misled someone. Gemini 3.1 Pro is the most accurate model in this test and the least useful &mdash; it declined 390 of 467 questions. GPT-5.5 gets the most questions right overall and is wrong about the number in 41% of the cases where it correctly names the source.</p>
+
+<div class="bar-chart">
+  <div class="bar-row">
+    <span class="br-label">GPT-5.5</span>
+    <div class="br-track"><div class="br-fill" style="width:31.9%"></div></div>
+    <span class="br-value">31.9%</span>
+  </div>
+  <div class="bar-row">
+    <span class="br-label">Claude Opus 5</span>
+    <div class="br-track"><div class="br-fill" style="width:30.8%"></div></div>
+    <span class="br-value">30.8%</span>
+  </div>
+  <div class="bar-row">
+    <span class="br-label">Gemini 3.6 Flash</span>
+    <div class="br-track"><div class="br-fill" style="width:28.3%"></div></div>
+    <span class="br-value">28.3%</span>
+  </div>
+  <div class="bar-row">
+    <span class="br-label">Grok 4.6</span>
+    <div class="br-track"><div class="br-fill" style="width:8.8%"></div></div>
+    <span class="br-value">8.8%</span>
+  </div>
+  <div class="bar-row">
+    <span class="br-label">Gemini 3.1 Pro</span>
+    <div class="br-track"><div class="br-fill" style="width:6.4%"></div></div>
+    <span class="br-value">6.4%</span>
+  </div>
+</div>
+<p class="fig-caption">Share of all 467 questions answered correctly, within 10% of the sourced value. Refusals count as misses.</p>
+
+<h2 id="trap">The trap: right source, wrong number</h2>
+
+<p>The headline accuracy figures are not the interesting part. This is.</p>
+
+<p>Every model in the test attributes well. When they name a publisher, it is the publisher the number genuinely comes from around <strong>90%</strong> of the time. They know that UK grid electricity is a DEFRA number and that global warming potentials come from the IPCC. What they cannot do is recall the value.</p>
+
+<div class="callout warning">
+<span class="callout-label">Why this is the dangerous failure</span>
+<p>A wrong number with no source attached gets caught, because nobody can cite it in a disclosure. A wrong number wearing the right publisher&rsquo;s name looks exactly like diligence &mdash; and goes into the report.</p>
+</div>
+
+<p>A reviewer checking a Scope 2 figure sees &ldquo;0.233 kg CO<sub>2</sub>e/kWh, DEFRA 2026&rdquo; and moves on. The citation is doing the work that the number should be doing. That is why we treat this metric, rather than raw accuracy, as the finding of the study.</p>
+
+<h2 id="calibration">The more a model answers, the less each answer is worth</h2>
+
+<p>Sort the five models by how often they answer at all, and the danger metric sorts almost perfectly with it.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 640 340" role="img" aria-labelledby="cal-t cal-d" style="width:100%;height:auto">
+  <title id="cal-t">Willingness to answer against rate of wrong numbers under correct citations</title>
+  <desc id="cal-d">Five models plotted. As the number of questions answered rises from 77 to 430, the share of correctly-attributed answers carrying a wrong number rises from 31.6% to 58.8%.</desc>
+  <line x1="70" y1="290" x2="610" y2="290" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
+  <line x1="70" y1="40" x2="70" y2="290" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
+  <text x="340" y="326" text-anchor="middle" font-size="13" fill="currentColor" opacity="0.75">Questions answered, of 467 &rarr;</text>
+  <text x="20" y="165" text-anchor="middle" font-size="13" fill="currentColor" opacity="0.75" transform="rotate(-90 20 165)">Right source, wrong number</text>
+  <text x="62" y="295" text-anchor="end" font-size="12" fill="currentColor" opacity="0.6">25%</text>
+  <text x="62" y="170" text-anchor="end" font-size="12" fill="currentColor" opacity="0.6">45%</text>
+  <text x="62" y="46" text-anchor="end" font-size="12" fill="currentColor" opacity="0.6">65%</text>
+  <line x1="88" y1="249" x2="566" y2="79" stroke="#04BF62" stroke-width="2" stroke-dasharray="5 5" opacity="0.5"/>
+  <circle cx="88"  cy="255" r="7" fill="#04BF62"/><text x="100" y="250" font-size="12.5" fill="currentColor">Gemini 3.1 Pro &mdash; 77 answered, 35.3%</text>
+  <circle cx="165" cy="278" r="7" fill="#04BF62"/><text x="177" y="273" font-size="12.5" fill="currentColor">Grok 4.6 &mdash; 144, 31.6%</text>
+  <circle cx="376" cy="220" r="7" fill="#04BF62"/><text x="388" y="215" font-size="12.5" fill="currentColor">GPT-5.5 &mdash; 326, 41.0%</text>
+  <circle cx="466" cy="138" r="7" fill="#1D3215"/><text x="300" y="118" font-size="12.5" fill="currentColor">Claude Opus 5 &mdash; 430, 54.1%</text>
+  <circle cx="446" cy="109" r="7" fill="#1D3215"/><text x="250" y="90" font-size="12.5" fill="currentColor">Gemini 3.6 Flash &mdash; 404, 58.8%</text>
+</svg>
+<figcaption>Each point is one model. Dashed line shows the trend, not a fitted regression.</figcaption>
+</figure>
+
+<p>This is a story about <strong>calibration</strong> &mdash; whether a model knows where its knowledge ends &mdash; rather than intelligence. Gemini 3.1 Pro refused 390 of 467 questions and was right two-thirds of the time when it spoke. Claude Opus 5 refused 37 and was right 46% of the time.</p>
+
+<p>For carbon accounting, that trade is not neutral. <strong>A refusal costs you a lookup. A confident wrong number costs you a misstated disclosure.</strong></p>
+
+<h2 id="tiers">Same vendor, two tiers &mdash; and you deploy the wrong one</h2>
+
+<p>The cleanest evidence needs no cross-vendor argument at all, because it is one company and one knowledge base at two price points.</p>
+
+<div class="table-wrap">
+<table class="table-compare">
+<thead><tr><th>Google model</th><th>Answered</th><th>Right when it answered</th><th>Right source, wrong number</th></tr></thead>
+<tbody>
+<tr><td>Gemini 3.1 <strong>Pro</strong></td><td>77 / 467</td><td>65.2%</td><td>35.3%</td></tr>
+<tr><td>Gemini 3.6 <strong>Flash</strong></td><td>404 / 467</td><td>41.9%</td><td>58.8%</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>The fast tier answers five times as many questions and is right on far fewer of them. When it correctly names the publisher, it is wrong about the number more often than not.</p>
+
+<div class="callout key">
+<span class="callout-label">Key Point</span>
+<p>The fast tier is the one that gets deployed. Nobody puts a slow reasoning model behind a bulk emissions pipeline &mdash; the economics do not work. So the model most likely to be sitting inside a production carbon feature is the one that fabricates most.</p>
+</div>
+
+<h2 id="where">Where AI is reliable, and where it invents</h2>
+
+<p>Accuracy is not evenly spread. Broken down by category, Claude Opus 5 looks like two different systems.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Category</th><th>Correct within 10%</th></tr></thead>
+<tbody>
+<tr><td>Fuels</td><td>92%</td></tr>
+<tr><td>Fuel properties</td><td>91%</td></tr>
+<tr><td>Mobile combustion</td><td>83%</td></tr>
+<tr><td>CBAM defaults</td><td>18%</td></tr>
+<tr><td>EV charging</td><td>17%</td></tr>
+<tr><td>NGFS scenarios</td><td>9%</td></tr>
+<tr><td>Food product footprints</td><td>8%</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Diesel per gallon appears in every textbook and the model gets it right. A CBAM country default, an NGFS scenario cell, an AGRIBALYSE product line &mdash; anything jurisdiction-specific, recently published, or buried in an annex &mdash; is fabricated in precisely the same confident tone.</p>
+
+<p>The practical consequence: <strong>the categories where AI is least reliable are the categories where compliance pressure is rising fastest.</strong> CBAM, CSRD scenario disclosure and Scope 3 product footprints are exactly the numbers a model is most likely to invent.</p>
+
+<h2 id="r290">One factor, in detail</h2>
+
+<p>Asked for the emission factor of refrigerant R-290, Claude Opus 5 answered:</p>
+
+<blockquote><p>&ldquo;3 kg CO<sub>2</sub>e per kg leaked &mdash; GWP100 = 3 under IPCC AR5. This is the value DEFRA publishes.&rdquo;</p></blockquote>
+
+<p>The correct value is <strong>0.02</strong>, from IPCC AR6 WGI Chapter 7, Table 7.SM.7. AR6 revised the global warming potentials of short-lived hydrocarbons down by two orders of magnitude. The model was answering from the older figure.</p>
+
+<p>Three things went wrong at once, and only one of them is obvious. The number is 150 times too high. It is credited to a publisher that does not publish it. And it is stated without a hedge, so nothing in the sentence invites a reader to check.</p>
+
+<h2 id="fix">What fixes it</h2>
+
+<p>We ran the same questions again, with one change: the model could call two GreenCalculus endpoints &mdash; a search and a lookup &mdash; the same pair any client gets.</p>
+
+<p>It was <strong>not</strong> handed the answer. It had to decide to search, choose the right factor from the results, and read the value off it. A failure here would have been a real integration failure, which is why the test was worth running rather than asserting.</p>
+
+<div class="bar-chart">
+  <div class="bar-row">
+    <span class="br-label">Claude &mdash; unaided</span>
+    <div class="br-track"><div class="br-fill" style="width:37.1%"></div></div>
+    <span class="br-value">37.1%</span>
+  </div>
+  <div class="bar-row">
+    <span class="br-label">Claude &mdash; with lookup</span>
+    <div class="br-track"><div class="br-fill" style="width:98.7%"></div></div>
+    <span class="br-value">98.7%</span>
+  </div>
+  <div class="bar-row">
+    <span class="br-label">GPT-5.5 &mdash; unaided</span>
+    <div class="br-track"><div class="br-fill" style="width:50%"></div></div>
+    <span class="br-value">50.0%</span>
+  </div>
+  <div class="bar-row">
+    <span class="br-label">GPT-5.5 &mdash; with lookup</span>
+    <div class="br-track"><div class="br-fill" style="width:100%"></div></div>
+    <span class="br-value">100.0%</span>
+  </div>
+</div>
+<p class="fig-caption">90 questions, scored paired &mdash; the same question ids with and without the lookup, so nothing depends on sampling.</p>
+
+<p>Answers off by more than 50% fell from 25.8% to 1.3% for Claude, and from 19.6% to zero for GPT-5.5. It cost between one and 1.6 tool calls per question: search once, find the factor, read the value.</p>
+
+<p>The more interesting half is coverage. GPT-5.5 answered 62 of 90 questions unaided and 87 with the lookup &mdash; <strong>25 refusals became correct answers</strong>. Accuracy and coverage normally trade against each other. Here they moved together, because the constraint was never the model&rsquo;s reasoning. It was not having the number.</p>
+
+<div class="cta">
+<p>Every factor comes back with its publisher, its exact source cell and the data version it was read at. Reading the corpus needs no API key.</p>
+<div class="cta-btn-row">
+<a href="/developers/welcome?plan=free&amp;ref=ai-study" class="cta-btn">Get a free API key &rarr;</a>
+<a href="/developers/docs" class="cta-btn-ghost">Read the docs</a>
+</div>
+</div>
+
+<h2 id="method">How we tested</h2>
+
+<p>Questions were generated from the GreenCalculus corpus at data version 2026.187, drawn deterministically across all 45 categories and 75 publishers so the set is not dominated by UK electricity. Only factors we are licensed to republish were used, so the answer key can ship alongside the questions.</p>
+
+<p>Each question was phrased the way a practitioner asks &mdash; <em>&ldquo;What is the greenhouse-gas emission factor for UK grid electricity, per kWh?&rdquo;</em> &mdash; not as a database key. Models were given 30 questions at a time, with no tools and no web access, and asked to give a value, a unit and a source, or to say plainly that they did not know.</p>
+
+<p>Scoring is dimensional rather than numeric: an answer of 63 kg CO<sub>2</sub>/GJ against a sourced 0.0172 tonne C/GJ is the same quantity and is scored correct. Where two units cannot be reconciled mechanically &mdash; a Swedish krona answer against a US dollar figure &mdash; the question is marked unscoreable and removed from the denominator rather than counted wrong.</p>
+
+<h2 id="scorer">What our own scorer got wrong</h2>
+
+<p>Six times, and we are publishing all six, because on a benchmark the corrections matter more than the headline.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Bug</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>Compared numbers, not quantities</td><td>Scored a <em>correct</em> hydrogen answer as a 366,179% error</td></tr>
+<tr><td>Stripped Unicode superscripts</td><td>Penalised Grok for writing units as kg CH<sub>4</sub> head&#8315;&sup1;</td></tr>
+<tr><td>Required a fixed answer format</td><td>Silently discarded 30 Gemini answers over a numbering style</td></tr>
+<tr><td>Treated an empty reply as a refusal</td><td>Reasoning models emit nothing until they finish thinking</td></tr>
+<tr><td>Read the citation as part of the unit</td><td>Made correct answers unscoreable</td></tr>
+<tr><td>Broke on a trailing full stop</td><td>&ldquo;per hectare.&rdquo; did not match &ldquo;per hectare&rdquo;</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Four of the six were understating our own result rather than flattering it.</strong> The fourth was the most dangerous: this study turns on how often each model refuses, and a truncated response is indistinguishable from a refusal unless you inspect the stop reason. Left uncaught, it would have made a model look maximally cautious when it had simply been cut off.</p>
+
+<p>Two independent checks that the headline survives. Hand-adjudicating 45 answers gave roughly 47% against the scorer&rsquo;s 45.9%. And as successive scorer gaps were closed, the number of unscoreable questions fell from 137 to 112 while the headline moved only from 46.7% to 46.3% &mdash; if the unscoreable pile had been hiding a bias, converting a quarter of it would have shifted the result. It did not, and the model rankings did not change through any revision.</p>
+
+<h2 id="limits">Limitations</h2>
+
+<ul>
+<li><strong>One run per model.</strong> No temperature sweep, no repeats. This is a floor-setting measurement, not a leaderboard.</li>
+<li><strong>Small samples on the cautious models.</strong> Gemini 3.1 Pro and Grok 4.6 answered so few questions that their accuracy rests on 46 and 66 scoreable answers. Treat those percentages as indicative; the refusal counts are the solid part.</li>
+<li><strong>Batched context.</strong> Thirty questions share a context window, so answers within a batch are not fully independent.</li>
+<li><strong>The task is easier than reality.</strong> Questions come only from factors we may republish, which favours well-documented public sources.</li>
+<li><strong>These numbers will move.</strong> Model versions and run date are stated for that reason.</li>
+</ul>
+
+<p>The questions, the answer key, every model&rsquo;s raw output, the scoring code and the harness are public. <a href="https://github.com/greencalculus/greencalculus-benchmark">Reproduce it on GitHub</a>.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+
+<div class="faq">
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Can I use ChatGPT or Claude to calculate my carbon footprint?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>For structuring a calculation, understanding a standard or writing up a method, yes &mdash; models are strong at all three. For the emission factors themselves, no. Unaided, the models we tested returned a value within 10% of the published figure between 42% and 65% of the time, and named the correct publisher alongside a wrong number in up to 59% of cases. Connect the model to a sourced factor database and accuracy rises to 99&ndash;100%.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Which AI model is most accurate on emission factors?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>It depends which question you are asking. Gemini 3.1 Pro was most accurate when it answered (65.2%) but declined 390 of 467 questions. GPT-5.5 got the most questions right overall (31.9% of all 467). Ranked by accuracy-when-answering the order is Gemini 3.1 Pro, Grok 4.6, GPT-5.5, Claude Opus 5, Gemini 3.6 Flash; ranked by total correct it is almost exactly reversed.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Why is a wrong number with a correct citation worse than no answer?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>Because the citation stops the checking. A figure with no source cannot be used in a disclosure, so it gets caught. A figure attributed to DEFRA or the EPA looks like it has already been verified, and passes review on the strength of the attribution rather than the value.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Does retrieval or a database connection actually fix this?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>In this test, yes. Given two lookup endpoints and left to decide for itself whether to use them, Claude Opus 5 went from 37.1% to 98.7% correct and GPT-5.5 from 50.0% to 100.0%, at one to 1.6 tool calls per question. Answers off by more than 50% fell to 1.3% and zero respectively. The models were not handed the answers &mdash; they had to search, choose the right factor and read the value.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>How were the questions and the answer key chosen?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>467 questions drawn deterministically from the GreenCalculus corpus at data version 2026.187, spread across 45 categories and 75 publishers. Only factors under licences permitting republication were used, so the answer key ships with the benchmark and anyone can re-run it. Every factor traces to a named publisher, a document and an exact cell.</p>
+</div></div>
+</div>
+</div>
+
+[gc_api_cta]
+
+[gc_related_posts]
+<!-- /wp:html -->

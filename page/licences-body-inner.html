@@ -1,0 +1,230 @@
+<p class="hook">Every carbon product is built on somebody else&rsquo;s numbers, and almost every team assumes those numbers are either &ldquo;open&rdquo; or &ldquo;not open&rdquo;. We read the terms of all 137 sources in our corpus, one at a time, and that binary does not survive contact with the evidence. Forty-two of them use no recognisable licence at all &mdash; just bespoke wording you have to read and interpret. This page is what we found, including the sources we hold and may not republish, and the reasons in the publishers&rsquo; own words.</p>
+
+<div class="quick-ans">
+<span class="qa-label">Quick Answer</span>
+<p>Most major emission-factor sources &mdash; DEFRA, EPA, IPCC, Ember, ADEME &mdash; permit republication with attribution. Standards bodies (ISO, EN, CDP, IFRS) do not. The trap is in between: several sources let you use a number but not redistribute the dataset, and those are different permissions.</p>
+</div>
+
+<nav class="toc" aria-label="On this page">
+<span class="toc-label">On this page</span>
+<ol>
+<li><a href="#no-standard">There is no standard licence for this data</a></li>
+<li><a href="#permissions">Four permissions people treat as one</a></li>
+<li><a href="#open">What you may republish</a></li>
+<li><a href="#closed">What you may not, and why</a></li>
+<li><a href="#traps">Five traps that catch working teams</a></li>
+<li><a href="#held">The source we held back although we were allowed</a></li>
+<li><a href="#check">Check a source yourself</a></li>
+<li><a href="#method">How we read the terms, and how this stays current</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ol>
+</nav>
+
+<p>Licence review is the least glamorous job in building a carbon product and the one most likely to be discovered late, by a lawyer, after the feature has shipped. It is not hard work. It is just work that has to be done once per source, re-done on every new edition, and recorded somewhere a future colleague can find.</p>
+
+<p>We have done it 137 times for our own corpus. The results below are generated from that record rather than written by hand, so the tables cannot quietly drift away from what the API actually serves.</p>
+
+<h2 id="no-standard">There is no standard licence for this data</h2>
+
+<p>This is the finding that reframes everything else. Across 137 sources there are thirteen distinct licence families, and <strong>the largest single group is &ldquo;none of the above&rdquo;</strong> &mdash; bespoke terms written by the publisher, in prose, with no standard instrument behind them.</p>
+
+<div class="table-wrap">
+<table class="table-compare">
+<caption>Licence families across 137 emission-factor sources, and how many permit republication</caption>
+<thead><tr><th scope="col">Licence family</th><th scope="col">Sources</th><th scope="col">May republish</th><th scope="col">May not</th></tr></thead>
+<tbody>
+<tr><td><strong>Bespoke / no standard instrument</strong></td><td>57</td><td>23</td><td>34</td></tr>
+<tr><td>CC BY 4.0</td><td>27</td><td>25</td><td>2</td></tr>
+<tr><td>All rights reserved</td><td>13</td><td>2</td><td>11</td></tr>
+<tr><td>Open Government Licence</td><td>9</td><td>9</td><td>0</td></tr>
+<tr><td>US public domain</td><td>8</td><td>8</td><td>0</td></tr>
+<tr><td>Paid / subscription</td><td>6</td><td>0</td><td>6</td></tr>
+<tr><td>EU Official Journal</td><td>5</td><td>5</td><td>0</td></tr>
+<tr><td>CC BY-NC-ND</td><td>3</td><td>0</td><td>3</td></tr>
+<tr><td>CC BY-SA</td><td>3</td><td>0</td><td>3</td></tr>
+<tr><td>Etalab Open Licence</td><td>2</td><td>2</td><td>0</td></tr>
+<tr><td>CC BY-NC</td><td>2</td><td>0</td><td>2</td></tr>
+<tr><td>CC BY-NC-SA</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>Eurostat reuse policy</td><td>1</td><td>1</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout key">
+<span class="callout-label">Key Point</span>
+<p>You cannot triage emission-factor sources by licence badge, because 42% of them do not have one. Every source needs its terms read once, and the answer recorded next to the data rather than in somebody&rsquo;s inbox.</p>
+</div>
+
+<p>By row count the picture is friendlier than by source count: <strong>15,748 of 17,074 rows &mdash; 92% &mdash; come from sources that permit republication.</strong> The restrictive sources are mostly small: a standards table here, a research paper there. That asymmetry is worth knowing, because it means the licence problem is rarely about volume. It is about the specific rows you happen to need.</p>
+
+<h2 id="permissions">Four permissions people treat as one</h2>
+
+<p>&ldquo;Can I use this?&rdquo; is four separate questions, and a source can answer them differently.</p>
+
+<div class="table-wrap">
+<table>
+<caption>The four permissions, and what each one actually governs</caption>
+<thead><tr><th scope="col">Permission</th><th scope="col">The question it answers</th></tr></thead>
+<tbody>
+<tr><td><strong>Use</strong></td><td>May I read this and compute with it, internally?</td></tr>
+<tr><td><strong>Publish a result</strong></td><td>May a number derived from it appear in a report I publish?</td></tr>
+<tr><td><strong>Redistribute</strong></td><td>May I republish the dataset itself, in bulk, to my users?</td></tr>
+<tr><td><strong>Commercial</strong></td><td>May I do any of the above inside a product I charge for?</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Two real examples from our own corpus show why the distinction matters.</p>
+
+<p><strong>ecoinvent</strong> answers differently within a single source: the methodology documentation is open, the quantitative data is not. You may describe how it works and cite it; you may not ship the numbers.</p>
+
+<p><strong>The GHG Protocol Product Standard</strong> is published with attribution on terms close to CC BY 4.0 &mdash; and is still not redistributable by a paid product, because the non-commercial condition bites on the fourth question rather than the third. A team that checks only &ldquo;is it CC BY?&rdquo; gets this one wrong.</p>
+
+<h2 id="open">What you may republish</h2>
+
+<p>Seventy-five sources, 15,748 rows. Nearly all of them require attribution, and the attribution line is a condition of the licence rather than a courtesy &mdash; if you republish these values, reproduce the credit for each source you actually use.</p>
+
+<div class="table-wrap">
+<table>
+<caption>The largest republishable sources in the corpus, by row count</caption>
+<thead><tr><th scope="col">Rows</th><th scope="col">Source</th><th scope="col">Publisher</th><th scope="col">Licence</th></tr></thead>
+<tbody>
+<tr><td>3,036</td><td>IPCC 2006 Guidelines Vol. 4</td><td>IPCC</td><td>CC BY 4.0</td></tr>
+<tr><td>2,451</td><td>AGRIBALYSE 3.2</td><td>ADEME</td><td>Licence Ouverte (Etalab)</td></tr>
+<tr><td>2,039</td><td>Air emissions accounts</td><td>Eurostat</td><td>Eurostat reuse policy</td></tr>
+<tr><td>1,822</td><td>UK conversion factors 2026</td><td>DESNZ</td><td>Open Government Licence v3.0</td></tr>
+<tr><td>1,547</td><td>CBAM default values 2026</td><td>European Commission DG TAXUD</td><td>EU Official Journal</td></tr>
+<tr><td>1,106</td><td>USEEIO supply-chain factors</td><td>US EPA</td><td>CC BY 4.0</td></tr>
+<tr><td>381</td><td>GLEC Framework v3.2</td><td>Smart Freight Centre</td><td>Free use with attribution</td></tr>
+<tr><td>292</td><td>&Ouml;KOBAUDAT 2024</td><td>BBSR</td><td>CC BY 4.0</td></tr>
+<tr><td>255</td><td>GHG Emission Factors Hub</td><td>US EPA</td><td>US public domain</td></tr>
+<tr><td>215</td><td>Yearly Electricity Data</td><td>Ember</td><td>CC BY 4.0</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+<span class="callout-label">Tip</span>
+<p>US federal work is public domain, which is the most permissive position you will encounter &mdash; no attribution is legally required for EPA Hub or eGRID. Credit them anyway. A reviewer who cannot see where a number came from will ask, and &ldquo;public domain&rdquo; is a worse answer than a citation.</p>
+</div>
+
+<h2 id="closed">What you may not, and why</h2>
+
+<p>Sixty-two sources, 1,326 rows. We hold and serve these &mdash; you can look one up and cite it &mdash; but we may not republish them in bulk, and neither may you without your own agreement with the publisher. The reasons below are the publishers&rsquo; terms as we recorded them at review, not our paraphrase.</p>
+
+<div class="table-wrap">
+<table class="table-compare">
+<caption>The most-cited restricted sources, and the reason recorded at licence review</caption>
+<thead><tr><th scope="col">Source</th><th scope="col">Licence</th><th scope="col">Why it is excluded</th></tr></thead>
+<tbody>
+<tr><td>ICAO Carbon Calculator v13</td><td>None stated</td><td>No grant found &mdash; carries no copyright notice, licence or terms</td></tr>
+<tr><td>CO2emissiefactoren.nl</td><td>Custom permission</td><td>Use and embedding granted; bulk redistribution refused</td></tr>
+<tr><td>SBTi Corporate Standard</td><td>CC BY-NC 4.0</td><td>Non-commercial &mdash; a paid product is out</td></tr>
+<tr><td>PCAF Global Standard</td><td>CC BY-NC-ND 4.0</td><td>Non-commercial <em>and</em> no derivatives</td></tr>
+<tr><td>EXIOBASE 3.8</td><td>CC BY-SA 4.0</td><td>Share-alike &mdash; viral over derived results</td></tr>
+<tr><td>CDP technical annex</td><td>CDP proprietary</td><td>Published annually and free to read, still proprietary</td></tr>
+<tr><td>ISO 14067</td><td>Paid licence</td><td>Cited as a framework reference under fair use</td></tr>
+<tr><td>EN 15978</td><td>Paid (BSI / DIN / AFNOR)</td><td>Cited as a framework reference under fair use</td></tr>
+<tr><td>IFRS S2</td><td>IFRS proprietary</td><td>Fair-use citation only</td></tr>
+<tr><td>ecoinvent 3.10</td><td>Split</td><td>Methodology open; quantitative data not</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="traps">Five traps that catch working teams</h2>
+
+<div class="callout warning">
+<span class="callout-label">1. Share-alike is viral over your output</span>
+<p>CC BY-SA does not merely require attribution &mdash; it can oblige you to license derived work on the same terms. For an emission-factor dataset that potentially reaches the results your product computes, not just the data you shipped. Four sources in our corpus carry share-alike terms, and it is the reason none of them are in the open export.</p>
+</div>
+
+<div class="callout warning">
+<span class="callout-label">2. NonCommercial means your product, not your intent</span>
+<p>A CC BY-NC source is unusable inside anything you charge for, however worthy the use. SBTi, PCAF, WBCSD Pathfinder and the GHG Protocol Product Standard all carry a non-commercial condition. PCAF adds NoDerivatives, so you may not even transform it.</p>
+</div>
+
+<div class="callout warning">
+<span class="callout-label">3. &ldquo;Free to download&rdquo; is not &ldquo;free to redistribute&rdquo;</span>
+<p>CDP, IFRS S2 and several industry bodies publish openly and charge nothing to read. That is a distribution decision, not a licence grant. The copyright is unchanged and the terms usually say so somewhere less prominent than the download button.</p>
+</div>
+
+<div class="callout warning">
+<span class="callout-label">4. Paid standards are cited, never copied</span>
+<p>ISO 14040, 14044, 14067 and EN 15978 sit behind BSI, DIN and AFNOR paywalls. You may implement the method and reference the standard. Reproducing its tables is a licence breach, and it is the one most likely to be noticed, because standards bodies watch for it.</p>
+</div>
+
+<div class="callout warning">
+<span class="callout-label">5. Silence is not permission</span>
+<p>The sharpest case in our corpus is ICAO&rsquo;s Carbon Emissions Calculator, at 429 rows the largest single exclusion. Version 13.1 carries no copyright notice, no licence and no terms of use. Nothing forbids redistribution &mdash; and nothing grants it. An absent licence is the most restrictive outcome, not the most permissive, because the default under copyright is reserved.</p>
+</div>
+
+<h2 id="held">The source we held back although we were allowed</h2>
+
+<p>One entry in our corpus is flagged CC BY 4.0 by the publisher&rsquo;s own metadata, and we exclude it anyway.</p>
+
+<p>An IEA dataset on AI and data-centre energy arrives labelled with an open licence. Our earlier licence audit of the IEA recorded a general prohibition on third-party publication of derived footprints. The label and the audit disagree, and we have not resolved it with the publisher yet.</p>
+
+<div class="callout key">
+<span class="callout-label">Why this is in the generator, not a to-do list</span>
+<p>The exclusion is implemented as an override that can only ever <em>remove</em> a source, never add one. A mistake in it costs us coverage; it cannot cause a breach. That asymmetry is the whole design: when a licence question is genuinely unresolved, the cheap failure has to be the one you build toward.</p>
+</div>
+
+<h2 id="check">Check a source yourself</h2>
+
+<p>Search for an activity below. The result names the publisher behind it, the licence recorded at review, and whether that licence permits republication. This is the live corpus, queried from your browser with no API key.</p>
+
+[LICENCE_WIDGET]
+
+<h2 id="method">How we read the terms, and how this stays current</h2>
+
+<p>Each source was reviewed once when it was ingested, and is re-reviewed on each new edition, because terms change &mdash; a source cleared in 2025 can carry a non-commercial condition in 2026. Four things get recorded: the licence name, the publisher, whether republication is permitted, and the sentence that decides it.</p>
+
+<p>That record travels with the data. Every API response carries the licence of every source it touched, so a downstream consumer never has to come back to this page to find out what they may do with a value they already hold.</p>
+
+<p>The tables above are generated from that record rather than maintained by hand, which is the only way a page like this stays true. A hand-written licence table is accurate on the day it is published and quietly wrong within a year.</p>
+
+<div class="callout tip">
+<span class="callout-label">If you are doing this yourself</span>
+<p>Record the deciding sentence, not your conclusion. &ldquo;Redistributable: no&rdquo; is useless to the colleague who inherits it in eighteen months. &ldquo;NonCommercial clause, section 4b&rdquo; can be re-checked in a minute when the publisher issues a new edition.</p>
+</div>
+
+<h2 id="faq">Frequently asked questions</h2>
+
+<div class="faq">
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Can I use DEFRA emission factors in a commercial product?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>Yes. The UK Government conversion factors are published under the Open Government Licence v3.0, which permits commercial use and redistribution provided you attribute the source. The required credit is &ldquo;UK Government GHG Conversion Factors &mdash; Department for Energy Security and Net Zero (DESNZ)&rdquo;. The same applies to the other nine OGL sources in the corpus.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Is ecoinvent free to use?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>No, and the answer splits within the source. ecoinvent&rsquo;s methodology documentation is openly available and may be cited. The quantitative dataset is licensed and may not be redistributed. If you need ecoinvent numbers in a product, you need a licence directly from ecoinvent.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>What does share-alike mean for emission factor data?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>A CC BY-SA source requires derived work to carry the same licence. For a dataset used inside a calculation, that obligation can reach the results your product produces, not only the copy of the data you hold. EXIOBASE is the source most teams encounter this with. Treat share-alike as a licensing decision about your own product, not a data question.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>A dataset has no licence at all. Can I use it?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>Assume not. Copyright reserves rights by default, so an absent licence grants nothing &mdash; silence is the most restrictive position, not the most permissive. The ICAO Carbon Emissions Calculator is the clearest example: version 13.1 carries no notice, no licence and no terms, and it is the single largest exclusion in our corpus at 429 rows.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>Can I cite a factor from a source I am not allowed to redistribute?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>Usually yes. Citing an individual value with attribution is ordinarily fair use, and is how standards such as ISO 14067 and EN 15978 are referenced. What is restricted is bulk republication of the tables. This is why our API serves every source but our open export contains only the 75 that permit redistribution.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false"><span>How much of the corpus can actually be republished?</span></button>
+<div class="faq-body"><div class="faq-inner">
+<p>15,748 of 17,074 rows, or 92%, across 75 of 137 sources. The restricted sources are mostly small &mdash; standards tables and research papers rather than national datasets &mdash; so the constraint is rarely about volume. It bites when the specific row you need happens to sit in a restricted source.</p>
+</div></div>
+</div>
+</div>
