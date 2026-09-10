@@ -1,0 +1,73 @@
+name: Release
+
+# Self-healing tagging: the version in CITATION.cff is the release.
+#
+# That file is what people cite, so it is the version that matters here — a tag
+# that disagreed with the citation would be worse than no tag. When it changes
+# and lands on main, this cuts the matching GitHub Release; otherwise the run is
+# a no-op.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "CITATION.cff"
+      - "questions.json"
+      - "results/**"
+      - ".github/workflows/release.yml"
+  schedule:
+    - cron: "51 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  tag:
+    name: Tag the benchmark version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # create the GitHub Release
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read the versions
+        id: v
+        run: |
+          V=$(python3 -c "
+          import re
+          for line in open('CITATION.cff'):
+              m = re.match(r'^version:\s*[\"\x27]?([^\"\x27\s]+)', line)
+              if m:
+                  print(m.group(1)); break
+          ")
+          if [ -z "$V" ]; then echo "::error::CITATION.cff has no version"; exit 1; fi
+          N=$(python3 -c "import json;print(json.load(open('questions.json'))['n'])")
+          D=$(python3 -c "import json;print(json.load(open('questions.json'))['data_version'])")
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+          echo "n=$N"       >> "$GITHUB_OUTPUT"
+          echo "data=$D"    >> "$GITHUB_OUTPUT"
+
+      - name: Cut the release if it is missing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          V: ${{ steps.v.outputs.version }}
+        run: |
+          if gh release view "v$V" >/dev/null 2>&1; then
+            echo "Release v$V already exists — nothing to do." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          gh release create "v$V" \
+            --target "$GITHUB_SHA" \
+            --title "v$V" \
+            --notes "${{ steps.v.outputs.n }} questions against ground truth at data version ${{ steps.v.outputs.data }}.
+
+          Raw model replies, the scoring harness and the answer key are in this tree, so every figure in the README can be re-scored from the answers that produced it. Write-up: [FINDINGS.md](./FINDINGS.md)." \
+            --generate-notes
+          echo "Cut release **v$V**." >> "$GITHUB_STEP_SUMMARY"
