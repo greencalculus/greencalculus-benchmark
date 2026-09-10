@@ -1,5 +1,6 @@
 # Emission-factor accuracy benchmark
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22692277.svg)](https://doi.org/10.5281/zenodo.22692277)
 [![questions](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreencalculus%2Fgreencalculus-benchmark%2Fmain%2Fquestions.json&query=%24.n&label=questions&color=04BF62)](./questions.json)
 [![data version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreencalculus%2Fgreencalculus-benchmark%2Fmain%2Fquestions.json&query=%24.data_version&label=ground%20truth&color=04BF62)](https://verify.greencalculus.com)
 [![findings](https://img.shields.io/badge/write--up-FINDINGS.md-04BF62)](./FINDINGS.md)
@@ -131,3 +132,17 @@ python3 score.py runs.json questions.json    # score a model's answers
 
 `runs.json` is `[{"id": "<factor key>", "answer": "<the model's raw reply>"}]` —
 so any model or harness can produce it.
+
+## Citing this benchmark
+
+Archived on Zenodo. The **concept DOI** always resolves to the latest version;
+cite the versioned DOI if you need the exact snapshot you ran against.
+
+- Concept DOI (latest): [10.5281/zenodo.22692277](https://doi.org/10.5281/zenodo.22692277)
+- Version 1.0.0 (10 Sep 2026): [10.5281/zenodo.22692278](https://doi.org/10.5281/zenodo.22692278)
+
+> Say, J. (2026). *GreenCalculus Emission-Factor Accuracy Benchmark (with the AI
+> vendor-recommendation study)* (Version 1.0.0) [Data set]. Zenodo.
+> https://doi.org/10.5281/zenodo.22692278
+
+Machine-readable metadata is in [`CITATION.cff`](./CITATION.cff).
