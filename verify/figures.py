@@ -194,9 +194,22 @@ def check_fresh():
     return stale
 
 
+def licence_figures(figs):
+    """The licence audit, from its committed snapshot. See verify/licences.py --
+    the audit is a point-in-time statement, so the snapshot is what the guide is
+    checked against, and `--drift` reports what has moved in the live registry."""
+    import licences
+    if not os.path.exists(licences.SNAPSHOT):
+        return
+    snap = licences.load_snapshot()
+    figs.update(licences.figures(snap["sources"])[0])
+    figs["licence.snapshot_as_of"] = snap["as_of"]
+
+
 def build():
     figs = {}
     scorer_output_figures(figs)
+    licence_figures(figs)
     accuracy_figures(figs)
     paired_figures(figs)
     recommendation_figures(figs)

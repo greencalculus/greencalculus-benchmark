@@ -37,3 +37,14 @@ jobs:
       - name: Published pages
         run: python3 verify/check_claims.py
         continue-on-error: false
+
+  licence-drift:
+    # Reports, never blocks. A licence audit is a point-in-time statement; the
+    # job of this check is to make sure a re-review never goes unnoticed again.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Licence figures reproduce from the snapshot
+        run: python3 verify/licences.py

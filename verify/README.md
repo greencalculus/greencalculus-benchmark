@@ -48,11 +48,39 @@ version — it goes in `allowlist.json` **with a written reason**. "It is correc
 is not a reason. Every allowlist entry is a surface we cannot verify
 automatically, which is a debt rather than a resolution.
 
+## The licence audit — closed 11 September 2026
+
+This was listed as "not reproducible from this repository". That was wrong, and
+worth recording as its own lesson: **the debt was smaller than the note claimed,
+and nobody had checked.** The audit does not live in the `gc-sources` store. It
+reproduces from `gc_mb_canonical_sources_registry()` joined to corpus row counts,
+which is what `verify/licences.py` now does. 137 sources, 17,074 rows and the 92%
+republishable row share reproduce exactly.
+
+A licence audit is a **point-in-time** statement, so it is snapshotted rather than
+recomputed live: `licence_snapshot.json` carries the date it describes, the guide
+is checked against the snapshot, and `--drift` compares the snapshot to the live
+registry. Drift is not a failure — it is the signal to re-date the guide, or to
+record why the published date still stands.
+
+Two things remain open, both named rather than hidden:
+
+- **The guide is 14 rows stale.** Two sources had their licence verdict changed
+  after it published — one is `LOVEHAGEN_2023_EMBODIED_USER_DEVICES`, whose author
+  granted display on 2026-09-09. The guide says 15,748 republishable rows across
+  75 sources; the snapshot says 15,762 across 77. The 92% headline is unchanged.
+- **The 42% figure depends on a boundary this repo now draws differently.** The
+  published family table put 13 sources under "All rights reserved"; the committed
+  rule in `licences.py` puts 17, moving four `©  — fair-use citation` sources
+  (IPCC AR4, ICCT, NVIDIA, AWS and similar) out of "Bespoke". Eleven of the
+  thirteen families match the published table exactly. The consequence is
+  42% → 39% of sources having no standard licence instrument, which strengthens
+  rather than weakens the guide's point. The family assignment is a presentational
+  judgement that was never a stored field; `FAMILIES` in `licences.py` is now that
+  rule, in one place, versioned.
+
 ## Known debt
 
-- **The licence audit is not reproducible from this repository.** Its 137-source
-  review lives in the `gc-sources` store, so the gate cannot check any of its
-  numbers. They are trusted, not verified. Closing this is the next piece of work.
 - **`FINDINGS.md` spans several scorer versions.** Its historical figures are
   allowlisted individually and marked as historical.
 

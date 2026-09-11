@@ -1,0 +1,964 @@
+{
+ "as_of": "2026-09-11",
+ "sources": [
+  {
+   "id": "IPCC_2006_VOL3",
+   "raw": 182,
+   "canon": 182,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "DEFRA_2026",
+   "raw": 1822,
+   "canon": 1424,
+   "redistributable": 1,
+   "license": "Open Government Licence v3.0"
+  },
+  {
+   "id": "ECCC_EF_2025",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 1,
+   "license": "Open Government Licence - Canada"
+  },
+  {
+   "id": "ECCC_FUEL_LCA_MODEL_2024",
+   "raw": 43,
+   "canon": 43,
+   "redistributable": 1,
+   "license": "Open Government Licence - Canada"
+  },
+  {
+   "id": "IPCC_AR6",
+   "raw": 219,
+   "canon": 219,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "EU_F_GAS_REG_2024",
+   "raw": 8,
+   "canon": 8,
+   "redistributable": 1,
+   "license": "EU Official Journal \u2014 free use with attribution"
+  },
+  {
+   "id": "GLEC_FRAMEWORK_v3_2",
+   "raw": 381,
+   "canon": 381,
+   "redistributable": 1,
+   "license": "Smart Freight Centre \u2014 free use with attribution, factor tables reproducible"
+  },
+  {
+   "id": "IPCC_2006_VOL4",
+   "raw": 3036,
+   "canon": 3036,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "IPCC_2013_WETLANDS_SUPPLEMENT",
+   "raw": 106,
+   "canon": 106,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "EPA_EGRID_2023",
+   "raw": 80,
+   "canon": 80,
+   "redistributable": 1,
+   "license": "US Government public domain"
+  },
+  {
+   "id": "NETL_ELEC_BASELINE_2026",
+   "raw": 142,
+   "canon": 142,
+   "redistributable": 1,
+   "license": "US Government public domain \u2014 dataset states \"No Restrictions\""
+  },
+  {
+   "id": "DCCEEW_NGA_2025",
+   "raw": 94,
+   "canon": 94,
+   "redistributable": 1,
+   "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+   "id": "ADEME_BASE_CARBONE_2026",
+   "raw": 65,
+   "canon": 65,
+   "redistributable": 1,
+   "license": "Licence Ouverte / Open Licence (Etalab)"
+  },
+  {
+   "id": "CBS_ELEKTRICITEIT_2024",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ECCC_NIR_2026",
+   "raw": 58,
+   "canon": 58,
+   "redistributable": 1,
+   "license": "Open Government Licence - Canada"
+  },
+  {
+   "id": "EMBER_YEARLY_ELECTRICITY_2025",
+   "raw": 215,
+   "canon": 214,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "AIB_RESIDUAL_MIX_2025",
+   "raw": 32,
+   "canon": 31,
+   "redistributable": 1,
+   "license": "AIB published results (free use with attribution)"
+  },
+  {
+   "id": "GREENE_RESIDUAL_MIX_2025",
+   "raw": 27,
+   "canon": 27,
+   "redistributable": 1,
+   "license": "Center for Resource Solutions published rates"
+  },
+  {
+   "id": "IATA_CARBON_2025",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "IATA proprietary \u2014 fair use citation"
+  },
+  {
+   "id": "ICAO_CARBON_CALCULATOR_v13",
+   "raw": 429,
+   "canon": 429,
+   "redistributable": 0,
+   "license": "No licence stated \u2014 methodology v13.1 carries no copyright notice, licence or terms; its \"open-source\" wording (\u00a71, \u00a77) refers to air carriers adapting the method with their own data, not to reuse rights (icec.icao.int, Methodology v13.1)"
+  },
+  {
+   "id": "CHA_HOTEL_2024",
+   "raw": 52,
+   "canon": 52,
+   "redistributable": 0,
+   "license": "CC BY-NC"
+  },
+  {
+   "id": "IPCC_WASTE_2006_VOL5",
+   "raw": 188,
+   "canon": 188,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "USEEIO_SC_FACTORS_v1_4_0",
+   "raw": 1106,
+   "canon": 1106,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ONS_AEA_2025_GHG_INTENSITY",
+   "raw": 18,
+   "canon": 18,
+   "redistributable": 1,
+   "license": "Open Government Licence v3.0"
+  },
+  {
+   "id": "EUROSTAT_AEA_GVA_2024",
+   "raw": 2039,
+   "canon": 2039,
+   "redistributable": 1,
+   "license": "Eurostat reuse policy (free reuse with attribution)"
+  },
+  {
+   "id": "IPCC_AR4",
+   "raw": 31,
+   "canon": 31,
+   "redistributable": 1,
+   "license": "IPCC (c) - fair-use citation of published Table 2.14 GWP values"
+  },
+  {
+   "id": "IPCC_TIER1",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "DEFRA_2025",
+   "raw": 29,
+   "canon": 29,
+   "redistributable": 1,
+   "license": "Open Government Licence v3.0"
+  },
+  {
+   "id": "IPCC_2019_REFINEMENT",
+   "raw": 186,
+   "canon": 186,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "NEED_2025",
+   "raw": 45,
+   "canon": 45,
+   "redistributable": 1,
+   "license": "Open Government Licence v3.0"
+  },
+  {
+   "id": "CIBSE_TM46_2008",
+   "raw": 58,
+   "canon": 58,
+   "redistributable": 0,
+   "license": "CIBSE publication (2008); benchmarks are the basis of the UK statutory Display Energy Certificate operational ratings"
+  },
+  {
+   "id": "EPA_GHG_HUB_2025",
+   "raw": 255,
+   "canon": 255,
+   "redistributable": 1,
+   "license": "US Government public domain"
+  },
+  {
+   "id": "IPCC_2006_GL_V2",
+   "raw": 37,
+   "canon": 37,
+   "redistributable": 1,
+   "license": "IPCC use terms \u2014 free use with attribution"
+  },
+  {
+   "id": "IPCC_2019_REFINEMENT_v1",
+   "raw": 33,
+   "canon": 33,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "NIST_CODATA",
+   "raw": 2,
+   "canon": 2,
+   "redistributable": 1,
+   "license": "NIST Standard Reference Data - US Government work"
+  },
+  {
+   "id": "EPA_SC_FACTORS_v1_3_0",
+   "raw": 27,
+   "canon": 27,
+   "redistributable": 1,
+   "license": "US Government work; public domain (no copyright)"
+  },
+  {
+   "id": "EXIOBASE_v3_8",
+   "raw": 26,
+   "canon": 26,
+   "redistributable": 0,
+   "license": "CC BY-SA 4.0 (research use)"
+  },
+  {
+   "id": "STATCAN_3810009801_2026",
+   "raw": 109,
+   "canon": 109,
+   "redistributable": 1,
+   "license": "Statistics Canada Open Licence"
+  },
+  {
+   "id": "RICS_WLCA_2023",
+   "raw": 10,
+   "canon": 10,
+   "redistributable": 0,
+   "license": "RICS copyright \u2014 reference by citation only (standard not redistributable)"
+  },
+  {
+   "id": "WRAP_NWT",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 1,
+   "license": "Open (WRAP guidance)"
+  },
+  {
+   "id": "BCIS_LEBC",
+   "raw": 10,
+   "canon": 10,
+   "redistributable": 0,
+   "license": "BCIS subscription \u2014 reference by citation only"
+  },
+  {
+   "id": "LETI_2020",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 1,
+   "license": "Open (LETI free publication)"
+  },
+  {
+   "id": "RIBA_2030",
+   "raw": 2,
+   "canon": 2,
+   "redistributable": 1,
+   "license": "Open (RIBA free publication)"
+  },
+  {
+   "id": "GHGP_CHP_2006",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 1,
+   "license": "GHG Protocol Initiative \u2014 free use with attribution"
+  },
+  {
+   "id": "IDF_2022",
+   "raw": 2,
+   "canon": 2,
+   "redistributable": 0,
+   "license": "IDF \u2014 citation with attribution (Bulletin of the IDF No 520/2022)"
+  },
+  {
+   "id": "POORE_NEMECEK_2018",
+   "raw": 12,
+   "canon": 12,
+   "redistributable": 0,
+   "license": "Science/AAAS \u2014 citation with attribution; dataset openly tabulated by Our World in Data"
+  },
+  {
+   "id": "SCARBOROUGH_2023",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 1,
+   "license": "Nature Food \u2014 open access (CC BY 4.0); citation with attribution"
+  },
+  {
+   "id": "WORLD_BANK_CARBON_PRICING_DASHBOARD",
+   "raw": 81,
+   "canon": 81,
+   "redistributable": 1,
+   "license": "CC BY 4.0 \u2014 World Bank Open Data"
+  },
+  {
+   "id": "AU_FINANCE_ERF_2025_26",
+   "raw": 58,
+   "canon": 58,
+   "redistributable": 1,
+   "license": "CC BY 4.0, ESTABLISHED 2026-08-18 FROM THE PUBLISHER'S OWN NOTICE. finance.gov.au/about-us/copyright-notice: \"All material presented on this website is provided under a Creative Commons Attribution 4.0 International licence, with the exception of: the Commonwealth Coat of Arms, Finance's logo, content supplied by third parties, material protected by trademark, any images and/or photographs, other content as specified.\" Required attribution, verbatim from the notice: \"(c) Commonwealth of Australia, Department of Finance [title of the work and publication year]\". The workbook's own \"(c) Commonwealth of Australia 2026\" line asserts copyright and states no terms, so the site-wide grant supplies them under its \"unless otherwise noted\" clause. Read via web.archive.org snapshot 20250708202113 because finance.gov.au still returns HTTP 000 from our environment \u2014 the host is unreachable, not the licence unknowable, and the distinction is the whole reason this took two days."
+  },
+  {
+   "id": "NL_CO2EMISSIEFACTOREN_2026",
+   "raw": 221,
+   "canon": 221,
+   "redistributable": 0,
+   "license": "Custom permission published in the site FAQ, NOT a named open licence: \"Ja, de lijst is openbaar en gratis toegankelijk\", \"Gebruik is gratis\", conditional on \"Vermeld dan wel de bron: www.co2emissiefactoren.nl\". Use in a third-party CO2 instrument is EXPLICITLY contemplated \u2014 \"Wilt u de lijst gebruiken in uw CO2-instrument? Neem dan een duidelijke bronverwijzing op en laat het ons weten\" \u2014 and carries a notification condition as well as attribution."
+  },
+  {
+   "id": "ADEME_AGRIBALYSE_V32",
+   "raw": 2451,
+   "canon": 2451,
+   "redistributable": 1,
+   "license": "Licence Ouverte / Open Licence (Etalab)"
+  },
+  {
+   "id": "OEKOBAUDAT_2024",
+   "raw": 292,
+   "canon": 292,
+   "redistributable": 1,
+   "license": "CC BY 4.0 (public open data; DIBt-administered free use with attribution)"
+  },
+  {
+   "id": "MPA_FS18_2025",
+   "raw": 5,
+   "canon": 5,
+   "redistributable": 1,
+   "license": "MPA publication \u2014 free use with attribution (industry fact sheet)"
+  },
+  {
+   "id": "ICE_V2_2011",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 1,
+   "license": "Freely distributed 2011 open release (the open ICE v2.0; distinct from the withdrawn commercial ICE DB v3/v4)"
+  },
+  {
+   "id": "EUROPEAN_ALUMINIUM_EPR_2024",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 1,
+   "license": "European Aluminium publication \u2014 free use with attribution (industry LCI report)"
+  },
+  {
+   "id": "CBAM_DEFAULT_2026",
+   "raw": 1547,
+   "canon": 1547,
+   "redistributable": 1,
+   "license": "EU Official Journal \u2014 free use with attribution"
+  },
+  {
+   "id": "EN_15978_2011",
+   "raw": 17,
+   "canon": 17,
+   "redistributable": 0,
+   "license": "Paid licence (BSI / DIN / AFNOR); referenced for methodology \u2014 stage definitions reproduced as framework metadata under fair-use citation"
+  },
+  {
+   "id": "GCP_REGION_CARBON_2024",
+   "raw": 44,
+   "canon": 44,
+   "redistributable": 1,
+   "license": "CC BY 4.0 (cloud.google.com content licence)"
+  },
+  {
+   "id": "AWS_SUSTAINABILITY_UG_2026",
+   "raw": 9,
+   "canon": 9,
+   "redistributable": 0,
+   "license": "AWS Documentation \u00a9 2026 Amazon Web Services \u2014 fair-use citation for methodology"
+  },
+  {
+   "id": "PATTERSON_2021_LARGE_NN_TRAINING",
+   "raw": 9,
+   "canon": 9,
+   "redistributable": 0,
+   "license": "arXiv perpetual non-exclusive licence (author terms); fair-use citation"
+  },
+  {
+   "id": "IEA_AI_ENERGY_2025",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "SPECPOWER_SSJ2008",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 0,
+   "license": "SPEC fair-use citation; full results free for non-commercial reference"
+  },
+  {
+   "id": "DELL_R740_LCA_2019",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "Dell Technologies \u00a9 \u2014 fair-use citation for methodology and published carbon-footprint figures"
+  },
+  {
+   "id": "CLOUD_CARBON_FOOTPRINT_2024",
+   "raw": 14,
+   "canon": 14,
+   "redistributable": 1,
+   "license": "Apache-2.0 (project) / docs \u2014 fair-use citation"
+  },
+  {
+   "id": "KIRKEBY_LAGERMANN_2026_EUD_ENERGY",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "arXiv perpetual non-exclusive licence; ACM author submission"
+  },
+  {
+   "id": "URBAN_CTA_2017",
+   "raw": 4,
+   "canon": 4,
+   "redistributable": 0,
+   "license": "Commissioned report \u2014 fair-use citation only. The report states it \"may be reproduced only in its entirety\" and redistributed only with CTA consent, so the PDF is NOT committed to handoffs/; cite by cell_ref."
+  },
+  {
+   "id": "DIMPACT_FRAMEWORK_2022",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 0,
+   "license": "DIMPACT methodology \u2014 fair-use citation"
+  },
+  {
+   "id": "DIGST_DK_FRAMEWORK_2025",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 1,
+   "license": "Danish government framework \u2014 public-use"
+  },
+  {
+   "id": "LOVEHAGEN_2023_EMBODIED_USER_DEVICES",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 1,
+   "license": "CC BY-NC-ND 4.0 (Elsevier Open Access)"
+  },
+  {
+   "id": "NVIDIA_DC_GPU_DATASHEETS_2025",
+   "raw": 12,
+   "canon": 12,
+   "redistributable": 0,
+   "license": "NVIDIA \u00a9 \u2014 fair-use citation of published product specifications"
+  },
+  {
+   "id": "NVIDIA_H100_PCF_2023",
+   "raw": 2,
+   "canon": 2,
+   "redistributable": 0,
+   "license": "NVIDIA \u00a9 \u2014 fair-use citation of published carbon-footprint figure"
+  },
+  {
+   "id": "A100_CRADLE_TO_GRAVE_LCA_2026",
+   "raw": 2,
+   "canon": 2,
+   "redistributable": 0,
+   "license": "arXiv perpetual non-exclusive licence (author terms); fair-use citation"
+  },
+  {
+   "id": "EPOCH_AI_CHATGPT_ENERGY_2025",
+   "raw": 8,
+   "canon": 8,
+   "redistributable": 0,
+   "license": "Epoch AI \u2014 fair-use citation"
+  },
+  {
+   "id": "AI_AUGMENTED_SEARCH_EMISSIONS_2024",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 0,
+   "license": "arXiv perpetual non-exclusive licence (author terms); fair-use citation"
+  },
+  {
+   "id": "SWD_MODEL_V4",
+   "raw": 16,
+   "canon": 16,
+   "redistributable": 0,
+   "license": "CC BY-SA 4.0 (open methodology)"
+  },
+  {
+   "id": "SWD_MODEL_V3",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "CC BY-SA 4.0 (open methodology)"
+  },
+  {
+   "id": "ISO_14067_2018",
+   "raw": 19,
+   "canon": 19,
+   "redistributable": 0,
+   "license": "Paid licence"
+  },
+  {
+   "id": "GHG_PROTOCOL_PRODUCT_2011",
+   "raw": 17,
+   "canon": 17,
+   "redistributable": 0,
+   "license": "Available with attribution (CC BY 4.0 equivalent for non-commercial use)"
+  },
+  {
+   "id": "EU_PEF_REC_2021_2279",
+   "raw": 18,
+   "canon": 18,
+   "redistributable": 1,
+   "license": "EU Official Journal \u2014 free use with attribution"
+  },
+  {
+   "id": "WBCSD_PATHFINDER_v2",
+   "raw": 13,
+   "canon": 13,
+   "redistributable": 0,
+   "license": "CC BY-NC-ND 4.0 \u2014 NonCommercial and NoDerivatives; commercial use requires written permission from WBCSD (wbcsd.org/terms-of-use)"
+  },
+  {
+   "id": "ISO_14044_2006",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 0,
+   "license": "Paid licence (ISO); cited as framework reference only \u2014 clause numbers reproduced under fair-use"
+  },
+  {
+   "id": "ISO_14040_2006",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 0,
+   "license": "Paid licence (ISO); cited as framework reference only \u2014 clause numbers reproduced under fair-use"
+  },
+  {
+   "id": "ECOINVENT_3_10",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 0,
+   "license": "Methodology documentation: open; quantitative activity datasets: licensed (commercial redistribution prohibited \u2014 pointer rows only in MB)"
+  },
+  {
+   "id": "PCAF_2024",
+   "raw": 79,
+   "canon": 79,
+   "redistributable": 0,
+   "license": "CC BY-NC-ND 4.0"
+  },
+  {
+   "id": "SBTI_CORPORATE_2026",
+   "raw": 84,
+   "canon": 84,
+   "redistributable": 0,
+   "license": "CC BY-NC 4.0 (SBTi public methodology)"
+  },
+  {
+   "id": "CSRD_ESRS_E1",
+   "raw": 32,
+   "canon": 32,
+   "redistributable": 1,
+   "license": "EU Official Journal \u2014 free use with attribution"
+  },
+  {
+   "id": "IFRS_S2_2023",
+   "raw": 18,
+   "canon": 18,
+   "redistributable": 0,
+   "license": "IFRS proprietary \u2014 fair use citation; software/data products require paid licence"
+  },
+  {
+   "id": "TCFD_2017",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 0,
+   "license": "Available with attribution"
+  },
+  {
+   "id": "NGFS_PHASE5_2024",
+   "raw": 84,
+   "canon": 84,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "CDP_TECHNICAL_2025",
+   "raw": 23,
+   "canon": 23,
+   "redistributable": 0,
+   "license": "CDP proprietary \u2014 annual public release of questionnaire + scoring rubric (commercial use of scores requires CDP licence)"
+  },
+  {
+   "id": "ACT_ALUMINIUM_2022",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 0,
+   "license": "ADEME + CDP joint copyright 2022 \u2014 reproduction without permission prohibited"
+  },
+  {
+   "id": "CA_SB253",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 1,
+   "license": "California public record"
+  },
+  {
+   "id": "CA_SB261",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 1,
+   "license": "California public record"
+  },
+  {
+   "id": "AU_CORP_ACT_CLIMATE_2024",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 1,
+   "license": "Australian public record (Federal Register of Legislation)"
+  },
+  {
+   "id": "AASB_S2_2024",
+   "raw": 2,
+   "canon": 2,
+   "redistributable": 1,
+   "license": "Australian public record (AASB)"
+  },
+  {
+   "id": "SEC_CLIMATE_2024",
+   "raw": 13,
+   "canon": 13,
+   "redistributable": 1,
+   "license": "US Government public domain"
+  },
+  {
+   "id": "CBAM_DEFAULT_2025",
+   "raw": 136,
+   "canon": 136,
+   "redistributable": 1,
+   "license": "EU Official Journal \u2014 free use with attribution"
+  },
+  {
+   "id": "EU_ETS_PHASE4",
+   "raw": 24,
+   "canon": 24,
+   "redistributable": 1,
+   "license": "EU Official Journal \u2014 free use with attribution; EEA report CC BY 4.0"
+  },
+  {
+   "id": "UK_SECR_2018",
+   "raw": 5,
+   "canon": 5,
+   "redistributable": 1,
+   "license": "Open Government Licence v3.0"
+  },
+  {
+   "id": "WORLD_BANK_TD_LOSSES_2024",
+   "raw": 150,
+   "canon": 149,
+   "redistributable": 1,
+   "license": "CC BY 4.0 \u2014 World Bank Open Data"
+  },
+  {
+   "id": "ASHRAE_DC_GUIDE_2013",
+   "raw": 4,
+   "canon": 4,
+   "redistributable": 0,
+   "license": "ASHRAE \u00a9 2013, all rights reserved \u2014 fair-use citation for methodology and named case studies only; factor tables NOT redistributable"
+  },
+  {
+   "id": "EUROSTAT_NRG_IND_REN_2024",
+   "raw": 38,
+   "canon": 38,
+   "redistributable": 1,
+   "license": "CC BY 4.0 \u2014 EUROSTAT Open Data"
+  },
+  {
+   "id": "HRE4_HEAT_ROADMAP_2018",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 1,
+   "license": "CC BY 4.0 \u2014 EU Horizon 2020 research deliverable D6.4"
+  },
+  {
+   "id": "DIGICONOMIST_BTC",
+   "raw": 2,
+   "canon": 2,
+   "redistributable": 0,
+   "license": "Research use with attribution; site materials cite per academic convention. Carbon intensity derived from miner-location data published in Nature Communications (de Vries & Stoll 2021) post-China crackdown baseline."
+  },
+  {
+   "id": "CCAF_CBECI_2025",
+   "raw": 8,
+   "canon": 8,
+   "redistributable": 0,
+   "license": "CC BY-NC-SA 4.0 (CBECI dashboard pages explicitly licensed; CDMIR 2025 report distributed under same Creative Commons attribution-noncommercial-sharealike terms)"
+  },
+  {
+   "id": "CCRI_ETH_2022",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 0,
+   "license": "CCRI proprietary \u2014 fair use citation of published methodology + numerical results from the ConsenSys-commissioned Merge report PDF; measurements covered 95.54% of all post-Merge Ethereum clients"
+  },
+  {
+   "id": "MABROUK_B2C_2025",
+   "raw": 18,
+   "canon": 18,
+   "redistributable": 0,
+   "license": "Conference paper for academic use with attribution; quantitative dataset sourced from CCRI 2025 indices (https://indices.carbon-ratings.com/) and triangulated against Digiconomist + CBECI"
+  },
+  {
+   "id": "CCRI_POS_METHODS_2024",
+   "raw": 7,
+   "canon": 7,
+   "redistributable": 0,
+   "license": "CCRI proprietary \u2014 methodology white paper available for fair use citation; describes the 5-step bottom-up methodology (hardware selection \u2192 single-node measurement \u2192 network electricity \u2192 tx efficiency analysis \u2192 carbon emissions estimation) underlying CCRI 2022a-d industry reports and CCRI 2025 indices"
+  },
+  {
+   "id": "SGX_ACRA_ISSB_2024",
+   "raw": 13,
+   "canon": 13,
+   "redistributable": 1,
+   "license": "Singapore public record (ACRA / SGX)"
+  },
+  {
+   "id": "SEAGATE_STORAGE_LCA_2024",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 0,
+   "license": "Seagate \u00a9 / WD \u00a9 \u2014 fair-use citation for published product-LCA figures"
+  },
+  {
+   "id": "TANNU_NAIR_SSD_2022",
+   "raw": 2,
+   "canon": 2,
+   "redistributable": 0,
+   "license": "arXiv perpetual non-exclusive licence; fair-use citation"
+  },
+  {
+   "id": "ICCT_LCA_PASSENGER_CARS_2025",
+   "raw": 22,
+   "canon": 22,
+   "redistributable": 0,
+   "license": "ICCT (c) - fair-use citation for methodology and published figures"
+  },
+  {
+   "id": "IEA_PVPS_T12_LCA_2023",
+   "raw": 10,
+   "canon": 10,
+   "redistributable": 0,
+   "license": "IEA-PVPS (c) - fair-use citation for published figures"
+  },
+  {
+   "id": "WORLDBANK_GSA_SOLARGIS_2020",
+   "raw": 19,
+   "canon": 19,
+   "redistributable": 1,
+   "license": "CC BY 4.0 (World Bank / ESMAP / Solargis)"
+  },
+  {
+   "id": "NREL_PV_DEGRADATION_JORDAN_KURTZ",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 1,
+   "license": "NREL / public domain (US government work)"
+  },
+  {
+   "id": "IPCC_AR5_WG3_ANNEX_III",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 0,
+   "license": "IPCC (c) - fair-use citation of published Table A.III.2 lifecycle emission factors"
+  },
+  {
+   "id": "EU_ECODESIGN_DISHWASHER_2019",
+   "raw": 3,
+   "canon": 3,
+   "redistributable": 1,
+   "license": "EU law (freely available via EUR-Lex)"
+  },
+  {
+   "id": "ENERGY_SAVING_TRUST",
+   "raw": 5,
+   "canon": 5,
+   "redistributable": 1,
+   "license": "Public guidance"
+  },
+  {
+   "id": "SAP_10_2_SEDBUK",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 1,
+   "license": "Crown copyright / BRE \u2014 fair-use citation for published methodology figures"
+  },
+  {
+   "id": "EOH_HEAT_PUMP_PERFORMANCE_2024",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 1,
+   "license": "Energy Systems Catapult / Crown copyright \u2014 fair-use citation for published figures"
+  },
+  {
+   "id": "GSHPA_OFGEM_INSITU_2024",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "GSHPA \u2014 fair-use citation for published figures"
+  },
+  {
+   "id": "MCS_STANDARDS",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "Public standards \u2014 fair-use citation"
+  },
+  {
+   "id": "OXFORD_OFFSETTING_2024",
+   "raw": 10,
+   "canon": 10,
+   "redistributable": 0,
+   "license": "All rights reserved (academic publication; cited by reference, not redistributed)"
+  },
+  {
+   "id": "CDR_FYI_DAC_2025",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "All rights reserved (market-data report; cited by reference \u2014 figures not redistributed in bulk)"
+  },
+  {
+   "id": "EPA_GHG_EQUIVALENCIES_2024",
+   "raw": 19,
+   "canon": 19,
+   "redistributable": 1,
+   "license": "U.S. Government work \u2014 public domain (fair-use citation)"
+  },
+  {
+   "id": "DFT_NTS_2023",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 1,
+   "license": "Open Government Licence v3.0"
+  },
+  {
+   "id": "IEA_STREAMING_FOOTPRINT_2020",
+   "raw": 6,
+   "canon": 6,
+   "redistributable": 0,
+   "license": "IEA \u2014 (c) OECD/IEA; citation with attribution"
+  },
+  {
+   "id": "UNEP_EMISSIONS_GAP_2024",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 1,
+   "license": "UN publication \u2014 fair-use citation"
+  },
+  {
+   "id": "BERNERS_LEE_BANANAS_2020",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "Published book \u2014 fair-use citation of individual figures"
+  },
+  {
+   "id": "WORLDSTEEL",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "Industry-association publication \u2014 fair-use citation"
+  },
+  {
+   "id": "GCCA_GNR",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "Industry-association publication \u2014 fair-use citation"
+  },
+  {
+   "id": "CARBON_TRUST_CLOTHING",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "Industry report / literature \u2014 fair-use citation"
+  },
+  {
+   "id": "SAMSUNG_QLED_EPD_2023",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "Manufacturer environmental declaration \u2014 citation with attribution"
+  },
+  {
+   "id": "EU_ENERGY_LABEL_TV_TOPTEN",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 0,
+   "license": "Topten.eu \u2014 citation with attribution; underlying label declarations are regulatory filings"
+  },
+  {
+   "id": "CARBON_TRUST_VIDEO_STREAMING_2021",
+   "raw": 5,
+   "canon": 5,
+   "redistributable": 0,
+   "license": "The Carbon Trust \u2014 citation with attribution"
+  },
+  {
+   "id": "GCB_2025",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "GMB_2025",
+   "raw": 1,
+   "canon": 1,
+   "redistributable": 1,
+   "license": "CC BY 4.0"
+  }
+ ]
+}
