@@ -1,0 +1,162 @@
+#!/usr/bin/env python3
+"""Refuse to let an unreproducible number sit in published prose.
+
+Extracts every numeric claim from the published study pages, the preprint and
+the dataset card, and asks one question of each: does a committed script
+produce this number? Anything that does not must be listed in allowlist.json
+with a written reason. Anything else fails the build.
+
+  python3 verify/check_claims.py            # live pages over HTTP
+  python3 verify/check_claims.py --offline  # skip the network, check local files
+"""
+import argparse, html, json, os, re, subprocess, sys, urllib.request
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+sys.path.insert(0, HERE)
+
+import figures as figures_mod
+
+SURFACES = [
+    ("guide:accuracy", "https://greencalculus.com/guides/ai-emission-factors-accuracy/"),
+    ("guide:licences", "https://greencalculus.com/guides/emission-factor-licences/"),
+    ("guide:by-category", "https://greencalculus.com/guides/ai-emission-factor-reliability-by-category/"),
+    ("guide:recommendations", "https://greencalculus.com/guides/ai-recommended-carbon-data-providers/"),
+]
+LOCAL_SURFACES = [
+    ("paper", os.path.join(ROOT, "paper", "main.tex")),
+    ("dataset-card", os.path.join(ROOT, "hf", "README.md")),
+    ("findings", os.path.join(ROOT, "FINDINGS.md")),
+]
+
+# A claim is a percentage, a correlation, or a thousands-separated count.
+CLAIM_RE = re.compile(
+    r"(?:r\s*=\s*(?P<r>[−-]?\d*\.\d+))"
+    r"|(?P<pct>\d{1,3}(?:\.\d+)?)\s?%"
+    r"|(?P<big>\b\d{1,3}(?:[,{]?,?\d{3})+\b)"
+)
+
+
+def strip_markup(text, kind):
+    if kind == "tex":
+        text = re.sub(r"%.*", "", text)                 # TeX comments
+        text = text.replace(r"\%", "%").replace("{,}", ",")
+        return text
+    text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)  # engineering summaries
+    text = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", text, flags=re.S | re.I)
+    text = re.sub(r"<[^>]+>", " ", text)
+    return html.unescape(text)
+
+
+# Years, DOI paths and standard numbers are identifiers, not claims about data.
+NOT_A_CLAIM = re.compile(r"(?:doi\.org|zenodo|ISO|IEC|EN|BS|PAS|GHG Protocol)\s*[/:]?\s*[\d./\s-]*$", re.I)
+
+
+def is_identifier(value, before):
+    if re.fullmatch(r"(19|20)\d{2}", value):          # a year
+        return True
+    if NOT_A_CLAIM.search(before[-24:]):               # DOI or standard number
+        return True
+    if re.search(r"[/@.=]\s*$", before[-2:]):         # inside a URL or version
+        return True
+    return False
+
+
+def claims_in(text):
+    found = set()
+    for m in CLAIM_RE.finditer(text):
+        raw = m.group("big")
+        if raw is not None and is_identifier(raw.replace(",", ""), text[:m.start()]):
+            continue
+        if m.group("r") is not None:
+            found.add(("r", m.group("r").replace("−", "-")))
+        elif m.group("pct") is not None:
+            found.add(("pct", m.group("pct")))
+        else:
+            found.add(("count", raw.replace(",", "")))
+    return found
+
+
+def reproduces(kind, raw, figs):
+    """True if some committed figure prints exactly this, at its own precision."""
+    value = float(raw)
+    decimals = len(raw.split(".")[1]) if "." in raw else 0
+    for key, fig in figs.items():
+        if fig is None or isinstance(fig, bool):
+            continue
+        if kind == "r" and not key.startswith("corpus_size.r"):
+            continue
+        if kind == "pct" and not isinstance(fig, (int, float)):
+            continue
+        try:
+            if round(float(fig), decimals) == value:
+                return key
+        except (TypeError, ValueError):
+            continue
+    return None
+
+
+def fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "gc-claims-gate"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--offline", action="store_true")
+    ap.add_argument("--list-unmatched", action="store_true")
+    args = ap.parse_args()
+
+    figs = figures_mod.build()
+    with open(os.path.join(HERE, "allowlist.json")) as fh:
+        allow = json.load(fh)
+
+    surfaces = list(LOCAL_SURFACES)
+    if not args.offline:
+        surfaces = SURFACES + surfaces
+
+    failures, checked, allowed = [], 0, 0
+    for name, src in surfaces:
+        if src.startswith("http"):
+            text = strip_markup(fetch(src), "html")
+        else:
+            if not os.path.exists(src):
+                print(f"  SKIP {name}: {src} absent")
+                continue
+            raw = open(src, encoding="utf-8").read()
+            text = strip_markup(raw, "tex" if src.endswith(".tex") else "md")
+
+        unmatched = []
+        for kind, raw_value in sorted(claims_in(text)):
+            checked += 1
+            key = reproduces(kind, raw_value, figs)
+            if key:
+                continue
+            token = f"{raw_value}%" if kind == "pct" else (
+                f"r={raw_value}" if kind == "r" else raw_value)
+            if token in allow.get(name, {}) or token in allow.get("*", {}):
+                allowed += 1
+                continue
+            unmatched.append(token)
+        status = "ok" if not unmatched else f"{len(unmatched)} UNEXPLAINED"
+        print(f"  {name:24} {status}")
+        if unmatched:
+            print(f"      {', '.join(unmatched)}")
+            failures.append((name, unmatched))
+
+    print(f"\n{checked} numeric claims checked · {allowed} explained by allowlist "
+          f"· {len(figs)} figures recomputed from committed data")
+
+    if failures:
+        print("\nFAIL: a number is published that no committed script produces and")
+        print("      no allowlist entry explains. Either make it reproducible or")
+        print("      justify it in verify/allowlist.json. Do not edit it away.")
+        return 1
+    print("\nPASS: every published number either reproduces from committed data")
+    print("      or carries a written justification.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
