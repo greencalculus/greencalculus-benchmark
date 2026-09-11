@@ -1,0 +1,128 @@
+% Right Source, Wrong Number — 4-page workshop paper.
+% Self-contained preamble on purpose: compiles on Overleaf or arXiv with no
+% external .sty. For a Climate Change AI submission, swap \documentclass for
+% their template and delete the geometry/titling block below.
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{url}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{1.2ex}{0.6ex}
+\titlespacing*{\subsection}{0pt}{1.0ex}{0.4ex}
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\title{\vspace{-2.2em}\textbf{Right Source, Wrong Number:\\Measuring Language-Model Recall of Greenhouse-Gas Emission Factors}\vspace{-0.6em}}
+\author{Jeremiah Say\\\small GreenCalculus \quad \texttt{jeremiah@greencalculus.com}}
+\date{\vspace{-1em}\small September 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+
+\begin{abstract}
+\small
+Greenhouse-gas emission factors are an unusually clean probe for factual recall: each has one correct value, traceable to a named cell in a published document. We put 467 such questions to five frontier language models with no tools and no web access. Unaided accuracy ranged from 41.9\% to 65.2\% within 10\% of the published value. The more consequential result is the failure mode. When these models cited a source they named the \emph{correct} publisher 82--94\% of the time, yet in 31.6--58.8\% of answers that correct attribution accompanied an incorrect number. A wrong value with no provenance is caught in review; a wrong value carrying the right publisher's name is not. In a paired arm on 90 questions, giving two models a sourced lookup tool moved accuracy from 37.1\% to 98.7\% and from 50.0\% to 100.0\%, at 1.0--1.6 tool calls per question, while simultaneously converting refusals into correct answers. We release the questions, every raw model response, the scoring harness, a log of six bugs found in our own scorer, a canary string, and a pre-registered held-out split.
+\end{abstract}
+
+\vspace{-0.6em}
+\section{Motivation}
+
+Emission factors convert activity into emissions: kilowatt-hours into kilograms of CO\textsubscript{2}e, tonne-kilometres of freight into a carbon figure. They are the arithmetic underneath corporate disclosure, and they are increasingly requested from language models. They also make a good factual-recall benchmark for three reasons. Each factor has a single correct value; that value is traceable to an exact cell in a public document, so ``correct'' is not a matter of judgement; and the values are numerous, jurisdiction-specific and periodically revised, which defeats memorisation of a small canon.
+
+The stakes are not academic. These numbers end up in regulatory filings. Our interest is practical rather than adversarial: we wanted to know whether a model can be trusted to supply one, and if not, what specifically goes wrong.
+
+\vspace{-0.3em}
+\section{The benchmark}
+
+\textbf{Questions.} 467 questions drawn deterministically from a sourced corpus at data version 2026.187, spanning 45 categories, 75 publishers and 50 countries. Categories include grid electricity, fuel combustion, well-to-tank, freight, refrigerants, construction materials, spend-based input-output factors, waste and agriculture. Questions are phrased as a practitioner asks (``What is the greenhouse-gas emission factor for UK grid electricity, per kWh?'') rather than as database keys, so the task is recall rather than lookup-by-identifier. Only factors under licences permitting republication were used, so the answer key ships with the benchmark.
+
+\textbf{Ground truth} is the published value together with its unit, gas, publisher, source document and the exact cell reference within it.
+
+\textbf{Scoring.} An answer is correct if it falls within 10\% of the published value after \emph{dimensional reconciliation}: an answer in kg\,CO\textsubscript{2}/GJ is compared against a truth in tonne\,C/GJ as the same physical quantity, handling mass, energy, volume and length conversions, percent-versus-fraction, and carbon-to-CO\textsubscript{2} in both directions. Without this, a correct answer of 63\,kg\,CO\textsubscript{2}/GJ scores as a 366{,}179\% error against 0.0172\,tonne\,C/GJ.
+
+Scoring yields three outcomes, not two. Where units cannot be reconciled mechanically --- a local-currency answer against a US-dollar truth, or a value given with no denominator --- the answer is marked \emph{unscoreable} and removed from the denominator rather than counted wrong. This is the softest part of the method and the reason we report the scored sample size beside every percentage.
+
+\textbf{Citation scoring.} We separately record whether an answer named a source and whether that source was the correct one. Citations count only on answers that actually supplied a number: a refusal that name-drops a publisher (``consult the DEFRA tables'') is not an attribution.
+
+\vspace{-0.3em}
+\section{Results}
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Answered & Scored & Within 10\% & Cited & Correct publisher & \textbf{Right src, wrong no.} \\
+\midrule
+Gemini 3.1 Pro    &  77 &  46 & 65.2\% & 12.0\% & 83.9\% & 35.3\% \\
+Grok 4.6          & 144 &  66 & 62.1\% & 21.6\% & 82.2\% & 31.6\% \\
+GPT-5.5           & 326 & 256 & 58.2\% & 53.7\% & 94.0\% & 41.0\% \\
+Claude Opus 5     & 430 & 315 & 45.7\% & 71.7\% & 89.9\% & 54.1\% \\
+Gemini 3.6 Flash  & 404 & 315 & 41.9\% & 71.7\% & 91.9\% & 58.8\% \\
+\bottomrule
+\end{tabular}
+\vspace{-0.3em}
+\caption{\small Unaided performance on 467 questions. ``Answered'' counts non-refusals; ``Scored'' excludes unscoreable units. ``Correct publisher'' is conditional on having cited one. The final column is the share of scored answers pairing a correct publisher with an out-of-tolerance value.}
+\end{table}
+\vspace{-1.2em}
+
+\textbf{Accuracy trades against coverage.} The two most accurate models are the two that answer least. Gemini 3.1 Pro declined 226 of 467 questions and Grok 4.6 declined 313; Claude Opus 5 declined 11. Read the accuracy column alone and caution looks like competence.
+
+\textbf{The failure mode.} Models are good at attribution and bad at values. Conditional on citing anything, they named the right publisher 82--94\% of the time --- but in 31.6\% to 58.8\% of scored answers that correct publisher appeared beside an incorrect number. The models are not confabulating a source to dress up a guess; they know where the number lives and misremember the number. Crucially, the tone is identical either way: we found no signal in the response that distinguishes a correct value from an incorrect one.
+
+This matters for review workflows. An unsourced figure invites checking. A figure carrying ``DEFRA 2026, Table 1'' does not.
+
+\textbf{A sourced lookup closes the gap.} On a paired subset of 90 questions, two models were given two read-only lookup tools and left to decide whether to use them.
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrrr}
+\toprule
+Model & Unaided & With lookup & Mean tool calls \\
+\midrule
+Claude Opus 5 & 37.1\% ($n$=62) & \textbf{98.7\%} ($n$=79) & 1.62 \\
+GPT-5.5       & 50.0\% ($n$=46) & \textbf{100.0\%} ($n$=79) & 1.00 \\
+\bottomrule
+\end{tabular}
+\vspace{-0.3em}
+\caption{\small Paired comparison on identical question ids. $n$ is the scored subset.}
+\end{table}
+\vspace{-1.2em}
+
+Accuracy and coverage moved together, which is unusual: GPT-5.5 answered 62 of 90 unaided and 87 with the tools, so refusals became correct answers rather than accuracy being purchased with silence.
+
+\vspace{-0.3em}
+\section{Two explanations we tested and rejected}
+
+\textbf{Corpus size.} The intuition that finely-subdivided sources are harder to memorise is not supported. Correlating a publisher's corpus size against its accuracy, across the 24 publishers with at least nine scored answers, gives $r = -0.28$; the coefficient ranges from $-0.25$ to $-0.34$ depending on the model pool and inclusion threshold, and at $n = 24$ none of these reaches $p < .05$ (which would require $|r| > 0.40$). The scatter is the clearer argument: a 3-row source scores 55.6\%, a 1{,}424-row source 50.7\%, and a 2{,}451-row source 17.4\%. Size does not order them.
+
+\textbf{Vintage confusion.} An older vintage of one publisher scored 11\% against the current year's 51\%, suggesting models quote the wrong edition. Reading the individual answers killed it: the sample is five questions on unusually obscure aggregates, and none of the answers resembles another vintage of the same factor.
+
+What remains is a pattern we can describe but have not isolated. Reliable categories are old, physically constrained and reprinted widely (fuel properties 93.9\%, waste treatment defaults 100\%); unreliable ones are recent, jurisdiction-specific and published once (CBAM defaults 27.3\%, NGFS scenario prices 9.1\%). At publisher level the contrast is sharper still: the European Commission's CBAM default dataset scores 0\% across every question asked of it. That is consistent with training-data frequency, which we cannot measure from outside. We state it as a pattern rather than a mechanism because two plausible explanations have already failed.
+
+\vspace{-0.3em}
+\section{Limitations}
+
+Single domain; results may not transfer to other factual-recall tasks. Point-in-time for the model versions named, September 2026. The 10\% tolerance is a choice, and categories near that boundary would move under a different one. Unscoreable answers were dropped rather than counted wrong --- 28 to 110 per model --- which is the softest methodological decision here. Two of five models have small scored samples (46 and 66) because they declined most questions, so their percentages carry real uncertainty.
+
+Our scorer has been wrong six times; all six are documented, and \emph{four of them understated} the result rather than flattering it. An independent hand-audit of 45 answers agreed with the automated figure to within about one point --- one check, not a proof.
+
+\textbf{Conflict of interest.} The author sells access to emission-factor data, including the lookup tools used in the paired arm. That is precisely why the questions, every raw model response, the ground truth and the scoring code are public: the result should be checkable rather than trusted.
+
+\vspace{-0.3em}
+\section{Availability and contamination control}
+
+Questions, all raw model responses, the scorer and the bug log are at \url{https://github.com/greencalculus/greencalculus-benchmark}, archived at \href{https://doi.org/10.5281/zenodo.22692277}{10.5281/zenodo.22692277} and on the HuggingFace Hub as \texttt{greencalculus/emission-factor-benchmark}.
+
+Publishing a benchmark with its answer key degrades it. Two mitigations ship with the release. A \textbf{canary string} is embedded in the question file itself, so it travels if that file is scraped alone; a model that reproduces it was trained on this benchmark and its score here is memorisation. And a \textbf{pre-registered held-out split} of 136 further questions --- same generator, same corpus, disjoint by construction --- is withheld, with only its size, spread and SHA-256 published in advance, so a later release can be verified rather than quietly substituted. From the next evaluation onward we report public and held-out scores side by side; a materially better public score will be reported as memorisation, not accuracy.
+
+\end{document}
