@@ -1,6 +1,7 @@
 # Emission-factor accuracy benchmark
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22692277.svg)](https://doi.org/10.5281/zenodo.22692277)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-dataset-yellow)](https://huggingface.co/datasets/greencalculus/emission-factor-benchmark)
 [![questions](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreencalculus%2Fgreencalculus-benchmark%2Fmain%2Fquestions.json&query=%24.n&label=questions&color=04BF62)](./questions.json)
 [![data version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreencalculus%2Fgreencalculus-benchmark%2Fmain%2Fquestions.json&query=%24.data_version&label=ground%20truth&color=04BF62)](https://verify.greencalculus.com)
 [![findings](https://img.shields.io/badge/write--up-FINDINGS.md-04BF62)](./FINDINGS.md)
@@ -178,6 +179,30 @@ starts carrying contents, or if the canary goes missing or disagrees with
 **The AEO study is the opposite case.** `aeo/` measures which vendors models name
 unprompted. There is no answer key to protect, and contamination there does not
 corrupt a measurement — it *is* the thing being measured. No held-out set applies.
+
+## Loading it
+
+The whole thing is on the HuggingFace Hub as five configs — no auth, one line:
+
+```python
+from datasets import load_dataset
+
+answers = load_dataset("greencalculus/emission-factor-benchmark", "answers")   # 2,335 scored replies
+paired  = load_dataset("greencalculus/emission-factor-benchmark", "paired")    # with/without a lookup tool
+```
+
+| Config | Rows | What it is |
+|---|---|---|
+| `answers` | 2,335 | Every model's reply to every question, scored |
+| `questions` | 467 | The instrument: question, truth value, unit, publisher, source cell |
+| `paired` | 360 | 90 questions × 2 models × with/without a sourced lookup |
+| `recommendations` | 125 | 25 buying prompts × 5 models, vendors named annotated |
+| `direct_probe` | 12 | What a model does when asked about a vendor it has no data on |
+
+Built by [`hf/build.py`](./hf/build.py), whose scored columns come from the same
+`score_one()` as every published figure — so the Hub copy cannot drift from this
+repo. It refuses to run without the held-out set available to check against, and
+[`hf/push.py`](./hf/push.py) re-checks every row before uploading.
 
 ## Citing this benchmark
 
