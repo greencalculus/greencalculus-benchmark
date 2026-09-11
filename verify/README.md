@@ -63,21 +63,26 @@ is checked against the snapshot, and `--drift` compares the snapshot to the live
 registry. Drift is not a failure — it is the signal to re-date the guide, or to
 record why the published date still stands.
 
-Two things remain open, both named rather than hidden:
+Both items this opened were closed the same day, by re-dating the guide:
 
-- **The guide is 14 rows stale.** Two sources had their licence verdict changed
-  after it published — one is `LOVEHAGEN_2023_EMBODIED_USER_DEVICES`, whose author
-  granted display on 2026-09-09. The guide says 15,748 republishable rows across
-  75 sources; the snapshot says 15,762 across 77. The 92% headline is unchanged.
-- **The 42% figure depends on a boundary this repo now draws differently.** The
-  published family table put 13 sources under "All rights reserved"; the committed
-  rule in `licences.py` puts 17, moving four `©  — fair-use citation` sources
-  (IPCC AR4, ICCT, NVIDIA, AWS and similar) out of "Bespoke". Eleven of the
-  thirteen families match the published table exactly. The consequence is
-  42% → 39% of sources having no standard licence instrument, which strengthens
-  rather than weakens the guide's point. The family assignment is a presentational
-  judgement that was never a stored field; `FAMILIES` in `licences.py` is now that
-  rule, in one place, versioned.
+- **Drift.** Two sources had their verdict changed after publication — one is
+  `LOVEHAGEN_2023_EMBODIED_USER_DEVICES`, whose author granted display permission
+  on 2026-09-09 in reply to a request from us. Republishable moved 75 / 15,748 →
+  **77 / 15,762**, restricted 62 / 1,326 → **60 / 1,312**. The 92% row share was
+  unchanged. The guide now states the current figures.
+- **The family boundary.** The published table put 13 sources under "All rights
+  reserved"; the committed rule in `licences.py` puts 17, moving four
+  `© … fair-use citation` sources (IPCC AR4, ICCT, NVIDIA, AWS) out of "Bespoke".
+  Eleven of the thirteen families were already exact. The guide now says **39%**
+  of sources have no standard licence instrument, not 42% — which makes its point
+  more sharply, not less. The assignment was a presentational judgement that was
+  never a stored field; `FAMILIES` is now that rule, in one place, versioned.
+
+The guide also gained a dated paragraph explaining that licence positions are
+point-in-time and why they move. That is the durable half: a reader who finds a
+different number in a cached copy now has an explanation rather than a
+contradiction, and the weekly drift job means the next re-licence surfaces in
+days.
 
 ## Known debt
 

@@ -33,15 +33,13 @@
     "93%": "rounded restatement in prose of a vendor citation rate"
   },
   "guide:licences": {
-    "_status": "NO LONGER UNVERIFIABLE (2026-09-11). The audit reproduces from the canonical sources registry joined to corpus row counts -- see verify/licences.py and licence_snapshot.json. 137 sources, 17,074 rows and the 92% row share all reproduce exactly. What remains is listed below and is drift or a boundary judgement, not an unknown.",
-    "15748": "STALE BY 14 ROWS. Snapshot 2026-09-11 gives 15,762. Two sources had their licence verdict changed after the guide published, one of them LOVEHAGEN_2023_EMBODIED_USER_DEVICES (the author granted display 2026-09-09). Pending a decision to re-date the guide; run `python3 verify/licences.py --drift`.",
-    "1326": "STALE BY 14 ROWS. Snapshot gives 1,312 across 60 sources, not 62. Same two flips as above.",
+    "_status": "VERIFIED against verify/licence_snapshot.json (as at 2026-09-11). The guide was re-dated the same day, so every headline figure now reproduces: 137 sources, 17,074 rows, 15,762 republishable rows, 92%, and the 39% with no standard licence instrument. Run `python3 verify/licences.py --drift` to compare the snapshot with the live registry.",
     "1547": "CBAM_DEFAULT_2026 corpus size; reproduces as licence.source.CBAM_DEFAULT_2026.rows",
-    "1822": "reproduces as licence.source.EUROSTAT_AIR_EMISSIONS.rows (verify id)",
-    "1106": "reproduces as licence.source.USEEIO_SC_FACTORS_v1_4_0.rows (verify id)",
+    "1822": "DEFRA_2026 corpus size; reproduces as licence.source.DEFRA_2026.rows",
+    "1106": "USEEIO_SC_FACTORS_v1_4_0 corpus size; reproduces from the snapshot",
+    "2039": "Eurostat air emissions accounts corpus size; reproduces from the snapshot",
     "2451": "ADEME_AGRIBALYSE_V32 corpus size; reproduces from the snapshot",
     "3036": "IPCC_2006_VOL4 corpus size; reproduces from the snapshot",
-    "92%": "reproduces exactly: licence.may_republish.row_pct",
     "14044": "ISO 14044, a standard number",
     "14067": "ISO 14067, a standard number"
   },
