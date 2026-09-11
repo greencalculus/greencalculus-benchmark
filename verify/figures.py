@@ -21,7 +21,13 @@ DATA = os.path.join(ROOT, "hf", "data")
 
 
 def load(config):
-    with open(os.path.join(DATA, config, "train.jsonl")) as fh:
+    path = os.path.join(DATA, config, "train.jsonl")
+    if not os.path.exists(path):
+        raise SystemExit(
+            f"missing {path}\n"
+            "hf/data/ is generated, not committed. Rebuild it first:\n"
+            "    python3 hf/build.py")
+    with open(path) as fh:
         return [json.loads(line) for line in fh]
 
 
