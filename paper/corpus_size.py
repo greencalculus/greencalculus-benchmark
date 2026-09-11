@@ -23,8 +23,11 @@ METRIC = "within_10pct"
 
 
 def scoreable(a):
-    """An answer counts only if it was given, not declined, and unit-comparable."""
-    return a["answered"] and not a["declined"] and not a["unscoreable_units"]
+    """The canonical definition, from score.py: an answer is scoreable exactly
+    when a relative error could be computed for it. Do not re-derive this from
+    the answered/declined/unscoreable flags -- that combination is close but not
+    identical, and the difference moves the coefficient."""
+    return a["rel_error"] is not None
 
 
 def load():

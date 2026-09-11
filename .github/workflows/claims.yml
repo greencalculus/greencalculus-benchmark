@@ -1,0 +1,39 @@
+name: claims
+
+# A number may not appear in our published prose unless a committed script
+# produces it. This is the gate that enforces that. It exists because the
+# corpus-size correlation was published as r = -0.12 with its specification
+# living in a chat session, where nobody could check it.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 1 * * 1"   # Mondays, so drift on the live pages surfaces weekly
+
+jobs:
+  figures-reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Committed scorer outputs still match their scripts
+        run: python3 verify/figures.py --check-fresh
+      - name: Every figure recomputes
+        run: python3 verify/figures.py > /dev/null
+      - name: The pinned corpus-size specification reproduces
+        run: python3 paper/corpus_size.py --sensitivity
+
+  claims-are-backed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Local surfaces (paper, dataset card, findings)
+        run: python3 verify/check_claims.py --offline
+      - name: Published pages
+        run: python3 verify/check_claims.py
+        continue-on-error: false

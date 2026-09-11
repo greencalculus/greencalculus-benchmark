@@ -1,0 +1,63 @@
+{
+  "_readme": [
+    "A number lands here only when it cannot be produced by committed code, and",
+    "the reason must say why. 'It is correct' is not a reason -- if it is correct",
+    "and derivable, make it a figure in figures.py instead. Every entry here is a",
+    "surface we cannot verify automatically, which is a debt, not a resolution."
+  ],
+  "*": {
+    "1000": "worked example: 1,000 kWh, an input the reader types, not a result",
+    "1500": "image dimension in a pin/hero URL, not a claim",
+    "16000": "'16,000+ factors', a deliberately rounded floor under corpus.rows (16,673)",
+    "17074": "raw listing rows including repeated keys; see corpus.rows for the canonical 16,673",
+    "2219": "Zenodo/YouTube identifier fragment, not a claim",
+    "366179": "identifier fragment in a URL, not a claim",
+    "5000": "Gemini's free grounding allowance, quoted from Google's pricing page",
+    "32000": "context-window size quoted from a model card, not our measurement",
+    "43255": "identifier fragment, not a claim"
+  },
+  "guide:accuracy": {
+    "45.9%": "scorer output at an EARLIER scorer version, quoted to show the headline was stable as coverage improved; cannot reproduce from today's code by design",
+    "46.3%": "as above -- an intermediate scorer version",
+    "46.7%": "as above -- the first scorer version",
+    "47%": "hand adjudication of 45 pilot answers by a person; not derivable from code",
+    "45%": "rounded restatement of the headline in prose",
+    "93%": "category accuracy quoted rounded; see category.*.accuracy for the exact values"
+  },
+  "guide:by-category": {
+    "45%": "rounded restatement of a per-category figure in prose",
+    "1424": "DEFRA_2026 corpus size; see corpus.source.DEFRA_2026.rows",
+    "2451": "ADEME_AGRIBALYSE_V32 corpus size; see corpus.source.ADEME_AGRIBALYSE_V32.rows"
+  },
+  "guide:recommendations": {
+    "93%": "rounded restatement in prose of a vendor citation rate"
+  },
+  "guide:licences": {
+    "_debt": "THE LICENCE AUDIT IS NOT REPRODUCIBLE FROM THIS REPOSITORY. Its 137-source review lives in the gc-sources store, not here, so none of the numbers below can be checked by this gate. Closing that is the next piece of work; until then these are trusted, not verified.",
+    "1106": "licence audit: source count by licence family (gc-sources store)",
+    "1326": "licence audit: source count by licence family (gc-sources store)",
+    "1547": "CBAM_DEFAULT_2026 corpus size; see corpus.source.CBAM_DEFAULT_2026.rows",
+    "1822": "licence audit: row count (gc-sources store)",
+    "15748": "licence audit: row count (gc-sources store)",
+    "2451": "ADEME_AGRIBALYSE_V32 corpus size; see corpus.source.ADEME_AGRIBALYSE_V32.rows",
+    "3036": "IPCC_2006_VOL4 corpus size; see corpus.source.IPCC_2006_VOL4.rows",
+    "92%": "licence audit: share of sources carrying a licence statement (gc-sources store)",
+    "14044": "ISO 14044, a standard number",
+    "14067": "ISO 14067, a standard number"
+  },
+  "findings": {
+    "_note": "FINDINGS.md is a working record written across several scorer versions. Figures that no longer reproduce are historical by design and are marked as such here.",
+    "46.7%": "headline at the first scorer version",
+    "46.9%": "headline at an intermediate scorer version",
+    "47%": "hand adjudication of 45 pilot answers",
+    "13.5%": "citation rate at an earlier scorer version",
+    "22.1%": "citation rate at an earlier scorer version",
+    "35.6%": "citation rate at an earlier scorer version",
+    "56.3%": "citation rate at an earlier scorer version",
+    "75.2%": "citation rate at an earlier scorer version",
+    "76.9%": "citation rate at an earlier scorer version",
+    "82.5%": "citation-correct rate at an earlier scorer version",
+    "85.7%": "citation-correct rate at an earlier scorer version",
+    "93.5%": "citation-correct rate at an earlier scorer version"
+  }
+}
