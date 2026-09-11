@@ -16,19 +16,12 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "paper"))
 
 import corpus_size  # the pinned specification lives there, not here
+import dataset      # noqa: F401  (import order: dataset must resolve before use)
 
 DATA = os.path.join(ROOT, "hf", "data")
 
 
-def load(config):
-    path = os.path.join(DATA, config, "train.jsonl")
-    if not os.path.exists(path):
-        raise SystemExit(
-            f"missing {path}\n"
-            "hf/data/ is generated, not committed. Rebuild it first:\n"
-            "    python3 hf/build.py")
-    with open(path) as fh:
-        return [json.loads(line) for line in fh]
+from dataset import load  # one loader for every figure script
 
 
 def pct(hit, total):
@@ -244,7 +237,8 @@ def main():
         return
     for k, v in sorted(figs.items()):
         print(f"{k:62} {v}")
-    print(f"\n{len(figs)} figures from hf/data/, results/ and paper/sources.tsv")
+    print(f"\n{len(figs)} figures from the benchmark dataset, results/ "
+          "and the licence snapshot")
     return 0
 
 

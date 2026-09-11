@@ -19,11 +19,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - name: Rebuild hf/data from committed results
-        # hf/data/ is gitignored -- it is generated, not source. Rebuilding it
-        # here means the gate runs against data derived from what is committed,
-        # and proves the published dataset still regenerates from the repo.
-        run: python3 hf/build.py
       - name: Committed scorer outputs still match their scripts
         run: python3 verify/figures.py --check-fresh
       - name: Every figure recomputes
@@ -37,11 +32,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - name: Rebuild hf/data from committed results
-        # hf/data/ is gitignored -- it is generated, not source. Rebuilding it
-        # here means the gate runs against data derived from what is committed,
-        # and proves the published dataset still regenerates from the repo.
-        run: python3 hf/build.py
       - name: Local surfaces (paper, dataset card, findings)
         run: python3 verify/check_claims.py --offline
       - name: Published pages

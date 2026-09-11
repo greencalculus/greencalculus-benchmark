@@ -11,7 +11,7 @@ Corpus sizes come from sources.tsv beside this file: canonical (deduplicated) ro
 counts per source_id. Releases 2026.188 and 2026.189 added and removed no rows, so
 these equal the counts at the benchmark's pinned data version 2026.187.
 """
-import argparse, collections, itertools, json, math, os
+import argparse, collections, itertools, json, math, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -31,9 +31,14 @@ def scoreable(a):
 
 
 def load():
-    answers = [json.loads(l) for l in open(os.path.join(ROOT, "hf/data/answers/train.jsonl"))]
-    questions = {q["id"]: q for q in
-                 (json.loads(l) for l in open(os.path.join(ROOT, "hf/data/questions/train.jsonl")))}
+    """Answers, questions and corpus sizes. The dataset comes through
+    verify/dataset.py so this works on a clean checkout, where hf/data/ is
+    absent because it is generated rather than committed."""
+    sys.path.insert(0, os.path.join(ROOT, "verify"))
+    from dataset import load as load_config
+
+    answers = load_config("answers")
+    questions = {q["id"]: q for q in load_config("questions")}
     sizes = {}
     for line in open(os.path.join(HERE, "sources.tsv")):
         if "\t" not in line:
