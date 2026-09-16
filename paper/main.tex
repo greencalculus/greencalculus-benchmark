@@ -1,3 +1,4 @@
+\pdfoutput=1  % arXiv: force pdfLaTeX. Must appear within the first five lines.
 % Right Source, Wrong Number — 4-page workshop paper.
 % Self-contained preamble on purpose: compiles on Overleaf or arXiv with no
 % external .sty. For a Climate Change AI submission, swap \documentclass for
@@ -36,6 +37,26 @@ Greenhouse-gas emission factors are an unusually clean probe for factual recall:
 Emission factors convert activity into emissions: kilowatt-hours into kilograms of CO\textsubscript{2}e, tonne-kilometres of freight into a carbon figure. They are the arithmetic underneath corporate disclosure, and they are increasingly requested from language models. They also make a good factual-recall benchmark for three reasons. Each factor has a single correct value; that value is traceable to an exact cell in a public document, so ``correct'' is not a matter of judgement; and the values are numerous, jurisdiction-specific and periodically revised, which defeats memorisation of a small canon.
 
 The stakes are not academic. These numbers end up in regulatory filings. Our interest is practical rather than adversarial: we wanted to know whether a model can be trusted to supply one, and if not, what specifically goes wrong.
+
+\vspace{-0.3em}
+% ---------------------------------------------------------------------------
+% Related work. For a strict 4-page venue (e.g. Climate Change AI), the last
+% three paragraphs can be cut to a single sentence each without losing an
+% argument; the first two are load-bearing and should stay.
+% ---------------------------------------------------------------------------
+\section{Related work}
+
+\textbf{Parametric recall and the long tail.} Probing a language model as a store of facts begins with LAMA \cite{petroni2019lama} and its successors \cite{jiang2020know,roberts2020pack}. Two findings anticipate ours: accuracy on a fact tracks how often that fact appears in pretraining \cite{kandpal2022longtail}, and models are least dependable exactly where non-parametric memory would help most \cite{mallen2022notrust}. Our category spread --- fuel properties at 93.9\% against CBAM defaults at 0\% --- is consistent with that account. Emission factors sharpen the instrument: the target is a number carrying a unit and a tolerance rather than a string to be matched, so a near miss is measurable rather than simply wrong.
+
+\textbf{Attribution and verifiability.} The closest line of work asks whether a generated statement is supported by the source cited beside it --- the AIS framework \cite{rashkin2021ais}, attributed question answering \cite{bohnet2022aqa}, ALCE \cite{gao2023alce}, and an audit of commercial generative search engines which found only a minority of generated sentences fully supported by their own citations \cite{liu2023verifiability}. That work supplies retrieved documents in context and asks whether the citation justifies the claim. We remove retrieval entirely and ask a narrower question with, we think, a more uncomfortable answer: the citation is usually \emph{correct} while the number beside it is not. Attribution correctness and value correctness come apart, so a verifiability check applied to the citation alone would pass these answers.
+
+\textbf{Hallucination and calibration.} The phenomenon is well surveyed \cite{ji2022hallucination,huang2023hallusurvey}, and TruthfulQA established that plausible-sounding falsehood is systematic rather than incidental \cite{lin2021truthfulqa}. A parallel literature asks whether models signal their own uncertainty \cite{kadavath2022know,xiong2023uncertainty}. We find no response-level signal separating a correct value from an incorrect one --- the tone is identical either way --- which carries that concern into a setting where the unit of error is a number in a regulatory filing.
+
+\textbf{Numeric answers, and tools.} DROP \cite{dua2019drop} and work on numeric representation \cite{thawani2021numbers} concern reasoning over numbers present in the input; ours is numeric \emph{recall}, where the number is itself the fact. Our paired arm is a minimal instance of retrieval- and tool-augmentation \cite{lewis2020rag,nakano2021webgpt,schick2023toolformer}, reported for the size of the gap rather than for novelty of method.
+
+\textbf{Climate and carbon language technology.} ClimateBERT \cite{webersinke2021climatebert}, chatClimate \cite{vaghefi2023chatclimate}, ClimateGPT \cite{thulke2024climategpt} and ClimateX \cite{lacombe2023climatex} evaluate climate-related text, grounding and the assessment of expert confidence. To our knowledge none evaluates recall of the numeric factors that statutory disclosure actually runs on. This is also a different question from the energy and emissions \emph{of} computing \cite{strubell2019energy,luccioni2022bloom}, with which it is easily confused.
+
+\textbf{Contamination.} We adopt the canary-string convention introduced with BIG-bench \cite{srivastava2022bigbench} and share the concern that publishing a benchmark degrades it \cite{sainz2023contamination}; the pre-registered held-out split described in the final section is our response.
 
 \vspace{-0.3em}
 \section{The benchmark}
@@ -124,5 +145,40 @@ Our scorer has been wrong six times; all six are documented, and \emph{four of t
 Questions, all raw model responses, the scorer and the bug log are at \url{https://github.com/greencalculus/greencalculus-benchmark}, archived at \href{https://doi.org/10.5281/zenodo.22692277}{10.5281/zenodo.22692277} and on the HuggingFace Hub as \texttt{greencalculus/emission-factor-benchmark}.
 
 Publishing a benchmark with its answer key degrades it. Two mitigations ship with the release. A \textbf{canary string} is embedded in the question file itself, so it travels if that file is scraped alone; a model that reproduces it was trained on this benchmark and its score here is memorisation. And a \textbf{pre-registered held-out split} of 136 further questions --- same generator, same corpus, disjoint by construction --- is withheld, with only its size, spread and SHA-256 published in advance, so a later release can be verified rather than quietly substituted. From the next evaluation onward we report public and held-out scores side by side; a materially better public score will be reported as memorisation, not accuracy.
+
+
+\vspace{-0.3em}
+{\small
+\begin{thebibliography}{99}
+\setlength{\itemsep}{0pt}
+\bibitem{petroni2019lama} F. Petroni et al. Language Models as Knowledge Bases? arXiv:1909.01066, 2019.
+\bibitem{jiang2020know} Zhengbao Jiang et al. How Can We Know What Language Models Know? arXiv:1911.12543, 2019.
+\bibitem{roberts2020pack} Adam Roberts, Colin Raffel and Noam Shazeer. How Much Knowledge Can You Pack into the Parameters of a Language Model? arXiv:2002.08910, 2020.
+\bibitem{kandpal2022longtail} Nikhil Kandpal et al. Large Language Models Struggle to Learn Long-Tail Knowledge. arXiv:2211.08411, 2022.
+\bibitem{mallen2022notrust} Alex Troy Mallen et al. When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories. arXiv:2212.10511, 2022.
+\bibitem{ji2022hallucination} Ziwei Ji et al. Survey of Hallucination in Natural Language Generation. arXiv:2202.03629, 2022.
+\bibitem{huang2023hallusurvey} Lei Huang et al. A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions. arXiv:2311.05232, 2023.
+\bibitem{lin2021truthfulqa} Stephanie C. Lin, Jacob Hilton and Owain Evans. TruthfulQA: Measuring How Models Mimic Human Falsehoods. arXiv:2109.07958, 2021.
+\bibitem{liu2023verifiability} Nelson F. Liu, Tianyi Zhang and Percy Liang. Evaluating Verifiability in Generative Search Engines. arXiv:2304.09848, 2023.
+\bibitem{rashkin2021ais} Hannah Rashkin et al. Measuring Attribution in Natural Language Generation Models. arXiv:2112.12870, 2021.
+\bibitem{gao2023alce} Tianyu Gao et al. Enabling Large Language Models to Generate Text with Citations. arXiv:2305.14627, 2023.
+\bibitem{bohnet2022aqa} Bernd Bohnet et al. Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models. arXiv:2212.08037, 2022.
+\bibitem{kadavath2022know} Saurav Kadavath et al. Language Models (Mostly) Know What They Know. arXiv:2207.05221, 2022.
+\bibitem{lewis2020rag} Patrick Lewis et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. arXiv:2005.11401, 2020.
+\bibitem{schick2023toolformer} Timo Schick et al. Toolformer: Language Models Can Teach Themselves to Use Tools. arXiv:2302.04761, 2023.
+\bibitem{nakano2021webgpt} Reiichiro Nakano et al. WebGPT: Browser-assisted question-answering with human feedback. arXiv:2112.09332, 2021.
+\bibitem{thawani2021numbers} Avijit Thawani et al. Representing Numbers in NLP: a Survey and a Vision. arXiv:2103.13136, 2021.
+\bibitem{srivastava2022bigbench} Aarohi Srivastava et al. Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models. arXiv:2206.04615, 2022.
+\bibitem{sainz2023contamination} Oscar Sainz et al. NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark. arXiv:2310.18018, 2023.
+\bibitem{webersinke2021climatebert} Nicolas Webersinke et al. ClimateBert: A Pretrained Language Model for Climate-Related Text. arXiv:2110.12010, 2021.
+\bibitem{vaghefi2023chatclimate} S. Vaghefi et al. chatClimate: Grounding Conversational AI in Climate Science. arXiv:2304.05510, 2023.
+\bibitem{thulke2024climategpt} David Thulke et al. ClimateGPT: Towards AI Synthesizing Interdisciplinary Research on Climate Change. arXiv:2401.09646, 2024.
+\bibitem{lacombe2023climatex} Romain Lacombe, Kerrie Wu and Eddie Dilworth. ClimateX: Do LLMs Accurately Assess Human Expert Confidence in Climate Statements? arXiv:2311.17107, 2023.
+\bibitem{strubell2019energy} Emma Strubell, Ananya Ganesh and A. McCallum. Energy and Policy Considerations for Deep Learning in NLP. arXiv:1906.02243, 2019.
+\bibitem{luccioni2022bloom} A. Luccioni, S. Viguier and Anne-Laure Ligozat. Estimating the Carbon Footprint of BLOOM, a 176B Parameter Language Model. arXiv:2211.02001, 2022.
+\bibitem{xiong2023uncertainty} Miao Xiong et al. Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs. arXiv:2306.13063, 2023.
+\bibitem{dua2019drop} Dheeru Dua et al. DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. arXiv:1903.00161, 2019.
+\end{thebibliography}
+}
 
 \end{document}
