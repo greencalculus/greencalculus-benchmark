@@ -16,7 +16,66 @@ units this scorer cannot reconcile is excluded from the accuracy denominator and
 reported separately, never counted as a wrong answer.
 """
 import json, re, unicodedata
-from units import reconcile
+from units import CURRENCY, reconcile
+
+# Tokens recognised immediately before a number. CURRENCY already has
+# usd/us$/$/eur/gbp/sek; € and £ are listed there in spirit but stripped by
+# _clean, so they are canonicalised to EUR/GBP before they reach reconcile.
+# Extra ISO/local codes are recognised so "NT$" is not stolen by "$" and so a
+# foreign-only figure stays attached to its own code — never given an FX rate.
+_EXTRA_CURRENCY = ("€", "£", "nt$", "nok", "aud", "huf", "zar", "jpy", "twd", "mxn")
+_SYMBOL_CANON = {"€": "EUR", "£": "GBP"}
+_CURRENCY_FAMILY = {
+    "usd": "usd", "us$": "usd", "$": "usd",
+    "eur": "eur", "€": "eur",
+    "gbp": "gbp", "£": "gbp",
+    "sek": "sek", "nok": "nok",
+    "nt$": "twd", "twd": "twd",
+    "aud": "aud", "huf": "huf", "zar": "zar", "jpy": "jpy", "mxn": "mxn",
+}
+
+
+def _currency_token_alts():
+    toks = sorted(set(CURRENCY) | set(_EXTRA_CURRENCY), key=len, reverse=True)
+    parts = []
+    for tok in toks:
+        esc = re.escape(tok)
+        parts.append(rf"(?<![\w]){esc}(?![\w])" if tok.isalpha() else esc)
+    return parts
+
+
+_CUR_ALTS = _currency_token_alts()
+_CUR_BEFORE = re.compile(r"(?:" + "|".join(_CUR_ALTS) + r")\s*$", re.I)
+_CUR_LEADING = re.compile(r"^(?:" + "|".join(_CUR_ALTS) + r")", re.I)
+
+
+def _leading_currency_family(unit):
+    """Numerator currency family, or None if the unit does not start with one."""
+    if not unit:
+        return None
+    m = _CUR_LEADING.match(unit.lstrip())
+    if not m:
+        return None
+    return _CURRENCY_FAMILY.get(m.group(0).rstrip().lower())
+
+
+def _trailing_takes_currency(unit):
+    """True when the captured tail is a unit (``/tCO2e``, ``per tCO2e``), not a scale word."""
+    raw = (unit or "").lstrip().lower()
+    return (not raw) or raw.startswith("/") or raw.startswith("per")
+
+
+def _with_currency_prefix(text, start, unit):
+    """Carry a currency written immediately before the number into `unit`."""
+    m = _CUR_BEFORE.search(text[:start])
+    if not m or not _trailing_takes_currency(unit):
+        return unit, None
+    cur = _SYMBOL_CANON.get(m.group(0).strip(), m.group(0).strip())
+    fam = _CURRENCY_FAMILY.get(m.group(0).strip().lower())
+    unit = unit or ""
+    if not unit:
+        return cur, fam
+    return f"{cur} {unit.lstrip()}", fam
 
 # The unit is whatever immediately follows the number, but it must stop at the
 # first separator — an em-dash, comma or bracket usually introduces the source
@@ -63,27 +122,50 @@ def norm(s):
     return unicodedata.normalize("NFKD", (s or "")).lower()
 
 
-def candidates(text):
-    """[(value, trailing_unit_text)] — ranges collapse to their midpoint."""
-    out, seen = [], set()
-    for m in RANGE.finditer(text or ""):
+def _iter_candidates(text):
+    """Yield (value, unit, prefix_family_or_None). Ranges collapse to midpoint."""
+    text = text or ""
+    seen = set()
+    for m in RANGE.finditer(text):
         lo, hi = float(m.group(1).replace(",", "")), float(m.group(2).replace(",", ""))
-        out.append(((lo + hi) / 2.0, m.group(3)))
+        unit, pref_fam = _with_currency_prefix(text, m.start(), m.group(3))
+        yield (lo + hi) / 2.0, unit, pref_fam
         seen.update(range(m.start(), m.end()))
-    for m in SINGLE.finditer(text or ""):
+    for m in SINGLE.finditer(text):
         if m.start() in seen:
             continue
         whole, exp, unit = m.group(1).replace(",", ""), m.group(2), m.group(3)
         if "." not in whole and not exp and re.fullmatch(r"(19|20)\d{2}", whole):
             continue  # a bare year is not a value
         v = float(whole) * (10 ** int(exp) if exp else 1)
-        out.append((v, unit))
-    return out
+        unit, pref_fam = _with_currency_prefix(text, m.start(), unit)
+        yield v, unit, pref_fam
+
+
+def candidates(text):
+    """[(value, unit_text)] — ranges collapse to their midpoint.
+
+    The unit is the text that trails the number, plus a currency token written
+    immediately before it. Models write ``USD 5 /tCO2e``; without the prefix
+    the extractor only sees ``/tCO2e``, which never reaches reconcile as
+    ``USD/tCO2e``.
+    """
+    return [(v, unit) for v, unit, _ in _iter_candidates(text)]
 
 
 def best_value(answer, truth_unit):
-    """The first candidate whose unit reconciles with the truth's unit."""
-    for v, unit in candidates(answer):
+    """The first candidate whose unit reconciles with the truth's unit.
+
+    A currency we lifted from immediately before the number is not FX-converted
+    into a different currency. ``EUR 65 /tCO2e`` against ``USD/tCO2e`` stays
+    unscoreable; if the same sentence also states a USD figure, that is scored.
+    Trailing currencies already in the unit text (``85 EUR per tonne``) keep
+    their existing reconcile behaviour.
+    """
+    want = _leading_currency_family(truth_unit)
+    for v, unit, pref_fam in _iter_candidates(answer):
+        if want and pref_fam and pref_fam != want:
+            continue
         conv, note = reconcile(v, unit, truth_unit)
         if conv is not None:
             return conv, unit, note
