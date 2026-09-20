@@ -14,7 +14,7 @@ batches of 30, **no tools and no lookups**. Run 2026-09-10.
 | Grok 4.6 | 66 | 62.1% | 86.4% | 13.6% |
 | GPT-5.5 | 256 | 58.2% | 85.2% | 14.8% |
 | Claude Opus 5 | 315 | 45.7% | 77.5% | 22.5% |
-| Gemini 3.6 Flash | 315 | 41.9% | 78.1% | 21.9% |
+| Gemini 3.6 Flash | 312 | 42.0% | 77.9% | 22.1% |
 
 **Of all 467 asked, how many did it get right?**
 
@@ -22,7 +22,7 @@ batches of 30, **no tools and no lookups**. Run 2026-09-10.
 |---|---:|---:|---:|---:|
 | GPT-5.5 | 326 | 141 | 149 | **31.9%** |
 | Claude Opus 5 | 430 | 37 | 144 | 30.8% |
-| Gemini 3.6 Flash | 404 | 63 | 132 | 28.3% |
+| Gemini 3.6 Flash | 404 | 63 | 131 | 28.1% |
 | Grok 4.6 | 144 | 323 | 41 | 8.8% |
 | Gemini 3.1 Pro | 77 | **390** | 30 | 6.4% |
 
@@ -59,7 +59,7 @@ and one knowledge base at two tiers:
 | Google model | Answered | Within 10% | Right source, wrong number |
 |---|---:|---:|---:|
 | Gemini 3.1 **Pro** | 77 / 467 | 65.2% | 35.3% |
-| Gemini 3.6 **Flash** | 404 / 467 | 41.9% | 58.8% |
+| Gemini 3.6 **Flash** | 404 / 467 | 42.0% | 58.8% |
 
 Same company, same training corpus. The fast tier answers five times as many
 questions and is right on far fewer of them, and when it cites the correct

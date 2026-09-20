@@ -233,7 +233,8 @@ def check_fresh():
     import filecmp, shutil, tempfile
     stale = []
     for script, out in (("compare.py", "results/comparison.json"),
-                        ("paired.py", "results/paired.json")):
+                        ("paired.py", "results/paired.json"),
+                        ("absolute.py", "results/absolute.json")):
         path = os.path.join(ROOT, out)
         if not os.path.exists(path):
             continue
