@@ -73,7 +73,7 @@ About **+61 points** for both, at 1.0–1.6 tool calls per question. The model i
 not handed the answer — it searches, picks the factor and reads the value, so
 this measures the integration, not a rigged prompt.
 
-Full write-up, caveats, and the log of the scorer's own six bugs:
+Full write-up, caveats, and the log of the scorer's own seven bugs:
 **[FINDINGS.md](./FINDINGS.md)**.
 
 ## A second study: who AI recommends

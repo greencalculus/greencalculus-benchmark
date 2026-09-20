@@ -155,7 +155,7 @@ revised short-lived hydrocarbon GWPs down by two orders of magnitude.
 
 ## Is the scorer trustworthy?
 
-It was wrong six times, and each is recorded because on a benchmark the
+It was wrong seven times, and each is recorded because on a benchmark the
 corrections matter more than the headline.
 
 1. **It compared numbers, not quantities.** The first version reported 35.6% and
@@ -180,11 +180,20 @@ corrections matter more than the headline.
    first separator.
 6. **A trailing full stop broke the match**, and `hectare`/`ha`, `year`/`yr` were
    treated as different units. Both folded.
+7. **It treated one currency as another.** Every entry in `CURRENCY` carried a
+   scale of 1.0, because we hold no exchange rates — so EUR, GBP and USD were
+   interchangeable and `85.00 EUR per tonne CO2e` scored 85 against a
+   `USD/tCO2e` truth, wrong by whatever the rate happened to be. `SEK` was
+   refused only by accident, having no scale at all. Three `gemini-3.6-flash`
+   carbon-price answers were affected and one of them was being counted
+   *correct*; `reconcile` now refuses a mismatched pair outright.
 
-Every one of these six was found before the number was published, and four of
-them were *understating* the result rather than flattering it. The rankings did
-not change through any of the revisions — which is the strongest evidence that
-they are real.
+Six of the seven were found before the number was published, and four of those
+were *understating* the result rather than flattering it. The seventh was found
+after publication, while reviewing a contributor's fix for the related bug in
+extraction, and is the reason the Gemini 3.6 Flash row moved from 41.9% to
+42.0%. The rankings did not change through any of the revisions — which is the
+strongest evidence that they are real.
 
 Two independent checks that the headline is real:
 
@@ -195,8 +204,9 @@ Two independent checks that the headline is real:
   hidden a bias, converting a fifth of it would have shifted the result.
 
 Unreconcilable units are reported **UNSCOREABLE** and leave the denominator,
-never counted wrong — mostly currency (a SEK answer against a USD truth) and
-prose units like "calendar year".
+never counted wrong — mostly currency (any answer whose currency is not the
+truth's; we convert between currencies never, not at a guessed rate) and prose
+units like "calendar year".
 
 ## Caveats, stated plainly
 
