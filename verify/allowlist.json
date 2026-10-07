@@ -57,6 +57,8 @@
   "repo-readme": {
     "_note": "README.md repeats the pilot-vs-hand-adjudication comparison. Only the two figures below are here; every headline figure in the README's tables is checked against results/*.json and must be updated, never allowlisted, when the scorer changes.",
     "46.9%": "the pilot headline at the scorer version the hand adjudication was run against; the comparison is only meaningful at that version",
-    "47%": "hand adjudication of 45 pilot answers, read by a person -- no script can produce it"
+    "47%": "hand adjudication of 45 pilot answers, read by a person -- no script can produce it",
+    "2733": "Errata, 7 Oct 2026: the SUPERSEDED answer-key value (2,733.85) for food.diet.mixed.annual, quoted to say what was wrong. It exists only in git history (questions.json before the erratum commit), so no current script can print it.",
+    "2569": "Errata, 7 Oct 2026: the corrected answer-key value (2,569.6, questions.json truth.value for food.diet.mixed.annual = Scarborough et al. 2023 Table 3, 7.04 kg/day x 365). Not a study result. claims_in() reads '2,569.6' as the count 2569 while the value rounds to 2570, so a figures.py entry cannot match it."
   }
 }
