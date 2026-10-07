@@ -220,6 +220,23 @@ It came out of an audit of our own corpus, which found 66 wrong cells out of 407
 checked. MIT, no dependencies, and it does not go stale — the assessment reports
 it rests on are closed.
 
+## Errata
+
+**7 October 2026 — one answer-key value corrected.** The truth value for
+`food.diet.mixed.annual` (mixed / medium meat-eater diet, Scarborough et al.
+2023, *Nature Food*) was 2,733.85 kg CO2e per person per year, built from
+7.49 kg CO2e a day. The paper's Table 3 gives 7.04 kg a day, so the value is now
+2,569.6. The six diet rows also now carry `gwp_set` AR6_100, the basis the paper
+states. The error came from the GreenCalculus MasterBrain, which was corrected
+the same day (v2026.239).
+
+No published figure changes. Three models' answers to this question are now
+closer to the truth but stay on the same side of the 10% and 50% thresholds, and
+the with-tools answers stay within 10%. `python3 verify/figures.py` gives
+identical output before and after the fix, and `--check-fresh` passes. The
+HuggingFace dataset has been rebuilt with the corrected value; the Zenodo
+v1.0.0 deposit is a frozen snapshot and still carries the old one.
+
 ## Citing this benchmark
 
 Archived on Zenodo. The **concept DOI** always resolves to the latest version;

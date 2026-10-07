@@ -56,7 +56,15 @@ CLAIM_RE = re.compile(
 # Allowlisting those numbers would have been the wrong fix: it would also wave
 # through the next genuinely wrong number that happens to land inside a widget.
 # Scope the gate to the article's own prose instead.
-FURNITURE = ("gc-srcmx", "gc-related-card", "gc-related-grid")
+#
+# The same goes for site chrome that prints the LIVE MasterBrain size ("18,995
+# factors") on every page: the author bio, the API card, the data-provenance
+# panel and the footer. That count moves with every data release, so the weekly
+# gate went red on 28 Sep 2026 and stayed red with nothing wrong in any study
+# figure. It is a statement about today's database, not about the study, and it
+# is checked where it is made (the MasterBrain itself), not here.
+FURNITURE = ("gc-srcmx", "gc-related-card", "gc-related-grid",
+             "gc-meta-attribution", "gc-apicta", "mb-prov", "gc-footer-live")
 
 
 def drop_subtrees(text, classes=FURNITURE):
