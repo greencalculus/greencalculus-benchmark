@@ -63,8 +63,14 @@ CLAIM_RE = re.compile(
 # gate went red on 28 Sep 2026 and stayed red with nothing wrong in any study
 # figure. It is a statement about today's database, not about the study, and it
 # is checked where it is made (the MasterBrain itself), not here.
+#
+# Same again from 12 Oct 2026: the byline moved to a foot card (gc-byfoot) and,
+# on 15 Oct, the content-first header shipped with the live count in its menu
+# panels, promo and trust line (gc-nav-panels, gc-nav-trust). Red since 12 Oct
+# on 19,561 alone; every study figure reproduced.
 FURNITURE = ("gc-srcmx", "gc-related-card", "gc-related-grid",
-             "gc-meta-attribution", "gc-apicta", "mb-prov", "gc-footer-live")
+             "gc-meta-attribution", "gc-apicta", "mb-prov", "gc-footer-live",
+             "gc-nav-panels", "gc-nav-trust", "gc-byfoot")
 
 
 def drop_subtrees(text, classes=FURNITURE):
