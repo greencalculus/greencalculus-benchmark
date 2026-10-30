@@ -27,6 +27,7 @@ BRANDS = {
  "Sinai":             [r"sinai technologies"],
  "CarbonChain":       [r"carbonchain", r"carbon chain"],
  "Altruistiq":        [r"altruistiq"],
+ "Terrascope":        [r"terrascope"],
  # public datasets, not vendors — tracked separately
  "_DEFRA":            [r"\bdefra\b", r"\bdesnz\b", r"\bbeis\b"],
  "_EPA":              [r"\bepa\b", r"egrid"],
