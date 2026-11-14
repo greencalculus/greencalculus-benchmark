@@ -28,6 +28,8 @@ BRANDS = {
  "CarbonChain":       [r"carbonchain", r"carbon chain"],
  "Altruistiq":        [r"altruistiq"],
  "Terrascope":        [r"terrascope"],
+ "Ecochain":          [r"\becochain\b"],
+ "Carbonfact":        [r"\bcarbonfact\b"],
  # public datasets, not vendors — tracked separately
  "_DEFRA":            [r"\bdefra\b", r"\bdesnz\b", r"\bbeis\b"],
  "_EPA":              [r"\bepa\b", r"egrid"],
@@ -35,6 +37,7 @@ BRANDS = {
  "_Ember":            [r"\bember\b"],
  "_ADEME":            [r"\bademe\b", r"base carbone", r"agribalyse"],
  "_EEIO/USEEIO":      [r"useeio", r"\beeio\b"],
+ "_GHG":              [r"\bghg protocol\b", r"greenhouse gas protocol"],
 }
 VENDORS = [b for b in BRANDS if not b.startswith("_")]
 DATASETS = [b for b in BRANDS if b.startswith("_")]
