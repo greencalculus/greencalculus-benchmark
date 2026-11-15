@@ -19,6 +19,17 @@ python3 verify/figures.py --check-fresh    # committed scorer output is current
 python3 aeo/trend.py                       # the search-arm panel
 ```
 
+Optional panel chart (matplotlib is needed only for drawing):
+
+```bash
+python3 -m pip install matplotlib
+python3 aeo/plot.py --output panel.svg
+```
+
+The plot breaks lines at incomparable runs, marks only shipped timeline events,
+and reports the per-prompt noise floor. `--csv FILE` (or `--csv -` for stdin)
+accepts the CSV from `aeo/trend.py --csv`; no model calls are made.
+
 API keys are needed **only** to re-run models. Everything else — the scorers, the gates, the 467 questions and every raw answer — is in the repo.
 
 ## The rules that are not negotiable

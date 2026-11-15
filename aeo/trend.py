@@ -111,32 +111,8 @@ def differential(runs, reaches, dates, floor, n_prompts):
                      f"still not significant at n={n_prompts}"))
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--csv", action="store_true", help="one row per run x brand")
-    args = ap.parse_args()
-
-    runs = discover()
-    if not runs:
-        sys.exit("no runs found")
-
-    if args.csv:
-        w = csv.writer(sys.stdout)
-        w.writerow(["run", "n_answers", "brand", "reach_pct", "named"])
-        for run in runs:
-            rr, n = reach(run["rows"]), len(run["rows"])
-            for b in [US] + CONTROLS:
-                w.writerow([run["date"], n, b, f"{rr.get(b, 0.0):.2f}",
-                            round(rr.get(b, 0.0) * n / 100)])
-        return
-
-    print(f"=== SEARCH ARM PANEL — {len(runs)} run(s) ===\n")
-
-    # --- comparability guards, before any number is read ------------------
-    # A reach percentage is only comparable run to run if the instrument was the
-    # same. Two things break that silently: a model dropping out (the denominator
-    # changes and every brand appears to move) and a provider ignoring the search
-    # tool (the row looks like an answer but is the no-web arm wearing its badge).
+def comparison_issues(runs):
+    """Reuse the panel guards in both text and CSV output."""
     base_models = None
     problems = []
     tainted = {}          # run date -> why its numbers are not comparable
@@ -158,6 +134,39 @@ def main():
                 problems.append(f"{run['date']}: {why} — that arm may be the no-web "
                                 f"baseline in disguise")
                 tainted.setdefault(run["date"], why)
+    return base_models, problems, tainted
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--csv", action="store_true", help="one row per run x brand")
+    args = ap.parse_args(argv)
+
+    runs = discover()
+    if not runs:
+        sys.exit("no runs found")
+
+    base_models, problems, tainted = comparison_issues(runs)
+
+    if args.csv:
+        w = csv.writer(sys.stdout)
+        w.writerow(["run", "n_answers", "brand", "reach_pct", "named", "n_prompts", "comparable"])
+        for run in runs:
+            rr, n = reach(run["rows"]), len(run["rows"])
+            for b in [US] + CONTROLS:
+                w.writerow([run["date"], n, b, f"{rr.get(b, 0.0):.2f}",
+                            round(rr.get(b, 0.0) * n / 100),
+                            len({r["prompt"] for r in run["rows"]}),
+                            "false" if run["date"] in tainted else "true"])
+        return
+
+    print(f"=== SEARCH ARM PANEL — {len(runs)} run(s) ===\n")
+
+    # --- comparability guards, before any number is read ------------------
+    # A reach percentage is only comparable run to run if the instrument was the
+    # same. Two things break that silently: a model dropping out (the denominator
+    # changes and every brand appears to move) and a provider ignoring the search
+    # tool (the row looks like an answer but is the no-web arm wearing its badge).
     if problems:
         print("COMPARABILITY WARNINGS")
         for p in problems:
